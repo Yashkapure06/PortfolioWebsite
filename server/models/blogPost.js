@@ -10,7 +10,6 @@ const blogSchema = mongoose.Schema({
     twitterHandle:String,
     facebookHandle:String,
     linkedinHandle:String,
-    githubHandle:String,
     instagramHandle:String,
     website:String,
     tags: [String],
