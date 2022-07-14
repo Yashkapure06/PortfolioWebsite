@@ -9,7 +9,9 @@ import postRoutes from "./routes/posts.js";
 const app = express();
 dotenv.config();
 
-app.use('/posts',postRoutes);
+app.use('/posts',postRoutes, (req, res) => {
+    res.send('Posts');
+});
 
 app.get('/', (req, res)=>{
     res.send("Weclome to my Portfolio");
