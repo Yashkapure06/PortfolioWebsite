@@ -12,6 +12,7 @@ import {
   Text,
   Container,
   useColorModeValue,
+  Divider,
 } from "@chakra-ui/react";
 import { projects } from "../constants/constants";
 
@@ -19,6 +20,7 @@ import { BsGithub } from 'react-icons/bs';
 const Projects = () => {
   return (
     <>
+    <Divider/>
     <Center id="projects" py={4}>
     <Text
         textTransform={"uppercase"}
@@ -33,9 +35,9 @@ const Projects = () => {
         My Projects
       </Text>
       </Center>
-      <Center py={4}>
+      <Center py={2}>
 
-      <Heading>Here are some of My Projects</Heading>
+      <Heading style={{alignItems: "justify"}}>Here are some of My Projects</Heading>
       </Center>
     <Container id="about" maxW={"6xl"} py={12} isLazy>
         {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}> */}
