@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import TestimonialMain from './components/Testimonials';
 import About from './components/About';
 import Projects from './components/Projects';
+import Blog from './components/Blog';
 
 const App=() =>{
     
@@ -17,6 +18,8 @@ const App=() =>{
         <Hero/>
         <About/>
         <Projects/>
+        <Divider/>
+        <Blog/>
         <Divider/>
         <TestimonialMain/>
         <Divider/>

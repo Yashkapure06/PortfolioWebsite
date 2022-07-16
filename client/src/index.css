@@ -29,17 +29,17 @@
 	
     position: relative;
     width: 300px;
-    height: 195px;
+    height: 525px;
     cursor: pointer;
     border-radius: 16px;
     box-shadow: 0 0 13px 0px rgba(0,0,0,.3);
     transition: .5s;
     overflow: hidden;
-    margin: .85rem;
+    margin: 1.15rem;
 }
-.card:hover{
+/* .card:hover{
     height: 450px;
-}
+} */
 
 .card img{
     width: 100%;

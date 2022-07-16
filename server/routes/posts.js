@@ -4,12 +4,12 @@ import { getPosts, getPost, createPost, updatePost, likePost, deletePost } from 
 
 const router = express.Router();
 
-router.get('/blog', getPosts);
-router.post('/blog/new', createPost);
-router.get('/blog/:id', getPost);
-
-router.patch('/blog/:id', updatePost);
+router.get('/', getPosts);
+router.post('/', createPost);
+router.get('/:id', getPost);
+// patch is used for updating existing document
+router.patch('/:id', updatePost);
 router.delete('/:id', deletePost);
-router.patch('/blog/:id/likePost', likePost);
+router.patch('/:id/likePost', likePost);
 
 export default router;
