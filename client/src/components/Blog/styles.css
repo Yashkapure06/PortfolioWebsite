@@ -7,8 +7,8 @@
 }
 
 .card-container {
-  width: 300px;
-  height: 440px;
+  width: 400px;
+  height: 530px;
   background-color: #fff;
   border-radius: 8px;
   margin: auto;
@@ -17,7 +17,7 @@
 }
 
 .card-image img {
-  height: 220px;
+  height: 210px;
   width: 100%;
   border-radius: 8px 8px 0 0;
   background-size: cover;
@@ -28,7 +28,7 @@
   flex-direction: column;
   align-items: start;
   padding: 16px;
-  min-height: 200px;
+  min-height: 220px;
 }
 
 .card-badge {
@@ -37,7 +37,7 @@
   color: #fff;
   padding: 2px 8px;
   border-radius: 70px;
-  margin: 0;
+  margin: 5px;
   font-size: 12px;
 }
 

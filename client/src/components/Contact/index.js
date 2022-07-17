@@ -17,6 +17,7 @@ import {
     InputGroup,
     InputLeftElement,
     Textarea,
+    Link,
   } from '@chakra-ui/react';
   import {
     MdPhone,
@@ -30,6 +31,28 @@ import {
   
 
 const Contact = () => {
+
+  const ButtonMailto = ({ mailto, label }) => {
+    return (
+        <Link
+            style={{textDecoration:'none'}}
+            _hover={{textDecoration:'none'}}         
+            to='#'
+            onClick={(e) => {
+                window.location.href = mailto;
+                e.preventDefault();
+            }}
+        >
+          <Button mt={4}
+                        variant="solid"
+                        bg="#0D74FF"
+                        color="white"
+                        _hover={{bgGradient:'linear(to-l, #7928CA, #FF0080)'}} >
+                            {label}
+                          </Button>
+        </Link>
+    );
+  };
     return (
        <Container id="contact" bgGradient='linear(to-l, #7928CA, #FF0080)'  maxW="full" mt={0} centerContent overflow="hidden" isLazy>
       <Flex>
@@ -93,6 +116,9 @@ const Contact = () => {
                       isRound={true}
                       _hover={{bgGradient:'linear(to-l, #7928CA, #FF0080)'  }}
                       icon={<BsInstagram size="28px" />}
+                      onClick={() => {
+                        window.open("https://www.instagram.com/_yashkapure_/", "_blank");
+                      }}
                     />
                     <IconButton
                       aria-label="github"
@@ -101,6 +127,9 @@ const Contact = () => {
                       isRound={true}
                       _hover={{ bgGradient:'linear(to-l, #7928CA, #FF0080)'  }}
                       icon={<BsGithub size="28px" />}
+                      onClick={() => {
+                        window.open("https://github.com/Yashkapure06", "_blank");
+                      }}
                     />
                     <IconButton
                       aria-label="discord"
@@ -109,6 +138,9 @@ const Contact = () => {
                       isRound={true}
                       _hover={{ bgGradient:'linear(to-l, #7928CA, #FF0080)'  }}
                       icon={<BsLinkedin size="28px" />}
+                      onClick={() => {
+                        window.open("https://www.linkedin.com/in/yash-kapure-9090a01a9/", "_blank");
+                      }}
                     />
                   </HStack>
                 </Box>
@@ -117,6 +149,7 @@ const Contact = () => {
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
+                      <form action="mailto:yashkapure06@gmail.com" method="post">
                       <FormControl id="name">
                         <FormLabel>Your Name</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
@@ -148,14 +181,12 @@ const Contact = () => {
                         />
                       </FormControl>
                       <FormControl id="name" float="right">
-                        <Button
-                          variant="solid"
-                          bg="#0D74FF"
-                          color="white"
-                          _hover={{bgGradient:'linear(to-l, #7928CA, #FF0080)'}}>
-                          Send Message
-                        </Button>
+                        
+                        <ButtonMailto
+                        
+                        label="Write me an E-Mail" mailto="mailto:no-reply@example.com" />
                       </FormControl>
+                      </form>
                     </VStack>
                   </Box>
                 </Box>

@@ -180,13 +180,11 @@ const Footer = () => {
         >
           <Text>© 2022 Yash Kapure. All rights reserved</Text>
           <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
+            <SocialButton label={"Twitter"} href={"https://twitter.com/KapureYash"} target={"_blank"}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={"YouTube"} href={"#"}>
-              <FaYoutube />
-            </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
+            
+            <SocialButton label={"Instagram"} href={"https://www.instagram.com/_yashkapure_/"} target={"_blank"}>
               <FaInstagram />
             </SocialButton>
           </Stack>

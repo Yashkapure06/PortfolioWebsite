@@ -20,23 +20,9 @@ import {
   Stack,
   useColorMode,
   Center,
+  AvatarBadge,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-// const Links = ['Home', 'About', 'Projects', 'Blog', 'Contact'];
-
-// const NavLink = ({ children }: { children: ReactNode }) => (
-// <Link
-//   px={2}
-//   py={1}
-//   rounded={'md'}
-//   _hover={{
-//     textDecoration: 'none',
-//     bg: useColorModeValue('gray.200', 'gray.700'),
-//   }}
-//   href='#'>
-//   {children}
-// </Link>
-// );
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -124,8 +110,6 @@ const Navbar = () => {
                 }}
                 href={"#blog"}
               >
-                
-
                 Blog
               </Link>
               <Link
@@ -161,7 +145,10 @@ const Navbar = () => {
                   <Avatar
                     size={"sm"}
                     src={"https://avatars.githubusercontent.com/u/61585443?v=4"}
-                  />
+                    
+                  >
+                    <AvatarBadge boxSize='1.15em' bg='green.400' />
+                  </Avatar>
                 </MenuButton>
                 <MenuList alignItems={"center"}>
                   <br />
@@ -171,6 +158,7 @@ const Navbar = () => {
                       src={
                         "https://avatars.githubusercontent.com/u/61585443?v=4"
                       }
+                      
                     />
                   </Center>
                   <br />
@@ -193,46 +181,67 @@ const Navbar = () => {
         </Flex>
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"}  spacing={4}>
-            <Link py={1}
+            <Stack as={"nav"} spacing={4}>
+              <Link
+                py={1}
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}href="#"
-                
-            onClick={isOpen ? onClose : onOpen}>Home</Link>
-            <Link py={1}
+                }}
+                href="#"
+                onClick={isOpen ? onClose : onOpen}
+              >
+                Home
+              </Link>
+              <Link
+                py={1}
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}href="#about"
-                
-            onClick={isOpen ? onClose : onOpen}>About</Link>
-            <Link py={1}
+                }}
+                href="#about"
+                onClick={isOpen ? onClose : onOpen}
+              >
+                About
+              </Link>
+              <Link
+                py={1}
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}href="#projects"
-                
-            onClick={isOpen ? onClose : onOpen}>Projects</Link>
-            <Link py={1}
+                }}
+                href="#projects"
+                onClick={isOpen ? onClose : onOpen}
+              >
+                Projects
+              </Link>
+              <Link
+                py={1}
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}href="blog"
-                
-            onClick={isOpen ? onClose : onOpen}>Blog</Link>
-            <Link py={1}
+                }}
+                href="blog"
+                onClick={isOpen ? onClose : onOpen}
+              >
+                Blog
+              </Link>
+              <Link
+                py={1}
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}href="contact"
-                
-            onClick={isOpen ? onClose : onOpen}>Contact</Link>
+                }}
+                href="contact"
+                onClick={isOpen ? onClose : onOpen}
+              >
+                Contact
+              </Link>
             </Stack>
           </Box>
         ) : null}
       </Box>
+      
     </>
   );
 };

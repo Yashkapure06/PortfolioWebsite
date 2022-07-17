@@ -18,6 +18,16 @@ export const projects = [
   
     },
     {
+      title: 'Personal Portfolio',
+      description: "This is my personal portfolio website. I have made this with the help of NextJS + Its documents .You can see my projects, skills, and contact me over here as well. ",
+      image: '/images/8.png',
+      tags: ['NextJs', 'MaterialUI'],
+      source: 'https://github.com/Yashkapure06/PersonalPortfolio',
+      visit: 'https://yash-kapure.vercel.app/',
+      id: 'personalPortfolio',
+  
+    },
+    {
       title: 'Space Talks ✨',
       description: "This is a MERN Website. I have created this website using ReactJs, Material-UI, Nodejs, CSS, Express and MongoDB. This website is a platform for people to share their love and knowledge about space, universe, stars, galaxies and other planets with people from all over.",
       image: '/images/spacetalks.png',
