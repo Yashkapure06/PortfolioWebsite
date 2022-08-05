@@ -2,12 +2,12 @@
   color: #000;
   display: flex;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0fr;
   gap: 16px;
 }
 
 .card-container {
-  width: 400px;
+  width: 350px;
   height: 530px;
   background-color: #fff;
   border-radius: 8px;

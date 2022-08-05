@@ -43,7 +43,7 @@ interface BlogAuthorProps {
 
 export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   return (
-    <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
+    <HStack marginTop="2" spacing="1" display="flex" alignItems="center">
       <Image
         borderRadius="full"
         boxSize="40px"

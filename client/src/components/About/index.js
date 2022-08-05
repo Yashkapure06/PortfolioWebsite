@@ -73,14 +73,14 @@ const About = () => {
           <Text color={"gray.500"} fontSize={"md"}>
             Some of the Stack I know
           </Text>
-          <Stack spacing={4} direction={"row"}>
+          <Stack spacing={6} direction={"row"}>
             <Feature
               icon={
                 <Icon
                   as={IoLogoReact}
                   color={useColorModeValue("blue.200", "blue.500")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -90,8 +90,8 @@ const About = () => {
                 <Icon
                   as={IoLogoPython}
                   color={useColorModeValue("blue.200", "blue.500")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -101,8 +101,8 @@ const About = () => {
                 <Icon
                   as={IoLogoNodejs}
                   color={useColorModeValue("green.500")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "green.900")}
@@ -112,8 +112,8 @@ const About = () => {
                 <Icon
                   as={IoLogoJavascript}
                   color={useColorModeValue("yellow.300", "yellow.400")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -123,8 +123,8 @@ const About = () => {
                 <Icon
                   as={IoLogoHtml5}
                   color={useColorModeValue("red.300", "red.500")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -134,8 +134,8 @@ const About = () => {
                 <Icon
                   as={TbBrandNextjs}
                   color={useColorModeValue("white", "black")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -145,21 +145,21 @@ const About = () => {
                 <Icon
                   as={SiMongodb}
                   color={useColorModeValue("green.500", "green.300")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
             />
           </Stack>
-          <Stack spacing={4} direction={"row"}>
+          <Stack spacing={6} direction={"row"}>
             <Feature
               icon={
                 <Icon
                   as={SiExpress}
                   color={useColorModeValue("white", "blue.600")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -169,8 +169,8 @@ const About = () => {
                 <Icon
                   as={IoLogoGithub}
                   color={useColorModeValue("white", "blue.700")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -180,8 +180,8 @@ const About = () => {
                 <Icon
                   as={SiHeroku}
                   color={useColorModeValue("white", "blue.700")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -191,8 +191,8 @@ const About = () => {
                 <Icon
                   as={SiGit}
                   color={useColorModeValue("red", "red.500")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -202,8 +202,8 @@ const About = () => {
                 <Icon
                   as={IoLogoCss3}
                   color={useColorModeValue("blue.200", "blue.500")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -213,8 +213,8 @@ const About = () => {
                 <Icon
                   as={SiJava}
                   color={useColorModeValue("white", "red.500")}
-                  w={5}
-                  h={5}
+                  w={7}
+                  h={7}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
