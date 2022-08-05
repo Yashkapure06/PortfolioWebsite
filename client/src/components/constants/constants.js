@@ -9,6 +9,15 @@ export const projects = [
         id: 'anandlokayurveda',
     },
     {
+      title: 'OpenSource Contribution in Chakra-UI',
+      description: "I created a portfolio website for my OpenSource contribution in Chakra-UI. This website is a collection of my contributions to the Chakra-UI community.",
+        image: '/images/9.png',
+        tags: ['Chakra-UI', 'React.Js', 'CSS'],
+        source:'https://github.com/Yashkapure06/awesome-chakra-ui',
+        visit: 'https://chakra-ui.com/community/showcase',
+        id: 'anandlokayurveda',
+    },
+    {
       title: 'Blogging Website',
       description: "This Blogging Website is made with NodeJs, Express and MongoDB. It is a simple blogging website where you can read, write, delete and edit your blog post. ",
       image: '/images/7.png',

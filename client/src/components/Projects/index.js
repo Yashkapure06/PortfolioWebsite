@@ -25,8 +25,6 @@ const Projects = ({ post, _id }) => {
     display: flex;
     padding-left: 10px;
   `;
-  // text-align: center;
-  // justify-content: space-around;
   const Tag = styled.li`
     padding-left: 12px;
     letter-spacing: 0.1rem;
