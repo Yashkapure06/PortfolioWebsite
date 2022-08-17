@@ -18,11 +18,22 @@ export const projects = [
         id: 'anandlokayurveda',
     },
     {
+      title: 'Netflix Clone using ReactJs',
+      description: "I created a Netflix clone using ReactJs and Sass. This is a clone of Netflix website. And played a lot with Api.",
+      image: '/images/10.png',
+      tags: ['React JS', 'SCSS', 'CSS', 'API'],
+      source: 'https://github.com/Yashkapure06/netflix-clone',
+      visit: 'https://netflix-clone-06.netlify.app/',
+      id: 'netflix-clone',
+  
+    },
+    {
       title: 'Blogging Website',
       description: "This Blogging Website is made with NodeJs, Express and MongoDB. It is a simple blogging website where you can read, write, delete and edit your blog post. ",
       image: '/images/7.png',
       tags: ['Nodejs', 'Express', 'CSS', 'MongoDB'],
       source: 'https://github.com/Yashkapure06/Blogging-Website',
+      visit: 'https://github.com/Yashkapure06/Blogging-Website',
       id: 'bloggingwebsite',
   
     },
