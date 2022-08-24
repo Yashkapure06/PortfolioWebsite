@@ -9,7 +9,7 @@ import {
   Button,
   Image,
   Icon,
-  IconButton,
+  // IconButton,
   createIcon,
   IconProps,
   useColorModeValue,
@@ -21,11 +21,11 @@ import {
   PopoverBody,
   PopoverArrow,
   PopoverCloseButton,
-  Tabs,
-  TabList,
-  Tab,
-  TabPanels,
-  TabPanel,
+  // Tabs,
+  // TabList,
+  // Tab,
+  // TabPanels,
+  // TabPanel,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from '@chakra-ui/icons';
 
@@ -85,6 +85,14 @@ const Hero = () => {
               >
                
                 Personally I love to work in React.js especially MERN.
+              </Highlight>
+              <br/>
+              <Highlight
+                query="React Native 📱"
+                styles={{ px: "5", py: "1", rounded: "full", bg: "blue.100" }}
+              >
+
+               Currently I have started learning React Native 📱.
               </Highlight>
             </Text>
             <Stack
