@@ -102,8 +102,8 @@ const Projects = ({ post, _id }) => {
                   <div className="card-body">
                     <h6>{title}</h6>
                     <p>{description}</p>
-                    <TitleContent>Stack</TitleContent>
-                    <TagList>
+                    <TitleContent sx={{ textAlign: "center" }}>Stack</TitleContent>
+                    <TagList sx={{ textAlign: "center" }}>
                       {tags.map((tag, index) => (
                         <center>
                           
