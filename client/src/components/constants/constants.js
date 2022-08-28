@@ -28,6 +28,16 @@ export const projects = [
   
     },
     {
+      title: 'YouTube Clone using ReactJs',
+      description: "I created a YouTube clone using ReactJs and Material UI. Used Rapid API to fetch data and learnt how to fetch data using API. The API used here was YouTube v3.",
+      image: '/images/11.png',
+      tags: ['ReactJs', 'CSS', 'Material-UI', 'API'],
+      source: 'https://github.com/Yashkapure06/youtube_clone',
+      visit: 'https://youtube-clone-06.netlify.app/',
+      id: 'youtube-clone',
+  
+    },
+    {
       title: 'Blogging Website',
       description: "This Blogging Website is made with NodeJs, Express and MongoDB. It is a simple blogging website where you can read, write, delete and edit your blog post. ",
       image: '/images/7.png',
