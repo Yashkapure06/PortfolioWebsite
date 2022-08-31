@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import {
   Badge,
   Button,
@@ -45,7 +45,7 @@ const Projects = ({ post, _id }) => {
     border: 0;
     background: #ff0080;
   `;
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   return (
     <>
       <Divider />
@@ -66,7 +66,7 @@ const Projects = ({ post, _id }) => {
       </Center>
       <Center py={2}>
         <Heading style={{ paddingLeft: 30 }}>
-          Here are some of My Projects
+          <Text>Here are some of My Projects</Text>
         </Heading>
       </Center>
       <Hr />
@@ -91,10 +91,10 @@ const Projects = ({ post, _id }) => {
         </i>
       </Center>
       <Hr />
-      <Container id="about" maxW={"6xl"} py={12} isLazy>
+      {/* <Container id="about" > */}
         {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}> */}
-        <Center py={6}>
-          <div className="main">
+        {/* <Center py={6}> */}
+          <section id="about"  className="main">
             {projects.map(
               ({ id, image, title, description, tags, source, visit, likeCount }) => (
                 <div className="card">
@@ -102,13 +102,12 @@ const Projects = ({ post, _id }) => {
                   <div className="card-body">
                     <h6>{title}</h6>
                     <p>{description}</p>
-                    <TitleContent sx={{ textAlign: "center" }}>Stack</TitleContent>
+                    <TitleContent sx={{ textAlign: "center" }}><strong>Stack</strong></TitleContent>
                     <TagList sx={{ textAlign: "center" }}>
                       {tags.map((tag, index) => (
-                        <center>
-                          
+                        <p>                          
                           <Tag key={index}>{tag}</Tag>
-                        </center>
+                        </p>
                       ))}
                     </TagList>
                     <div>
@@ -161,9 +160,9 @@ const Projects = ({ post, _id }) => {
                 </div>
               )
             )}
-          </div>
-        </Center>
-      </Container>
+          </section>
+        {/* </Center> */}
+      {/* </Container> */}
     </>
   );
 };

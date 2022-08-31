@@ -19,14 +19,14 @@ const App=() =>{
         <Hero/>
         <About/>
         <Projects/>
-        <Comments/>
+        {/* <Comments/> */}
         <Divider/>
         <Blog/>
         <Divider/>
         <TestimonialMain/>
         <Divider/>
         <Contact/>
-        <Footer/>
+        <Footer/> 
     </ChakraProvider>
   )
 };
