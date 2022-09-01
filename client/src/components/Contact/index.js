@@ -54,7 +54,7 @@ const Contact = () => {
     );
   };
     return (
-       <Container id="contact" bgGradient='linear(to-l, #7928CA, #FF0080)'  maxW="full" mt={0} centerContent overflow="hidden" isLazy>
+       <Container className="reveal" id="contact" bgGradient='linear(to-l, #7928CA, #FF0080)'  maxW="full" mt={0} centerContent overflow="hidden" isLazy>
       <Flex>
         <Box
           bg="#02054B"
