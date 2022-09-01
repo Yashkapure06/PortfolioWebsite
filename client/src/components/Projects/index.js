@@ -94,10 +94,10 @@ const Projects = ({ post, _id }) => {
       {/* <Container id="about" > */}
         {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}> */}
         {/* <Center py={6}> */}
-          <section id="about"  className="main">
+          <section className=" main" id="about">
             {projects.map(
               ({ id, image, title, description, tags, source, visit, likeCount }) => (
-                <div className="card">
+                <div className="reveal card">
                   <img src={image} alt={title} />
                   <div className="card-body">
                     <h6>{title}</h6>
@@ -105,9 +105,9 @@ const Projects = ({ post, _id }) => {
                     <TitleContent sx={{ textAlign: "center" }}><strong>Stack</strong></TitleContent>
                     <TagList sx={{ textAlign: "center" }}>
                       {tags.map((tag, index) => (
-                        <p>                          
+                        <Text style={{ fontWeight:"600"}}>                          
                           <Tag key={index}>{tag}</Tag>
-                        </p>
+                        </Text>
                       ))}
                     </TagList>
                     <div>
