@@ -87,15 +87,17 @@ const TestimonialAvatar = ({
 
 const TestimonialMain = () => {
   return (
-    <Box >
+    <Box className="reveal">
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
-          <Heading>Testimonials</Heading>
+          <Heading><Text>Testimonials</Text></Heading>
           <Text>Some Words of Appreciation</Text>
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
-          spacing={{ base: 10, md: 4, lg: 10 }}>
+          spacing={{ base: 10, md: 4, lg: 10 }}
+          className="reveal"
+          >
           <Testimonial>
             <TestimonialContent>
               <TestimonialHeading>Web Development at Anandlok Ayurveda</TestimonialHeading>
