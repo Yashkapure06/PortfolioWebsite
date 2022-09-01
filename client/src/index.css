@@ -5,6 +5,17 @@
 *{    
     font-family: 'Poppins', sans-serif;
 }
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
 @keyframes move{
     0% {
 		transform: scale(0.95);
