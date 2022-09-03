@@ -9,6 +9,7 @@ import {
   Avatar,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { testimonials } from '../constants/constants';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -98,21 +99,29 @@ const TestimonialMain = () => {
           spacing={{ base: 10, md: 4, lg: 10 }}
           className="reveal"
           >
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Web Development at Anandlok Ayurveda</TestimonialHeading>
-              <TestimonialText>
-              “Yash worked very hard for this project as Intern at Anandlok Ayurveda, Beautifully created the whole website one handedly with proper stack he knows. Wish you all the best for your future.”
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8ykRstebGo9HXF-ZFiHGhj4l6YF_papozO8q5j-8ig&s'
-              }
-              name={'Dr. Viraj Gite'}
-              title={'CEO at Anandlok Ayurveda Hospital'}
-            />
-          </Testimonial>
+            {testimonials.map(
+              ({heading, message, avatar, name, title, location})=>(
+                <Testimonial>
+                  <TestimonialContent>
+                  <TestimonialHeading><Text>{heading}</Text></TestimonialHeading>
+                  
+                  <Text
+                    style={{fontWeight: 'bold', fontSize: '0.8em'}}
+                  >
+                    {location}
+                  </Text>
+                  <TestimonialText>
+                  “{message}”
+                  </TestimonialText>
+                </TestimonialContent>
+                <TestimonialAvatar
+                  src={avatar}
+                  name={name}
+                  title={title}
+                />
+            </Testimonial>  
+            )
+            )}
         </Stack>
       </Container>
     </Box>
