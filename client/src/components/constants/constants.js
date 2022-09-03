@@ -112,3 +112,23 @@ export const projects = [
       id: 'todolist',
     },
   ];
+
+
+  export const testimonials = [
+    {
+      heading :'Web Development at Anandlok Ayurveda',
+      message : 'Yash worked very hard for this project as Intern at Anandlok Ayurveda, Beautifully created the whole website one handedly with proper stack he knows. Wish you all the best for your future.',
+      avatar : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8ykRstebGo9HXF-ZFiHGhj4l6YF_papozO8q5j-8ig&s',
+      name : 'Dr. Viraj Gite',
+      title: 'CEO at Anandlok Ayurveda Hospital',
+      location: 'Nagpur, India',
+    },
+    {
+      heading :'Portfolio development for Assam Client',
+      message : 'I saw his portfolio on the chakra UI documentation and liked it so I asked him to make me one. The UI is really eye-catching as well as smooth, he has a very good understanding of the tech stacks that he uses. I wish him all the best for his future projects.',
+      avatar : 'https://media-exp1.licdn.com/dms/image/C5603AQGBlcZKMni90w/profile-displayphoto-shrink_100_100/0/1642131536797?e=1667433600&v=beta&t=gIixVC-LW70nSAQJnOKdJsL30ufQN6AfHZgXFqXrq8M',
+      name : 'Subham Dey',
+      title: 'Student',
+      location: 'Assam, India',
+    },
+  ]
