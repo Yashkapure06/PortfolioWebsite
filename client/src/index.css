@@ -7,7 +7,6 @@
     scroll-behavior: smooth;
 }
 
-/*Smooth Scroll */
 ::-webkit-scrollbar {
     width: 10px;
   }
