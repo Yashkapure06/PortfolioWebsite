@@ -14,10 +14,10 @@
     background: #f8eded; 
   }
   ::-webkit-scrollbar-thumb {
-    background: #923de7; 
+    background: #FF0080; 
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #FF0080; 
+    background: #ff4ca5; 
   }
 
 .reveal {
