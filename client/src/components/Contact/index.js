@@ -27,7 +27,7 @@ import {
     MdOutlineEmail,
   } from 'react-icons/md';
   import { BsGithub, BsDiscord, BsPerson, BsInstagram, BsLinkedin } from 'react-icons/bs';
-
+  import Comments from '../Comments/index';
   
 
 const Contact = () => {
@@ -55,13 +55,16 @@ const Contact = () => {
   };
     return (
        <Container className="reveal" id="contact" bgGradient='linear(to-l, #7928CA, #FF0080)'  maxW="full" mt={0} centerContent overflow="hidden" isLazy>
-      <Flex>
+      <Flex
+      >
         <Box
           bg="#02054B"
           color="white"
           borderRadius="lg"
-          m={{ sm: 4, md: 16, lg: 10 }}
-          p={{ sm: 5, md: 5, lg: 16 }}>
+          p={{ sm: 5, md: 5, lg: 6 }}
+          m={{ sm: 4, md: 16, lg: 25 }}
+          width="100%"
+          >
           <Box p={4}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
@@ -80,17 +83,17 @@ const Contact = () => {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                        +91-7028073007
+                        <Link href="tel:7028073007">+91-7028073007</Link>
                       </Button>
                       <Button
                         size="md"
                         height="48px"
-                        width="225px"
+                        width="255px"
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                        yashkapure06@gmail.com
+                       <Link href="mailto:yashkapure06@gmail.com"> yashkapure06@gmail.com</Link>
                       </Button>
                       <Button
                         size="md"
@@ -145,29 +148,11 @@ const Contact = () => {
                   </HStack>
                 </Box>
               </WrapItem>
-              <WrapItem>
-                <Box  bg="white" borderRadius="lg">
-                  <Box m={8} color="#0B0E3F">
-                    <VStack spacing={3}>
-                      <form action="mailto:yashkapure06@gmail.com" method="post">
-                        <center>
-                      
-                      <FormControl id="name" float="right">
-                        
-                        <ButtonMailto
-                        
-                        label="Write me an E-Mail" mailto="mailto:no-reply@example.com" />
-                      </FormControl>
-                      </center>
-                      </form>
-                    </VStack>
-                  </Box>
-                </Box>
-              </WrapItem>
             </Wrap>
           </Box>
         </Box>
       </Flex>
+              <Comments />
     </Container>
     );
 }
