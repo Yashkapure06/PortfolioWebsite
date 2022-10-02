@@ -63,7 +63,6 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
     </Text>
   );
 };
-
 const TestimonialAvatar = ({
   src,
   name,
@@ -87,6 +86,7 @@ const TestimonialAvatar = ({
 };
 
 const TestimonialMain = () => {
+  
   return (
     <Box className="reveal">
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>

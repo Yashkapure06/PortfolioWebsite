@@ -9,6 +9,7 @@ import TestimonialMain from './components/Testimonials';
 import About from './components/About';
 import Projects from './components/Projects';
 import Blog from './components/Blog';
+import LiveCount from './components/LiveCount';
 // import Comments from './components/Comments';
 
 function reveal() {
@@ -27,6 +28,18 @@ function reveal() {
   }
 }
 
+// const countEl = document.getElementById('count');
+
+// updateVisitCount();
+// function updateVisitCount(){
+  
+  
+//   fetch('https://api.countapi.xyz/update/yashkapure.netlify.app/test?amount=1')
+//     .then(res => res.json())
+//     .then(res => {
+//       countEl.innerHTML = res.value;
+//     })
+// }
 window.addEventListener("scroll", reveal);
 const App=() =>{
     
@@ -43,6 +56,7 @@ const App=() =>{
         <TestimonialMain/>
         <Divider/>
         <Contact/>
+        {/* <LiveCount/> */}
         <Footer/> 
     </ChakraProvider>
   )

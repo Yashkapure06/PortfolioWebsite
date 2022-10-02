@@ -152,7 +152,7 @@ const Contact = () => {
           </Box>
         </Box>
       </Flex>
-              <Comments />
+              {/* <Comments /> */}
     </Container>
     );
 }
