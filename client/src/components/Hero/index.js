@@ -72,9 +72,10 @@ const Hero = () => {
                 bgGradient="linear(to-l, #7928CA, #FF0080)"
                 bgClip="text"
               >
-                Portfolio!
+              Portfolio!
               </Text>
             </Heading>
+            <Text> Total visits : <span id="visits"></span></Text>
             <Text color={"gray.400"}>
               I am working with a range of technologies in the web development
               world. From front-end to back-end, I am comfortable with all of
