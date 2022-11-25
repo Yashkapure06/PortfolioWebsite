@@ -82,7 +82,7 @@ const Hero = () => {
               them.
               <Highlight
                 query="MERN"
-                styles={{ px: "5", py: "1", rounded: "full", bg: "green.100" }}
+                styles={{ px: "2", py: "0.3", rounded: "full", bg: "green.100" }}
               >
                
                 Personally I love to work in React.js especially MERN.
@@ -90,7 +90,7 @@ const Hero = () => {
               <br/>
               <Highlight
                 query="React Native 📱"
-                styles={{ px: "5", py: "1", rounded: "full", bg: "blue.100" }}
+                styles={{ px: "2", py: "0.3", rounded: "full", bg: "blue.100" }}
               >
 
                Currently I have started learning React Native 📱.
