@@ -120,16 +120,6 @@ export const projects = [
     visit: "https://harshal-nandani.web.app/",
     id: "weddingwebsite",
   },
-  {
-    title: "ToDo List",
-    description:
-      "This project is made with EJS, Nodejs and MongoDB at basic level. It is a simple todo list. For backend I have used MongoDB. Main feature is anyone can use it &  you can play with the link. ",
-    image: "/images/2.png",
-    tags: ["EJS", "Nodejs", "MongoDB"],
-    source: "https://github.com/Yashkapure06/todolist-v1.git",
-    visit: "https://tranquil-stream-68506.herokuapp.com/",
-    id: "todolist",
-  },
 ];
 
 export const testimonials = [
