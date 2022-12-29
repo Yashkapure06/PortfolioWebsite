@@ -34,7 +34,7 @@ const Feature = ({ icon, iconBg }: FeatureProps) => {
   return (
     <Stack direction={"row"} align={"center"}>
       <Flex
-        w={8}
+        w={12}
         h={8}
         align={"center"}
         justify={"center"}
@@ -64,11 +64,17 @@ const About = () => {
           >
             About Me
           </Text>
-          <Heading><Text>Hello Friends, Myself Yash Kapure</Text></Heading>
+          <Heading>
+            <Text>Hello! My name is Yash Kapure</Text>
+          </Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
-            A self-taught Programmer who loves to learn more about programming. I have good
-            knowledge of web development. I also love to learn new things. A Tea
-            🍵 Lover and sometimes coffee☕. The Sport I love is Cricket🏏.
+            I am a self-taught programmer with a passion for learning and
+            exploring new technologies. I have a strong background in full-stack
+            development and am always eager to expand my skillset and take on
+            new challenges. In my free time, I enjoy sipping on a cup of tea (or
+            coffee) and watching a game of cricket. As a dedicated and driven
+            individual, I am constantly seeking out opportunities to grow and
+            improve as a programmer.
           </Text>
           <Text color={"gray.500"} fontSize={"md"}>
             Some of the Stack I know
@@ -79,8 +85,8 @@ const About = () => {
                 <Icon
                   as={IoLogoReact}
                   color={useColorModeValue("blue.200", "blue.500")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -90,8 +96,8 @@ const About = () => {
                 <Icon
                   as={IoLogoPython}
                   color={useColorModeValue("blue.200", "blue.500")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -101,8 +107,8 @@ const About = () => {
                 <Icon
                   as={IoLogoNodejs}
                   color={useColorModeValue("green.500")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "green.900")}
@@ -112,20 +118,20 @@ const About = () => {
                 <Icon
                   as={IoLogoJavascript}
                   color={useColorModeValue("yellow.300", "yellow.400")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
             />
-           
+
             <Feature
               icon={
                 <Icon
                   as={TbBrandNextjs}
                   color={useColorModeValue("white", "black")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -135,8 +141,8 @@ const About = () => {
                 <Icon
                   as={SiMongodb}
                   color={useColorModeValue("green.500", "green.300")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -144,23 +150,23 @@ const About = () => {
           </Stack>
           <Stack spacing={8} direction={"row"}>
             <Feature
-                icon={
-                  <Icon
-                    as={IoLogoHtml5}
-                    color={useColorModeValue("red.300", "red.500")}
-                    w={7}
-                    h={7}
-                  />
-                }
-                iconBg={useColorModeValue("black", "white")}
-              />
+              icon={
+                <Icon
+                  as={IoLogoHtml5}
+                  color={useColorModeValue("red.300", "red.500")}
+                  w={12}
+                  h={10}
+                />
+              }
+              iconBg={useColorModeValue("black", "white")}
+            />
             <Feature
               icon={
                 <Icon
                   as={SiExpress}
                   color={useColorModeValue("white", "blue.600")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -170,8 +176,8 @@ const About = () => {
                 <Icon
                   as={IoLogoGithub}
                   color={useColorModeValue("white", "blue.700")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -181,8 +187,8 @@ const About = () => {
                 <Icon
                   as={SiHeroku}
                   color={useColorModeValue("white", "blue.700")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -192,8 +198,8 @@ const About = () => {
                 <Icon
                   as={SiGit}
                   color={useColorModeValue("red", "red.500")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
@@ -203,22 +209,21 @@ const About = () => {
                 <Icon
                   as={IoLogoCss3}
                   color={useColorModeValue("blue.200", "blue.500")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
             />
-            
           </Stack>
           <Stack spacing={8} direction={"row"}>
-          <Feature
+            <Feature
               icon={
                 <Icon
                   as={SiJava}
                   color={useColorModeValue("white", "red.500")}
-                  w={7}
-                  h={7}
+                  w={12}
+                  h={10}
                 />
               }
               iconBg={useColorModeValue("black", "white")}
