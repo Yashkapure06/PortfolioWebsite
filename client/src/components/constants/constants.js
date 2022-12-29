@@ -136,7 +136,7 @@ export const testimonials = [
   {
     heading: "Web Development at Anandlok Ayurveda",
     message:
-      "Yash worked very hard for this project as Intern at Anandlok Ayurveda, Beautifully created the whole website one handedly with proper stack he knows. Wish you all the best for your future.",
+      "Yash put in a lot of effort as an intern at Anandlok Ayurveda, and was able to create an impressive website single-handedly using the appropriate technology stack. We wish Yash the best of luck in his future endeavors.",
     avatar:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8ykRstebGo9HXF-ZFiHGhj4l6YF_papozO8q5j-8ig&s",
     name: "Dr. Viraj Gite",
