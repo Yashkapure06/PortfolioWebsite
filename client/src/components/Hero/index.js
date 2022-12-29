@@ -27,7 +27,7 @@ import {
   // TabPanels,
   // TabPanel,
 } from "@chakra-ui/react";
-import { ChevronDownIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 import heroImage from "./image/DSC_0094.JPG";
 import resume from "./image/resume.png";
@@ -72,28 +72,36 @@ const Hero = () => {
                 bgGradient="linear(to-l, #7928CA, #FF0080)"
                 bgClip="text"
               >
-              Portfolio!
+                Portfolio!
               </Text>
             </Heading>
-            <Text> Total visits : <span id="visits"></span></Text>
+            <Text>
+              {" "}
+              Total visits : <span id="visits"></span>
+            </Text>
             <Text color={"gray.400"}>
-              I am working with a range of technologies in the web development
-              world. From front-end to back-end, I am comfortable with all of
-              them.
+              As a full-stack web developer, I have a strong foundation in a
+              range of technologies. My expertise spans from front-end
+              development to back-end programming.
               <Highlight
                 query="MERN"
-                styles={{ px: "2", py: "0.3", rounded: "full", bg: "green.100" }}
+                styles={{
+                  px: "2",
+                  py: "0.3",
+                  rounded: "full",
+                  bg: "green.100",
+                }}
               >
-               
-                Personally I love to work in React.js especially MERN.
+                One of my favorite technologies to work with is React.js,
+                particularly within the MERN stack.
               </Highlight>
-              <br/>
+              <br />
               <Highlight
                 query="React Native 📱"
                 styles={{ px: "2", py: "0.3", rounded: "full", bg: "blue.100" }}
               >
-
-               Currently I have started learning React Native 📱.
+                I am currently expanding my skillset to include React Native 📱 for
+                mobile development.
               </Highlight>
             </Text>
             <Stack
@@ -114,44 +122,46 @@ const Hero = () => {
               >
                 Hire me
               </Button>
-      
-      
-              
-      <Popover placement="bottom" isLazy>
-        <PopoverTrigger>
-          <Button
-            rounded={"full"}
-            rightIcon={<ChevronDownIcon />}
-            size={"lg"}
-            colorScheme={"red"}
-            fontWeight={"normal"}
-            bgGradient="linear(to-l, #7928CA, #FF0080)"  
-            _hover={{ bgGradient: "linear(to-r, #7928CA, #FF0080)" }}
-            w="fit-content">
-            My Resume
-          </Button>
-        </PopoverTrigger>
-        <PopoverContent _focus={{ boxShadown: '#f4f4' }} ml={5}>
-          <PopoverArrow />
-          <PopoverCloseButton />
-          <PopoverHeader fontWeight="bold">My Resume(Click on image to open)</PopoverHeader>
-          <PopoverBody >
-                <Image
-                   alt={"Hero Image"}
-                   fit={"cover"}
-                   align={"center"}
-                   w={"100%"}
-                   h={"100%"}
-                   src={resume}
-                   onClick={() => {
-                    
-                    window.open("https://drive.google.com/file/d/1AoHfHwZyZJanBg6_FNXbsEHfOPuQhXTk/view?usp=sharing", '_blank');
-                    
-                   }}
-                />
-          </PopoverBody>
-        </PopoverContent>
-      </Popover>
+
+              <Popover placement="bottom" isLazy>
+                <PopoverTrigger>
+                  <Button
+                    rounded={"full"}
+                    rightIcon={<ChevronDownIcon />}
+                    size={"lg"}
+                    colorScheme={"red"}
+                    fontWeight={"normal"}
+                    bgGradient="linear(to-l, #7928CA, #FF0080)"
+                    _hover={{ bgGradient: "linear(to-r, #7928CA, #FF0080)" }}
+                    w="fit-content"
+                  >
+                    My Resume
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent _focus={{ boxShadown: "#f4f4" }} ml={5}>
+                  <PopoverArrow />
+                  <PopoverCloseButton />
+                  <PopoverHeader fontWeight="bold">
+                    My Resume(Click on image to open)
+                  </PopoverHeader>
+                  <PopoverBody>
+                    <Image
+                      alt={"Hero Image"}
+                      fit={"cover"}
+                      align={"center"}
+                      w={"100%"}
+                      h={"100%"}
+                      src={resume}
+                      onClick={() => {
+                        window.open(
+                          "https://drive.google.com/file/d/1AoHfHwZyZJanBg6_FNXbsEHfOPuQhXTk/view?usp=sharing",
+                          "_blank"
+                        );
+                      }}
+                    />
+                  </PopoverBody>
+                </PopoverContent>
+              </Popover>
               {/* </Button> */}
             </Stack>
           </Stack>
@@ -222,4 +232,3 @@ export const Blob = (props: IconProps) => {
     </Icon>
   );
 };
-
