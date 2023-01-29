@@ -154,7 +154,7 @@ const Hero = () => {
                       src={resume}
                       onClick={() => {
                         window.open(
-                          "https://drive.google.com/file/d/1AoHfHwZyZJanBg6_FNXbsEHfOPuQhXTk/view?usp=sharing",
+                          "https://drive.google.com/file/d/1XLk7xQ_qU5zaCt_G4pVzIa6LOQ9Lt56m/view?usp=sharing",
                           "_blank"
                         );
                       }}
