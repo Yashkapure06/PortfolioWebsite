@@ -84,7 +84,7 @@ const Hero = () => {
               range of technologies. My expertise spans from front-end
               development to back-end programming.
               <Highlight
-                query="MERN and MEVN"
+                query="MERN / MEVN"
                 styles={{
                   px: "2",
                   py: "0.3",
@@ -93,7 +93,7 @@ const Hero = () => {
                 }}
               >
                 One of my favorite technologies to work with is React.js,
-                particularly within the MERN and MEVN stack.
+                particularly within the MERN / MEVN stack.
               </Highlight>
               <br />
               <Highlight
