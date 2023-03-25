@@ -21,6 +21,7 @@ import {
   IoLogoReact,
   IoLogoGithub,
   IoLogoCss3,
+  IoLogoVue
 } from "react-icons/io5";
 import { ReactElement } from "react";
 
@@ -94,6 +95,17 @@ const About = () => {
             <Feature
               icon={
                 <Icon
+                  as={IoLogoVue}
+                  color={useColorModeValue("green.500", "blue.500")}
+                  w={12}
+                  h={10}
+                />
+              }
+              iconBg={useColorModeValue("black", "white")}
+            />
+            <Feature
+              icon={
+                <Icon
                   as={IoLogoPython}
                   color={useColorModeValue("blue.200", "blue.500")}
                   w={12}
@@ -136,17 +148,7 @@ const About = () => {
               }
               iconBg={useColorModeValue("black", "white")}
             />
-            <Feature
-              icon={
-                <Icon
-                  as={SiMongodb}
-                  color={useColorModeValue("green.500", "green.300")}
-                  w={12}
-                  h={10}
-                />
-              }
-              iconBg={useColorModeValue("black", "white")}
-            />
+            
           </Stack>
           <Stack spacing={8} direction={"row"}>
             <Feature
@@ -222,6 +224,17 @@ const About = () => {
                 <Icon
                   as={SiJava}
                   color={useColorModeValue("white", "red.500")}
+                  w={12}
+                  h={10}
+                />
+              }
+              iconBg={useColorModeValue("black", "white")}
+            />
+            <Feature
+              icon={
+                <Icon
+                  as={SiMongodb}
+                  color={useColorModeValue("green.500", "green.300")}
                   w={12}
                   h={10}
                 />
