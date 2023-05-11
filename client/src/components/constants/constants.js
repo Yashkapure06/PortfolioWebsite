@@ -11,6 +11,15 @@
 
 export const projects = [
   {
+    title: "Dr. Manisha's Yoga Institute",
+    description:
+      "Using ReactJs, Next.js, and Material-UI, I worked as an Intern for Anandlok Ayurveda & Panchakrma Hospital and created a website for Ayurveda & Panchakarma practitioners to share their knowledge and experience with others.",
+    image: "/images/main.png",
+    tags: ["Vue.js", "Tailwind CSS", "Vuex", "MongoDB", "Node-Express", "Firebase"],
+    source: "https://www.drmanishasyogainstitute.com/",
+    visit: "https://www.drmanishasyogainstitute.com/",
+    id: "yogainstitute",
+  },{
     title: "Anandlok Ayurveda",
     description:
       "Using ReactJs, Next.js, and Material-UI, I worked as an Intern for Anandlok Ayurveda & Panchakrma Hospital and created a website for Ayurveda & Panchakarma practitioners to share their knowledge and experience with others.",
@@ -28,7 +37,7 @@ export const projects = [
     tags: ["Chakra-UI", "React.Js", "CSS"],
     source: "https://github.com/Yashkapure06/awesome-chakra-ui",
     visit: "https://chakra-ui.com/community/showcase",
-    id: "anandlokayurveda",
+    id: "opensource",
   },
   {
     title: "Netflix Clone using ReactJs",
