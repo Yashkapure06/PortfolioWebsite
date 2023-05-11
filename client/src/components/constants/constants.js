@@ -13,7 +13,7 @@ export const projects = [
   {
     title: "Dr. Manisha's Yoga Institute",
     description:
-      "Using ReactJs, Next.js, and Material-UI, I worked as an Intern for Anandlok Ayurveda & Panchakrma Hospital and created a website for Ayurveda & Panchakarma practitioners to share their knowledge and experience with others.",
+      "Created a MEVN Stack Web Application. Gave more than 180+ hours on this project. The project also includes admin panel along with CRUD Functionalities. Blogging System using Firebase.",
     image: "/images/main.png",
     tags: ["Vue.js", "Tailwind CSS", "Vuex", "MongoDB", "Node-Express", "Firebase"],
     source: "https://www.drmanishasyogainstitute.com/",
