@@ -220,7 +220,7 @@ const Hero = () => {
           <a href="https://linkedin.com/in/yash-kapure" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
-          <a href="https://www.instagram.com/_yashkapure_" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/_yashkapure" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
           <a href="https://twitter.com/KapureYash" target="_blank" rel="noopener noreferrer">

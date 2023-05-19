@@ -30,6 +30,16 @@ export const projects = [
     id: "anandlokayurveda",
   },
   {
+    title: "Select Text to Speech Chrome extention",
+    description:
+      "A simple chrome extension where you can select text, then right click and then select the option 'Read aloud' and you can hear the final audio.",
+    image: "/images/text-to-sppech.webp",
+    tags: ["JavaScript"],
+    source: "https://github.com/Yashkapure06/TextToSpeech-ChromeExtension",
+    visit: "https://github.com/Yashkapure06/TextToSpeech-ChromeExtension",
+    id: "texttospeech",
+  },
+  {
     title: "OpenSource Contribution in Chakra-UI",
     description:
       "I created a portfolio website for my OpenSource contribution in Chakra-UI. This website is a collection of my contributions to the Chakra-UI community.",
