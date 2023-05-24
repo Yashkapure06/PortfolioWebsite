@@ -19,7 +19,8 @@ export const projects = [
     source: "https://www.drmanishasyogainstitute.com/",
     visit: "https://www.drmanishasyogainstitute.com/",
     id: "yogainstitute",
-  },{
+  },
+  {
     title: "Anandlok Ayurveda",
     description:
       "Using ReactJs, Next.js, and Material-UI, I worked as an Intern for Anandlok Ayurveda & Panchakrma Hospital and created a website for Ayurveda & Panchakarma practitioners to share their knowledge and experience with others.",
@@ -28,6 +29,16 @@ export const projects = [
     source: "https://github.com/Yashkapure06/anandlokayurveda",
     visit: "https://www.anandlokayurved.com",
     id: "anandlokayurveda",
+  },
+  {
+    title: "News-o-Pedia",
+    description:
+      "Using Vue.js I have created this news application having the main feature of Image Mapping, Used newsapi.org api to fetch the news from different parts of the world. Note: The API used doesnot works in Production, so use it in developers mode (i.e, locally). To Check how the news are fetch and shown in UI you need to fork the repo and download the code.",
+    image: "/images/news-o-pedia.png",
+    tags: ["Vue.js", "CSS", "NewsAPI.org"],
+    source: "https://github.com/Yashkapure06/News-O-Pedia",
+    visit: "https://news-o-pedia.netlify.app/",
+    id: "news-o-pedia",
   },
   {
     title: "Select Text to Speech Chrome extention",
