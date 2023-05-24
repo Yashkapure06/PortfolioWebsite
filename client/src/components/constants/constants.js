@@ -51,6 +51,16 @@ export const projects = [
     id: "texttospeech",
   },
   {
+    title: "Restro - A Restaurent Website",
+    description:
+      "A simple and beautiful Restaurent Website made with Pure HTML, CSS and JS. With some beautiful Animation and data fetching using API. ",
+    image: "/images/restro.png",
+    tags: ["HTML", "CSS", "Javascript", "API"],
+    source: "https://github.com/Yashkapure06/fyndAcademy-MEVN/tree/master/Project3-HTML%2BCSS%2BJS",
+    visit: "https://fynd-academy-mevn.vercel.app/",
+    id: "restro",
+  },
+  {
     title: "OpenSource Contribution in Chakra-UI",
     description:
       "I created a portfolio website for my OpenSource contribution in Chakra-UI. This website is a collection of my contributions to the Chakra-UI community.",
