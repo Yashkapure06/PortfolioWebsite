@@ -33,7 +33,7 @@ export const projects = [
   {
     title: "News-o-Pedia",
     description:
-      "Using Vue.js I have created this news application having the main feature of Image Mapping, Used newsapi.org api to fetch the news from different parts of the world. Note: The API used doesnot works in Production, so use it in developers mode (i.e, locally). To Check how the news are fetch and shown in UI you need to fork the repo and download the code.",
+      "Using Vue.js I have created this news application having the main feature of Image Mapping, Used newsapi.org api to fetch the news from different parts of the world. Note: The API used works developers mode (i.e, locally. download it).",
     image: "/images/news-o-pedia.png",
     tags: ["Vue.js", "CSS", "NewsAPI.org"],
     source: "https://github.com/Yashkapure06/News-O-Pedia",
