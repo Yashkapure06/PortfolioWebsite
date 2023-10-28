@@ -26,8 +26,8 @@ export const projects = [
       "Using ReactJs, Next.js, and Material-UI, I worked as an Intern for Anandlok Ayurveda & Panchakrma Hospital and created a website for Ayurveda & Panchakarma practitioners to share their knowledge and experience with others.",
     image: "/images/1.png",
     tags: ["Next.js", "React.Js", "CSS", "Material-UI"],
-    source: "https://github.com/Yashkapure06/anandlokayurveda",
-    visit: "https://www.anandlokayurved.com",
+    source: "https://www.anandlokayurveda.com/",
+    visit: "https://www.anandlokayurveda.com/",
     id: "anandlokayurveda",
   },
   {
