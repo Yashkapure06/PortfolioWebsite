@@ -161,7 +161,7 @@ const Hero = () => {
                       src={resume}
                       onClick={() => {
                         window.open(
-                          "https://drive.google.com/file/d/1O6y2aMWxA48GAZqJL-9Rh9LNM-YXhL-T/view?usp=sharing",
+                          "https://drive.google.com/file/d/1zHvvBxF-plAmr-J6ZFCl73LF68fnteEt/view?usp=sharing",
                           "_blank"
                         );
                       }}
