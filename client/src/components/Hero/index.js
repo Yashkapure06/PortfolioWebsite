@@ -84,7 +84,7 @@ const Hero = () => {
             </Heading>
             <Text>
               {" "}
-              Total visits : <span id="visits"></span>
+              {/* Total visits : <span id="visits"></span> */}
             </Text>
             <Text color={"gray.400"}>
               As a full-stack web developer, I have a strong foundation in a
