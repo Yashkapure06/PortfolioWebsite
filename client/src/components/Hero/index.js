@@ -36,7 +36,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-import heroImage from "./image/DSC_0094.JPG";
+import heroImage from "./image/profilesample.jpg";
 import resume from "./image/resume.png";
 
 const Hero = () => {
