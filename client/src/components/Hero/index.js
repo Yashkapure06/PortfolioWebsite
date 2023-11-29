@@ -96,7 +96,7 @@ const Hero = () => {
                   bg: "green.100",
                 }}
               >
-                One of my favorite technologies to work with is React.js,
+                One of my favourite technologies to work with is React.js,
                 particularly within the MERN / MEVN stack.
               </Highlight>
               <br />
@@ -105,7 +105,7 @@ const Hero = () => {
                 styles={{ px: "2", py: "0.3", rounded: "full", bg: "blue.100" }}
               >
                 I am currently expanding my skillset to include Next.js 14✨ for
-                high scale application development.
+                high-scale application development.
               </Highlight>
             </Text>
             <Stack
