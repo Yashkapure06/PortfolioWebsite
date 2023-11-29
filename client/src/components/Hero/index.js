@@ -101,10 +101,10 @@ const Hero = () => {
               </Highlight>
               <br />
               <Highlight
-                query="Next.js 14"
+                query="Next.js 14✨"
                 styles={{ px: "2", py: "0.3", rounded: "full", bg: "blue.100" }}
               >
-                I am currently expanding my skillset to include Next.js 14 for
+                I am currently expanding my skillset to include Next.js 14✨ for
                 high scale application development.
               </Highlight>
             </Text>
