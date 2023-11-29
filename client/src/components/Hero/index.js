@@ -82,10 +82,7 @@ const Hero = () => {
                 Portfolio!
               </Text>
             </Heading>
-            <Text>
-              {" "}
-              {/* Total visits : <span id="visits"></span> */}
-            </Text>
+            <Text> {/* Total visits : <span id="visits"></span> */}</Text>
             <Text color={"gray.400"}>
               As a full-stack web developer, I have a strong foundation in a
               range of technologies. My expertise spans from front-end
@@ -104,11 +101,11 @@ const Hero = () => {
               </Highlight>
               <br />
               <Highlight
-                query="React Native 📱"
+                query="Next.js 14"
                 styles={{ px: "2", py: "0.3", rounded: "full", bg: "blue.100" }}
               >
-                I am currently expanding my skillset to include React Native 📱
-                for mobile development.
+                I am currently expanding my skillset to include Next.js 14 for
+                high scale application development.
               </Highlight>
             </Text>
             <Stack
@@ -204,7 +201,6 @@ const Hero = () => {
                 h={"100%"}
                 src={heroImage}
               />
-              
             </Box>
           </Flex>
         </Stack>
@@ -213,22 +209,38 @@ const Hero = () => {
           direction={{ base: "column", sm: "row" }}
           align="center" // Align the text and icons horizontally
         >
-          <Text fontSize={{ base: "3xl", sm: "2xl", lg: "3xl" }}>Connect with me :</Text>
-          <a href="https://github.com/Yashkapure06" target="_blank" rel="noopener noreferrer">
+          <Text fontSize={{ base: "3xl", sm: "2xl", lg: "3xl" }}>
+            Connect with me :
+          </Text>
+          <a
+            href="https://github.com/Yashkapure06"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
-          <a href="https://linkedin.com/in/yash-kapure" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://linkedin.com/in/yash-kapure"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
-          <a href="https://www.instagram.com/_yashkapure" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/_yashkapure"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
-          <a href="https://twitter.com/KapureYash" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://twitter.com/KapureYash"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
-          
         </Stack>
-
       </Container>
     </>
   );
