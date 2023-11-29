@@ -164,7 +164,7 @@ export const projects = [
 
 export const testimonials = [
   {
-    heading: "Web Development at Anandlok Ayurveda",
+    heading: "Front End Developer at Anandlok Ayurveda & Panchakarma Hospital",
     message:
       "Yash put in a lot of effort as an intern at Anandlok Ayurveda, and was able to create an impressive website single-handedly using the appropriate technology stack. We wish Yash the best of luck in his future endeavors.",
     avatar:
