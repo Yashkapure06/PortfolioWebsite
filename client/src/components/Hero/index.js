@@ -7,6 +7,7 @@ import {
   Heading,
   Text,
   Button,
+  Badge,
   Image,
   Icon,
   // IconButton,
@@ -82,6 +83,24 @@ const Hero = () => {
                 Portfolio!
               </Text>
             </Heading>
+            <Box>
+              <Badge
+                fontSize="base"
+                padding={"7px"}
+                margin={"7px"}
+                rounded="full"
+                ml="1"
+                pl={"5px"}
+                colorScheme="green"
+              >
+                <span
+                  className="dot dot--basic"
+                  style={{ verticalAlign: "middle" }}
+                ></span>
+                ACTIVE - Freelancer
+              </Badge>
+            </Box>
+
             <Text> {/* Total visits : <span id="visits"></span> */}</Text>
             <Text color={"gray.400"}>
               As a full-stack web developer, I have a strong foundation in a

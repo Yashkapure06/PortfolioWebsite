@@ -198,8 +198,8 @@
 }
 
 .dot {
-  width: 1rem;
-  height: 1rem;
+  width: 0.7rem;
+  height: 0.7rem;
   background-color: rgb(83, 197, 63);
   border-radius: 50%;
   display: inline-block;

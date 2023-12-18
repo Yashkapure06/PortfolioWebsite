@@ -55,19 +55,7 @@ const Navbar = () => {
                 Yash Kapure
               </Box>
             </Link>
-            <Box>
-              <Badge
-                fontSize="base"
-                padding={"7px"}
-                margin={"7px"}
-                rounded="full"
-                ml="1"
-                colorScheme="green"
-              >
-                <span className="dot dot--basic"></span>
-                ACTIVE - Freelancer
-              </Badge>
-            </Box>
+            
             <HStack
               as={"nav"}
               spacing={4}
