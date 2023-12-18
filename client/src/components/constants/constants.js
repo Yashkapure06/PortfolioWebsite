@@ -15,7 +15,14 @@ export const projects = [
     description:
       "Created a MEVN Stack Web Application. Gave more than 180+ hours on this project. The project also includes admin panel along with CRUD Functionalities. Blogging System using Firebase.",
     image: "/images/main.png",
-    tags: ["Vue.js", "Tailwind CSS", "Vuex", "MongoDB", "Node-Express", "Firebase"],
+    tags: [
+      "Vue.js",
+      "Tailwind CSS",
+      "Vuex",
+      "MongoDB",
+      "Node-Express",
+      "Firebase",
+    ],
     source: "https://www.drmanishasyogainstitute.com/",
     visit: "https://www.drmanishasyogainstitute.com/",
     id: "yogainstitute",
@@ -56,7 +63,8 @@ export const projects = [
       "A simple and beautiful Restaurent Website made with Pure HTML, CSS and JS. With some beautiful Animation and data fetching using API. ",
     image: "/images/restro.png",
     tags: ["HTML", "CSS", "Javascript", "API"],
-    source: "https://github.com/Yashkapure06/fyndAcademy-MEVN/tree/master/Project3-HTML%2BCSS%2BJS",
+    source:
+      "https://github.com/Yashkapure06/fyndAcademy-MEVN/tree/master/Project3-HTML%2BCSS%2BJS",
     visit: "https://fynd-academy-mevn.vercel.app/",
     id: "restro",
   },
@@ -172,5 +180,15 @@ export const testimonials = [
     name: "Dr. Viraj Gite",
     title: "CEO at Anandlok Ayurveda Hospital",
     location: "Nagpur, India",
+  },
+  {
+    heading: "Full Stack Developer at Dr. Manisha's Yoga Institute",
+    message:
+      "Thank you Mr.Yash Kapure.I really appreciate your work on our website.  The website looks professiona and user-friendly.Its very easy to navigate our services and products to our clients.Our client got very positive impact.I really appreciate the way you think through the best way to accomplish what we need on our site - Thank you very much.",
+    avatar:
+      "https://www.drmanishasyogainstitute.com/img/Dr.Manisha.3b416061.jpeg",
+    name: "Dr. Manisha Sonawane",
+    title: "CEO at Dr. Manisha's Yoga Institute",
+    location: "Pune, India",
   },
 ];
