@@ -92,76 +92,86 @@ const Projects = ({ post, _id }) => {
       </Center>
       <Hr />
       {/* <Container id="about" > */}
-        {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}> */}
-        {/* <Center py={6}> */}
-          <section className=" main" id="about">
-            {projects.map(
-              ({ id, image, title, description, tags, source, visit, likeCount }) => (
-                <div className="reveal card">
-                  <img src={image} alt={title} />
-                  <div className="card-body">
-                    <h6>{title}</h6>
-                    <p>{description}</p>
-                    <TitleContent sx={{ textAlign: "center" }}><strong>Stack</strong></TitleContent>
-                    <TagList sx={{ textAlign: "center" }}>
-                      {tags.map((tag, index) => (
-                        <Text style={{ fontWeight:"600"}}>                          
-                          <Tag key={index}>{tag}</Tag>
-                        </Text>
-                      ))}
-                    </TagList>
-                    <div>
-                      <Stack
-                        width={"100%"}
-                        mt={"1rem"}
-                        direction={"row"}
-                        padding={1}
-                        justifyContent={"space-between"}
-                        alignItems={"center"}
-                      >
-                        <Button
-                          flex={1}
-                          fontSize={"sm"}
-                          rounded={"full"}
-                          _focus={{
-                            bg: "gray.200",
-                          }}
-                          onClick={() => {
-                            window.open(visit, "_blank");
-                          }}
-                        >
-                          Visit
-                        </Button>
-                        <Button
-                          flex={1}
-                          fontSize={"sm"}
-                          rounded={"full"}
-                          bg={"black"}
-                          color={"white"}
-                          boxShadow={
-                            "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
-                          }
-                          _hover={{
-                            bgGradient: "linear(to-r, #7928CA, #FF0080)",
-                          }}
-                          // _focus={{
-                          //   bg: "blue.500",
-                          // }}
-                          onClick={() => {
-                            window.open(source, "_blank");
-                          }}
-                        >
-                          {<BsGithub size="28px" />}
-                        </Button>
-                        
-                      </Stack>
-                    </div>
-                  </div>
+      {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}> */}
+      {/* <Center py={6}> */}
+      <section className=" main" id="about">
+        {projects.map(
+          ({
+            id,
+            image,
+            title,
+            description,
+            tags,
+            source,
+            visit,
+            likeCount,
+          }) => (
+            <div className=" card">
+              <img src={image} alt={title} />
+              <div className="card-body">
+                <h6>{title}</h6>
+                <p>{description}</p>
+                <TitleContent sx={{ textAlign: "center" }}>
+                  <strong>Stack</strong>
+                </TitleContent>
+                <TagList sx={{ textAlign: "center" }}>
+                  {tags.map((tag, index) => (
+                    <Text style={{ fontWeight: "600" }}>
+                      <Tag key={index}>{tag}</Tag>
+                    </Text>
+                  ))}
+                </TagList>
+                <div>
+                  <Stack
+                    width={"100%"}
+                    mt={"1rem"}
+                    direction={"row"}
+                    padding={1}
+                    justifyContent={"space-between"}
+                    alignItems={"center"}
+                  >
+                    <Button
+                      flex={1}
+                      fontSize={"sm"}
+                      rounded={"full"}
+                      _focus={{
+                        bg: "gray.200",
+                      }}
+                      onClick={() => {
+                        window.open(visit, "_blank");
+                      }}
+                    >
+                      Visit
+                    </Button>
+                    <Button
+                      flex={1}
+                      fontSize={"sm"}
+                      rounded={"full"}
+                      bg={"black"}
+                      color={"white"}
+                      boxShadow={
+                        "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
+                      }
+                      _hover={{
+                        bgGradient: "linear(to-r, #7928CA, #FF0080)",
+                      }}
+                      // _focus={{
+                      //   bg: "blue.500",
+                      // }}
+                      onClick={() => {
+                        window.open(source, "_blank");
+                      }}
+                    >
+                      {<BsGithub size="28px" />}
+                    </Button>
+                  </Stack>
                 </div>
-              )
-            )}
-          </section>
-        {/* </Center> */}
+              </div>
+            </div>
+          )
+        )}
+      </section>
+      {/* </Center> */}
       {/* </Container> */}
     </>
   );

@@ -20,10 +20,10 @@ const Blog = () => {
       </Center>
     <Center id="blog" py={4}>
       
-      <section className="reveal container">
+      <section className=" container">
       {blogPosts.map(
           ({title, description, image, visit,author, tags, time}) => (
-      <div className="reveal card-container">
+      <div className=" card-container">
         
            <><div className="card-image">
               <img

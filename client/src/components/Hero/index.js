@@ -42,7 +42,7 @@ import resume from "./image/resume.png";
 const Hero = () => {
   return (
     <>
-      <Container maxW={"7xl"} isLazy>
+      <Container maxW={"7xl"}>
         <Stack
           align={"center"}
           spacing={{ base: 8, md: 10 }}

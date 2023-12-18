@@ -50,7 +50,7 @@ const Feature = ({ icon, iconBg }: FeatureProps) => {
 
 const About = () => {
   return (
-    <Container className="reveal" id="about" maxW={"5xl"} py={12} isLazy>
+    <Container className="" id="about" maxW={"5xl"} py={12} isLazy>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Text

@@ -178,13 +178,21 @@ const Footer = () => {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2022 Yash Kapure. All rights reserved</Text>
+          <Text>© 2023 Yash Kapure. All rights reserved</Text>
           <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"https://twitter.com/KapureYash"} target={"_blank"}>
+            <SocialButton
+              label={"Twitter"}
+              href={"https://twitter.com/KapureYash"}
+              target={"_blank"}
+            >
               <FaTwitter />
             </SocialButton>
-            
-            <SocialButton label={"Instagram"} href={"https://www.instagram.com/_yashkapure_/"} target={"_blank"}>
+
+            <SocialButton
+              label={"Instagram"}
+              href={"https://www.instagram.com/_yashkapure_/"}
+              target={"_blank"}
+            >
               <FaInstagram />
             </SocialButton>
           </Stack>

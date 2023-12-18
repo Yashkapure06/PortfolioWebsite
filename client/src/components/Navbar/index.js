@@ -39,14 +39,34 @@ const Navbar = () => {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box
-              bgGradient="linear(to-l, #7928CA, #FF0080)"
-              bgClip="text"
-              fontSize="2xl"
-              fontWeight="extrabold"
-              fontFamily="sans-serif"
+            <Link
+              to="/"
+              _hover={{
+                textDecoration: "none",
+              }}
             >
-              Yash Kapure
+              <Box
+                bgGradient="linear(to-l, #7928CA, #FF0080)"
+                bgClip="text"
+                fontSize="2xl"
+                fontWeight="extrabold"
+                fontFamily="sans-serif"
+              >
+                Yash Kapure
+              </Box>
+            </Link>
+            <Box>
+              <Badge
+                fontSize="base"
+                padding={"7px"}
+                margin={"7px"}
+                rounded="full"
+                ml="1"
+                colorScheme="green"
+              >
+                <span className="dot dot--basic"></span>
+                ACTIVE - Freelancer
+              </Badge>
             </Box>
             <HStack
               as={"nav"}
@@ -145,9 +165,12 @@ const Navbar = () => {
                   <Avatar
                     size={"sm"}
                     src={"https://avatars.githubusercontent.com/u/61585443?v=4"}
-                    
                   >
-                    <AvatarBadge boxSize='1.15em' bg='green.400' />
+                    <AvatarBadge
+                      className="blink"
+                      boxSize="1.15em"
+                      bg="green.400"
+                    />
                   </Avatar>
                 </MenuButton>
                 <MenuList alignItems={"center"}>
@@ -158,7 +181,6 @@ const Navbar = () => {
                       src={
                         "https://avatars.githubusercontent.com/u/61585443?v=4"
                       }
-                      
                     />
                   </Center>
                   <br />
@@ -166,11 +188,12 @@ const Navbar = () => {
                     <Box>
                       <Text fontWeight="bold">
                         Yash Kapure
+                        <br />
                         <Badge ml="1" colorScheme="green">
-                          New
+                          ACTIVE - Freelancer
                         </Badge>
                       </Text>
-                      <Text fontSize="sm"> Software Developer</Text>
+                      <Text fontSize="sm">Software Developer</Text>
                     </Box>
                   </Center>
                   <br />
@@ -241,7 +264,6 @@ const Navbar = () => {
           </Box>
         ) : null}
       </Box>
-      
     </>
   );
 };
