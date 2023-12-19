@@ -21,7 +21,7 @@ import {
   IoLogoReact,
   IoLogoGithub,
   IoLogoCss3,
-  IoLogoVue
+  IoLogoVue,
 } from "react-icons/io5";
 import { ReactElement } from "react";
 
@@ -70,12 +70,12 @@ const About = () => {
           </Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
             I am a self-taught programmer with a passion for learning and
-            exploring new technologies. I have a strong background in full-stack
-            development and am always eager to expand my skillset and take on
-            new challenges. In my free time, I enjoy sipping on a cup of tea (or
-            coffee) and watching a game of cricket. As a dedicated and driven
-            individual, I am constantly seeking out opportunities to grow and
-            improve as a programmer.
+            exploring new technologies. I have a strong background in FrontEnd
+            Development and improving full-stack development and am always eager
+            to expand my skillset and take on new challenges. In my free time, I
+            enjoy sipping on a cup of tea (or coffee) and watching a game of
+            cricket. As a dedicated and driven individual, I am constantly
+            seeking out opportunities to grow and improve as a programmer.
           </Text>
           <Text color={"gray.500"} fontSize={"md"}>
             Some of the Stack I know
@@ -148,7 +148,6 @@ const About = () => {
               }
               iconBg={useColorModeValue("black", "white")}
             />
-            
           </Stack>
           <Stack spacing={8} direction={"row"}>
             <Feature
