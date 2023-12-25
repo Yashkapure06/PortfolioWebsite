@@ -70,7 +70,7 @@ const Projects = ({ post, _id }) => {
         </Heading>
       </Center>
       <Hr />
-      <Center py={2}>
+      {/* <Center py={2}>
         <Text
           Text
           color={useColorModeValue("black", "white")}
@@ -89,8 +89,8 @@ const Projects = ({ post, _id }) => {
           —Bill Gates, Co-Chairman, Bill & Melinda Gates Foundation, Co-Founder,
           Microsoft
         </i>
-      </Center>
-      <Hr />
+      </Center> */}
+      {/* <Hr /> */}
       {/* <Container id="about" > */}
       {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}> */}
       {/* <Center py={6}> */}

@@ -87,10 +87,8 @@ const Hero = () => {
               <Badge
                 fontSize="base"
                 padding={"7px"}
-                margin={"7px"}
                 rounded="full"
                 ml="1"
-                pl={"5px"}
                 colorScheme="green"
               >
                 <span
@@ -101,7 +99,7 @@ const Hero = () => {
               </Badge>
             </Box>
 
-            <Text> {/* Total visits : <span id="visits"></span> */}</Text>
+            {/* <Text> {/* Total visits : <span id="visits"></span> </Text> */}
             <Text color={"gray.400"}>
               As a full-stack web developer, I have a strong foundation in a
               range of technologies. My expertise spans from front-end
@@ -120,11 +118,11 @@ const Hero = () => {
               </Highlight>
               <br />
               <Highlight
-                query="Next.js 14✨"
+                query="Next.js 14✨ & React Native📱"
                 styles={{ px: "2", py: "0.3", rounded: "full", bg: "blue.100" }}
               >
-                I am currently expanding my skillset to include Next.js 14✨ for
-                high-scale application development.
+                I am currently expanding my skillset to include Next.js 14✨ &
+                React Native📱 for high-scale application development.
               </Highlight>
             </Text>
             <Stack
@@ -231,6 +229,7 @@ const Hero = () => {
           <Text fontSize={{ base: "3xl", sm: "2xl", lg: "3xl" }}>
             Connect with me :
           </Text>
+
           <a
             href="https://github.com/Yashkapure06"
             target="_blank"
@@ -246,7 +245,7 @@ const Hero = () => {
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
           <a
-            href="https://www.instagram.com/_yashkapure"
+            href="https://www.instagram.com/_yashkapure_"
             target="_blank"
             rel="noopener noreferrer"
           >

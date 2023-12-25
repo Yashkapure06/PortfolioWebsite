@@ -25,7 +25,7 @@ import {
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode("dark");
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 Yash Kapure
               </Box>
             </Link>
-            
+
             <HStack
               as={"nav"}
               spacing={4}
@@ -106,7 +106,7 @@ const Navbar = () => {
               >
                 Projects
               </Link>
-              <Link
+              {/* <Link
                 px={2}
                 spacing={4}
                 display={{ base: "none", md: "flex" }}
@@ -119,7 +119,7 @@ const Navbar = () => {
                 href={"#blog"}
               >
                 Blog
-              </Link>
+              </Link> */}
               <Link
                 px={2}
                 spacing={4}
@@ -139,7 +139,7 @@ const Navbar = () => {
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
               <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                {colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
               </Button>
 
               <Menu>
@@ -226,7 +226,7 @@ const Navbar = () => {
               >
                 Projects
               </Link>
-              <Link
+              {/* <Link
                 py={1}
                 rounded={"md"}
                 _hover={{
@@ -236,7 +236,7 @@ const Navbar = () => {
                 onClick={isOpen ? onClose : onOpen}
               >
                 Blog
-              </Link>
+              </Link> */}
               <Link
                 py={1}
                 rounded={"md"}

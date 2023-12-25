@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 import TestimonialMain from "./components/Testimonials";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Blog from "./components/Blog";
+// import Blog from "./components/Blog";
 
 // function reveal() {
 //   var reveals = document.querySelectorAll(".reveal");
@@ -35,7 +35,7 @@ const App = () => {
       <About />
       <Projects />
       <Divider />
-      <Blog />
+      {/* <Blog /> */}
       <Divider />
       <TestimonialMain />
       <Divider />
