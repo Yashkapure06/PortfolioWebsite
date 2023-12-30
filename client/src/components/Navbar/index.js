@@ -102,6 +102,20 @@ const Navbar = () => {
                   textDecoration: "none",
                   bg: useColorModeValue("gray.200", "gray.700"),
                 }}
+                href={"#experience"}
+              >
+                Experience
+              </Link>
+              <Link
+                px={2}
+                spacing={4}
+                display={{ base: "none", md: "flex" }}
+                py={1}
+                rounded={"md"}
+                _hover={{
+                  textDecoration: "none",
+                  bg: useColorModeValue("gray.200", "gray.700"),
+                }}
                 href={"#projects"}
               >
                 Projects

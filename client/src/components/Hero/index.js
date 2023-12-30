@@ -194,7 +194,7 @@ const Hero = () => {
             w={"full"}
           >
             <Blob
-              w={"190%"}
+              w={"100%"}
               h={"150%"}
               position={"absolute"}
               top={"-20%"}

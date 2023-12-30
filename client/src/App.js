@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import TestimonialMain from "./components/Testimonials";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 // import Blog from "./components/Blog";
 
 // function reveal() {
@@ -33,6 +34,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <Divider />
+      <Experience />
+      <Divider />
       <Projects />
       <Divider />
       {/* <Blog /> */}
