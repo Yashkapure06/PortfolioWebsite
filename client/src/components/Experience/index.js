@@ -43,6 +43,13 @@ const steps = [
     description:
       "Worked remotely on the project, designed the whole using Tailwind CSS. Developed Front-end using latest technologies which is basically a JavaScript Library React.js whose expanded version is NEXT.JS 14 along with basic TypeScript.",
   },
+  {
+    title: "React.js Developer Full-Time (On-Site)",
+    duration: "1st Jan 2024 - Present",
+    companyName: "Octane Apps",
+    description:
+      "Working in one of the famous and trending JavaScript Library React.js along with it's Framework Next.js. Developing new Projects, working on front-end development and, maintaining and managing old projects.",
+  },
 ];
 
 const Experience = () => {
