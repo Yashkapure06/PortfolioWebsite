@@ -11,6 +11,36 @@
 
 export const projects = [
   {
+    title: "Affinix Digital",
+    description:
+      " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Best Digital Marketing Agency",
+    image: "/images/12.png",
+    tags: ["Next.js", "Tailwind CSS", "React.js", "MUI"],
+    source: "https://affinixdigital.com/",
+    visit: "https://affinixdigital.com/",
+    id: "affinixdigital",
+  },
+  {
+    title: "Octane Apps",
+    description:
+      " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration.",
+    image: "/images/14.png",
+    tags: ["Next.js", "SCSS", "CSS", "React.js", "MUI"],
+    source: "https://octaneapps.com/",
+    visit: "https://octaneapps.com/",
+    id: "affinixdigital",
+  },
+  {
+    title: "TechnoKraft",
+    description:
+      " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Educational Content Provider",
+    image: "/images/13.png",
+    tags: ["Next.js", "CSS3", "React.js", "MUI"],
+    source: "https://affinixdigital.com/",
+    visit: "https://affinixdigital.com/",
+    id: "affinixdigital",
+  },
+  {
     title: "Dr. Manisha's Yoga Institute",
     description:
       "Created a MEVN Stack Web Application. Gave more than 180+ hours on this project. The project also includes admin panel along with CRUD Functionalities. Blogging System using Firebase.",
@@ -33,8 +63,8 @@ export const projects = [
       "Using ReactJs, Next.js, and Material-UI, I worked as an Intern for Anandlok Ayurveda & Panchakrma Hospital and created a website for Ayurveda & Panchakarma practitioners to share their knowledge and experience with others.",
     image: "/images/1.png",
     tags: ["Next.js", "React.Js", "CSS", "Material-UI"],
-    source: "https://www.anandlokayurveda.com/",
-    visit: "https://www.anandlokayurveda.com/",
+    source: "https://tts.net.in/",
+    visit: "https://tts.net.in/",
     id: "anandlokayurveda",
   },
   {

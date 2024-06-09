@@ -16,13 +16,6 @@ import {
 } from "@chakra-ui/react";
 const steps = [
   {
-    title: "Front End Developer Intern (Remote) - Next.js",
-    duration: "24th Dec 2021 - 6th June 2022",
-    companyName: "Anandlok Ayurveda & Panchakarma Hospital",
-    description:
-      "Designed and developed a fully functional website using the latest technologies such as Next.js and React.js.     Worked independently to create engaging web content and    reusable components.    Contributed to the development of the website and helped    to improve the performance of the website",
-  },
-  {
     title: "Full Stack Developer Part-Time (Remote) - MEVN",
     duration: "3rd May 2023 - 30th Nov 2023",
     companyName: "Dr. Manisha's Yoga Institute",
@@ -44,6 +37,13 @@ const steps = [
       "Worked remotely on the project, designed the whole using Tailwind CSS. Developed Front-end using latest technologies which is basically a JavaScript Library React.js whose expanded version is NEXT.JS 14 along with basic TypeScript.",
   },
   {
+    title: "Full Stack Developer - MERN",
+    duration: "24th Dec 2021 - Present",
+    companyName: "Anandlok Ayurveda & Panchakarma Hospital",
+    description:
+      "Designed and developed a fully functional website using the latest technologies such as Next.js and React.js.     Worked independently to create engaging web content and    reusable components.    Contributed to the development of the website and helped    to improve the performance of the website",
+  },
+  {
     title: "React.js Developer Full-Time (On-Site)",
     duration: "1st Jan 2024 - Present",
     companyName: "Octane Apps",
@@ -54,7 +54,7 @@ const steps = [
 
 const Experience = () => {
   const { activeStep, setActiveStep } = useSteps({
-    index: steps.length - 1,
+    index: steps.length - 2,
     count: steps.length,
   });
 

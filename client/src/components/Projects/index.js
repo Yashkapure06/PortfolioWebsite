@@ -107,7 +107,11 @@ const Projects = ({ post, _id }) => {
             likeCount,
           }) => (
             <div className=" card">
-              <img src={image} alt={title} />
+              <img
+                style={{ width: "100%", objectFit: "cover" }}
+                src={image}
+                alt={title}
+              />
               <div className="card-body">
                 <h6>{title}</h6>
                 <p>{description}</p>
