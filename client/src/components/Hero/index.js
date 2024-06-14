@@ -212,7 +212,7 @@ const Hero = () => {
               overflow={"hidden"}
             >
               <Image
-                alt={"Hero Image"}
+                alt={"Yash Kapure| Best Frontend Developer | Best FreeLancer"}
                 fit={"cover"}
                 align={"center"}
                 w={"100%"}
