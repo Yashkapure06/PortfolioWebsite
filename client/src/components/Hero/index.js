@@ -93,9 +93,9 @@ const Hero = () => {
               >
                 <span
                   className="dot dot--basic"
-                  style={{ verticalAlign: "middle" }}
+                  style={{ verticalAlign: "middle", paddingRight: 12 }}
                 ></span>
-                ACTIVE - Freelancer
+                ACTIVE - Freelancer <strong>$35/hr</strong>
               </Badge>
             </Box>
 
@@ -173,9 +173,10 @@ const Hero = () => {
                       w={"100%"}
                       h={"100%"}
                       src={resume}
+                      style={{ cursor: "pointer" }}
                       onClick={() => {
                         window.open(
-                          "https://drive.google.com/file/d/1zHvvBxF-plAmr-J6ZFCl73LF68fnteEt/view?usp=sharing",
+                          "https://drive.google.com/file/d/1JfmW9doV5h-9QuUblJNkTpSa9S2TthpM/view",
                           "_blank"
                         );
                       }}
