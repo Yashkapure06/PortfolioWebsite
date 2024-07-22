@@ -83,7 +83,7 @@ const Hero = () => {
                 Portfolio!
               </Text>
             </Heading>
-            <Box>
+            {/* <Box>
               <Badge
                 fontSize="base"
                 padding={"7px"}
@@ -97,13 +97,15 @@ const Hero = () => {
                 ></span>
                 ACTIVE - Freelancer <strong>$35/hr</strong>
               </Badge>
-            </Box>
+            </Box> */}
 
             {/* <Text> {/* Total visits : <span id="visits"></span> </Text> */}
             <Text color={"gray.400"}>
-              As a full-stack web developer, I have a strong foundation in a
-              range of technologies. My expertise spans from front-end
-              development to back-end programming.
+              I am a front-end developer with 3 years of proven experience in
+              the field. I am skilled in Search Engine Optimization, Next.js,
+              React.js, Tailwind CSS, and JavaScript. I am passionate about
+              creating interactive and beautiful user interfaces, along with the
+              required functionalities on the front end.
               <Highlight
                 query="MERN / MEVN"
                 styles={{
@@ -121,8 +123,8 @@ const Hero = () => {
                 query="Next.js 14✨ & React Native📱"
                 styles={{ px: "2", py: "0.3", rounded: "full", bg: "blue.100" }}
               >
-                I am currently expanding my skillset to include Next.js 14✨ &
-                React Native📱 for high-scale application development.
+                My Experties include Next.js 14✨ & React.js for high-scale
+                application development.
               </Highlight>
             </Text>
             <Stack

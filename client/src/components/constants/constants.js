@@ -11,11 +11,21 @@
 
 export const projects = [
   {
+    title: "The Kolorado Paints",
+    description:
+      " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Artistic Content.",
+    image: "/images/15.png",
+    tags: ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
+    source: "https://thekoloradopaints.com/",
+    visit: "https://thekoloradopaints.com/",
+    id: "technoKraft",
+  },
+  {
     title: "TechnoKraft",
     description:
       " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Educational Content Provider",
     image: "/images/13.png",
-    tags: ["Next.js", "CSS3", "React.js", "MUI"],
+    tags: ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
     source: "https://tts.net.in/",
     visit: "https://tts.net.in/",
     id: "technoKraft",
@@ -25,7 +35,7 @@ export const projects = [
     description:
       " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Best Digital Marketing Agency",
     image: "/images/12.png",
-    tags: ["Next.js", "Tailwind CSS", "React.js", "MUI"],
+    tags: ["Next.js", "Tailwind CSS", "React.js", "MUI", "SEO"],
     source: "https://affinixdigital.com/",
     visit: "https://affinixdigital.com/",
     id: "affinixdigital",
@@ -35,7 +45,7 @@ export const projects = [
     description:
       " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration.",
     image: "/images/14.png",
-    tags: ["Next.js", "SCSS", "CSS", "React.js", "MUI"],
+    tags: ["Next.js", "SCSS", "CSS", "React.js", "MUI", "SEO"],
     source: "https://octaneapps.com/",
     visit: "https://octaneapps.com/",
     id: "octaneapps",
@@ -53,6 +63,7 @@ export const projects = [
       "MongoDB",
       "Node-Express",
       "Firebase",
+      "SEO",
     ],
     source: "https://www.drmanishasyogainstitute.com/",
     visit: "https://www.drmanishasyogainstitute.com/",
