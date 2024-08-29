@@ -31,6 +31,16 @@ export const projects = [
     id: "technoKraft",
   },
   {
+    title: "BEST GST Course",
+    description:
+      " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project also contains Payment Gateway Integration using Easebuzz. This is a GST Course Selling website.",
+    image: "/images/16.png",
+    tags: ["Payment Gateway","Next.js", "Tailwind CSS", "React.js", "MUI", "SEO"],
+    source: "https://www.bestgstcourse.com/",
+    visit: "https://www.bestgstcourse.com/",
+    id: "gstcourse",
+  },
+  {
     title: "Affinix Digital",
     description:
       " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Best Digital Marketing Agency",

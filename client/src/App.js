@@ -9,6 +9,8 @@ import TestimonialMain from "./components/Testimonials";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import { Helmet } from "react-helmet";
+import { projects } from "./components/constants/constants";
 // import Blog from "./components/Blog";
 
 // function reveal() {
@@ -29,23 +31,36 @@ import Experience from "./components/Experience";
 
 // window.addEventListener("scroll", reveal);
 const App = () => {
+  const titles = projects.map((project) => project.title);
+
   return (
-    <ChakraProvider>
-      <Navbar />
-      <Hero />
-      <About />
-      <Divider />
-      <Experience />
-      <Divider />
-      <Projects />
-      <Divider />
-      {/* <Blog /> */}
-      <Divider />
-      <TestimonialMain />
-      <Divider />
-      <Contact />
-      <Footer />
-    </ChakraProvider>
+    <>
+      <Helmet>
+        {/* meta keywords */}
+        <meta
+          name="keywords"
+          content={`portfolio, web developer, full stack developer, front end developer, back end developer, react developer, node developer, javascript developer, python developer, django developer, react developer, reactjs developer, react.js developer, react js developer, react native developer, reactnative developer, react-native developer, react native developer, react-native developer, react-native, ${titles?.join(
+            ", "
+          )}`}
+        />
+      </Helmet>
+      <ChakraProvider>
+        <Navbar />
+        <Hero />
+        <About />
+        <Divider />
+        <Experience />
+        <Divider />
+        <Projects />
+        <Divider />
+        {/* <Blog /> */}
+        <Divider />
+        <TestimonialMain />
+        <Divider />
+        <Contact />
+        <Footer />
+      </ChakraProvider>
+    </>
   );
 };
 export default App;
