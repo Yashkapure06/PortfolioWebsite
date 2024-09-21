@@ -35,7 +35,14 @@ export const projects = [
     description:
       " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project also contains Payment Gateway Integration using Easebuzz. This is a GST Course Selling website.",
     image: "/images/16.png",
-    tags: ["Payment Gateway","Next.js", "Tailwind CSS", "React.js", "MUI", "SEO"],
+    tags: [
+      "Payment Gateway",
+      "Next.js",
+      "Tailwind CSS",
+      "React.js",
+      "MUI",
+      "SEO",
+    ],
     source: "https://www.bestgstcourse.com/",
     visit: "https://www.bestgstcourse.com/",
     id: "gstcourse",
@@ -242,5 +249,15 @@ export const testimonials = [
     name: "Dr. Manisha Sonawane",
     title: "CEO at Dr. Manisha's Yoga Institute",
     location: "Pune, India",
+  },
+  {
+    heading: "Front-End Developer (React.js) at Octane Apps",
+    message:
+      "I had the pleasure of managing Yash Kapure at Octane Apps, where he demonstrated exceptional skills and a remarkable eagerness to learn. Yash's technical proficiency, particularly in React and web development, consistently exceeded expectations. His problem-solving abilities were top-notch, and he tackled complex challenges with a strategic mindset and innovative solutions. Yash's dedication to his work, coupled with his positive attitude and willingness to take on new responsibilities, made him an invaluable asset to our team. His contributions significantly advanced our projects, and his collaborative spirit fostered a productive and dynamic work environment. I highly recommend Yash for any role that demands technical expertise, creativity, and a strong commitment to excellence.",
+    avatar:
+      "https://media.licdn.com/dms/image/v2/C4E03AQGoUDQCM5_eKg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1604476317262?e=1732147200&v=beta&t=diruAGJPqyak8K9E-EvuZd80DnnzBg5lzuI1COe_2z4",
+    name: "Ranjeet Ahire",
+    title: "CEO at Tridebits Technologies",
+    location: "Nashik, India",
   },
 ];

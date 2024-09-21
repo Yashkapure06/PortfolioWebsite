@@ -98,8 +98,17 @@ const TestimonialMain = () => {
           <Text>Some Words of Appreciation</Text>
         </Stack>
         <Stack
-          direction={{ base: "column", md: "row" }}
+          direction={{
+            base: "column",
+            md: "column",
+            lg: "row",
+          }}
           spacing={{ base: 10, md: 4, lg: 10 }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
           {testimonials.map(
             ({ heading, message, avatar, name, title, location }) => (
