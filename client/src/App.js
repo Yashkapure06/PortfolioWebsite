@@ -11,6 +11,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import { Helmet } from "react-helmet";
 import { projects } from "./components/constants/constants";
+import MainProject from "./components/MainProject";
 
 const App = () => {
   const titles = projects.map((project) => project.title);
@@ -18,6 +19,26 @@ const App = () => {
     "@context": "https://schema.org",
     "@type": "ItemList",
     itemListElement: [
+      {
+        "@type": "CreativeWork",
+        name: "Online Interview Assessment System",
+        description:
+          "A fully Functional Online Interview Assessment System for Students and Professionals.",
+        url: "https://calendly.com/yashkapure06/book-a-call-at-the-earliest?month=2024-10",
+        thumbnailUrl: "/images/final-year.png",
+        keywords: [
+          "React.js",
+          "Tailwind CSS",
+          "React.js",
+          "Node.js",
+          "Socket.io",
+          "MongoDB",
+          "Heroku",
+          "Git",
+          "Node Mailer",
+          "Express.js",
+        ],
+      },
       {
         "@type": "CreativeWork",
         name: "The Kolorado Paints",
@@ -223,7 +244,7 @@ const App = () => {
 
         <meta
           name="keywords"
-          content={`portfolio, web developer, full stack developer, front end developer, back end developer, react developer, node developer, javascript developer, python developer, django developer, react developer, reactjs developer, react.js developer, react js developer, react native developer, reactnative developer, react-native developer, react native developer, react-native developer, react-native, ${titles?.join(
+          content={`Online Interview Assessment System for Students and Professionals, portfolio, web developer, full stack developer, front end developer, back end developer, react developer, node developer, javascript developer, python developer, django developer, react developer, reactjs developer, react.js developer, react js developer, react native developer, reactnative developer, react-native developer, react native developer, react-native developer, react-native, Book A Call with Yash Kapure ${titles?.join(
             ", "
           )}`}
         />
@@ -232,6 +253,8 @@ const App = () => {
         <Navbar />
         <Hero />
         <About />
+        <Divider />
+        <MainProject />
         <Divider />
         <Experience />
         <Divider />
