@@ -178,7 +178,7 @@ const Hero = () => {
                       style={{ cursor: "pointer" }}
                       onClick={() => {
                         window.open(
-                          "https://drive.google.com/file/d/1JfmW9doV5h-9QuUblJNkTpSa9S2TthpM/view",
+                          "https://drive.google.com/file/d/1D2gsimV47zEsubjK2urHGWpY_h-iLyBB/view",
                           "_blank"
                         );
                       }}
