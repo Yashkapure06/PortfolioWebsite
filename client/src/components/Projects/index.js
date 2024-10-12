@@ -108,7 +108,7 @@ const Projects = ({ post, _id }) => {
           }) => (
             <div className=" card">
               <img
-                style={{ width: "100%", objectFit: "cover" }}
+                style={{ width: "100%", objectFit: "contain" }}
                 src={image}
                 alt={title}
               />

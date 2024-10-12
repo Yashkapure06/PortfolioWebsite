@@ -65,12 +65,13 @@
   box-shadow: 0 0 13px 0px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
   overflow: hidden;
-  margin: 1.15rem;
+  margin: 1.05rem;
+  border-radius: 10px;
 }
 
 .card img {
   width: 400px;
-  height: 250px;
+  height: 210px;
   transition: 2.5s;
 }
 .card .card-body {
