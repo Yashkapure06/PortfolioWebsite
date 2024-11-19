@@ -1,17 +1,9 @@
 import * as React from "react";
 
-import { ChakraProvider, Divider } from "@chakra-ui/react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
-import TestimonialMain from "./components/Testimonials";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
 import { Helmet } from "react-helmet";
-import { projects } from "./components/constants/constants";
-import MainProject from "./components/MainProject";
+import { projects } from "./old-ui/components/constants/constants";
+import OldUI from "./old-ui";
+const NewUI = React.lazy(() => import("./new-ui"));
 
 const App = () => {
   const titles = projects.map((project) => project.title);
@@ -236,6 +228,47 @@ const App = () => {
       },
     ],
   };
+
+  const storedUIState = localStorage.getItem("showNewUI");
+  const [showNewUI, setShowNewUI] = React.useState(
+    storedUIState ? JSON.parse(storedUIState) : false
+  );
+
+  React.useEffect(() => {
+    const indexCSSLink = document.querySelector('link[href*="index.css"]');
+    const loadTailwindCSS = async () => {
+      if (showNewUI) {
+        if (indexCSSLink) {
+          indexCSSLink.remove();
+        }
+
+        try {
+          await import("./tailwind.css");
+          console.log("Tailwind CSS loaded for new UI");
+        } catch (err) {
+          console.log("Error loading Tailwind CSS", err);
+        }
+      } else {
+        try {
+          await import("./index.css");
+          console.log("Chakra CSS Imported");
+        } catch (err) {
+          console.log("Error loading Chakra CSS", err);
+        }
+      }
+    };
+
+    loadTailwindCSS();
+  }, [showNewUI]);
+
+  const handleToggleUI = () => {
+    const newUIState = !showNewUI;
+    setShowNewUI(newUIState);
+    localStorage.setItem("showNewUI", JSON.stringify(newUIState));
+
+    window.location.reload();
+  };
+
   return (
     <>
       <Helmet>
@@ -249,24 +282,23 @@ const App = () => {
           )}`}
         />
       </Helmet>
-      <ChakraProvider>
-        <Navbar />
-        <Hero />
-        <About />
-        <Divider />
-        <MainProject />
-        <Divider />
-        <Experience />
-        <Divider />
-        <Projects />
-        <Divider />
-        {/* <Blog /> */}
-        <Divider />
-        <TestimonialMain />
-        <Divider />
-        <Contact />
-        <Footer />
-      </ChakraProvider>
+
+      {!showNewUI ? (
+        <OldUI handleToggleUI={handleToggleUI} />
+      ) : (
+        <React.Suspense
+          fallback={
+            <div
+              className="flex items-center justify-center h-screen
+            "
+            >
+              <div className="text-2xl font-bold">Loading New UI...</div>
+            </div>
+          }
+        >
+          <NewUI handleToggleUI={handleToggleUI} />
+        </React.Suspense>
+      )}
     </>
   );
 };

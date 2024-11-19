@@ -211,6 +211,10 @@
 .blink {
   animation: blink 1s infinite;
 }
+.border-blink {
+  border: 2px solid #ff0080;
+  animation: blink 3s infinite;
+}
 /* --- Animation --- */
 
 /* Define animation keyframes */
