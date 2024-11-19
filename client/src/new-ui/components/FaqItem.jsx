@@ -1,7 +1,5 @@
 import clsx from "clsx";
 import { useState } from "react";
-import { SlideDown } from "react-slidedown";
-import "react-slidedown/lib/slidedown.css";
 import { Link as LinkScroll } from "react-scroll";
 import Button from "./Button";
 
