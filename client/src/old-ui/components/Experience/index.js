@@ -38,14 +38,14 @@ const steps = [
   },
   {
     title: "Full Stack Developer - MERN",
-    duration: "24th Dec 2021 - Present",
+    duration: "24th Dec 2021 - 30th Nov 2024",
     companyName: "Anandlok Ayurveda & Panchakarma Hospital",
     description:
       "Designed and developed a fully functional website using the latest technologies such as Next.js and React.js.     Worked independently to create engaging web content and    reusable components.    Contributed to the development of the website and helped    to improve the performance of the website",
   },
   {
     title: "React.js Developer Full-Time (On-Site)",
-    duration: "1st Jan 2024 - Present",
+    duration: "1st Jan 2024 - 30th Nov 2024",
     companyName: "Octane Apps",
     description:
       "Working in one of the famous and trending JavaScript Library React.js along with it's Framework Next.js. Developing new Projects, working on front-end development and, maintaining and managing old projects.",
@@ -54,7 +54,7 @@ const steps = [
 
 const Experience = () => {
   const { activeStep, setActiveStep } = useSteps({
-    index: steps.length - 2,
+    index: steps.length,
     count: steps.length,
   });
 

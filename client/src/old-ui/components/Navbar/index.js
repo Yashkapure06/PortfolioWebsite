@@ -162,13 +162,9 @@ const Navbar = ({ handleToggleUI }) => {
                   border: "2px solid",
                   borderColor: useColorModeValue("#7928CA", " #FF0080"),
                 }}
-                // add blink class to the border
-                className={`
-                    border-blink
-                  `}
                 onClick={handleToggleUI}
               >
-                <Text>Check out new UI</Text>
+                <Text>Click to see new UI</Text>
               </Button>
 
               <Menu>

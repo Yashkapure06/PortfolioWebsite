@@ -72,19 +72,7 @@ const MainProject = () => {
       >
         Online Interview Assessment System for Students and Professionals
       </Text>
-      {/* SHow the Tech Stack used ->  
-      [
-          "React.js",
-          "Tailwind CSS",
-          "React.js",
-          "Node.js",
-          "Socket.io",
-          "MongoDB",
-          "Heroku",
-          "Git",
-          "Node Mailer",
-          "Express.js",
-        ],*/}
+
       <Text
         style={{
           textAlign: "center",
@@ -100,6 +88,7 @@ const MainProject = () => {
         flexWrap={{
           md: "wrap",
           sm: "wrap",
+          base: "wrap",
         }}
         justifyContent={"center"}
       >
