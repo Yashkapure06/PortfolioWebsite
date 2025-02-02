@@ -11,6 +11,17 @@
 
 export const projects = [
   {
+    title: "Shangrila Petition Platform",
+    description:
+      "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
+    image:
+      "https://github.com/Yashkapure06/Shangri-La-Petition-Platform/blob/master/screenshots/landing.png",
+    tags: ["React.js", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    source: "https://github.com/Yashkapure06/Shangri-La-Petition-Platform",
+    visit: "https://github.com/Yashkapure06/Shangri-La-Petition-Platform",
+    id: "shangrilaPetition",
+  },
+  {
     title: "The Kolorado Paints",
     description:
       " A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Artistic Content.",
