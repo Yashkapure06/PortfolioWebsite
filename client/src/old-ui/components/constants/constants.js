@@ -11,6 +11,24 @@
 
 export const projects = [
   {
+    title: "Dragon Sino Group",
+    description:
+      "Worked as a Full Stack developer At Dragon Sino Group. Created a fully functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. This  is a Chinese Company, I was glad to work with them in the United Kingdom.",
+    image: "/images/17.png",
+    tags: [
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
+    source: "https://www.dragonsino.com/",
+    visit: "https://www.dragonsino.com/",
+    id: "dragonsinogroup",
+  },
+  {
     title: "Shangrila Petition Platform",
     description:
       "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
