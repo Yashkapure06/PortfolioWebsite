@@ -41,10 +41,10 @@ export const About = () => {
           new tools and trends thrills me.
         </p>
         <p>
-          Outside of work, I enjoy cricket and a good cup of tea. I&apos;m
-          always up for learning, experimenting, and growing and looking for
-          opportunities wherein I can bring value toward impactful products and
-          inventive teams.
+          Outside of work, I enjoy cricket and a good cup of tea, but now I am
+          used to drinking coffee. I&apos;m always up for learning,
+          experimenting, and growing and looking for opportunities wherein I can
+          bring value toward impactful products and inventive teams.
         </p>
       </div>
       <Skills />
