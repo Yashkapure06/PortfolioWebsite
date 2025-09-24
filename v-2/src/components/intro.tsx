@@ -92,7 +92,7 @@ export const Intro = () => {
         </Button>
         <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
           <a
-            href="https://drive.google.com/file/d/1D2gsimV47zEsubjK2urHGWpY_h-iLyBB/view"
+            href="/cv/Yash Kapure CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
