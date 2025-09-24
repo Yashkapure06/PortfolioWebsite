@@ -1,12 +1,26 @@
 import { env } from '@/env.mjs';
 
 export const siteConfig = {
-  title: 'Yash Kapure | Full Stack Developer & Frontend Specialist',
+  title: 'Yash Kapure | Frontend Engineer & Full Stack Expertise',
   description:
-    "Hello, I'm Yash Kapure. I am a Full Stack Developer with 3+ years of experience in React.js, Next.js, Node.js, and MERN/MEVN stack. I specialize in creating interactive and beautiful user interfaces with modern web technologies.",
+    "Hello, I'm Yash Kapure. I am a Full Stack Developer with 3.5+ years of experience in React.js, Next.js, Node.js, and MERN/MEVN stack. I specialize in creating interactive and beautiful user interfaces with modern web technologies.",
   keywords: [
     'Yash Kapure',
+    'Best Frontend engineer in United Kingdom',
+    "United Kingdom's Best Frontend engineer",
+    "United Kingdom's Best Full Stack Developer",
+    "United Kingdom's Best React Developer",
+    "United Kingdom's Best Next.js Developer",
+    "United Kingdom's Best Node.js Developer",
+    "United Kingdom's Best MERN Stack Developer",
+    "United Kingdom's Best MEVN Stack Developer",
     'Full Stack Developer',
+    "United Kingdom's Best Full Stack Developer",
+    "United Kingdom's Best React Developer",
+    "United Kingdom's Best Next.js Developer",
+    "United Kingdom's Best Node.js Developer",
+    "United Kingdom's Best MERN Stack Developer",
+    "United Kingdom's Best MEVN Stack Developer",
     'Frontend Developer',
     'React Developer',
     'Next.js Developer',
