@@ -15,6 +15,20 @@ export default function ProjectsPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
+        className="mb-8"
+      >
+        <Button variant="outline" asChild className="mb-8">
+          <Link href="/">
+            <Icons.arrowRight className="mr-2 size-4 rotate-180" />
+            Back to Home
+          </Link>
+        </Button>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
         className="mb-12 text-center"
       >
         <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -101,20 +115,6 @@ export default function ProjectsPage() {
           </motion.div>
         ))}
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
-        className="mt-12 text-center"
-      >
-        <Button variant="outline" asChild>
-          <Link href="/">
-            <Icons.arrowRight className="mr-2 size-4 rotate-180" />
-            Back to Home
-          </Link>
-        </Button>
-      </motion.div>
     </div>
   );
 }

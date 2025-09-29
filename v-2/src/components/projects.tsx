@@ -1,7 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
+import { Button } from '@/components/button';
+import { Icons } from '@/components/icons';
 import { Project } from '@/components/project';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
@@ -52,7 +55,12 @@ export const Projects = () => {
         }}
         className="mt-8 flex justify-center"
       >
-        To see all projects, Please contact me. Thank you.
+        <Button variant="outline" asChild>
+          <Link href="/projects">
+            View More Projects
+            <Icons.arrowRight className="ml-2 size-4" />
+          </Link>
+        </Button>
       </motion.div>
     </section>
   );
