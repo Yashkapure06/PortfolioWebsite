@@ -1,7 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
@@ -60,8 +60,8 @@ export const Testimonials = () => {
               transform: `translateX(-${currentIndex * 100}%)`,
             }}
           >
-            {testimonialsData.map((testimonial, index) => (
-              <div key={testimonial.name} className="w-full flex-shrink-0 px-4">
+            {testimonialsData.map((testimonial) => (
+              <div key={testimonial.name} className="w-full shrink-0 px-4">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -80,7 +80,7 @@ export const Testimonials = () => {
 
                   {/* Testimonial Content */}
                   <blockquote className="mb-8 text-center text-lg leading-relaxed">
-                    "{testimonial.content}"
+                    &ldquo;{testimonial.content}&rdquo;
                   </blockquote>
 
                   {/* Author Info */}
@@ -89,17 +89,17 @@ export const Testimonials = () => {
                       <img
                         src={testimonial.avatar}
                         alt={testimonial.name}
-                        className="mb-4 size-16 rounded-full object-cover border-4 border-muted"
+                        className="border-muted mb-4 size-16 rounded-full border-4 object-cover"
                       />
                     )}
                     <div className="text-center">
-                      <div className="text-xl font-semibold text-foreground">
+                      <div className="text-foreground text-xl font-semibold">
                         {testimonial.name}
                       </div>
                       <div className="text-muted-foreground">
                         {testimonial.position}
                       </div>
-                      <div className="text-sm text-muted-foreground">
+                      <div className="text-muted-foreground text-sm">
                         {testimonial.company}
                       </div>
                     </div>
@@ -113,14 +113,14 @@ export const Testimonials = () => {
         {/* Navigation Arrows */}
         <button
           onClick={prevTestimonial}
-          className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-background/80 p-2 shadow-lg transition-all hover:bg-background hover:shadow-xl"
+          className="bg-background/80 hover:bg-background absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-2 shadow-lg transition-all hover:shadow-xl"
           aria-label="Previous testimonial"
         >
           <Icons.arrowRight className="size-5 rotate-180" />
         </button>
         <button
           onClick={nextTestimonial}
-          className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-background/80 p-2 shadow-lg transition-all hover:bg-background hover:shadow-xl"
+          className="bg-background/80 hover:bg-background absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-2 shadow-lg transition-all hover:shadow-xl"
           aria-label="Next testimonial"
         >
           <Icons.arrowRight className="size-5" />
@@ -132,7 +132,7 @@ export const Testimonials = () => {
             <button
               key={index}
               onClick={() => goToTestimonial(index)}
-              className={`h-3 w-3 rounded-full transition-all ${
+              className={`size-3 rounded-full transition-all ${
                 index === currentIndex
                   ? 'bg-primary'
                   : 'bg-muted hover:bg-muted/80'
