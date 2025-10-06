@@ -18,6 +18,10 @@ export const links = [
     hash: '#projects',
   },
   {
+    name: 'Testimonials',
+    hash: '#testimonials',
+  },
+  {
     name: 'Contact',
     hash: '#contact',
   },
@@ -482,4 +486,37 @@ export const skillsData = [
   { icon: <Icons.nextjs className="size-12" /> },
   { icon: <Icons.nestjs className="size-12" /> },
   { icon: <Icons.docker className="size-12" /> },
+] as const;
+
+export const testimonialsData = [
+  {
+    name: 'Ranjeet Ahire',
+    position: 'CEO at Tridebits Technologies',
+    company: 'Nashik, India',
+    content:
+      "I had the pleasure of managing Yash at Octane Apps, where he demonstrated exceptional skills and remarkable eagerness to learn. His technical proficiency in React and web development consistently exceeded expectations. Yash's problem-solving abilities were top-notch, and he tackled complex challenges with strategic thinking and innovative solutions. I highly recommend Yash for any role demanding technical expertise and creativity.",
+    rating: 5,
+    avatar:
+      'https://images.crunchbase.com/image/upload/c_thumb,h_170,w_170,f_auto,g_face,z_0.7,b_white,q_auto:eco,dpr_2/lg4yvoftidmmkouytzgl',
+  },
+  {
+    name: 'Dr. Viraj Gite',
+    position: 'CEO at Anandlok Ayurveda Hospital',
+    company: 'Nagpur, India',
+    content:
+      'Yash put in tremendous effort as an intern at Anandlok Ayurveda and created an impressive website single-handedly using the appropriate technology stack. His dedication and technical skills were outstanding. We wish Yash the best of luck in his future endeavors.',
+    rating: 5,
+    avatar:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8ykRstebGo9HXF-ZFiHGhj4l6YF_papozO8q5j-8ig&s',
+  },
+  {
+    name: 'Dr. Manisha Sonawane',
+    position: "CEO at Dr. Manisha's Yoga Institute",
+    company: 'Pune, India',
+    content:
+      "Thank you Mr. Yash Kapure. I really appreciate your work on our website. The website looks professional and user-friendly. It's very easy to navigate our services and products to our clients. Our clients had a very positive impact. I highly recommend Yash for web development projects.",
+    rating: 5,
+    avatar:
+      'https://www.drmanishasyogainstitute.com/img/Dr.Manisha.3b416061.jpeg',
+  },
 ] as const;

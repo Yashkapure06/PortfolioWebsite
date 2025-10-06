@@ -6,6 +6,7 @@ import { Header } from '@/components/header';
 import { Intro } from '@/components/intro';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
+import { Testimonials } from '@/components/testimonials';
 import { ThemeToggle } from '@/components/theme-toggle';
 
 const HomePage = async () => {
@@ -18,6 +19,7 @@ const HomePage = async () => {
         <About />
         <Experience />
         <Projects />
+        <Testimonials />
         <Contact />
         <Footer />
       </div>
