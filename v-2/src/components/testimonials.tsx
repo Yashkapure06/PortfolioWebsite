@@ -26,12 +26,43 @@ export const Testimonials = () => {
     setCurrentIndex(index);
   };
 
+  // Structured data for testimonials
+  const testimonialsStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Yash Kapure Portfolio',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: testimonialsData.length,
+    },
+    review: testimonialsData.map((testimonial) => ({
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: testimonial.name,
+      },
+      reviewBody: testimonial.content,
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+    })),
+  };
+
   return (
     <section
       ref={ref}
       id="testimonials"
       className="my-10 scroll-mt-28 md:mb-20"
     >
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(testimonialsStructuredData),
+        }}
+      />
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{

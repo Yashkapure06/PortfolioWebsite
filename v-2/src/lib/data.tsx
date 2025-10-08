@@ -29,6 +29,52 @@ export const links = [
 
 export const projectsData = [
   {
+    image: '/images/mini-otio.jpg',
+    title: 'Mini Otio - AI Research Assistant',
+    description:
+      'A modern AI-powered research assistant that combines real-time web search with intelligent response generation. Users can ask research questions and receive comprehensive, streamed responses with multiple formatting options (step-by-step, bullet points, ELI5). Features include bookmark management, conversation export, and a sleek chat interface with real-time streaming capabilities.      ',
+    technologies: [
+      'AI Agent',
+      'Next.js 15',
+      'TypeScript',
+      'Shadcn UI',
+      'React.js',
+      'Tailwind CSS',
+      'Zustand',
+      'Zod',
+      'OpenRouter API',
+      'Exa.ai',
+      'AI SDK',
+    ],
+    links: {
+      preview: 'https://mini-otio.vercel.app/',
+      github: 'https://github.com/Yashkapure06/mini-otio',
+      githubApi: 'https://api.github.com/repos/Yashkapure06',
+    },
+  },
+  {
+    image: '/images/ec2.jpg',
+    title: 'EC2 Cloud Cost Analyzer',
+    description:
+      '       AWS EC2 Cloud Cost Analyzer is a tool that helps you analyze the cost of your AWS EC2 instances. It is a web application that allows you to view the cost of your AWS EC2 instances and compare them with the cost of other AWS EC2 instances. It is a web application that allows you to view the cost of your AWS EC2 instances and compare them with the cost of other AWS EC2 instances.      ',
+    technologies: [
+      'TypeScript',
+      'React.js',
+      'Next.js',
+      'Shadcn UI',
+      'Tailwind CSS',
+      'AWS',
+      'AWS EC2',
+      'AWS API Gateway',
+      'AWS CloudWatch',
+    ],
+    links: {
+      preview: 'https://ec2-observe.vercel.app/',
+      github: 'https://github.com/Yashkapure06/ec2-observe',
+      githubApi: 'https://api.github.com/repos/Yashkapure06',
+    },
+  },
+  {
     image: '/images/final-year.png',
     title: 'Online Interview Assessment System (OIAS)',
     description:

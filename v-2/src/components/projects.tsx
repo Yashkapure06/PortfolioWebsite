@@ -14,7 +14,7 @@ export const Projects = () => {
   const { ref } = useSectionInView('Projects');
 
   // Show only first 2 projects
-  const featuredProjects = projectsData.slice(0, 2);
+  const featuredProjects = projectsData.slice(0, 4);
 
   return (
     <section ref={ref} id="projects" className="my-10 scroll-mt-28 md:mb-20">
@@ -36,7 +36,7 @@ export const Projects = () => {
           content="Projects I worked on. Each of them containing its own case study."
         />
       </motion.div>
-      <div className="flex flex-col gap-7 md:flex-row">
+      <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
         {featuredProjects.map((project, index) => (
           <Project key={project.title} project={project} index={index} />
         ))}
