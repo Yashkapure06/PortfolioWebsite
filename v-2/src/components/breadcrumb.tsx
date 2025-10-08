@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
 import { Icons } from './icons';
 
 interface BreadcrumbItem {
@@ -24,7 +25,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       const items: BreadcrumbItem[] = [{ name: 'Home', href: '/' }];
 
       let currentPath = '';
-      pathSegments.forEach((segment, index) => {
+      pathSegments.forEach((segment) => {
         currentPath += `/${segment}`;
         const name = segment.charAt(0).toUpperCase() + segment.slice(1);
         items.push({ name, href: currentPath });
@@ -37,9 +38,9 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
   const breadcrumbStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: breadcrumbItems.map((item, index) => ({
+    itemListElement: breadcrumbItems.map((item, position) => ({
       '@type': 'ListItem',
-      position: index + 1,
+      position: position + 1,
       name: item.name,
       item: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://yashkapure.dev'}${item.href}`,
     })),
@@ -58,17 +59,17 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       {/* Breadcrumb Navigation */}
       <nav
         aria-label="Breadcrumb"
-        className="flex items-center space-x-1 text-sm text-muted-foreground mb-4"
+        className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground"
       >
         {breadcrumbItems.map((item, index) => (
           <div key={item.href} className="flex items-center">
-            {index > 0 && <Icons.chevronRight className="h-4 w-4 mx-1" />}
+            {index > 0 && <Icons.chevronRight className="mx-1 size-4" />}
             {index === breadcrumbItems.length - 1 ? (
               <span className="font-medium text-foreground">{item.name}</span>
             ) : (
               <Link
                 href={item.href}
-                className="hover:text-foreground transition-colors"
+                className="transition-colors hover:text-foreground"
               >
                 {item.name}
               </Link>

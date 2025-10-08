@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+
 import { Icons } from './icons';
 
 interface FAQItem {
@@ -26,7 +27,7 @@ const defaultFAQItems: FAQItem[] = [
   {
     question: 'What is your hourly rate?',
     answer:
-      "My freelance rate is $35/hour, though this may vary depending on the project scope and requirements. I'm flexible with working hours and available for both short-term and long-term projects.",
+      "My freelance rate is $57/hour, though this may vary depending on the project scope and requirements. I'm flexible with working hours and available for both short-term and long-term projects.",
   },
   {
     question: 'Do you work remotely?',
@@ -36,7 +37,7 @@ const defaultFAQItems: FAQItem[] = [
   {
     question: 'What technologies do you specialize in?',
     answer:
-      'I specialize in React.js, Next.js, Node.js, TypeScript, JavaScript, MERN/MEVN stack, Tailwind CSS, MongoDB, Express.js, Vue.js, and various other modern web technologies.',
+      'I specialize in React.js, Next.js, Node.js, TypeScript, JavaScript, MERN/MEVN stack, Tailwind CSS, ShadCN UI, MongoDB, Express.js, Vue.js, and various other modern web technologies.',
   },
   {
     question: 'Can you help with existing projects?',
@@ -80,26 +81,26 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
 
       <div className="container mx-auto px-4">
         <div className="mb-10 text-center">
-          <h2 className="font-heading text-3xl font-semibold mb-4">
+          <h2 className="mb-4 font-heading text-3xl font-semibold">
             Frequently Asked Questions
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-lg text-muted-foreground">
             Get answers to common questions about my services and expertise
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="mx-auto max-w-3xl">
           {items.map((item, index) => (
             <div key={index} className="border-b border-border last:border-b-0">
               <button
-                className="w-full py-6 text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
+                className="flex w-full items-center justify-between py-6 text-left transition-colors hover:bg-muted/50"
                 onClick={() => toggleItem(index)}
                 aria-expanded={openItems.includes(index)}
                 aria-controls={`faq-answer-${index}`}
               >
-                <h3 className="text-lg font-semibold pr-4">{item.question}</h3>
+                <h3 className="pr-4 text-lg font-semibold">{item.question}</h3>
                 <Icons.chevronDown
-                  className={`h-5 w-5 transition-transform ${
+                  className={`size-5 transition-transform ${
                     openItems.includes(index) ? 'rotate-180' : ''
                   }`}
                 />
@@ -113,7 +114,7 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
                     : 'max-h-0 opacity-0'
                 }`}
               >
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="leading-relaxed text-muted-foreground">
                   {item.answer}
                 </p>
               </div>
