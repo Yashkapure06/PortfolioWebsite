@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.title}`,
   },
   description: siteConfig.description,
-  keywords: siteConfig.keywords,
+  keywords: siteConfig.keywords.join(', '),
   robots: { index: true, follow: true },
   icons: {
     icon: '/favicon/favicon.ico',
@@ -35,18 +35,32 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: 'Yash Kapure Portfolio',
+    images: [
+      {
+        url: `${siteConfig.url}/images/metaimg.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Yash Kapure - Full Stack Developer',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
     creator: '@KapureYash',
+    images: [`${siteConfig.url}/images/metaimg.png`],
   },
   authors: [{ name: 'Yash Kapure', url: 'https://github.com/Yashkapure06' }],
   creator: 'Yash Kapure',
   publisher: 'Yash Kapure',
   alternates: {
     canonical: siteConfig.url,
+  },
+  other: {
+    author: 'Yash Kapure',
+    email: 'yashkapure06@gmail.com',
+    copyright: 'Yash Kapure 2023',
   },
 };
 
@@ -56,11 +70,13 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Yash Kapure',
+    alternateName: 'Yash Vinod Kapure',
     jobTitle: 'Frontend Engineer & Full Stack Developer',
     description:
-      'Full Stack Developer with 3.5+ years of experience in React.js, Next.js, Node.js, and MERN/MEVN stack. Specializing in creating interactive and beautiful user interfaces with modern web technologies.',
+      'Hi there! My name is Yash and I am a programmer with a passion for learning and exploring new technologies. With a strong background in full-stack development, I have a well-rounded skill set and am always looking to expand my knowledge and take on new challenges. As a dedicated and driven individual, I am constantly seeking out opportunities to grow and improve as a programmer.',
     url: siteConfig.url,
     image: `${siteConfig.url}/images/profile.jpg`,
+    email: 'yashkapure06@gmail.com',
     sameAs: [
       'https://github.com/Yashkapure06',
       'https://linkedin.com/in/yash-kapure',
@@ -104,15 +120,32 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       'Web Development',
       'Frontend Development',
       'Full Stack Development',
+      'React-Native Development',
+      'Freelance Development',
+      'Online Interview Assessment System',
+      "Dr. Manisha's Yoga Institute",
+      'Anandlok Ayurveda',
     ],
     offers: {
       '@type': 'Service',
       name: 'Web Development Services',
       description:
-        'Professional web development services including React.js, Next.js, Node.js, and full-stack development',
+        'Professional web development services including React.js, Next.js, Node.js, React-Native, and full-stack development. Best Freelancer Near me, Affordable Freelancer Near me, Hourly based paid freelancer near me.',
       provider: {
         '@type': 'Person',
         name: 'Yash Kapure',
+      },
+      areaServed: 'United Kingdom',
+      serviceType: 'Web Development',
+    },
+    hasOccupation: {
+      '@type': 'Occupation',
+      name: 'Full Stack Web Developer',
+      description:
+        'Frontend Engineer & Full Stack Developer specializing in React.js, Next.js, Node.js, and MERN/MEVN stack',
+      occupationLocation: {
+        '@type': 'Country',
+        name: 'United Kingdom',
       },
     },
   };
@@ -120,6 +153,28 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Google Tag Manager */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PDKQ7JZ');
+            `,
+          }}
+        />
+
+        {/* Google AdSense */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5126308192729168"
+          crossOrigin="anonymous"
+        />
+
         {/* Structured Data */}
         <script
           type="application/ld+json"
@@ -139,6 +194,16 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         <link rel="dns-prefetch" href="//linkedin.com" />
       </head>
       <body className={cn('min-h-screen font-sans', fonts)}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PDKQ7JZ"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+
         {/* Microsoft Clarity */}
         <Script
           id="clarity-script"
