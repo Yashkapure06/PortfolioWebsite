@@ -11,31 +11,33 @@ import { useSectionInView } from '@/hooks/use-section-in-view';
 import { projectsData } from '@/lib/data';
 
 export const Projects = () => {
-  const { ref } = useSectionInView('Projects');
+  const { ref } = useSectionInView('Projects', 0.3);
 
   // Show only first 2 projects
   const featuredProjects = projectsData.slice(0, 4);
 
   return (
-    <section ref={ref} id="projects" className="my-10 scroll-mt-28 md:mb-20">
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          delay: 0.175,
-        }}
-        viewport={{
-          once: true,
-        }}
-      >
-        <SectionHeading
-          heading="My Projects"
-          content="Projects I worked on. Each of them containing its own case study."
-        />
-      </motion.div>
+    <section id="projects" className="my-10 scroll-mt-28 md:mb-20">
+      <div ref={ref}>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            delay: 0.175,
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
+          <SectionHeading
+            heading="My Projects"
+            content="Projects I worked on. Each of them containing its own case study."
+          />
+        </motion.div>
+      </div>
       <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
         {featuredProjects.map((project, index) => (
           <Project key={project.title} project={project} index={index} />
