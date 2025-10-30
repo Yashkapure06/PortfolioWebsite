@@ -542,7 +542,7 @@ export const testimonialsData = [
     content:
       'I have worked with Yash, throughout two separate projects during which he was part of the ToraTech AI team. Yash has always shown tremendous initiative to get work done and work around problems. I was impressed with his back end skills, aswell as having a great eye for a UX and UI. I would recommend Yash to any company looking for efficient development.',
     rating: 5,
-    avatar:'/images/lucca_allen.jpg',
+    avatar: '/images/lucca_allen.jpg',
   },
   {
     name: 'Ranjeet Ahire',
