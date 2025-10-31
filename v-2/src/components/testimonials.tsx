@@ -11,6 +11,8 @@ import { testimonialsData } from '@/lib/data';
 export const Testimonials = () => {
   const { ref } = useSectionInView('Testimonials');
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonialsData.length);
@@ -24,6 +26,26 @@ export const Testimonials = () => {
 
   const goToTestimonial = (index: number) => {
     setCurrentIndex(index);
+  };
+
+  // Simple touch swipe handling
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchStartX(e.changedTouches[0].clientX);
+  };
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchEndX(e.changedTouches[0].clientX);
+  };
+  const handleTouchEnd = () => {
+    if (touchStartX === null || touchEndX === null) return;
+    const delta = touchEndX - touchStartX;
+    const threshold = 50; // px
+    if (delta > threshold) {
+      prevTestimonial();
+    } else if (delta < -threshold) {
+      nextTestimonial();
+    }
+    setTouchStartX(null);
+    setTouchEndX(null);
   };
 
   // Structured data for testimonials
@@ -54,7 +76,7 @@ export const Testimonials = () => {
     <section
       ref={ref}
       id="testimonials"
-      className="my-10 scroll-mt-28 md:mb-20"
+      className="my-8 sm:my-10 md:my-16 scroll-mt-28 overflow-x-hidden"
     >
       {/* Structured Data */}
       <script
@@ -82,37 +104,57 @@ export const Testimonials = () => {
         />
       </motion.div>
 
-      <div className="relative mx-auto max-w-4xl">
+      <div
+        className="relative mx-auto w-full max-w-sm sm:max-w-sm md:max-w-3xl lg:max-w-4xl px-2 sm:px-4"
+        role="region"
+        aria-label="Testimonials carousel"
+      >
         {/* Carousel Container */}
-        <div className="overflow-hidden rounded-lg">
+        <div
+          className="w-full overflow-hidden rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'ArrowLeft') prevTestimonial();
+            if (e.key === 'ArrowRight') nextTestimonial();
+          }}
+          aria-roledescription="carousel"
+          aria-live="polite"
+        >
           <motion.div
-            className="flex transition-transform duration-500 ease-in-out"
+            id="testimonials-track"
+            className="flex transition-transform duration-400 ease-out"
             style={{
               transform: `translateX(-${currentIndex * 100}%)`,
             }}
           >
             {testimonialsData.map((testimonial) => (
-              <div key={testimonial.name} className="w-full shrink-0 px-4">
+              <div key={testimonial.name} className="w-full shrink-0">
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                  className="bg-card text-card-foreground group rounded-lg border p-8 shadow-sm transition-all hover:shadow-lg"
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="bg-card text-card-foreground group rounded-lg border p-4 sm:p-6 md:p-8 lg:p-10 shadow-sm transition-all hover:shadow-md min-h-[320px] sm:min-h-[340px] md:min-h-[320px]"
                 >
                   {/* Rating Stars */}
                   <div className="mb-6 flex justify-center gap-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Icons.star
                         key={i}
-                        className="size-5 fill-yellow-400 text-yellow-400"
+                        className="size-4 sm:size-5 md:size-6 fill-yellow-400 text-yellow-400"
                       />
                     ))}
                   </div>
 
                   {/* Testimonial Content */}
-                  <blockquote className="mb-8 text-center text-lg leading-relaxed">
-                    &ldquo;{testimonial.content}&rdquo;
-                  </blockquote>
+                  <blockquote
+                    className="mb-6 sm:mb-8 text-center text-sm sm:text-sm md:text-lg lg:text-xl leading-relaxed italic break-words"
+                    dangerouslySetInnerHTML={{
+                      __html: `&ldquo;${testimonial.content}&rdquo;`,
+                    }}
+                  />
 
                   {/* Author Info */}
                   <div className="flex flex-col items-center">
@@ -120,17 +162,17 @@ export const Testimonials = () => {
                       <img
                         src={testimonial.avatar}
                         alt={testimonial.name}
-                        className="border-muted mb-4 size-16 rounded-full border-4 object-cover"
+                        className="border-muted mb-4 size-12 sm:size-16 md:size-20 rounded-full border-4 object-cover"
                       />
                     )}
                     <div className="text-center">
-                      <div className="text-foreground text-xl font-semibold">
+                      <div className="text-foreground text-base sm:text-lg md:text-xl font-semibold">
                         {testimonial.name}
                       </div>
-                      <div className="text-muted-foreground">
+                      <div className="text-muted-foreground text-xs sm:text-sm">
                         {testimonial.position}
                       </div>
-                      <div className="text-muted-foreground text-sm">
+                      <div className="text-muted-foreground text-xs sm:text-sm">
                         {testimonial.company}
                       </div>
                     </div>
@@ -144,31 +186,34 @@ export const Testimonials = () => {
         {/* Navigation Arrows */}
         <button
           onClick={prevTestimonial}
-          className="bg-background/80 hover:bg-background absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-2 shadow-lg transition-all hover:shadow-xl"
+          className="hidden sm:inline-flex bg-background/80 hover:bg-background absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-1.5 sm:p-2 md:p-3 shadow-lg transition-all hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           aria-label="Previous testimonial"
+          aria-controls="testimonials-track"
         >
-          <Icons.arrowRight className="size-5 rotate-180" />
+          <Icons.arrowRight className="size-4 sm:size-5 md:size-6 rotate-180" />
         </button>
         <button
           onClick={nextTestimonial}
-          className="bg-background/80 hover:bg-background absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-2 shadow-lg transition-all hover:shadow-xl"
+          className="hidden sm:inline-flex bg-background/80 hover:bg-background absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-1.5 sm:p-2 md:p-3 shadow-lg transition-all hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           aria-label="Next testimonial"
+          aria-controls="testimonials-track"
         >
-          <Icons.arrowRight className="size-5" />
+          <Icons.arrowRight className="size-4 sm:size-5 md:size-6" />
         </button>
 
         {/* Dots Indicator */}
-        <div className="mt-8 flex justify-center gap-2">
+        <div className="mt-8 flex justify-center gap-2 px-2">
           {testimonialsData.map((_, index) => (
             <button
               key={index}
               onClick={() => goToTestimonial(index)}
-              className={`size-3 rounded-full transition-all ${
+              className={`size-2.5 sm:size-3 md:size-3.5 lg:size-4 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
                 index === currentIndex
                   ? 'bg-primary'
                   : 'bg-muted hover:bg-muted/80'
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
+              aria-current={index === currentIndex}
             />
           ))}
         </div>

@@ -29,6 +29,32 @@ export const links = [
 
 export const projectsData = [
   {
+    image: '/images/calmllama.jpg',
+    title: 'Calm Llama - AI Chatbot',
+    description:
+      'A modern web platform that enables users to discover and book premium wellness experiences such as saunas, yoga, massages, and float tanks. Features include real-time availability, secure payments, and instant booking confirmations. Worked as a Full Stack Freelance developer @ ToraTec AI, Dublin, Ireland',
+    technologies: [
+      'TypeScript',
+      'Stripe Payment Gateway',
+      'React.js',
+      'Next.js',
+      'Tailwind CSS',
+      'Shadcn UI',
+      'Node.js',
+      'Express',
+      'UI/UX Developer',
+      'Supabase',
+      'AI',
+      'n8n',
+      'Google Maps API',
+    ],
+    links: {
+      preview: 'https://calmllama.life/',
+      github: 'https://github.com/Yashkapure06',
+      githubApi: 'https://api.github.com/repos/Yashkapure06',
+    },
+  },
+  {
     image: '/images/mini-otio.jpg',
     title: 'Mini Otio - AI Research Assistant',
     description:
@@ -545,8 +571,17 @@ export const testimonialsData = [
     avatar: '/images/lucca_allen.jpg',
   },
   {
+    name: 'Cristina',
+    position: 'Director @ Impact A&C',
+    company: 'Leicester, United Kingdom',
+    content:
+      'Yash has been an exceptional member of our teaching team at Impact A&C Leicester. He demonstrates a strong understanding of coding concepts and effectively adapts his teaching approach to suit students of all ages, from young beginners aged 5 to 17, to adults looking to advance their programming skills.<br/><br/>He is intelligent, resourceful, and handles challenges with professionalism and composure. Whenever an issue or error arises, Yash manages to resolve it quickly and efficiently, ensuring the smooth flow of each session. <br/><br/> He is also highly cooperative within the class environment, maintaining great communication with students and colleagues alike.His dedication, technical expertise, and calm attitude make him a valuable asset to our academy.',
+    rating: 5,
+    avatar: '/images/impact_academies.png',
+  },
+  {
     name: 'Ranjeet Ahire',
-    position: 'CEO at Tridebits Technologies',
+    position: 'CEO @ Tridebits Technologies',
     company: 'Nashik, India',
     content:
       "I had the pleasure of managing Yash at Octane Apps, where he demonstrated exceptional skills and remarkable eagerness to learn. His technical proficiency in React and web development consistently exceeded expectations. Yash's problem-solving abilities were top-notch, and he tackled complex challenges with strategic thinking and innovative solutions. I highly recommend Yash for any role demanding technical expertise and creativity.",
@@ -556,7 +591,7 @@ export const testimonialsData = [
   },
   {
     name: 'Dr. Viraj Gite',
-    position: 'CEO at Anandlok Ayurveda Hospital',
+    position: 'CEO @ Anandlok Ayurveda Hospital',
     company: 'Nagpur, India',
     content:
       'Yash put in tremendous effort as an intern at Anandlok Ayurveda and created an impressive website single-handedly using the appropriate technology stack. His dedication and technical skills were outstanding. We wish Yash the best of luck in his future endeavors.',
@@ -566,7 +601,7 @@ export const testimonialsData = [
   },
   {
     name: 'Dr. Manisha Sonawane',
-    position: "CEO at Dr. Manisha's Yoga Institute",
+    position: "CEO @ Dr. Manisha's Yoga Institute",
     company: 'Pune, India',
     content:
       "Thank you Mr. Yash Kapure. I really appreciate your work on our website. The website looks professional and user-friendly. It's very easy to navigate our services and products to our clients. Our clients had a very positive impact. I highly recommend Yash for web development projects.",

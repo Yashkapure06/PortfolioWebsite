@@ -28,7 +28,7 @@ export const Intro = () => {
         <img
           src="/images/profile.jpg"
           alt="Yash Kapure Profile"
-          className="size-36 rounded-full object-cover grayscale transition-all duration-300 hover:scale-105 hover:grayscale-0"
+          className="size-36 rounded-full object-cover grayscale ring-2 ring-yellow-400 shadow-xl shadow-yellow-400/40 transition-all duration-300 hover:scale-105 hover:grayscale-0"
         />
       </motion.div>
       <motion.div
@@ -41,7 +41,7 @@ export const Intro = () => {
       >
         <Link
           href="#contact"
-          className="flex items-center gap-3 rounded border px-3 py-1"
+          className="flex items-center gap-2 rounded-full border bg-background/60 px-3 py-1 backdrop-blur transition-colors hover:bg-background/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
         >
           <span className="relative flex size-2">
             <span className="absolute flex size-full animate-ping rounded-full bg-green-400 opacity-75"></span>
@@ -50,6 +50,9 @@ export const Intro = () => {
           <span className="font-mono text-sm">Available for work!</span>
         </Link>
       </motion.div>
+      <p className="mt-2 text-xs text-muted-foreground">
+        Currently based in United Kingdom — open to relocate
+      </p>
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -83,58 +86,78 @@ export const Intro = () => {
         transition={{
           delay: 0.1,
         }}
-        className="flex flex-row gap-2"
+        // Responsive: stack vertically on small screens, row wrap on larger screens
+        className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center"
       >
-        <Button asChild size="lg">
-          <Link href="#contact">
-            Get in touch <Icons.arrowRight className="ml-2 size-4" />
-          </Link>
-        </Button>
-        <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
-          <a
-            href="/cv/Yash Kapure CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="flex flex-col gap-2 sm:flex-row sm:gap-2 flex-1">
+          <Button asChild size="lg" className="w-full sm:w-auto">
+            <Link href="#contact">
+              Get in touch <Icons.arrowRight className="ml-2 size-4" />
+            </Link>
+          </Button>
+          <Button
+            variant="secondary"
+            size="lg"
+            asChild
+            className="w-full sm:w-auto"
           >
-            Download CV <Icons.download className="ml-2 size-4" />
-          </a>
-        </Button>
-        <Button variant="outline" size="icon" asChild>
-          <Link
-            href="https://linkedin.com/in/yash-kapure"
-            aria-label="Linkedin"
-            target="_blank"
+            <Link href="#projects">
+              View projects <Icons.arrowRight className="ml-2 size-4" />
+            </Link>
+          </Button>
+          <Button
+            variant="outline"
+            size="lg"
+            className="w-full sm:w-auto hidden sm:flex"
+            asChild
           >
-            <Icons.linkedin className="size-5" />
-          </Link>
-        </Button>
-        <Button variant="outline" size="icon" asChild>
-          <Link
-            href="https://github.com/Yashkapure06"
-            aria-label="Github"
-            target="_blank"
-          >
-            <Icons.github className="size-5" />
-          </Link>
-        </Button>
-        <Button variant="outline" size="icon" asChild>
-          <Link
-            href="https://www.instagram.com/_yashkapure_"
-            aria-label="Instagram"
-            target="_blank"
-          >
-            <Icons.instagram className="size-5" />
-          </Link>
-        </Button>
-        <Button variant="outline" size="icon" asChild>
-          <Link
-            href="https://twitter.com/KapureYash"
-            aria-label="Twitter"
-            target="_blank"
-          >
-            <Icons.twitter className="size-5" />
-          </Link>
-        </Button>
+            <a
+              href="/cv/Yash Kapure CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV <Icons.download className="ml-2 size-4" />
+            </a>
+          </Button>
+        </div>
+        <div className="flex flex-row gap-2 justify-center sm:justify-start flex-wrap">
+          <Button variant="outline" size="icon" asChild>
+            <Link
+              href="https://linkedin.com/in/yash-kapure"
+              aria-label="Linkedin"
+              target="_blank"
+            >
+              <Icons.linkedin className="size-5" />
+            </Link>
+          </Button>
+          <Button variant="outline" size="icon" asChild>
+            <Link
+              href="https://github.com/Yashkapure06"
+              aria-label="Github"
+              target="_blank"
+            >
+              <Icons.github className="size-5" />
+            </Link>
+          </Button>
+          <Button variant="outline" size="icon" asChild>
+            <Link
+              href="https://www.instagram.com/_yashkapure_"
+              aria-label="Instagram"
+              target="_blank"
+            >
+              <Icons.instagram className="size-5" />
+            </Link>
+          </Button>
+          <Button variant="outline" size="icon" asChild>
+            <Link
+              href="https://twitter.com/KapureYash"
+              aria-label="Twitter"
+              target="_blank"
+            >
+              <Icons.twitter className="size-5" />
+            </Link>
+          </Button>
+        </div>
       </motion.div>
     </section>
   );
