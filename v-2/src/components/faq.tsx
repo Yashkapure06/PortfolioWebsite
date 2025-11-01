@@ -27,7 +27,7 @@ const defaultFAQItems: FAQItem[] = [
   {
     question: 'What is your hourly rate?',
     answer:
-      "My freelance rate is $57/hour, though this may vary depending on the project scope and requirements. I'm flexible with working hours and available for both short-term and long-term projects.",
+      "My freelance rate is $25-57/hour, though this may vary depending on the project scope and requirements. I'm flexible with working hours, hourly rate, fixed rate, payment terms and available for both short-term and long-term projects.",
   },
   {
     question: 'Do you work remotely?',
