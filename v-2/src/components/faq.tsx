@@ -98,7 +98,10 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
                 aria-expanded={openItems.includes(index)}
                 aria-controls={`faq-answer-${index}`}
               >
-                <h3 className="pr-4 text-lg font-semibold" id={`faq-question-${index}`}>
+                <h3
+                  className="pr-4 text-lg font-semibold"
+                  id={`faq-question-${index}`}
+                >
                   {item.question}
                 </h3>
                 <Icons.chevronDown

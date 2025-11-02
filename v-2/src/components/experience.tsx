@@ -12,15 +12,21 @@ import { cn } from '@/lib/utils';
 export const Experience = () => {
   const { ref: sectionRef } = useSectionInView('Experience', 0.3);
   const prefersReducedMotion = useReducedMotion();
+  const sectionInitial = prefersReducedMotion
+    ? { opacity: 1 }
+    : { opacity: 0, y: 100 };
+  const sectionTransition = prefersReducedMotion
+    ? { duration: 0 }
+    : { delay: 0.175 };
 
   return (
     <motion.section
       ref={sectionRef}
       id="experience"
       className="my-10 scroll-mt-28 md:mb-20"
-      initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+      initial={sectionInitial}
       animate={{ opacity: 1, y: 0 }}
-      transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.175 }}
+      transition={sectionTransition}
     >
       <SectionHeading
         heading="My Experience"
@@ -37,9 +43,9 @@ export const Experience = () => {
                 <div className="border-primary bg-background absolute left-[-5px] top-0 size-3 rounded-full border-2" />
               </div>
               <motion.div
-                initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+                initial={sectionInitial}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.175 }}
+                transition={sectionTransition}
                 viewport={{ once: true }}
                 className={cn('space-y-3 opacity-0')}
               >

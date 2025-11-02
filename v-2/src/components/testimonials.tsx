@@ -73,6 +73,20 @@ export const Testimonials = () => {
     })),
   };
 
+  const headerInitial = prefersReducedMotion
+    ? { opacity: 1 }
+    : { opacity: 0, y: 100 };
+  const headerTransition = prefersReducedMotion
+    ? { duration: 0 }
+    : { delay: 0.175 };
+
+  const cardInitial = prefersReducedMotion
+    ? { opacity: 1 }
+    : { opacity: 0, y: 12 };
+  const cardTransition = prefersReducedMotion
+    ? { duration: 0 }
+    : { duration: 0.3 };
+
   return (
     <section
       ref={ref}
@@ -87,9 +101,9 @@ export const Testimonials = () => {
         }}
       />
       <motion.div
-        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+        initial={headerInitial}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.175 }}
+        transition={headerTransition}
         viewport={{ once: true }}
       >
         <SectionHeading
@@ -126,9 +140,9 @@ export const Testimonials = () => {
             {testimonialsData.map((testimonial) => (
               <div key={testimonial.name} className="w-full shrink-0">
                 <motion.div
-                  initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 12 }}
+                  initial={cardInitial}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.3 }}
+                  transition={cardTransition}
                   className="bg-card text-card-foreground group rounded-lg border p-4 sm:p-6 md:p-8 lg:p-10 shadow-sm transition-all hover:shadow-md min-h-[320px] sm:min-h-[340px] md:min-h-[320px]"
                 >
                   {/* Rating Stars */}
@@ -185,7 +199,10 @@ export const Testimonials = () => {
           aria-label="Previous testimonial"
           aria-controls="testimonials-track"
         >
-          <Icons.arrowRight aria-hidden="true" className="size-4 sm:size-5 md:size-6 rotate-180" />
+          <Icons.arrowRight
+            aria-hidden="true"
+            className="size-4 sm:size-5 md:size-6 rotate-180"
+          />
         </button>
         <button
           onClick={nextTestimonial}
@@ -193,7 +210,10 @@ export const Testimonials = () => {
           aria-label="Next testimonial"
           aria-controls="testimonials-track"
         >
-          <Icons.arrowRight aria-hidden="true" className="size-4 sm:size-5 md:size-6" />
+          <Icons.arrowRight
+            aria-hidden="true"
+            className="size-4 sm:size-5 md:size-6"
+          />
         </button>
 
         {/* Dots Indicator */}

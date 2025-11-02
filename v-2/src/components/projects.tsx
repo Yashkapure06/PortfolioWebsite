@@ -13,6 +13,16 @@ import { projectsData } from '@/lib/data';
 export const Projects = () => {
   const { ref } = useSectionInView('Projects', 0.3);
   const prefersReducedMotion = useReducedMotion();
+  const headingInitial = prefersReducedMotion
+    ? { opacity: 1 }
+    : { opacity: 0, y: 100 };
+  const headingTransition = prefersReducedMotion
+    ? { duration: 0 }
+    : { delay: 0.175 };
+  const ctaInitial = prefersReducedMotion
+    ? { opacity: 1 }
+    : { opacity: 0, y: 20 };
+  const ctaTransition = prefersReducedMotion ? { duration: 0 } : { delay: 0.3 };
 
   // Show only first 2 projects
   const featuredProjects = projectsData.slice(0, 4);
@@ -21,9 +31,9 @@ export const Projects = () => {
     <section id="projects" className="my-10 scroll-mt-28 md:mb-20">
       <div ref={ref}>
         <motion.div
-          initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+          initial={headingInitial}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.175 }}
+          transition={headingTransition}
           viewport={{ once: true }}
         >
           <SectionHeading
@@ -38,9 +48,9 @@ export const Projects = () => {
         ))}
       </div>
       <motion.div
-        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
+        initial={ctaInitial}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.3 }}
+        transition={ctaTransition}
         viewport={{ once: true }}
         className="mt-8 flex justify-center"
       >
