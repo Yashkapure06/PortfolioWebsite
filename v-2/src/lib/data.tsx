@@ -145,6 +145,18 @@ export const projectsData = [
     },
   },
   {
+    image: '/images/10.png',
+    title: 'Netflix Clone using ReactJs',
+    description:
+      'I created a Netflix clone using ReactJs and Sass. This is a clone of Netflix website. And played a lot with Api.',
+    technologies: ['React JS', 'SCSS', 'CSS', 'API'],
+    links: {
+      preview: 'https://free-netflix-clone.vercel.app/',
+      github: 'https://github.com/Yashkapure06/netflix-clone',
+      githubApi: 'https://api.github.com/repos/Yashkapure06',
+    },
+  },
+  {
     image: '/images/shangrila-petition.png',
     title: 'Shangrila Petition Platform',
     description:
@@ -313,18 +325,6 @@ export const projectsData = [
     links: {
       preview: 'https://chakra-ui.com/community/showcase',
       github: 'https://github.com/Yashkapure06/awesome-chakra-ui',
-      githubApi: 'https://api.github.com/repos/Yashkapure06',
-    },
-  },
-  {
-    image: '/images/10.png',
-    title: 'Netflix Clone using ReactJs',
-    description:
-      'I created a Netflix clone using ReactJs and Sass. This is a clone of Netflix website. And played a lot with Api.',
-    technologies: ['React JS', 'SCSS', 'CSS', 'API'],
-    links: {
-      preview: 'https://free-netflix-clone.vercel.app/',
-      github: 'https://github.com/Yashkapure06/netflix-clone',
       githubApi: 'https://api.github.com/repos/Yashkapure06',
     },
   },
