@@ -157,6 +157,18 @@ export const projectsData = [
     },
   },
   {
+    image: '/images/earthly.jpg',
+    title: 'Earthly Internship',
+    description:
+      'Worked as an Intern at Earthly. A simple frontend project for Earthly.',
+    technologies: ['jQuery', 'CSS3', 'JavaScript', 'HTML5'],
+    links: {
+      preview: 'https://earthly-internship.netlify.app/',
+      github: 'https://github.com/Yashkapure06',
+      githubApi: 'https://api.github.com/repos/Yashkapure06',
+    },
+  },
+  {
     image: '/images/15.png',
     title: 'The Kolorado Paints',
     description:
