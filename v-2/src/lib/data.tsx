@@ -323,7 +323,7 @@ export const projectsData = [
       'I created a Netflix clone using ReactJs and Sass. This is a clone of Netflix website. And played a lot with Api.',
     technologies: ['React JS', 'SCSS', 'CSS', 'API'],
     links: {
-      preview: 'https://netflix-clone-06.netlify.app/',
+      preview: 'https://free-netflix-clone.vercel.app/',
       github: 'https://github.com/Yashkapure06/netflix-clone',
       githubApi: 'https://api.github.com/repos/Yashkapure06',
     },
