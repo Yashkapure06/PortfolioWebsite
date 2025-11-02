@@ -11,7 +11,7 @@ import { projectsData } from '@/lib/data';
 
 export default function ProjectsPage() {
   return (
-    <div className="container mx-auto px-4 py-16">
+    <main id="main-content" className="container mx-auto px-4 py-16">
       <Breadcrumb />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -117,6 +117,6 @@ export default function ProjectsPage() {
           </motion.div>
         ))}
       </div>
-    </div>
+    </main>
   );
 }

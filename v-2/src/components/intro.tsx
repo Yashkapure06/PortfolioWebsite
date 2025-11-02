@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
 
 import { Button } from '@/components/button';
@@ -9,6 +9,7 @@ import { useSectionInView } from '@/hooks/use-section-in-view';
 
 export const Intro = () => {
   const { ref } = useSectionInView('Home');
+  const prefersReducedMotion = useReducedMotion();
 
   return (
     <section
@@ -17,12 +18,17 @@ export const Intro = () => {
       className="my-10 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28"
     >
       <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          type: 'tween',
-          duration: 0.2,
-        }}
+        initial={
+          prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 0 }
+        }
+        animate={
+          prefersReducedMotion ? { opacity: 1 } : { opacity: 1, scale: 1 }
+        }
+        transition={
+          prefersReducedMotion
+            ? { duration: 0 }
+            : { type: 'tween', duration: 0.2 }
+        }
         className="mb-8"
       >
         <img
@@ -32,12 +38,17 @@ export const Intro = () => {
         />
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          type: 'tween',
-          duration: 0.2,
-        }}
+        initial={
+          prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 0 }
+        }
+        animate={
+          prefersReducedMotion ? { opacity: 1 } : { opacity: 1, scale: 1 }
+        }
+        transition={
+          prefersReducedMotion
+            ? { duration: 0 }
+            : { type: 'tween', duration: 0.2 }
+        }
       >
         <Link
           href="#contact"
@@ -50,12 +61,21 @@ export const Intro = () => {
           <span className="font-mono text-sm">Available for work!</span>
         </Link>
       </motion.div>
-      <p className="mt-2 text-xs text-muted-foreground">
-        Currently based in United Kingdom — open to relocate
-      </p>
-      <motion.h1
-        initial={{ opacity: 0, y: 100 }}
+      <motion.p
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={
+          prefersReducedMotion
+            ? { duration: 0 }
+            : { delay: 0.05, duration: 0.2, type: 'tween' }
+        }
+        className="mt-2 text-xs text-muted-foreground"
+      >
+        Currently based in United Kingdom — open to relocate
+      </motion.p>
+      <motion.h1
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: prefersReducedMotion ? 0 : 0 }}
         className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
       >
         Hi I&#39;m
@@ -65,11 +85,9 @@ export const Intro = () => {
         - Frontend Engineer with Full-Stack Expertise.
       </motion.h1>
       <motion.p
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: prefersReducedMotion ? 0 : 0 }}
+        transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.1 }}
         className="text-muted-foreground max-w-xl"
       >
         I build fast, accessible, and SEO-friendly web applications using
@@ -81,18 +99,17 @@ export const Intro = () => {
         when needed.
       </motion.p>
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: prefersReducedMotion ? 0 : 0 }}
+        transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.1 }}
         // Responsive: stack vertically on small screens, row wrap on larger screens
         className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center"
       >
         <div className="flex flex-col gap-2 sm:flex-row sm:gap-2 flex-1">
           <Button asChild size="lg" className="w-full sm:w-auto">
             <Link href="#contact">
-              Get in touch <Icons.arrowRight className="ml-2 size-4" />
+              Get in touch{' '}
+              <Icons.arrowRight aria-hidden="true" className="ml-2 size-4" />
             </Link>
           </Button>
           <Button
@@ -102,7 +119,8 @@ export const Intro = () => {
             className="w-full sm:w-auto"
           >
             <Link href="#projects">
-              View projects <Icons.arrowRight className="ml-2 size-4" />
+              View projects{' '}
+              <Icons.arrowRight aria-hidden="true" className="ml-2 size-4" />
             </Link>
           </Button>
           <Button
@@ -116,7 +134,8 @@ export const Intro = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download CV <Icons.download className="ml-2 size-4" />
+              Download CV{' '}
+              <Icons.download aria-hidden="true" className="ml-2 size-4" />
             </a>
           </Button>
         </div>
@@ -126,6 +145,7 @@ export const Intro = () => {
               href="https://linkedin.com/in/yash-kapure"
               aria-label="Linkedin"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Icons.linkedin className="size-5" />
             </Link>
@@ -135,6 +155,7 @@ export const Intro = () => {
               href="https://github.com/Yashkapure06"
               aria-label="Github"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Icons.github className="size-5" />
             </Link>
@@ -144,6 +165,7 @@ export const Intro = () => {
               href="https://www.instagram.com/_yashkapure_"
               aria-label="Instagram"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Icons.instagram className="size-5" />
             </Link>
@@ -153,6 +175,7 @@ export const Intro = () => {
               href="https://twitter.com/KapureYash"
               aria-label="Twitter"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Icons.twitter className="size-5" />
             </Link>

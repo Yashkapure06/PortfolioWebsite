@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
@@ -11,15 +11,16 @@ import { cn } from '@/lib/utils';
 
 export const Experience = () => {
   const { ref: sectionRef } = useSectionInView('Experience', 0.3);
+  const prefersReducedMotion = useReducedMotion();
 
   return (
     <motion.section
       ref={sectionRef}
       id="experience"
       className="my-10 scroll-mt-28 md:mb-20"
-      initial={{ opacity: 0, y: 100 }}
+      initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+      transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.175 }}
     >
       <SectionHeading
         heading="My Experience"
@@ -36,17 +37,10 @@ export const Experience = () => {
                 <div className="border-primary bg-background absolute left-[-5px] top-0 size-3 rounded-full border-2" />
               </div>
               <motion.div
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                transition={{
-                  delay: 0.175,
-                }}
-                viewport={{
-                  once: true,
-                }}
+                initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.175 }}
+                viewport={{ once: true }}
                 className={cn('space-y-3 opacity-0')}
               >
                 <div className="flex items-center gap-3">

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
 
 import { Button } from '@/components/button';
@@ -12,6 +12,7 @@ import { projectsData } from '@/lib/data';
 
 export const Projects = () => {
   const { ref } = useSectionInView('Projects', 0.3);
+  const prefersReducedMotion = useReducedMotion();
 
   // Show only first 2 projects
   const featuredProjects = projectsData.slice(0, 4);
@@ -20,17 +21,10 @@ export const Projects = () => {
     <section id="projects" className="my-10 scroll-mt-28 md:mb-20">
       <div ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            delay: 0.175,
-          }}
-          viewport={{
-            once: true,
-          }}
+          initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.175 }}
+          viewport={{ once: true }}
         >
           <SectionHeading
             heading="My Projects"
@@ -44,23 +38,16 @@ export const Projects = () => {
         ))}
       </div>
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          delay: 0.3,
-        }}
-        viewport={{
-          once: true,
-        }}
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.3 }}
+        viewport={{ once: true }}
         className="mt-8 flex justify-center"
       >
         <Button variant="outline" asChild>
           <Link href="/projects">
             View More Projects
-            <Icons.arrowRight className="ml-2 size-4" />
+            <Icons.arrowRight aria-hidden="true" className="ml-2 size-4" />
           </Link>
         </Button>
       </motion.div>

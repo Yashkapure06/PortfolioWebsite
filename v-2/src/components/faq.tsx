@@ -98,8 +98,11 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
                 aria-expanded={openItems.includes(index)}
                 aria-controls={`faq-answer-${index}`}
               >
-                <h3 className="pr-4 text-lg font-semibold">{item.question}</h3>
+                <h3 className="pr-4 text-lg font-semibold" id={`faq-question-${index}`}>
+                  {item.question}
+                </h3>
                 <Icons.chevronDown
+                  aria-hidden="true"
                   className={`size-5 transition-transform ${
                     openItems.includes(index) ? 'rotate-180' : ''
                   }`}
@@ -108,6 +111,8 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
 
               <div
                 id={`faq-answer-${index}`}
+                role="region"
+                aria-labelledby={`faq-question-${index}`}
                 className={`overflow-hidden transition-all duration-300 ${
                   openItems.includes(index)
                     ? 'max-h-96 opacity-100 pb-6'

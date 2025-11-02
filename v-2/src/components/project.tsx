@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -32,15 +32,14 @@ const fadeInAnimationVariants = {
 
 export const Project = ({ project, index }: TProps) => {
   const { image, title, description, technologies, links } = project;
+  const prefersReducedMotion = useReducedMotion();
 
   return (
     <motion.div
-      variants={fadeInAnimationVariants}
-      initial="initial"
-      whileInView="animate"
-      viewport={{
-        once: true,
-      }}
+      variants={prefersReducedMotion ? undefined : fadeInAnimationVariants}
+      initial={prefersReducedMotion ? undefined : 'initial'}
+      whileInView={prefersReducedMotion ? undefined : 'animate'}
+      viewport={{ once: true }}
       custom={index}
       className="flex flex-col rounded border p-5 "
     >
@@ -79,6 +78,7 @@ export const Project = ({ project, index }: TProps) => {
         href={links.preview}
         aria-label={title}
         target="_blank"
+        rel="noopener noreferrer"
         className="mt-4 w-fit"
       >
         <Button variant="outline" size="sm" className="flex items-center gap-2">

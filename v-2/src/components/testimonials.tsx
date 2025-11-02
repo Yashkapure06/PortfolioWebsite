@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
@@ -10,6 +10,7 @@ import { testimonialsData } from '@/lib/data';
 
 export const Testimonials = () => {
   const { ref } = useSectionInView('Testimonials');
+  const prefersReducedMotion = useReducedMotion();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const [touchEndX, setTouchEndX] = useState<number | null>(null);
@@ -86,17 +87,10 @@ export const Testimonials = () => {
         }}
       />
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          delay: 0.175,
-        }}
-        viewport={{
-          once: true,
-        }}
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.175 }}
+        viewport={{ once: true }}
       >
         <SectionHeading
           heading="Testimonials"
@@ -126,16 +120,15 @@ export const Testimonials = () => {
           <motion.div
             id="testimonials-track"
             className="flex transition-transform duration-400 ease-out"
-            style={{
-              transform: `translateX(-${currentIndex * 100}%)`,
-            }}
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            transition={prefersReducedMotion ? { duration: 0 } : undefined}
           >
             {testimonialsData.map((testimonial) => (
               <div key={testimonial.name} className="w-full shrink-0">
                 <motion.div
-                  initial={{ opacity: 0, y: 12 }}
+                  initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
+                  transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.3 }}
                   className="bg-card text-card-foreground group rounded-lg border p-4 sm:p-6 md:p-8 lg:p-10 shadow-sm transition-all hover:shadow-md min-h-[320px] sm:min-h-[340px] md:min-h-[320px]"
                 >
                   {/* Rating Stars */}
@@ -143,9 +136,11 @@ export const Testimonials = () => {
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Icons.star
                         key={i}
+                        aria-hidden="true"
                         className="size-4 sm:size-5 md:size-6 fill-yellow-400 text-yellow-400"
                       />
                     ))}
+                    <span className="sr-only">{`${testimonial.rating} out of 5`}</span>
                   </div>
 
                   {/* Testimonial Content */}
@@ -190,7 +185,7 @@ export const Testimonials = () => {
           aria-label="Previous testimonial"
           aria-controls="testimonials-track"
         >
-          <Icons.arrowRight className="size-4 sm:size-5 md:size-6 rotate-180" />
+          <Icons.arrowRight aria-hidden="true" className="size-4 sm:size-5 md:size-6 rotate-180" />
         </button>
         <button
           onClick={nextTestimonial}
@@ -198,7 +193,7 @@ export const Testimonials = () => {
           aria-label="Next testimonial"
           aria-controls="testimonials-track"
         >
-          <Icons.arrowRight className="size-4 sm:size-5 md:size-6" />
+          <Icons.arrowRight aria-hidden="true" className="size-4 sm:size-5 md:size-6" />
         </button>
 
         {/* Dots Indicator */}
