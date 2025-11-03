@@ -7,6 +7,7 @@ import Script from 'next/script';
 import { ActiveSectionProvider } from '@/components/active-section-provider';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/toaster';
+import { env } from '@/env.mjs';
 import { fonts } from '@/lib/fonts';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
@@ -163,7 +164,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-PDKQ7JZ');
+              })(window,document,'script','dataLayer','${env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}');
             `,
           }}
         />
@@ -171,7 +172,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         {/* Google AdSense */}
         <Script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5126308192729168"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${env.NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT_ID}`}
           crossOrigin="anonymous"
         />
 
@@ -203,7 +204,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PDKQ7JZ"
+            src={`https://www.googletagmanager.com/ns.html?id=${env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}`}
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
@@ -220,7 +221,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "oi5p8b8wvn");
+              })(window, document, "clarity", "script", "${env.NEXT_PUBLIC_MICROSOFT_CLARITY_ID}");
             `,
           }}
         />
