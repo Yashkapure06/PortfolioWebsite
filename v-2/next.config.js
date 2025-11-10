@@ -12,6 +12,20 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
+  // Compiler options (SWC is enabled by default in Next.js 12+)
+  compiler: {
+    // Remove console logs in production (powered by SWC)
+    removeConsole: process.env.NODE_ENV === 'production' ? {
+      exclude: ['error', 'warn'],
+    } : false,
+  },
+  // Optimize package imports (reduces bundle size by tree-shaking unused exports)
+  optimizePackageImports: [
+    '@radix-ui/react-dialog',
+    '@radix-ui/react-slot',
+    'lucide-react',
+    'framer-motion',
+  ],
 };
 
 module.exports = nextConfig;
