@@ -57,6 +57,26 @@ export const metadata: Metadata = {
   publisher: 'Yash Kapure',
   alternates: {
     canonical: siteConfig.url,
+    languages: {
+      en: siteConfig.url,
+      'en-US': siteConfig.url,
+      'en-GB': siteConfig.url,
+      'en-IE': siteConfig.url,
+      'en-DE': siteConfig.url,
+      'en-FR': siteConfig.url,
+      'en-ES': siteConfig.url,
+      'en-IT': siteConfig.url,
+      'en-NL': siteConfig.url,
+      'en-BE': siteConfig.url,
+      'en-AT': siteConfig.url,
+      'en-CH': siteConfig.url,
+      'en-SE': siteConfig.url,
+      'en-NO': siteConfig.url,
+      'en-DK': siteConfig.url,
+      'en-PL': siteConfig.url,
+      'en-PT': siteConfig.url,
+      'x-default': siteConfig.url,
+    },
   },
   other: {
     author: 'Yash Kapure',
@@ -86,7 +106,8 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     ],
     address: {
       '@type': 'PostalAddress',
-      addressCountry: 'United Kingdom',
+      addressCountry: 'GB',
+      addressRegion: 'Europe',
     },
     alumniOf: [
       {
@@ -136,7 +157,25 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         '@type': 'Person',
         name: 'Yash Kapure',
       },
-      areaServed: 'United Kingdom',
+      areaServed: [
+        'GB', // United Kingdom
+        'IE', // Ireland
+        'DE', // Germany
+        'FR', // France
+        'ES', // Spain
+        'IT', // Italy
+        'NL', // Netherlands
+        'BE', // Belgium
+        'AT', // Austria
+        'CH', // Switzerland
+        'SE', // Sweden
+        'NO', // Norway
+        'DK', // Denmark
+        'PL', // Poland
+        'PT', // Portugal
+        'EU', // European Union
+        'Worldwide', // Global reach
+      ],
       serviceType: 'Web Development',
     },
     hasOccupation: {
@@ -144,16 +183,45 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       name: 'Full Stack Web Developer',
       description:
         'Frontend Engineer & Full Stack Developer specializing in React.js, Next.js, Node.js, and MERN/MEVN stack',
-      occupationLocation: {
-        '@type': 'Country',
-        name: 'United Kingdom',
-      },
+      occupationLocation: [
+        {
+          '@type': 'Country',
+          name: 'United Kingdom',
+        },
+        {
+          '@type': 'Continent',
+          name: 'Europe',
+        },
+        {
+          '@type': 'Place',
+          name: 'Worldwide',
+        },
+      ],
     },
   };
 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Hreflang tags for international SEO */}
+        <link rel="alternate" hrefLang="en" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-US" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-GB" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-IE" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-DE" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-FR" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-ES" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-IT" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-NL" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-BE" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-AT" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-CH" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-SE" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-NO" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-DK" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-PL" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="en-PT" href={siteConfig.url} />
+        <link rel="alternate" hrefLang="x-default" href={siteConfig.url} />
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"

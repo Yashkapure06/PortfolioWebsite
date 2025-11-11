@@ -4,5 +4,19 @@ module.exports = {
   generateIndexSitemap: false,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
+    additionalSitemaps: ['https://yashkapure.netlify.app/sitemap.xml'],
   },
+  // Additional paths for better indexing
+  additionalPaths: async () => {
+    const result = [];
+    // Add any additional paths you want to include
+    return result;
+  },
+  // Exclude paths that shouldn't be indexed
+  exclude: ['/404', '/api/*'],
+  // Change frequency and priority for better SEO
+  changefreq: 'weekly',
+  priority: 0.7,
+  // Add lastmod to help search engines understand content freshness
+  autoLastmod: true,
 };
