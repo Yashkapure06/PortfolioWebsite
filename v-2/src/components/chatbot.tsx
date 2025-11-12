@@ -932,7 +932,7 @@ export function Chatbot() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="bg-background relative rounded-lg border-2 border-primary/20 p-4 shadow-2xl"
+              className="border-primary/20 bg-background relative rounded-lg border-2 p-4 shadow-2xl"
             >
               {/* Close Button */}
               <motion.button
@@ -964,11 +964,14 @@ export function Chatbot() {
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
-                  Hi! I'm an AI-powered assistant here to help you learn about
-                  Yash Kapure. Ask me about his skills, projects, experience, or
-                  paste a job description for a match analysis!
+                  Hi! I&apos;m an AI-powered assistant here to help you learn
+                  about Yash Kapure. Ask me about his skills, projects,
+                  experience, or paste a job description for a match analysis!
                 </p>
-                <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
                   <Button
                     onClick={handleOpenChatFromPopup}
                     size="sm"
@@ -982,7 +985,7 @@ export function Chatbot() {
 
               {/* Arrow pointing to chat button */}
               <div className="absolute -bottom-2 right-8">
-                <div className="bg-background border-r-2 border-b-2 border-primary/20 size-4 rotate-45"></div>
+                <div className="border-primary/20 bg-background size-4 rotate-45 border-b-2 border-r-2"></div>
               </div>
             </motion.div>
           </motion.div>
