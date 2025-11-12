@@ -105,6 +105,16 @@ function MatchScore({ score }: { score: number }) {
 
 // Component to render job match analysis with enhanced UI
 function JobMatchAnalysis({ content }: { content: string }) {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   // Extract skills from [SKILLS: ...] format
   const skillsRegex = /\[SKILLS:\s*([^\]]+)\]/g;
   const skillsMatches = Array.from(content.matchAll(skillsRegex));
@@ -310,20 +320,22 @@ function JobMatchAnalysis({ content }: { content: string }) {
     <div className="space-y-4">
       {/* Match Analysis Card with Pie Chart */}
       <Card className="flex flex-col">
-        <CardHeader className="items-center pb-0">
+        <CardHeader className="items-center pb-0 px-3 pt-3 sm:px-6 sm:pt-6">
           <div className="mb-2 flex items-center gap-2">
-            <Award className="text-primary size-5" />
-            <CardTitle className="text-lg">Match Analysis</CardTitle>
+            <Award className="text-primary size-4 sm:size-5" />
+            <CardTitle className="text-base sm:text-lg">
+              Match Analysis
+            </CardTitle>
           </div>
           <CardDescription className="text-xs">
             {matchScore}% overall match based on skills, experience, and
             requirements
           </CardDescription>
         </CardHeader>
-        <CardContent className="flex-1 pb-0">
+        <CardContent className="flex-1 pb-0 px-3 sm:px-6">
           <ChartContainer
             config={matchChartConfig}
-            className="mx-auto aspect-square max-h-[200px]"
+            className="mx-auto aspect-square max-h-[150px] sm:max-h-[200px]"
           >
             <PieChart>
               <ChartTooltip
@@ -344,8 +356,8 @@ function JobMatchAnalysis({ content }: { content: string }) {
                 nameKey="category"
                 cx="50%"
                 cy="50%"
-                outerRadius={70}
-                innerRadius={45}
+                outerRadius={isMobile ? 55 : 70}
+                innerRadius={isMobile ? 35 : 45}
                 // label={({ name, value, percent }) => {
                 //   if (name === 'match' && percent) {
                 //     return `${value}% (${(percent * 100).toFixed(0)}%)`;
@@ -358,7 +370,7 @@ function JobMatchAnalysis({ content }: { content: string }) {
                 <Label
                   value={matchScore + '%'}
                   position="center"
-                  className="fill-foreground text-2xl font-bold"
+                  className="fill-foreground text-xl font-bold sm:text-2xl"
                 />
               </Pie>
             </PieChart>
@@ -390,16 +402,18 @@ function JobMatchAnalysis({ content }: { content: string }) {
       {/* Matching Skills with Pie Chart */}
       {allSkills.length > 0 && (
         <div className="space-y-4">
-          <div className="bg-muted/50 rounded-lg border p-4">
-            <h4 className="mb-3 font-semibold">Matching Skills</h4>
-            <div className="flex flex-wrap gap-2">
+          <div className="bg-muted/50 rounded-lg border p-3 sm:p-4">
+            <h4 className="mb-2 font-semibold text-sm sm:text-base sm:mb-3">
+              Matching Skills
+            </h4>
+            <div className="flex flex-wrap gap-1.5 sm:gap-2">
               {allSkills.map((skill, index) => (
                 <Badge
                   key={index}
                   variant="secondary"
-                  className="px-3 py-1 text-sm"
+                  className="px-2 py-0.5 text-xs sm:px-3 sm:py-1 sm:text-sm"
                 >
-                  <CheckCircle2 className="mr-1 size-3 text-green-500" />
+                  <CheckCircle2 className="mr-1 size-2.5 sm:size-3 text-green-500" />
                   {skill}
                 </Badge>
               ))}
@@ -409,17 +423,19 @@ function JobMatchAnalysis({ content }: { content: string }) {
           {/* Skill Distribution Pie Chart */}
           {pieData.length > 0 && totalSkills > 0 && (
             <Card className="flex flex-col">
-              <CardHeader className="items-center pb-0">
-                <CardTitle className="text-base">Skill Distribution</CardTitle>
+              <CardHeader className="items-center pb-0 px-3 pt-3 sm:px-6 sm:pt-6">
+                <CardTitle className="text-sm sm:text-base">
+                  Skill Distribution
+                </CardTitle>
                 <CardDescription className="text-xs">
                   {totalSkills} matching skill{totalSkills !== 1 ? 's' : ''}{' '}
                   categorized
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex-1 pb-4">
+              <CardContent className="flex-1 pb-3 sm:pb-4 px-3 sm:px-6">
                 <ChartContainer
                   config={chartConfig}
-                  className="mx-auto aspect-square h-[250px] w-full"
+                  className="mx-auto aspect-square h-[200px] w-full sm:h-[250px]"
                 >
                   <PieChart>
                     <ChartTooltip
@@ -452,14 +468,17 @@ function JobMatchAnalysis({ content }: { content: string }) {
                   </PieChart>
                 </ChartContainer>
                 {/* Legend */}
-                <div className="mt-4 flex flex-wrap justify-center gap-3 text-xs">
+                <div className="mt-3 flex flex-wrap justify-center gap-2 text-xs sm:mt-4 sm:gap-3">
                   {pieData.map((item, index) => (
-                    <div key={index} className="flex items-center gap-1.5">
+                    <div
+                      key={index}
+                      className="flex items-center gap-1 sm:gap-1.5"
+                    >
                       <div
-                        className="size-3 rounded-full"
+                        className="size-2.5 rounded-full sm:size-3"
                         style={{ backgroundColor: item.fill }}
                       />
-                      <span className="text-muted-foreground">
+                      <span className="text-muted-foreground text-xs">
                         {item.label}: {item.value}
                       </span>
                     </div>
@@ -473,8 +492,10 @@ function JobMatchAnalysis({ content }: { content: string }) {
 
       {/* Why Yash is a Perfect Fit */}
       {fitText && (
-        <div className="bg-muted/50 rounded-lg border p-4">
-          <h4 className="mb-3 font-semibold">Why Yash is a Perfect Fit</h4>
+        <div className="bg-muted/50 rounded-lg border p-3 sm:p-4">
+          <h4 className="mb-2 font-semibold text-sm sm:text-base sm:mb-3">
+            Why Yash is a Perfect Fit
+          </h4>
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
@@ -522,7 +543,7 @@ function JobMatchAnalysis({ content }: { content: string }) {
 
           if (remainingText && remainingText.length > 20) {
             return (
-              <div className="bg-muted/30 mt-4 rounded-lg border p-4">
+              <div className="bg-muted/30 mt-3 rounded-lg border p-3 sm:mt-4 sm:p-4">
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
                   components={{
@@ -926,7 +947,7 @@ export function Chatbot() {
               stiffness: 300,
               damping: 25,
             }}
-            className="fixed bottom-24 right-4 z-50 w-[280px] sm:bottom-28 sm:right-6 sm:w-[320px]"
+            className="fixed bottom-20 right-2 z-50 w-[calc(100vw-1rem)] max-w-[280px] sm:bottom-28 sm:right-6 sm:w-[320px]"
           >
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -946,7 +967,7 @@ export function Chatbot() {
               </motion.button>
 
               {/* Content */}
-              <div className="pr-6">
+              <div className="pr-6 sm:pr-8">
                 <div className="mb-2 flex items-center gap-2">
                   <motion.div
                     animate={{ rotate: [0, 10, -10, 0] }}
@@ -956,14 +977,16 @@ export function Chatbot() {
                       repeatDelay: 2,
                     }}
                   >
-                    <Bot className="text-primary size-5" />
+                    <Bot className="text-primary size-4 sm:size-5" />
                   </motion.div>
                   <div className="flex items-center gap-1">
-                    <Sparkles className="text-primary size-4" />
-                    <h4 className="font-semibold">AI Assistant Available</h4>
+                    <Sparkles className="text-primary size-3.5 sm:size-4" />
+                    <h4 className="font-semibold text-sm sm:text-base">
+                      AI Assistant Available
+                    </h4>
                   </div>
                 </div>
-                <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
+                <p className="text-muted-foreground mb-3 text-xs sm:text-sm leading-relaxed">
                   Hi! I&apos;m an AI-powered assistant here to help you learn
                   about Yash Kapure. Ask me about his skills, projects,
                   experience, or paste a job description for a match analysis!
@@ -1005,13 +1028,13 @@ export function Chatbot() {
               damping: 20,
               delay: 0.3,
             }}
-            className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6"
+            className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6 md:bottom-6 md:right-6"
           >
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
               <Button
                 onClick={() => setIsOpen(!isOpen)}
                 size="icon"
-                className="size-14 rounded-full shadow-lg"
+                className="size-12 rounded-full shadow-lg sm:size-14"
                 aria-label="Open chat"
               >
                 <motion.div
@@ -1022,7 +1045,7 @@ export function Chatbot() {
                     repeatDelay: 3,
                   }}
                 >
-                  <MessageCircle className="size-6" />
+                  <MessageCircle className="size-5 sm:size-6" />
                 </motion.div>
               </Button>
             </motion.div>
@@ -1042,17 +1065,19 @@ export function Chatbot() {
               stiffness: 300,
               damping: 30,
             }}
-            className="bg-background fixed bottom-4 right-4 z-50 flex h-[calc(100vh-2rem)] w-[calc(100vw-2rem)] max-w-md flex-col rounded-lg border shadow-2xl sm:bottom-6 sm:right-6 sm:h-[650px] sm:w-full"
+            className="bg-background fixed bottom-0 right-0 z-50 flex h-[100dvh] w-full max-w-full flex-col rounded-none border-t shadow-2xl sm:bottom-6 sm:right-6 sm:h-[650px] sm:w-full sm:max-w-md sm:rounded-lg sm:border"
           >
             {/* Header */}
-            <div className="flex items-center justify-between border-b px-4 py-3">
+            <div className="flex items-center justify-between border-b px-3 py-2.5 sm:px-4 sm:py-3">
               <div className="flex items-center gap-2">
-                <div className="bg-primary flex size-8 items-center justify-center rounded-full">
-                  <MessageCircle className="text-primary-foreground size-4" />
+                <div className="bg-primary flex size-7 items-center justify-center rounded-full sm:size-8">
+                  <MessageCircle className="text-primary-foreground size-3.5 sm:size-4" />
                 </div>
                 <div>
-                  <div className="flex items-center gap-2">
-                    <h3 className="font-semibold">AI Assistant</h3>
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <h3 className="font-semibold text-sm sm:text-base">
+                      AI Assistant
+                    </h3>
                     <span className="relative flex size-2">
                       <span className="absolute flex size-full animate-ping rounded-full bg-green-400 opacity-75"></span>
                       <span className="relative flex size-2 rounded-full bg-green-400"></span>
@@ -1071,16 +1096,16 @@ export function Chatbot() {
                   variant="ghost"
                   size="icon"
                   onClick={() => setIsOpen(false)}
-                  className="size-8"
+                  className="size-7 sm:size-8"
                   aria-label="Close chat"
                 >
-                  <X className="size-4" />
+                  <X className="size-3.5 sm:size-4" />
                 </Button>
               </motion.div>
             </div>
 
             {/* Messages Area */}
-            <ScrollArea className="flex-1 p-4">
+            <ScrollArea className="flex-1 p-3 sm:p-4">
               <div className="space-y-4">
                 {messages.map((message, index) => (
                   <motion.div
@@ -1099,7 +1124,7 @@ export function Chatbot() {
                     <motion.div
                       whileHover={{ scale: 1.02 }}
                       className={cn(
-                        'max-w-[80%] rounded-2xl px-4 py-2 text-sm',
+                        'max-w-[85%] rounded-2xl px-3 py-2 text-sm sm:max-w-[80%] sm:px-4',
                         message.role === 'user'
                           ? 'bg-primary text-primary-foreground'
                           : 'bg-muted text-muted-foreground'
@@ -1155,7 +1180,7 @@ export function Chatbot() {
                             variant="outline"
                             size="sm"
                             onClick={() => handleQuestionClick(question)}
-                            className="h-auto w-full justify-start whitespace-normal rounded-md px-3 py-2 text-left text-sm"
+                            className="h-auto w-full justify-start whitespace-normal rounded-md px-2.5 py-1.5 text-left text-xs sm:px-3 sm:py-2 sm:text-sm"
                           >
                             {question}
                           </Button>
@@ -1169,7 +1194,7 @@ export function Chatbot() {
             </ScrollArea>
 
             {/* Input Area */}
-            <form onSubmit={handleSend} className="border-t p-4">
+            <form onSubmit={handleSend} className="border-t p-3 sm:p-4">
               <div className="flex gap-2">
                 <Input
                   ref={inputRef}
@@ -1177,7 +1202,7 @@ export function Chatbot() {
                   onChange={(e) => setInput(e.target.value)}
                   placeholder="Type your message..."
                   disabled={isLoading}
-                  className="flex-1"
+                  className="flex-1 text-sm sm:text-base"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' && !e.shiftKey) {
                       e.preventDefault();
@@ -1189,7 +1214,7 @@ export function Chatbot() {
                   type="submit"
                   size="icon"
                   disabled={!input.trim() || isLoading}
-                  className="size-10"
+                  className="size-9 shrink-0 sm:size-10"
                 >
                   {isLoading ? (
                     <Loader2 className="size-4 animate-spin" />
