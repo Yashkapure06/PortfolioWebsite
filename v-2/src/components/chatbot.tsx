@@ -5,10 +5,12 @@ import ReactMarkdown from 'react-markdown';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
   Award,
+  Bot,
   CheckCircle2,
   Loader2,
   MessageCircle,
   Send,
+  Sparkles,
   X,
 } from 'lucide-react';
 import { Label, Pie, PieChart } from 'recharts';
@@ -47,6 +49,7 @@ const PREDEFINED_QUESTIONS = [
 ];
 
 const FIRST_TIME_KEY = 'chatbot-first-time';
+const POPUP_SEEN_KEY = 'chatbot-popup-seen';
 
 // Component to render match score with circular progress (unused - replaced by pie chart)
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -712,8 +715,21 @@ export function Chatbot() {
   const [isLoading, setIsLoading] = React.useState(false);
   const [showPredefinedQuestions, setShowPredefinedQuestions] =
     React.useState(false);
+  const [showPopup, setShowPopup] = React.useState(false);
   const messagesEndRef = React.useRef<HTMLDivElement>(null);
   const inputRef = React.useRef<HTMLInputElement>(null);
+
+  // Check if it's the first time visiting the site (show popup)
+  React.useEffect(() => {
+    const hasSeenPopup = localStorage.getItem(POPUP_SEEN_KEY);
+    if (!hasSeenPopup) {
+      // Show popup after a short delay for better UX
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+      }, 1500);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   // Check if it's the first time opening the chat
   React.useEffect(() => {
@@ -722,6 +738,25 @@ export function Chatbot() {
       setShowPredefinedQuestions(isFirstTime);
     }
   }, [isOpen]);
+
+  // Hide popup when chat is opened
+  React.useEffect(() => {
+    if (isOpen && showPopup) {
+      setShowPopup(false);
+      localStorage.setItem(POPUP_SEEN_KEY, 'true');
+    }
+  }, [isOpen, showPopup]);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    localStorage.setItem(POPUP_SEEN_KEY, 'true');
+  };
+
+  const handleOpenChatFromPopup = () => {
+    setShowPopup(false);
+    localStorage.setItem(POPUP_SEEN_KEY, 'true');
+    setIsOpen(true);
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -879,6 +914,81 @@ export function Chatbot() {
 
   return (
     <>
+      {/* First-time Visitor Popup/Tooltip */}
+      <AnimatePresence>
+        {showPopup && !isOpen && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.8, y: 20 }}
+            transition={{
+              type: 'spring',
+              stiffness: 300,
+              damping: 25,
+            }}
+            className="fixed bottom-24 right-4 z-50 w-[280px] sm:bottom-28 sm:right-6 sm:w-[320px]"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="bg-background relative rounded-lg border-2 border-primary/20 p-4 shadow-2xl"
+            >
+              {/* Close Button */}
+              <motion.button
+                whileHover={{ scale: 1.1, rotate: 90 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={handleClosePopup}
+                className="text-muted-foreground hover:text-foreground absolute right-2 top-2 rounded-full p-1 transition-colors"
+                aria-label="Close popup"
+              >
+                <X className="size-4" />
+              </motion.button>
+
+              {/* Content */}
+              <div className="pr-6">
+                <div className="mb-2 flex items-center gap-2">
+                  <motion.div
+                    animate={{ rotate: [0, 10, -10, 0] }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatDelay: 2,
+                    }}
+                  >
+                    <Bot className="text-primary size-5" />
+                  </motion.div>
+                  <div className="flex items-center gap-1">
+                    <Sparkles className="text-primary size-4" />
+                    <h4 className="font-semibold">AI Assistant Available</h4>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
+                  Hi! I'm an AI-powered assistant here to help you learn about
+                  Yash Kapure. Ask me about his skills, projects, experience, or
+                  paste a job description for a match analysis!
+                </p>
+                <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                  <Button
+                    onClick={handleOpenChatFromPopup}
+                    size="sm"
+                    className="w-full"
+                  >
+                    <MessageCircle className="mr-2 size-4" />
+                    Start Chatting
+                  </Button>
+                </motion.div>
+              </div>
+
+              {/* Arrow pointing to chat button */}
+              <div className="absolute -bottom-2 right-8">
+                <div className="bg-background border-r-2 border-b-2 border-primary/20 size-4 rotate-45"></div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Floating Chat Button */}
       <AnimatePresence>
         {!isOpen && (
