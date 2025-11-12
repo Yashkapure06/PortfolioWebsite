@@ -19,6 +19,8 @@ Then create .env file:
 ```bash
 SITE_URL='https://example.com' ## Required to generate sitemap by next-sitemap
 RESEND_API_KEY='your_resend_api_key' ## Required to send email by resend
+EXA_API_KEY='your_exa_api_key' ## Optional: For AI chatbot search capabilities
+OPENROUTER_API_KEY='your_openrouter_api_key' ## Required for AI chatbot functionality
 ```
 
 Then start the project on the local server with the command:

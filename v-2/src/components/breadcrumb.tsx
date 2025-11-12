@@ -59,17 +59,17 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       {/* Breadcrumb Navigation */}
       <nav
         aria-label="Breadcrumb"
-        className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground"
+        className="text-muted-foreground mb-4 flex items-center space-x-1 text-sm"
       >
         {breadcrumbItems.map((item, index) => (
           <div key={item.href} className="flex items-center">
             {index > 0 && <Icons.chevronRight className="mx-1 size-4" />}
             {index === breadcrumbItems.length - 1 ? (
-              <span className="font-medium text-foreground">{item.name}</span>
+              <span className="text-foreground font-medium">{item.name}</span>
             ) : (
               <Link
                 href={item.href}
-                className="transition-colors hover:text-foreground"
+                className="hover:text-foreground transition-colors"
               >
                 {item.name}
               </Link>

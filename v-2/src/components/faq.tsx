@@ -81,19 +81,19 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
 
       <div className="container mx-auto px-4">
         <div className="mb-10 text-center">
-          <h2 className="mb-4 font-heading text-3xl font-semibold">
+          <h2 className="font-heading mb-4 text-3xl font-semibold">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-muted-foreground text-lg">
             Get answers to common questions about my services and expertise
           </p>
         </div>
 
         <div className="mx-auto max-w-3xl">
           {items.map((item, index) => (
-            <div key={index} className="border-b border-border last:border-b-0">
+            <div key={index} className="border-border border-b last:border-b-0">
               <button
-                className="flex w-full items-center justify-between py-6 text-left transition-colors hover:bg-muted/50"
+                className="hover:bg-muted/50 flex w-full items-center justify-between py-6 text-left transition-colors"
                 onClick={() => toggleItem(index)}
                 aria-expanded={openItems.includes(index)}
                 aria-controls={`faq-answer-${index}`}
@@ -118,11 +118,11 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
                 aria-labelledby={`faq-question-${index}`}
                 className={`overflow-hidden transition-all duration-300 ${
                   openItems.includes(index)
-                    ? 'max-h-96 opacity-100 pb-6'
+                    ? 'max-h-96 pb-6 opacity-100'
                     : 'max-h-0 opacity-0'
                 }`}
               >
-                <p className="leading-relaxed text-muted-foreground">
+                <p className="text-muted-foreground leading-relaxed">
                   {item.answer}
                 </p>
               </div>

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Removed 'output: export' to enable API routes for chatbot
+  // If you need static export, you'll need to use a different approach for the chatbot
   trailingSlash: true,
   images: {
     unoptimized: true,

@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 import { ActiveSectionProvider } from '@/components/active-section-provider';
+import { Chatbot } from '@/components/chatbot';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/toaster';
 import { env } from '@/env.mjs';
@@ -265,7 +266,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <body className={cn('min-h-screen font-sans', fonts)}>
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-primary focus:px-3 focus:py-2 focus:text-primary-foreground"
+          className="focus:bg-primary focus:text-primary-foreground sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:px-3 focus:py-2"
         >
           Skip to content
         </a>
@@ -297,6 +298,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
           <ActiveSectionProvider>
             {children}
             <Toaster position="bottom-left" />
+            <Chatbot />
           </ActiveSectionProvider>
         </ThemeProvider>
       </body>

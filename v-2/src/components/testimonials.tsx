@@ -91,7 +91,7 @@ export const Testimonials = () => {
     <section
       ref={ref}
       id="testimonials"
-      className="my-8 sm:my-10 md:my-16 scroll-mt-28 overflow-x-hidden"
+      className="my-8 scroll-mt-28 overflow-x-hidden sm:my-10 md:my-16"
     >
       {/* Structured Data */}
       <script
@@ -113,13 +113,13 @@ export const Testimonials = () => {
       </motion.div>
 
       <div
-        className="relative mx-auto w-full max-w-sm sm:max-w-sm md:max-w-3xl lg:max-w-4xl px-2 sm:px-4"
+        className="relative mx-auto w-full max-w-sm px-2 sm:max-w-sm sm:px-4 md:max-w-3xl lg:max-w-4xl"
         role="region"
         aria-label="Testimonials carousel"
       >
         {/* Carousel Container */}
         <div
-          className="w-full overflow-hidden rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          className="focus-visible:ring-primary w-full overflow-hidden rounded-lg focus-visible:outline-none focus-visible:ring-2"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
@@ -133,7 +133,7 @@ export const Testimonials = () => {
         >
           <motion.div
             id="testimonials-track"
-            className="flex transition-transform duration-400 ease-out"
+            className="duration-400 flex transition-transform ease-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             transition={prefersReducedMotion ? { duration: 0 } : undefined}
           >
@@ -143,7 +143,7 @@ export const Testimonials = () => {
                   initial={cardInitial}
                   animate={{ opacity: 1, y: 0 }}
                   transition={cardTransition}
-                  className="bg-card text-card-foreground group rounded-lg border p-4 sm:p-6 md:p-8 lg:p-10 shadow-sm transition-all hover:shadow-md min-h-[320px] sm:min-h-[340px] md:min-h-[320px]"
+                  className="bg-card text-card-foreground group min-h-[320px] rounded-lg border p-4 shadow-sm transition-all hover:shadow-md sm:min-h-[340px] sm:p-6 md:min-h-[320px] md:p-8 lg:p-10"
                 >
                   {/* Rating Stars */}
                   <div className="mb-6 flex justify-center gap-1">
@@ -151,7 +151,7 @@ export const Testimonials = () => {
                       <Icons.star
                         key={i}
                         aria-hidden="true"
-                        className="size-4 sm:size-5 md:size-6 fill-yellow-400 text-yellow-400"
+                        className="size-4 fill-yellow-400 text-yellow-400 sm:size-5 md:size-6"
                       />
                     ))}
                     <span className="sr-only">{`${testimonial.rating} out of 5`}</span>
@@ -159,7 +159,7 @@ export const Testimonials = () => {
 
                   {/* Testimonial Content */}
                   <blockquote
-                    className="mb-6 sm:mb-8 text-center text-sm sm:text-sm md:text-lg lg:text-xl leading-relaxed italic break-words"
+                    className="mb-6 break-words text-center text-sm italic leading-relaxed sm:mb-8 sm:text-sm md:text-lg lg:text-xl"
                     dangerouslySetInnerHTML={{
                       __html: `&ldquo;${testimonial.content}&rdquo;`,
                     }}
@@ -171,11 +171,11 @@ export const Testimonials = () => {
                       <img
                         src={testimonial.avatar}
                         alt={testimonial.name}
-                        className="border-muted mb-4 size-12 sm:size-16 md:size-20 rounded-full border-4 object-cover"
+                        className="border-muted mb-4 size-12 rounded-full border-4 object-cover sm:size-16 md:size-20"
                       />
                     )}
                     <div className="text-center">
-                      <div className="text-foreground text-base sm:text-lg md:text-xl font-semibold">
+                      <div className="text-foreground text-base font-semibold sm:text-lg md:text-xl">
                         {testimonial.name}
                       </div>
                       <div className="text-muted-foreground text-xs sm:text-sm">
@@ -195,18 +195,18 @@ export const Testimonials = () => {
         {/* Navigation Arrows */}
         <button
           onClick={prevTestimonial}
-          className="hidden sm:inline-flex bg-background/80 hover:bg-background absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-1.5 sm:p-2 md:p-3 shadow-lg transition-all hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          className="bg-background/80 hover:bg-background focus-visible:ring-primary absolute left-4 top-1/2 hidden -translate-y-1/2 rounded-full p-1.5 shadow-lg transition-all hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 sm:inline-flex sm:p-2 md:p-3"
           aria-label="Previous testimonial"
           aria-controls="testimonials-track"
         >
           <Icons.arrowRight
             aria-hidden="true"
-            className="size-4 sm:size-5 md:size-6 rotate-180"
+            className="size-4 rotate-180 sm:size-5 md:size-6"
           />
         </button>
         <button
           onClick={nextTestimonial}
-          className="hidden sm:inline-flex bg-background/80 hover:bg-background absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-1.5 sm:p-2 md:p-3 shadow-lg transition-all hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          className="bg-background/80 hover:bg-background focus-visible:ring-primary absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-full p-1.5 shadow-lg transition-all hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 sm:inline-flex sm:p-2 md:p-3"
           aria-label="Next testimonial"
           aria-controls="testimonials-track"
         >
@@ -222,7 +222,7 @@ export const Testimonials = () => {
             <button
               key={index}
               onClick={() => goToTestimonial(index)}
-              className={`size-2.5 sm:size-3 md:size-3.5 lg:size-4 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+              className={`focus-visible:ring-primary size-2.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 sm:size-3 md:size-3.5 lg:size-4 ${
                 index === currentIndex
                   ? 'bg-primary'
                   : 'bg-muted hover:bg-muted/80'
