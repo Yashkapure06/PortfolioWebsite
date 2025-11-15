@@ -583,6 +583,15 @@ export const testimonialsData = [
     avatar: '/images/lucca_allen.jpg',
   },
   {
+    name: 'Daniela Vélez',
+    position: 'Global Marketing Director @ Dragon Sino Group',
+    company: 'Coventry, United Kingdom',
+    content:
+      'I had the opportunity to work with Yash and was pleased to see his enthusiasm from the very start. He approached his tasks with a positive attitude and showed a clear willingness to learn. Throughout our time working together, he was receptive to feedback and made efforts to improve. His openness to guidance was a valuable part of the collaboration.',
+    rating: 5,
+    avatar: '/images/daniela.jfif',
+  },
+  {
     name: 'Cristina',
     position: 'Director @ Impact A&C',
     company: 'Leicester, United Kingdom',
