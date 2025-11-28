@@ -1,43 +1,99 @@
-## 🎉 Project Overview
+## 🚀 Yash Kapure | Full-Stack Portfolio
 
-Yash Kapure's personal portfolio website built using Next.js, Tailwind CSS and Framer-motion. A Full Stack Developer with 3+ years of experience specializing in React.js, Next.js, Node.js, and MERN/MEVN stack.
+High-performance personal portfolio built with Next.js, Tailwind CSS, and Framer Motion. Showcases Yash Kapure's expertise in React.js, Node.js, MERN/MEVN, and modern product engineering practices for startups and global teams.
 
-## 📍 Live
+---
 
-Link to the live version: [https://yashkapure.dev](https://yashkapure.dev)
+## 🌐 Quick Links
 
-## 💾 Installation
+- Live site: [https://yashkapure.netlify.app](https://yashkapure.netlify.app)
+- Connect: [yashkapure06@gmail.com](mailto:yashkapure06@gmail.com)
 
-Download the project to your computer and install needed packages with command:
+---
 
-```bash
-$ npm install
-```
+## 📚 Table of Contents
 
-Then create .env file:
+1. [Features](#-features)
+2. [SEO Highlights](#-seo-highlights)
+3. [Tech Stack](#-tech-stack)
+4. [Getting Started](#-getting-started)
+5. [Environment Variables](#-environment-variables)
+6. [Available Scripts](#-available-scripts)
+7. [Contact](#-contact)
 
-```bash
-SITE_URL='https://example.com' ## Required to generate sitemap by next-sitemap
-RESEND_API_KEY='your_resend_api_key' ## Required to send email by resend
-EXA_API_KEY='your_exa_api_key' ## Optional: For AI chatbot search capabilities
-OPENROUTER_API_KEY='your_openrouter_api_key' ## Required for AI chatbot functionality
-```
+---
 
-Then start the project on the local server with the command:
+## ✨ Features
 
-```bash
-$ npm run dev
-```
+- Responsive portfolio optimized for Core Web Vitals.
+- Hero, skills, projects, experience, and contact sections with smooth micro-interactions.
+- AI-enhanced chatbot with OpenRouter + Exa for semantic search and replies.
+- Automated email delivery powered by Resend and react-hook-form validation.
+- SEO-ready: dynamic Open Graph tags, sitemap generation, structured data.
+- Accessible UI following WCAG 2.1 AA guidelines.
 
-and open http://localhost:3000 to see this app.
+---
 
-## 🔧 Tech/framework used
+## 🔍 SEO Highlights
 
-- Next.js
+- Descriptive metadata targeting keywords such as "Full-Stack Developer", "Next.js engineer", "React consultant", and "remote MERN developer".
+- Sitemap generated through `next-sitemap` using `SITE_URL`.
+- Pre-rendered sections and image optimization for global performance.
+- Contact CTA, social previews, and canonical URLs for improved discoverability.
+
+---
+
+## 🧰 Tech Stack
+
+- Next.js 14+ with App Router
 - TypeScript
 - Tailwind CSS
-- Framer-motion
-- React-hook-form
-- Resend
+- Framer Motion
+- React Hook Form
+- Resend Email API
 
-If you encounter a problem, write to this e-mail address: [yashkapure06@gmail.com](mailto:yashkapure06@gmail.com)
+---
+
+## ⚡ Getting Started
+
+Clone the repository, install dependencies, and run the development server.
+
+```bash
+npm install
+npm run dev
+```
+
+Visit `http://localhost:3000` to explore the portfolio locally.
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the project root:
+
+```bash
+SITE_URL='https://example.com'        # Required for sitemap generation
+RESEND_API_KEY='your_resend_api_key'  # Required for transactional email
+EXA_API_KEY='your_exa_api_key'        # Optional: powers AI search
+OPENROUTER_API_KEY='your_openrouter_api_key'  # Required for chatbot
+```
+
+---
+
+## 🧪 Available Scripts
+
+- `npm run dev` - start development server
+- `npm run build` - create production build
+- `npm run start` - launch production server
+- `npm run lint` - run Next.js/TypeScript linters
+
+---
+
+## 📫 Contact
+
+Questions, feedback, or collaboration inquiries are welcome:
+
+- Email: [yashkapure06@gmail.com](mailto:yashkapure06@gmail.com)
+- LinkedIn/GitHub links can be added in the contact section of the site.
+
+Crafted with ❤️ using cutting-edge full-stack technologies to highlight Yash Kapure's global-ready engineering portfolio.
