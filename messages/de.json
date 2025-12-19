@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "testimonials": "Referenzen",
+    "contact": "Kontakt"
+  },
+  "intro": {
+    "available": "Verfügbar für Arbeit!",
+    "location": "Derzeit ansässig im Vereinigten Königreich — offen für Umzug",
+    "greeting": "Hallo, ich bin",
+    "name": "Yash Kapure",
+    "title": "Frontend-Ingenieur mit Full-Stack-Expertise.",
+    "description": "Ich erstelle schnelle, zugängliche und SEO-freundliche Webanwendungen mit React.js, Next.js, Tailwind CSS und shadcn/ui. Mit über 3.5 Jahren Erfahrung und starken Full-Stack-Fähigkeiten in JavaScript und TypeScript bin ich leidenschaftlich daran interessiert, flüssige Benutzeroberflächen zu erstellen, eine hervorragende UI/UX zu gewährleisten und sauberen, wartbaren Code zu schreiben. Ich gestalte moderne Benutzererfahrungen und liefere gleichzeitig skalierbare Backend-Integrationen, wenn sie benötigt werden.",
+    "getInTouch": "Kontakt aufnehmen",
+    "viewProjects": "Projekte ansehen",
+    "downloadCV": "Lebenslauf herunterladen"
+  },
+  "about": {
+    "heading": "Über Mich",
+    "paragraph1": "Mein Name ist Yash Kapure und ich bin ein Frontend-Ingenieur mit über 3.5 Jahren praktischer Erfahrung im Design schneller, benutzerfreundlicher und SEO-freundlicher Webanwendungen. Meine Spezialität ist die Erstellung flüssiger Benutzeroberflächen mit React.js, Next.js, Tailwind CSS und shadcn/ui und das Erwecken von Dingen mit Framer Motion.",
+    "paragraph2": "Neben meiner Frontend-Erfahrung verfüge ich über gute Full-Stack-Fähigkeiten in JavaScript und TypeScript sowie vertraute Erfahrung mit Node.js, Express und Datenbanken wie MongoDB und MySQL. Dies ermöglicht es mir, Projekte von Anfang bis Ende zu verwalten, vom Design flüssiger Benutzeroberflächen bis zur Verbindung skalierbarer Backends.",
+    "paragraph3": "Ich habe Software für Produktunternehmen, Kliniken und Startups erstellt und maximale Leistung, Engagement und Lead-Generierung durch präzises Engineering geliefert. Das Schreiben von elegantem, aktuellem Code und die Entdeckung neuer Tools und Trends begeistert mich.",
+    "paragraph4": "Außerhalb der Arbeit genieße ich Cricket und eine gute Tasse Tee, aber jetzt bin ich es gewohnt, Kaffee zu trinken. Ich bin immer bereit zu lernen, zu experimentieren und zu wachsen und suche nach Möglichkeiten, bei denen ich Wert zu wirkungsvollen Produkten und erfinderischen Teams beitragen kann."
+  },
+  "contact": {
+    "heading": "Kontakt Aufnehmen",
+    "description": "Bitte kontaktieren Sie mich direkt unter",
+    "or": "oder über dieses Formular.",
+    "name": "Name",
+    "namePlaceholder": "Ihr Name",
+    "email": "E-Mail",
+    "emailPlaceholder": "hallo@gmail.com",
+    "message": "Nachricht",
+    "messagePlaceholder": "Hallo! Wie geht's?",
+    "submit": "Absenden",
+    "sending": "Wird gesendet...",
+    "success": "Vielen Dank für Ihre Nachricht! Ich werde mich bald bei Ihnen melden.",
+    "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+  },
+  "faq": {
+    "heading": "Häufig Gestellte Fragen",
+    "subheading": "Erhalten Sie Antworten auf häufige Fragen zu meinen Dienstleistungen und meiner Expertise",
+    "items": {
+      "services": {
+        "question": "Welche Dienstleistungen bieten Sie an?",
+        "answer": "Ich biete Full-Stack-Webentwicklungsdienste an, einschließlich React.js, Next.js, Node.js und MERN/MEVN-Stack-Entwicklung. Ich spezialisiere mich auf die Erstellung interaktiver und schöner Benutzeroberflächen mit modernen Webtechnologien."
+      },
+      "experience": {
+        "question": "Wie viel Erfahrung haben Sie?",
+        "answer": "Ich habe über 3.5 Jahre praktische Erfahrung in der Webentwicklung und arbeite mit verschiedenen Technologien, einschließlich React.js, Next.js, Node.js, MongoDB, Express.js und Vue.js."
+      },
+      "rate": {
+        "question": "Wie hoch ist Ihr Stundensatz?",
+        "answer": "Mein Freelance-Satz beträgt 25-57$/Stunde, obwohl dies je nach Projektumfang und Anforderungen variieren kann. Ich bin flexibel mit Arbeitszeiten, Stundensatz, Festpreis, Zahlungsbedingungen und verfügbar für sowohl kurzfristige als auch langfristige Projekte."
+      },
+      "remote": {
+        "question": "Arbeiten Sie remote?",
+        "answer": "Ja, ich arbeite remote und habe Erfahrung in der Zusammenarbeit mit Teams in verschiedenen Zeitzonen. Ich bin im Vereinigten Königreich ansässig und verfügbar für Remote-Arbeitsmöglichkeiten."
+      },
+      "technologies": {
+        "question": "Auf welche Technologien spezialisieren Sie sich?",
+        "answer": "Ich spezialisiere mich auf React.js, Next.js, Node.js, TypeScript, JavaScript, MERN/MEVN-Stack, Tailwind CSS, ShadCN UI, MongoDB, Express.js, Vue.js und verschiedene andere moderne Webtechnologien."
+      },
+      "existing": {
+        "question": "Können Sie bei bestehenden Projekten helfen?",
+        "answer": "Absolut! Ich kann bei der Wartung, Aktualisierung und Verbesserung bestehender Webanwendungen helfen. Ich habe Erfahrung mit Legacy-Codebasen und kann helfen, ältere Anwendungen zu modernisieren."
+      }
+    }
+  },
+  "common": {
+    "skipToContent": "Zum Inhalt springen",
+    "navigation": "Navigation"
+  }
+}

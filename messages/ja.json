@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "私について",
+    "experience": "経験",
+    "projects": "プロジェクト",
+    "testimonials": "お客様の声",
+    "contact": "お問い合わせ"
+  },
+  "intro": {
+    "available": "仕事可能です！",
+    "location": "現在イギリス在住 — 転勤可能",
+    "greeting": "こんにちは、私は",
+    "name": "Yash Kapure",
+    "title": "フルスタック専門知識を持つフロントエンドエンジニア。",
+    "description": "React.js、Next.js、Tailwind CSS、shadcn/uiを使用して、高速でアクセス可能でSEOに優れたWebアプリケーションを構築しています。3.5年以上の経験と、JavaScriptとTypeScriptの強力なフルスタックスキルを持ち、滑らかなユーザーインターフェースの作成、優れたUI/UXの維持、クリーンで保守可能なコードの記述に情熱を注いでいます。モダンなユーザーエクスペリエンスを構築し、必要に応じてスケーラブルなバックエンド統合も提供します。",
+    "getInTouch": "お問い合わせ",
+    "viewProjects": "プロジェクトを見る",
+    "downloadCV": "履歴書をダウンロード"
+  },
+  "about": {
+    "heading": "私について",
+    "paragraph1": "私の名前はYash Kapureで、3.5年以上の実務経験を持つフロントエンドエンジニアです。高速で使いやすく、SEOに優れたWebアプリケーションを設計しています。私の専門は、React.js、Next.js、Tailwind CSS、shadcn/uiを使用して滑らかなUIを作成し、Framer Motionで物事に命を吹き込むことです。",
+    "paragraph2": "フロントエンドの経験に加えて、JavaScriptとTypeScriptの優れたフルスタックスキルを持ち、Node.js、Express、MongoDBやMySQLなどのデータベースに精通しています。これにより、滑らかなUIの設計からスケーラブルなバックエンドの接続まで、プロジェクトを最初から最後まで管理できます。",
+    "paragraph3": "製品会社、クリニック、スタートアップ向けのソフトウェアを構築し、精密なエンジニアリングを通じて最大のパフォーマンス、エンゲージメント、リード獲得を提供してきました。エレガントで最新のコードを書き、新しいツールやトレンドを発見することに興奮しています。",
+    "paragraph4": "仕事以外では、クリケットと良いお茶を楽しんでいますが、今はコーヒーを飲むことに慣れています。常に学習、実験、成長に積極的で、影響力のある製品と革新的なチームに価値をもたらす機会を探しています。"
+  },
+  "contact": {
+    "heading": "お問い合わせ",
+    "description": "直接お問い合わせください",
+    "or": "またはこのフォームから。",
+    "name": "名前",
+    "namePlaceholder": "お名前",
+    "email": "メール",
+    "emailPlaceholder": "hello@gmail.com",
+    "message": "メッセージ",
+    "messagePlaceholder": "こんにちは！どうしましたか？",
+    "submit": "送信",
+    "sending": "送信中...",
+    "success": "お問い合わせありがとうございます！すぐに返信いたします。",
+    "error": "問題が発生しました。もう一度お試しください。"
+  },
+  "faq": {
+    "heading": "よくある質問",
+    "subheading": "私のサービスと専門知識に関するよくある質問への回答",
+    "items": {
+      "services": {
+        "question": "どのようなサービスを提供していますか？",
+        "answer": "React.js、Next.js、Node.js、MERN/MEVNスタック開発を含むフルスタックWeb開発サービスを提供しています。モダンなWebテクノロジーを使用して、インタラクティブで美しいユーザーインターフェースの作成を専門としています。"
+      },
+      "experience": {
+        "question": "どのくらいの経験がありますか？",
+        "answer": "Web開発で3.5年以上の実務経験があり、React.js、Next.js、Node.js、MongoDB、Express.js、Vue.jsなどのさまざまなテクノロジーで作業しています。"
+      },
+      "rate": {
+        "question": "時給はいくらですか？",
+        "answer": "フリーランスの料金は1時間あたり$25-57ですが、プロジェクトの範囲と要件によって異なる場合があります。勤務時間、時給、固定料金、支払条件に柔軟に対応し、短期および長期プロジェクトの両方に対応可能です。"
+      },
+      "remote": {
+        "question": "リモートで働きますか？",
+        "answer": "はい、リモートで働いており、異なるタイムゾーンのチームと協力する経験があります。イギリスに拠点を置いており、リモートワークの機会に利用可能です。"
+      },
+      "technologies": {
+        "question": "どのテクノロジーに特化していますか？",
+        "answer": "React.js、Next.js、Node.js、TypeScript、JavaScript、MERN/MEVNスタック、Tailwind CSS、ShadCN UI、MongoDB、Express.js、Vue.js、その他のモダンなWebテクノロジーに特化しています。"
+      },
+      "existing": {
+        "question": "既存のプロジェクトを手伝えますか？",
+        "answer": "もちろんです！既存のWebアプリケーションの保守、更新、強化をサポートできます。レガシーコードベースでの作業経験があり、古いアプリケーションの近代化を支援できます。"
+      }
+    }
+  },
+  "common": {
+    "skipToContent": "コンテンツにスキップ",
+    "navigation": "ナビゲーション"
+  }
+}

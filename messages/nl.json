@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over Mij",
+    "experience": "Ervaring",
+    "projects": "Projecten",
+    "testimonials": "Getuigenissen",
+    "contact": "Contact"
+  },
+  "intro": {
+    "available": "Beschikbaar voor werk!",
+    "location": "Momenteel gevestigd in het Verenigd Koninkrijk — open voor verhuizing",
+    "greeting": "Hallo, ik ben",
+    "name": "Yash Kapure",
+    "title": "Frontend Engineer met Full-Stack Expertise.",
+    "description": "Ik bouw snelle, toegankelijke en SEO-vriendelijke webapplicaties met React.js, Next.js, Tailwind CSS en shadcn/ui. Met meer dan 3.5 jaar ervaring en sterke full-stack vaardigheden in JavaScript en TypeScript, ben ik gepassioneerd over het creëren van vloeiende gebruikersinterfaces, het behouden van uitstekende UI/UX en het schrijven van schone, onderhoudbare code. Ik creëer moderne gebruikerservaringen terwijl ik ook schaalbare backend-integraties lever wanneer dat nodig is.",
+    "getInTouch": "Neem contact op",
+    "viewProjects": "Bekijk projecten",
+    "downloadCV": "CV downloaden"
+  },
+  "about": {
+    "heading": "Over Mij",
+    "paragraph1": "Mijn naam is Yash Kapure en ik ben een Frontend Engineer met meer dan 3.5 jaar praktische ervaring in het ontwerpen van snelle, bruikbare en SEO-vriendelijke webapplicaties. Mijn specialiteit is het creëren van vloeiende gebruikersinterfaces met React.js, Next.js, Tailwind CSS en shadcn/ui en dingen tot leven brengen met Framer Motion.",
+    "paragraph2": "Naast mijn frontend-ervaring beschik ik over goede full-stack vaardigheden in JavaScript en TypeScript, en vertrouwde ervaring met Node.js, Express en databases zoals MongoDB en MySQL. Dit stelt me in staat om projecten van begin tot eind te beheren, van het ontwerpen van vloeiende gebruikersinterfaces tot het verbinden van schaalbare backends.",
+    "paragraph3": "Ik heb software gebouwd voor productbedrijven, klinieken en startups, waarbij ik maximale prestaties, betrokkenheid en leadgeneratie lever door middel van precieze engineering. Het schrijven van elegante, up-to-date code en het ontdekken van nieuwe tools en trends spreekt me aan.",
+    "paragraph4": "Buiten het werk geniet ik van cricket en een goede kop thee, maar nu ben ik gewend aan het drinken van koffie. Ik sta altijd open voor leren, experimenteren en groeien en zoek naar kansen waarbij ik waarde kan toevoegen aan impactvolle producten en inventieve teams."
+  },
+  "contact": {
+    "heading": "Neem Contact Op",
+    "description": "Neem rechtstreeks contact met me op via",
+    "or": "of via dit formulier.",
+    "name": "Naam",
+    "namePlaceholder": "Uw Naam",
+    "email": "E-mail",
+    "emailPlaceholder": "hallo@gmail.com",
+    "message": "Bericht",
+    "messagePlaceholder": "Hallo! Hoe gaat het?",
+    "submit": "Verzenden",
+    "sending": "Verzenden...",
+    "success": "Bedankt voor uw bericht! Ik neem binnenkort contact met u op.",
+    "error": "Er is iets misgegaan. Probeer het opnieuw."
+  },
+  "faq": {
+    "heading": "Veelgestelde Vragen",
+    "subheading": "Krijg antwoorden op veelgestelde vragen over mijn diensten en expertise",
+    "items": {
+      "services": {
+        "question": "Welke diensten biedt u aan?",
+        "answer": "Ik bied full-stack webontwikkelingsdiensten aan, waaronder React.js, Next.js, Node.js en MERN/MEVN-stack ontwikkeling. Ik specialiseer me in het creëren van interactieve en mooie gebruikersinterfaces met moderne webtechnologieën."
+      },
+      "experience": {
+        "question": "Hoeveel ervaring heeft u?",
+        "answer": "Ik heb meer dan 3.5 jaar praktische ervaring in webontwikkeling en werk met verschillende technologieën, waaronder React.js, Next.js, Node.js, MongoDB, Express.js en Vue.js."
+      },
+      "rate": {
+        "question": "Wat is uw uurtarief?",
+        "answer": "Mijn freelance tarief is $25-57/uur, hoewel dit kan variëren afhankelijk van de projectomvang en vereisten. Ik ben flexibel met werktijden, uurtarief, vast tarief, betalingsvoorwaarden en beschikbaar voor zowel kortetermijn- als langetermijnprojecten."
+      },
+      "remote": {
+        "question": "Werkt u op afstand?",
+        "answer": "Ja, ik werk op afstand en heb ervaring met samenwerken met teams in verschillende tijdzones. Ik ben gevestigd in het Verenigd Koninkrijk en beschikbaar voor mogelijkheden voor remote werk."
+      },
+      "technologies": {
+        "question": "In welke technologieën specialiseert u zich?",
+        "answer": "Ik specialiseer me in React.js, Next.js, Node.js, TypeScript, JavaScript, MERN/MEVN-stack, Tailwind CSS, ShadCN UI, MongoDB, Express.js, Vue.js en verschillende andere moderne webtechnologieën."
+      },
+      "existing": {
+        "question": "Kunt u helpen met bestaande projecten?",
+        "answer": "Absoluut! Ik kan helpen met het onderhouden, bijwerken en verbeteren van bestaande webapplicaties. Ik heb ervaring met legacy codebases en kan helpen bij het moderniseren van oudere applicaties."
+      }
+    }
+  },
+  "common": {
+    "skipToContent": "Naar inhoud springen",
+    "navigation": "Navigatie"
+  }
+}
