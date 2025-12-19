@@ -25,6 +25,205 @@
     "paragraph3": "J'ai construit des logiciels pour des entreprises de produits, des cliniques et des startups, offrant des performances maximales, un engagement et une capture de leads grâce à une ingénierie précise. Écrire du code élégant et à jour et découvrir de nouveaux outils et tendances me passionne.",
     "paragraph4": "En dehors du travail, j'aime le cricket et une bonne tasse de thé, mais maintenant je suis habitué à boire du café. Je suis toujours prêt à apprendre, expérimenter et grandir et à chercher des opportunités où je peux apporter de la valeur à des produits impactants et des équipes inventives."
   },
+  "experience": {
+    "heading": "Mon Expérience",
+    "content": "Expérience professionnelle que j'ai accumulée au fil des années.",
+    "items": {
+      "itTutor": {
+        "title": "Tuteur en Informatique",
+        "company": "Impact Academies, Royaume-Uni",
+        "description": "J'enseigne Scratch, Java, JavaScript, Python, HTML, CSS, Motion Design, IA, ML et plus encore. J'aide les étudiants à apprendre ces compétences et à créer leurs propres projets. J'enseigne de 5 à 40+ ans",
+        "period": "2024 - Présent"
+      },
+      "fullStackDragon": {
+        "title": "Développeur Full Stack",
+        "company": "Dragon Sino Group, Royaume-Uni",
+        "description": "J'ai travaillé comme développeur Full Stack chez Dragon Sino Group, une entreprise chinoise opérant au Royaume-Uni. J'ai créé des applications web entièrement fonctionnelles avec stack MERN avec comportement réactif, interface utilisateur tactile fluide et intégration API.",
+        "period": "2024 - 2025"
+      },
+      "frontendOctane": {
+        "title": "Développeur Frontend (React.js)",
+        "company": "Octane Apps, Distant",
+        "description": "J'ai travaillé comme Développeur Frontend spécialisé en React.js chez Octane Apps. J'ai créé des frontends entièrement fonctionnels basés sur Next.js avec tableaux de bord MERN, en me concentrant sur la conception réactive et les interfaces utilisateur fluides.",
+        "period": "2023 - 2024"
+      },
+      "frontendAnandlok": {
+        "title": "Développeur Frontend (Full-Stack - Next.js)",
+        "company": "Anandlok Ayurveda & Panchakarma Hospital, Nagpur",
+        "description": "J'ai travaillé comme Développeur Full Stack axé sur le Frontend, créant un site web pour les praticiens d'Ayurveda et Panchakarma en utilisant React.js, Next.js et Material-UI. La plateforme permet aux praticiens de partager leurs connaissances et leur expérience avec d'autres.",
+        "period": "2021-2023"
+      },
+      "vueDeveloper": {
+        "title": "Développeur Full Stack Vue.js",
+        "company": "Dr. Manisha's Yoga Institute, Pune",
+        "description": "J'ai créé une application web complète avec stack MEVN pour le Dr. Manisha's Yoga Institute, investissant plus de 180+ heures en développement. Le projet comprend un panneau d'administration avec fonctionnalités CRUD et un système de blog utilisant Firebase. La plateforme sert d'espace numérique pour les praticiens et étudiants de yoga.",
+        "period": "2022 - 2023"
+      },
+      "freelance": {
+        "title": "Développeur Full Stack Freelance",
+        "company": "Indépendant, Distant",
+        "description": "Je travaille comme Développeur Full Stack freelance, spécialisé dans le développement de stack MERN/MEVN. Je crée des applications web réactives, des plateformes e-commerce et des solutions personnalisées pour divers clients. Disponible pour embauche à 35$/heure, peut varier selon le projet. Et horaires de travail flexibles.",
+        "period": "2020 - Présent"
+      }
+    }
+  },
+  "projects": {
+    "heading": "Mes Projets",
+    "content": "Projets sur lesquels j'ai travaillé. Chacun contenant sa propre étude de cas.",
+    "viewMore": "Voir Plus de Projets",
+    "items": {
+      "calmLlama": {
+        "title": "Calm Llama - Chatbot IA",
+        "description": "Une plateforme web moderne qui permet aux utilisateurs de découvrir et réserver des expériences de bien-être premium telles que saunas, yoga, massages et caissons de flottaison. Les fonctionnalités incluent la disponibilité en temps réel, les paiements sécurisés et les confirmations de réservation instantanées. J'ai travaillé comme développeur freelance Full Stack @ ToraTec AI, Dublin, Irlande"
+      },
+      "miniOtio": {
+        "title": "Mini Otio - Assistant de Recherche IA",
+        "description": "Un assistant de recherche moderne alimenté par l'IA qui combine la recherche web en temps réel avec la génération de réponses intelligentes. Les utilisateurs peuvent poser des questions de recherche et recevoir des réponses complètes et diffusées avec plusieurs options de formatage (étape par étape, puces, ELI5). Les fonctionnalités incluent la gestion des signets, l'exportation de conversations et une interface de chat élégante avec capacités de diffusion en temps réel."
+      },
+      "ec2Analyzer": {
+        "title": "Analyseur de Coût Cloud EC2",
+        "description": "AWS EC2 Cloud Cost Analyzer est un outil qui vous aide à analyser le coût de vos instances AWS EC2. C'est une application web qui vous permet de voir le coût de vos instances AWS EC2 et de les comparer avec le coût d'autres instances AWS EC2."
+      },
+      "oias": {
+        "title": "Système d'Évaluation d'Entretien en Ligne (OIAS)",
+        "description": "Un système d'évaluation d'entretien en ligne entièrement fonctionnel pour les étudiants et les professionnels. Cette plateforme complète permet des entretiens vidéo en temps réel, des évaluations automatisées et une communication fluide entre les intervieweurs et les candidats."
+      },
+      "dragonSino": {
+        "title": "Dragon Sino Group",
+        "description": "J'ai travaillé comme développeur Full Stack chez Dragon Sino Group. J'ai créé une application web entièrement fonctionnelle avec stack MERN avec comportement réactif, interface utilisateur tactile fluide et intégration API. C'est une entreprise chinoise, travaillant au Royaume-Uni."
+      },
+      "netflixClone": {
+        "title": "Clone Netflix utilisant ReactJs",
+        "description": "J'ai créé un clone Netflix en utilisant ReactJs et Sass. C'est un clone du site web Netflix. Et j'ai beaucoup joué avec Api."
+      },
+      "shangrila": {
+        "title": "Plateforme de Pétition Shangrila",
+        "description": "Une application web entièrement fonctionnelle avec stack MERN. Avec comportement réactif, interface utilisateur tactile fluide avec intégration API. Avec Panneau Administrateur et Pétitionnaire, ainsi que de nouvelles fonctionnalités telles que Connexion avec code QR, Connexion, Définition du seuil global."
+      },
+      "earthly": {
+        "title": "Stage Earthly",
+        "description": "J'ai travaillé comme stagiaire chez Earthly. Un projet frontend simple pour Earthly."
+      },
+      "kolorado": {
+        "title": "The Kolorado Paints",
+        "description": "Un frontend entièrement fonctionnel basé sur Next.js avec tableau de bord MERN. Avec comportement réactif, interface utilisateur tactile fluide avec intégration API. Ce projet est pour le contenu artistique."
+      },
+      "technokraft": {
+        "title": "TechnoKraft",
+        "description": "Un frontend entièrement fonctionnel basé sur Next.js avec tableau de bord MERN. Avec comportement réactif, interface utilisateur tactile fluide avec intégration API. Ce projet est pour le fournisseur de contenu éducatif"
+      },
+      "bestGst": {
+        "title": "BEST GST Course",
+        "description": "Un frontend entièrement fonctionnel basé sur Next.js avec tableau de bord MERN. Avec comportement réactif, interface utilisateur tactile fluide avec intégration API. Ce projet contient également l'intégration de passerelle de paiement utilisant Easebuzz. C'est un site web de vente de cours GST."
+      },
+      "affinix": {
+        "title": "Affinix Digital",
+        "description": "Un frontend entièrement fonctionnel basé sur Next.js avec tableau de bord MERN. Avec comportement réactif, interface utilisateur tactile fluide avec intégration API. Ce projet est pour la meilleure agence de marketing numérique"
+      },
+      "octaneApps": {
+        "title": "Octane Apps",
+        "description": "Un frontend entièrement fonctionnel basé sur Next.js avec tableau de bord MERN. Avec comportement réactif, interface utilisateur tactile fluide avec intégration API."
+      },
+      "yogaInstitute": {
+        "title": "Dr. Manisha's Yoga Institute",
+        "description": "J'ai créé une application web avec stack MEVN. J'ai consacré plus de 180+ heures à ce projet. Le projet comprend également un panneau d'administration avec fonctionnalités CRUD. Système de blog utilisant Firebase."
+      },
+      "anandlok": {
+        "title": "Anandlok Ayurveda",
+        "description": "En utilisant ReactJs, Next.js et Material-UI, j'ai travaillé comme stagiaire pour Anandlok Ayurveda & Panchakrma Hospital et créé un site web pour que les praticiens d'Ayurveda et Panchakarma partagent leurs connaissances et leur expérience avec d'autres."
+      },
+      "newspedia": {
+        "title": "News-o-Pedia",
+        "description": "En utilisant Vue.js, j'ai créé cette application de nouvelles avec la fonctionnalité principale de mappage d'images, utilisé l'API newsapi.org pour récupérer les nouvelles de différentes parties du monde. Note : L'API utilisée fonctionne en mode développeurs (c'est-à-dire, localement. téléchargez-la)."
+      },
+      "textToSpeech": {
+        "title": "Extension Chrome Select Text to Speech",
+        "description": "Une extension Chrome simple où vous pouvez sélectionner du texte, puis cliquer avec le bouton droit et sélectionner l'option 'Lire à haute voix' et vous pouvez entendre l'audio final."
+      },
+      "restro": {
+        "title": "Restro - Un Site Web de Restaurant",
+        "description": "Un site web de restaurant simple et beau fait avec du HTML pur, CSS et JS. Avec de belles animations et récupération de données utilisant l'API."
+      },
+      "chakraUI": {
+        "title": "Contribution OpenSource dans Chakra-UI",
+        "description": "J'ai créé un site web de portfolio pour ma contribution OpenSource dans Chakra-UI. Ce site web est une collection de mes contributions à la communauté Chakra-UI."
+      },
+      "youtubeClone": {
+        "title": "Clone YouTube utilisant ReactJs",
+        "description": "J'ai créé un clone YouTube en utilisant ReactJs et Material UI. J'ai utilisé Rapid API pour récupérer des données et appris à récupérer des données en utilisant l'API. L'API utilisée ici était YouTube v3."
+      },
+      "blogging": {
+        "title": "Site Web de Blog",
+        "description": "Ce site web de blog est fait avec NodeJs, Express et MongoDB. C'est un site web de blog simple où vous pouvez lire, écrire, supprimer et modifier votre article de blog."
+      },
+      "portfolio1": {
+        "title": "Portfolio Personnel",
+        "description": "C'est mon site web de portfolio personnel. Je l'ai fait avec l'aide de NextJS + Ses documents. Vous pouvez voir mes projets, compétences et me contacter ici aussi."
+      },
+      "spaceTalks": {
+        "title": "Space Talks ✨",
+        "description": "C'est un site web MERN. J'ai créé ce site web en utilisant ReactJs, Material-UI, Nodejs, CSS, Express et MongoDB. Ce site web est une plateforme pour que les gens partagent leur amour et leurs connaissances sur l'espace, l'univers, les étoiles, les galaxies et d'autres planètes avec des gens du monde entier."
+      },
+      "portfolio2": {
+        "title": "Portfolio Personnel",
+        "description": "C'est Mon 1er Site Web de Portfolio. Je l'ai fait avec ReactJS en apprenant ReactJS. Beaucoup de CSS est utilisé pour l'animation. J'ai également ajouté la fonctionnalité de Mode Sombre et Clair"
+      },
+      "movieApp": {
+        "title": "Application Web de Films",
+        "description": "Une application de films simple utilisant ReactJs pur - faite uniquement à des fins de révision"
+      },
+      "reactWebsite": {
+        "title": "Site Web React Complet",
+        "description": "J'ai fait tout ce site web à partir de zéro avec les dernières versions de React. Ce site web de démonstration complet est fait en utilisant ReactJs, HTML, CSS. Ce site web est un site web de démonstration complet qui inclut tous les composants de ReactJs."
+      },
+      "wedding": {
+        "title": "Site Web d'Invité de Mariage",
+        "description": "Ce site web est fait purement avec HTML, CSS et principalement JS. Vous trouverez de belles animations dans ce site web. Quelques fonctionnalités spéciales sont également ajoutées dans ce site web, veuillez visiter et vérifier."
+      }
+    }
+  },
+  "testimonials": {
+    "heading": "Témoignages",
+    "content": "Ce que disent les clients et collègues de mon travail",
+    "items": {
+      "lucca": {
+        "name": "Lucca Allen",
+        "position": "Co-Fondateur @ ToraTech AI",
+        "company": "Dublin, Irlande",
+        "content": "J'ai travaillé avec Yash, tout au long de deux projets distincts pendant lesquels il faisait partie de l'équipe ToraTech AI. Yash a toujours fait preuve d'une initiative considérable pour faire avancer le travail et résoudre les problèmes. J'ai été impressionné par ses compétences en back end, ainsi que par son excellent œil pour l'UX et l'UI. Je recommanderais Yash à toute entreprise recherchant un développement efficace."
+      },
+      "daniela": {
+        "name": "Daniela Vélez",
+        "position": "Directrice Marketing Mondiale @ Dragon Sino Group",
+        "company": "Coventry, Royaume-Uni",
+        "content": "J'ai eu l'opportunité de travailler avec Yash et j'ai été ravie de voir son enthousiasme dès le début. Il a abordé ses tâches avec une attitude positive et a montré une volonté claire d'apprendre. Tout au long de notre collaboration, il a été réceptif aux commentaires et a fait des efforts pour s'améliorer. Son ouverture aux conseils a été une partie précieuse de la collaboration."
+      },
+      "cristina": {
+        "name": "Cristina",
+        "position": "Directrice @ Impact A&C",
+        "company": "Leicester, Royaume-Uni",
+        "content": "Yash a été un membre exceptionnel de notre équipe d'enseignement à Impact A&C Leicester. Il démontre une compréhension solide des concepts de codage et adapte efficacement son approche pédagogique pour s'adapter aux étudiants de tous âges, des jeunes débutants âgés de 5 à 17 ans aux adultes cherchant à faire progresser leurs compétences en programmation. Il est intelligent, ingénieux et gère les défis avec professionnalisme et sang-froid. Chaque fois qu'un problème ou une erreur survient, Yash parvient à le résoudre rapidement et efficacement, assurant le bon déroulement de chaque session. Il est également très coopératif dans l'environnement de la classe, maintenant une excellente communication avec les étudiants et les collègues. Son dévouement, son expertise technique et son attitude calme font de lui un atout précieux pour notre académie."
+      },
+      "ranjeet": {
+        "name": "Ranjeet Ahire",
+        "position": "PDG @ Tridebits Technologies",
+        "company": "Nashik, Inde",
+        "content": "J'ai eu le plaisir de gérer Yash chez Octane Apps, où il a démontré des compétences exceptionnelles et un remarquable empressement à apprendre. Sa compétence technique en React et développement web a constamment dépassé les attentes. Les capacités de résolution de problèmes de Yash étaient de premier ordre, et il a relevé des défis complexes avec une pensée stratégique et des solutions innovantes. Je recommande vivement Yash pour tout rôle exigeant une expertise technique et de la créativité."
+      },
+      "viraj": {
+        "name": "Dr. Viraj Gite",
+        "position": "PDG @ Anandlok Ayurveda Hospital",
+        "company": "Nagpur, Inde",
+        "content": "Yash a fourni un effort considérable en tant que stagiaire chez Anandlok Ayurveda et a créé un site web impressionnant seul en utilisant la pile technologique appropriée. Son dévouement et ses compétences techniques étaient exceptionnels. Nous souhaitons à Yash la meilleure des chances dans ses futures entreprises."
+      },
+      "manisha": {
+        "name": "Dr. Manisha Sonawane",
+        "position": "PDG @ Dr. Manisha's Yoga Institute",
+        "company": "Pune, Inde",
+        "content": "Merci M. Yash Kapure. J'apprécie vraiment votre travail sur notre site web. Le site web a l'air professionnel et convivial. Il est très facile de naviguer nos services et produits à nos clients. Nos clients ont eu un impact très positif. Je recommande vivement Yash pour les projets de développement web."
+      }
+    }
+  },
   "contact": {
     "heading": "Me Contacter",
     "description": "Veuillez me contacter directement à",

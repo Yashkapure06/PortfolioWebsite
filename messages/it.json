@@ -25,6 +25,121 @@
     "paragraph3": "Ho costruito software per aziende di prodotti, cliniche e startup, fornendo massime prestazioni, coinvolgimento e acquisizione di lead attraverso un'ingegneria precisa. Scrivere codice elegante e aggiornato e scoprire nuovi strumenti e tendenze mi entusiasma.",
     "paragraph4": "Fuori dal lavoro, mi piace il cricket e una buona tazza di tè, ma ora sono abituato a bere caffè. Sono sempre pronto ad apprendere, sperimentare e crescere e cercare opportunità in cui posso portare valore verso prodotti di impatto e team inventivi."
   },
+  "projects": {
+    "heading": "I Miei Progetti",
+    "content": "Progetti su cui ho lavorato. Ognuno contiene il proprio caso di studio.",
+    "viewMore": "Vedi Altri Progetti",
+    "items": {
+      "calmLlama": {
+        "title": "Calm Llama - AI Chatbot",
+        "description": "A modern web platform that enables users to discover and book premium wellness experiences such as saunas, yoga, massages, and float tanks. Features include real-time availability, secure payments, and instant booking confirmations. Worked as a Full Stack Freelance developer @ ToraTec AI, Dublin, Ireland"
+      },
+      "miniOtio": {
+        "title": "Mini Otio - AI Research Assistant",
+        "description": "A modern AI-powered research assistant that combines real-time web search with intelligent response generation. Users can ask research questions and receive comprehensive, streamed responses with multiple formatting options (step-by-step, bullet points, ELI5). Features include bookmark management, conversation export, and a sleek chat interface with real-time streaming capabilities."
+      },
+      "ec2Analyzer": {
+        "title": "EC2 Cloud Cost Analyzer",
+        "description": "AWS EC2 Cloud Cost Analyzer is a tool that helps you analyze the cost of your AWS EC2 instances. It is a web application that allows you to view the cost of your AWS EC2 instances and compare them with the cost of other AWS EC2 instances."
+      },
+      "oias": {
+        "title": "Online Interview Assessment System (OIAS)",
+        "description": "A fully Functional Online Interview Assessment System for Students and Professionals. This comprehensive platform enables real-time video interviews, automated assessments, and seamless communication between interviewers and candidates."
+      },
+      "dragonSino": {
+        "title": "Dragon Sino Group",
+        "description": "Worked as a Full Stack developer at Dragon Sino Group. Created a fully functional MERN Stack Web Application with responsive behavior, smooth touch UI, and API Integration. This is a Chinese Company, working in the United Kingdom."
+      },
+      "netflixClone": {
+        "title": "Netflix Clone using ReactJs",
+        "description": "I created a Netflix clone using ReactJs and Sass. This is a clone of Netflix website. And played a lot with Api."
+      },
+      "shangrila": {
+        "title": "Shangrila Petition Platform",
+        "description": "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold."
+      },
+      "earthly": {
+        "title": "Earthly Internship",
+        "description": "Worked as an Intern at Earthly. A simple frontend project for Earthly."
+      },
+      "kolorado": {
+        "title": "The Kolorado Paints",
+        "description": "A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Artistic Content."
+      },
+      "technokraft": {
+        "title": "TechnoKraft",
+        "description": "A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Educational Content Provider"
+      },
+      "bestGst": {
+        "title": "BEST GST Course",
+        "description": "A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project also contains Payment Gateway Integration using Easebuzz. This is a GST Course Selling website."
+      },
+      "affinix": {
+        "title": "Affinix Digital",
+        "description": "A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration. This project is for Best Digital Marketing Agency"
+      },
+      "octaneApps": {
+        "title": "Octane Apps",
+        "description": "A fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive behaviour, smooth touch UI with API Integration."
+      },
+      "yogaInstitute": {
+        "title": "Dr. Manisha's Yoga Institute",
+        "description": "Created a MEVN Stack Web Application. Gave more than 180+ hours on this project. The project also includes admin panel along with CRUD Functionalities. Blogging System using Firebase."
+      },
+      "anandlok": {
+        "title": "Anandlok Ayurveda",
+        "description": "Using ReactJs, Next.js, and Material-UI, I worked as an Intern for Anandlok Ayurveda & Panchakrma Hospital and created a website for Ayurveda & Panchakarma practitioners to share their knowledge and experience with others."
+      },
+      "newspedia": {
+        "title": "News-o-Pedia",
+        "description": "Using Vue.js I have created this news application having the main feature of Image Mapping, Used newsapi.org api to fetch the news from different parts of the world. Note: The API used works developers mode (i.e, locally. download it)."
+      },
+      "textToSpeech": {
+        "title": "Select Text to Speech Chrome extention",
+        "description": "A simple chrome extension where you can select text, then right click and then select the option 'Read aloud' and you can hear the final audio."
+      },
+      "restro": {
+        "title": "Restro - A Restaurent Website",
+        "description": "A simple and beautiful Restaurent Website made with Pure HTML, CSS and JS. With some beautiful Animation and data fetching using API."
+      },
+      "chakraUI": {
+        "title": "OpenSource Contribution in Chakra-UI",
+        "description": "I created a portfolio website for my OpenSource contribution in Chakra-UI. This website is a collection of my contributions to the Chakra-UI community."
+      },
+      "youtubeClone": {
+        "title": "YouTube Clone using ReactJs",
+        "description": "I created a YouTube clone using ReactJs and Material UI. Used Rapid API to fetch data and learnt how to fetch data using API. The API used here was YouTube v3."
+      },
+      "blogging": {
+        "title": "Blogging Website",
+        "description": "This Blogging Website is made with NodeJs, Express and MongoDB. It is a simple blogging website where you can read, write, delete and edit your blog post."
+      },
+      "portfolio1": {
+        "title": "Personal Portfolio",
+        "description": "This is my personal portfolio website. I have made this with the help of NextJS + Its documents .You can see my projects, skills, and contact me over here as well."
+      },
+      "spaceTalks": {
+        "title": "Space Talks ✨",
+        "description": "This is a MERN Website. I have created this website using ReactJs, Material-UI, Nodejs, CSS, Express and MongoDB. This website is a platform for people to share their love and knowledge about space, universe, stars, galaxies and other planets with people from all over."
+      },
+      "portfolio2": {
+        "title": "Personal Portfolio",
+        "description": "This is My 1st Portfolio Website. I Made this with ReactJS while Learning ReactJS. A lots of CSS is Used for Animation. I have also added the feature of Dark & Light Mode"
+      },
+      "movieApp": {
+        "title": "Movie WebApp",
+        "description": "A Simple Movie App Using Pure ReactJs - made for just revision purpose"
+      },
+      "reactWebsite": {
+        "title": "Complete React Website",
+        "description": "I made this whole website from scratch with latest versions of React. This Complete Demo Website is Made using ReactJs, HTML, CSS. This website is a complete demo website which includes all the components of ReactJs."
+      },
+      "wedding": {
+        "title": "Wedding Invitation Website",
+        "description": "This Website is purely made with HTML, CSS and mainly JS. You Will find some Beautiful animations in this website. Some Special Features are also added in this website, please visit and check."
+      }
+    }
+  },
   "contact": {
     "heading": "Mettersi in Contatto",
     "description": "Per favore contattami direttamente a",
@@ -73,5 +188,89 @@
   "common": {
     "skipToContent": "Salta al contenuto",
     "navigation": "Navigazione"
+  },
+  "experience": {
+    "heading": "My Experience",
+    "content": "Professional experience that I have accumulated over several years.",
+    "items": {
+      "itTutor": {
+        "title": "IT Tutor",
+        "company": "Impact Academies, United Kingdom",
+        "description": "I teach Scratch, Java, JavaScript, Python, HTML, CSS, Motion Design, AI, ML, and more. I help students learn these skills and build their own projects. I teach from age 5 to 40+",
+        "period": "2024 - Present"
+      },
+      "fullStackDragon": {
+        "title": "Full Stack Developer",
+        "company": "Dragon Sino Group, United Kingdom",
+        "description": "Worked as a Full Stack developer at Dragon Sino Group, a Chinese company operating in the United Kingdom. Created fully functional MERN Stack Web Applications with responsive behavior, smooth touch UI, and API Integration.",
+        "period": "2024 - 2025"
+      },
+      "frontendOctane": {
+        "title": "Frontend Developer (React.js)",
+        "company": "Octane Apps, Remote",
+        "description": "Worked as a Frontend Developer specializing in React.js at Octane Apps. Created fully functional Next.js based frontends with MERN dashboards, focusing on responsive design and smooth user interfaces.",
+        "period": "2023 - 2024"
+      },
+      "frontendAnandlok": {
+        "title": "Frontend Developer (Full-Stack - Next.js)",
+        "company": "Anandlok Ayurveda & Panchakarma Hospital, Nagpur",
+        "description": "Worked as an Full Stack Developer Frontend Focused, creating a website for Ayurveda & Panchakarma practitioners using React.js, Next.js, and Material-UI. The platform allows practitioners to share their knowledge and experience with others.",
+        "period": "2021-2023"
+      },
+      "vueDeveloper": {
+        "title": "Full Stack Vue.js Developer",
+        "company": "Dr. Manisha's Yoga Institute, Pune",
+        "description": "Created a comprehensive MEVN Stack Web Application for Dr. Manisha's Yoga Institute, investing over 180+ hours in development. The project includes an admin panel with CRUD functionalities and a blogging system using Firebase. The platform serves as a digital space for yoga practitioners and students.",
+        "period": "2022 - 2023"
+      },
+      "freelance": {
+        "title": "Freelance Full Stack Developer",
+        "company": "Self-Employed, Remote",
+        "description": "Working as a freelance Full Stack Developer, specializing in MERN/MEVN stack development. Creating responsive web applications, e-commerce platforms, and custom solutions for various clients. Available for hire at $35/hr, may vary depending on the project. And flexible working hours.",
+        "period": "2020 - Present"
+      }
+    }
+  },
+  "testimonials": {
+    "heading": "Testimonials",
+    "content": "What clients and colleagues say about my work",
+    "items": {
+      "lucca": {
+        "name": "Lucca Allen",
+        "position": "Co-Founder @ ToraTech AI",
+        "company": "Dublin, Ireland",
+        "content": "I have worked with Yash, throughout two separate projects during which he was part of the ToraTech AI team. Yash has always shown tremendous initiative to get work done and work around problems. I was impressed with his back end skills, aswell as having a great eye for a UX and UI. I would recommend Yash to any company looking for efficient development."
+      },
+      "daniela": {
+        "name": "Daniela Vélez",
+        "position": "Global Marketing Director @ Dragon Sino Group",
+        "company": "Coventry, United Kingdom",
+        "content": "I had the opportunity to work with Yash and was pleased to see his enthusiasm from the very start. He approached his tasks with a positive attitude and showed a clear willingness to learn. Throughout our time working together, he was receptive to feedback and made efforts to improve. His openness to guidance was a valuable part of the collaboration."
+      },
+      "cristina": {
+        "name": "Cristina",
+        "position": "Director @ Impact A&C",
+        "company": "Leicester, United Kingdom",
+        "content": "Yash has been an exceptional member of our teaching team at Impact A&C Leicester. He demonstrates a strong understanding of coding concepts and effectively adapts his teaching approach to suit students of all ages, from young beginners aged 5 to 17, to adults looking to advance their programming skills. He is intelligent, resourceful, and handles challenges with professionalism and composure. Whenever an issue or error arises, Yash manages to resolve it quickly and efficiently, ensuring the smooth flow of each session. He is also highly cooperative within the class environment, maintaining great communication with students and colleagues alike. His dedication, technical expertise, and calm attitude make him a valuable asset to our academy."
+      },
+      "ranjeet": {
+        "name": "Ranjeet Ahire",
+        "position": "CEO @ Tridebits Technologies",
+        "company": "Nashik, India",
+        "content": "I had the pleasure of managing Yash at Octane Apps, where he demonstrated exceptional skills and remarkable eagerness to learn. His technical proficiency in React and web development consistently exceeded expectations. Yash's problem-solving abilities were top-notch, and he tackled complex challenges with strategic thinking and innovative solutions. I highly recommend Yash for any role demanding technical expertise and creativity."
+      },
+      "viraj": {
+        "name": "Dr. Viraj Gite",
+        "position": "CEO @ Anandlok Ayurveda Hospital",
+        "company": "Nagpur, India",
+        "content": "Yash put in tremendous effort as an intern at Anandlok Ayurveda and created an impressive website single-handedly using the appropriate technology stack. His dedication and technical skills were outstanding. We wish Yash the best of luck in his future endeavors."
+      },
+      "manisha": {
+        "name": "Dr. Manisha Sonawane",
+        "position": "CEO @ Dr. Manisha's Yoga Institute",
+        "company": "Pune, India",
+        "content": "Thank you Mr. Yash Kapure. I really appreciate your work on our website. The website looks professional and user-friendly. It's very easy to navigate our services and products to our clients. Our clients had a very positive impact. I highly recommend Yash for web development projects."
+      }
+    }
   }
 }
