@@ -26,7 +26,7 @@ const HomePage = async () => {
         <Contact />
         <Footer />
       </main>
-      <div className="bg-background/80 fixed right-3 top-3 z-30 flex items-center gap-2 rounded-lg border border-border/50 p-1 backdrop-blur-sm sm:right-6 sm:top-6 sm:border-0 sm:p-0">
+      <div className="bg-background/80 border-border/50 fixed right-3 top-3 z-30 flex items-center gap-2 rounded-lg border p-1 backdrop-blur-sm sm:right-6 sm:top-6 sm:border-0 sm:p-0">
         <LanguageSwitcher />
         <ThemeToggle />
       </div>
