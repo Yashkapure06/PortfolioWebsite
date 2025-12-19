@@ -41,7 +41,7 @@ export const Experience = () => {
     >
       <SectionHeading heading={t('heading')} content={t('content')} />
       <div className="relative max-w-screen-md">
-        {experiencesData.map(({ company, period, technologies }, index) => {
+        {experiencesData.map(({ company, technologies }, index) => {
           const key = experienceKeys[index];
           const title = t(`items.${key}.title`);
           const description = t(`items.${key}.description`);
