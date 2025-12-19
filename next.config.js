@@ -1,3 +1,7 @@
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Removed 'output: export' to enable API routes for chatbot
@@ -16,9 +20,12 @@ const nextConfig = {
   // Compiler options (SWC is enabled by default in Next.js 12+)
   compiler: {
     // Remove console logs in production (powered by SWC)
-    removeConsole: process.env.NODE_ENV === 'production' ? {
-      exclude: ['error', 'warn'],
-    } : false,
+    removeConsole:
+      process.env.NODE_ENV === 'production'
+        ? {
+            exclude: ['error', 'warn'],
+          }
+        : false,
   },
   // Optimize package imports (reduces bundle size by tree-shaking unused exports)
   optimizePackageImports: [
@@ -29,4 +36,4 @@ const nextConfig = {
   ],
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);
