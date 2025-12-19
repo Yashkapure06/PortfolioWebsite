@@ -4,13 +4,13 @@ import { useEffect } from 'react';
 import { useForm } from '@formspree/react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
 import { toast } from 'sonner';
 
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
+import { Link } from '@/i18n/routing';
 
 export const Contact = () => {
   const { ref } = useSectionInView('Contact');

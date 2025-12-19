@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useTransition, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState, useTransition } from 'react';
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/routing';
-import { locales, localeNames, type Locale } from '@/i18n/config';
+
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
+import { type Locale, localeNames, locales } from '@/i18n/config';
+import { usePathname, useRouter } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
 
 export const LanguageSwitcher = ({ className }: { className?: string }) => {
@@ -19,7 +20,16 @@ export const LanguageSwitcher = ({ className }: { className?: string }) => {
   const currentLocale = localeNames[locale];
 
   const handleLanguageChange = (newLocale: Locale) => {
+    // Don't change language if it's already the current locale
+    if (newLocale === locale) {
+      setIsOpen(false);
+      return;
+    }
+
     startTransition(() => {
+      // Preserve the current route when changing language
+      // pathname from usePathname() returns the path without locale (e.g., '/projects' or '/')
+      // router.replace will navigate to the same path with the new locale (e.g., '/fr/projects')
       router.replace(pathname, { locale: newLocale });
       setIsOpen(false);
     });
@@ -51,7 +61,7 @@ export const LanguageSwitcher = ({ className }: { className?: string }) => {
         variant="outline"
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          'bg-background/80 backdrop-blur-sm h-9 w-9 sm:h-11 sm:w-auto sm:px-3 gap-1 sm:gap-2 rounded-lg',
+          'bg-background/80 size-9 gap-1 rounded-lg backdrop-blur-sm sm:h-11 sm:w-auto sm:gap-2 sm:px-3',
           className
         )}
         aria-label="Change language"
@@ -59,25 +69,25 @@ export const LanguageSwitcher = ({ className }: { className?: string }) => {
         disabled={isPending}
       >
         <span
-          className="text-base sm:text-lg shrink-0"
+          className="shrink-0 text-base sm:text-lg"
           role="img"
           aria-hidden="true"
         >
           {currentLocale.flag}
         </span>
-        <span className="hidden sm:inline text-sm font-medium">
+        <span className="hidden text-sm font-medium sm:inline">
           {currentLocale.nativeName}
         </span>
         <Icons.chevronDown
           className={cn(
-            'size-3 sm:size-4 transition-transform shrink-0 hidden sm:block',
+            'hidden size-3 shrink-0 transition-transform sm:block sm:size-4',
             isOpen && 'rotate-180'
           )}
         />
       </Button>
 
       {isOpen && (
-        <div className="bg-background border-border absolute right-0 top-full z-50 mt-2 w-52 sm:w-56 rounded-lg border shadow-lg overflow-hidden max-h-[calc(100vh-8rem)] overflow-y-auto">
+        <div className="bg-background border-border absolute right-0 top-full z-50 mt-2 max-h-[calc(100vh-8rem)] w-52 overflow-hidden overflow-y-auto rounded-lg border shadow-lg sm:w-56">
           <ul className="py-1">
             {locales.map((loc) => {
               const localeInfo = localeNames[loc];
@@ -87,27 +97,27 @@ export const LanguageSwitcher = ({ className }: { className?: string }) => {
                   <button
                     onClick={() => handleLanguageChange(loc)}
                     className={cn(
-                      'hover:bg-muted/50 flex w-full items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-2.5 text-left transition-colors',
+                      'hover:bg-muted/50 flex w-full items-center gap-2 px-3 py-2 text-left transition-colors sm:gap-3 sm:px-4 sm:py-2.5',
                       isActive && 'bg-muted'
                     )}
                   >
                     <span
-                      className="text-lg sm:text-xl shrink-0"
+                      className="shrink-0 text-lg sm:text-xl"
                       role="img"
                       aria-hidden="true"
                     >
                       {localeInfo.flag}
                     </span>
-                    <div className="flex flex-col flex-1 min-w-0">
-                      <span className="font-medium text-foreground text-xs sm:text-sm">
+                    <div className="flex min-w-0 flex-1 flex-col">
+                      <span className="text-foreground text-xs font-medium sm:text-sm">
                         {localeInfo.nativeName}
                       </span>
-                      <span className="text-[10px] sm:text-xs text-muted-foreground">
+                      <span className="text-muted-foreground text-[10px] sm:text-xs">
                         {localeInfo.name}
                       </span>
                     </div>
                     {isActive && (
-                      <Icons.check className="ml-auto size-3 sm:size-4 text-primary shrink-0" />
+                      <Icons.check className="text-primary ml-auto size-3 shrink-0 sm:size-4" />
                     )}
                   </button>
                 </li>

@@ -14,6 +14,8 @@ type TProject = (typeof projectsData)[number];
 type TProps = {
   project: TProject;
   index: number;
+  translatedTitle?: string;
+  translatedDescription?: string;
 };
 
 const fadeInAnimationVariants = {
@@ -30,9 +32,16 @@ const fadeInAnimationVariants = {
   }),
 };
 
-export const Project = ({ project, index }: TProps) => {
+export const Project = ({
+  project,
+  index,
+  translatedTitle,
+  translatedDescription,
+}: TProps) => {
   const { image, title, description, technologies, links } = project;
   const prefersReducedMotion = useReducedMotion();
+  const displayTitle = translatedTitle || title;
+  const displayDescription = translatedDescription || description;
 
   return (
     <motion.div
@@ -45,7 +54,7 @@ export const Project = ({ project, index }: TProps) => {
     >
       {/* <Link
         href={links.github}
-        aria-label={title}
+        aria-label={displayTitle}
         target="_blank"
         className="overflow-hidden rounded"
       > */}
@@ -65,8 +74,8 @@ export const Project = ({ project, index }: TProps) => {
         />
       )}
       {/* </Link> */}
-      <h3 className="mt-3 text-xl font-medium">{title}</h3>
-      <p className="text-muted-foreground mb-2 mt-1">{description}</p>
+      <h3 className="mt-3 text-xl font-medium">{displayTitle}</h3>
+      <p className="text-muted-foreground mb-2 mt-1">{displayDescription}</p>
       <div className="flex flex-wrap gap-2">
         {technologies.map((tech) => (
           <span className="rounded-full border px-3 py-1 text-sm" key={tech}>
@@ -76,7 +85,7 @@ export const Project = ({ project, index }: TProps) => {
       </div>
       <Link
         href={links.preview}
-        aria-label={title}
+        aria-label={displayTitle}
         target="_blank"
         rel="noopener noreferrer"
         className="mt-4 w-fit"

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
@@ -11,6 +12,7 @@ import { cn } from '@/lib/utils';
 
 export const Experience = () => {
   const { ref: sectionRef } = useSectionInView('Experience', 0.3);
+  const t = useTranslations('experience');
   const prefersReducedMotion = useReducedMotion();
   const sectionInitial = prefersReducedMotion
     ? { opacity: 1 }
@@ -18,6 +20,15 @@ export const Experience = () => {
   const sectionTransition = prefersReducedMotion
     ? { duration: 0 }
     : { delay: 0.175 };
+
+  const experienceKeys = [
+    'itTutor',
+    'fullStackDragon',
+    'frontendOctane',
+    'frontendAnandlok',
+    'vueDeveloper',
+    'freelance',
+  ] as const;
 
   return (
     <motion.section
@@ -28,13 +39,15 @@ export const Experience = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={sectionTransition}
     >
-      <SectionHeading
-        heading="My Experience"
-        content="Professional experience that I have accumulated over several years."
-      />
+      <SectionHeading heading={t('heading')} content={t('content')} />
       <div className="relative max-w-screen-md">
-        {experiencesData.map(
-          ({ title, description, company, period, technologies }) => (
+        {experiencesData.map(({ company, period, technologies }, index) => {
+          const key = experienceKeys[index];
+          const title = t(`items.${key}.title`);
+          const description = t(`items.${key}.description`);
+          const translatedCompany = t(`items.${key}.company`);
+
+          return (
             <div
               key={company}
               className="not-last:pb-12 relative pl-8 [&:not(:last-child)]:pb-10"
@@ -53,13 +66,15 @@ export const Experience = () => {
                   <div className="flex size-9 shrink-0 items-center justify-center rounded-full border">
                     <Icons.building className="size-5" />
                   </div>
-                  <span className="text-lg font-semibold">{company}</span>
+                  <span className="text-lg font-semibold">
+                    {translatedCompany}
+                  </span>
                 </div>
                 <div>
                   <h3 className="text-xl font-medium">{title}</h3>
                   <div className="mt-1 flex items-center gap-2 text-sm">
                     <Icons.calendar className="size-4" />
-                    <span>{period}</span>
+                    <span>{t(`items.${key}.period`)}</span>
                   </div>
                 </div>
                 <p className="text-muted-foreground">{description}</p>
@@ -75,8 +90,8 @@ export const Experience = () => {
                 </div>
               </motion.div>
             </div>
-          )
-        )}
+          );
+        })}
       </div>
     </motion.section>
   );

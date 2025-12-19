@@ -2,11 +2,11 @@
 
 import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
 
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
 import { useSectionInView } from '@/hooks/use-section-in-view';
+import { Link } from '@/i18n/routing';
 
 export const Intro = () => {
   const { ref } = useSectionInView('Home');

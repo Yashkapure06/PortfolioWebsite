@@ -320,7 +320,7 @@ function JobMatchAnalysis({ content }: { content: string }) {
     <div className="space-y-4">
       {/* Match Analysis Card with Pie Chart */}
       <Card className="flex flex-col">
-        <CardHeader className="items-center pb-0 px-3 pt-3 sm:px-6 sm:pt-6">
+        <CardHeader className="items-center px-3 pb-0 pt-3 sm:px-6 sm:pt-6">
           <div className="mb-2 flex items-center gap-2">
             <Award className="text-primary size-4 sm:size-5" />
             <CardTitle className="text-base sm:text-lg">
@@ -332,7 +332,7 @@ function JobMatchAnalysis({ content }: { content: string }) {
             requirements
           </CardDescription>
         </CardHeader>
-        <CardContent className="flex-1 pb-0 px-3 sm:px-6">
+        <CardContent className="flex-1 px-3 pb-0 sm:px-6">
           <ChartContainer
             config={matchChartConfig}
             className="mx-auto aspect-square max-h-[150px] sm:max-h-[200px]"
@@ -403,7 +403,7 @@ function JobMatchAnalysis({ content }: { content: string }) {
       {allSkills.length > 0 && (
         <div className="space-y-4">
           <div className="bg-muted/50 rounded-lg border p-3 sm:p-4">
-            <h4 className="mb-2 font-semibold text-sm sm:text-base sm:mb-3">
+            <h4 className="mb-2 text-sm font-semibold sm:mb-3 sm:text-base">
               Matching Skills
             </h4>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
@@ -413,7 +413,7 @@ function JobMatchAnalysis({ content }: { content: string }) {
                   variant="secondary"
                   className="px-2 py-0.5 text-xs sm:px-3 sm:py-1 sm:text-sm"
                 >
-                  <CheckCircle2 className="mr-1 size-2.5 sm:size-3 text-green-500" />
+                  <CheckCircle2 className="mr-1 size-2.5 text-green-500 sm:size-3" />
                   {skill}
                 </Badge>
               ))}
@@ -423,7 +423,7 @@ function JobMatchAnalysis({ content }: { content: string }) {
           {/* Skill Distribution Pie Chart */}
           {pieData.length > 0 && totalSkills > 0 && (
             <Card className="flex flex-col">
-              <CardHeader className="items-center pb-0 px-3 pt-3 sm:px-6 sm:pt-6">
+              <CardHeader className="items-center px-3 pb-0 pt-3 sm:px-6 sm:pt-6">
                 <CardTitle className="text-sm sm:text-base">
                   Skill Distribution
                 </CardTitle>
@@ -432,7 +432,7 @@ function JobMatchAnalysis({ content }: { content: string }) {
                   categorized
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex-1 pb-3 sm:pb-4 px-3 sm:px-6">
+              <CardContent className="flex-1 px-3 pb-3 sm:px-6 sm:pb-4">
                 <ChartContainer
                   config={chartConfig}
                   className="mx-auto aspect-square h-[200px] w-full sm:h-[250px]"
@@ -493,7 +493,7 @@ function JobMatchAnalysis({ content }: { content: string }) {
       {/* Why Yash is a Perfect Fit */}
       {fitText && (
         <div className="bg-muted/50 rounded-lg border p-3 sm:p-4">
-          <h4 className="mb-2 font-semibold text-sm sm:text-base sm:mb-3">
+          <h4 className="mb-2 text-sm font-semibold sm:mb-3 sm:text-base">
             Why Yash is a Perfect Fit
           </h4>
           <ReactMarkdown
@@ -981,12 +981,12 @@ export function Chatbot() {
                   </motion.div>
                   <div className="flex items-center gap-1">
                     <Sparkles className="text-primary size-3.5 sm:size-4" />
-                    <h4 className="font-semibold text-sm sm:text-base">
+                    <h4 className="text-sm font-semibold sm:text-base">
                       AI Assistant Available
                     </h4>
                   </div>
                 </div>
-                <p className="text-muted-foreground mb-3 text-xs sm:text-sm leading-relaxed">
+                <p className="text-muted-foreground mb-3 text-xs leading-relaxed sm:text-sm">
                   Hi! I&apos;m an AI-powered assistant here to help you learn
                   about Yash Kapure. Ask me about his skills, projects,
                   experience, or paste a job description for a match analysis!
@@ -1065,7 +1065,7 @@ export function Chatbot() {
               stiffness: 300,
               damping: 30,
             }}
-            className="bg-background fixed bottom-0 right-0 z-50 flex h-[100dvh] w-full max-w-full flex-col rounded-none border-t shadow-2xl sm:bottom-6 sm:right-6 sm:h-[650px] sm:w-full sm:max-w-md sm:rounded-lg sm:border"
+            className="bg-background fixed bottom-0 right-0 z-50 flex h-dvh w-full max-w-full flex-col rounded-none border-t shadow-2xl sm:bottom-6 sm:right-6 sm:h-[650px] sm:w-full sm:max-w-md sm:rounded-lg sm:border"
           >
             {/* Header */}
             <div className="flex items-center justify-between border-b px-3 py-2.5 sm:px-4 sm:py-3">
@@ -1075,7 +1075,7 @@ export function Chatbot() {
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5 sm:gap-2">
-                    <h3 className="font-semibold text-sm sm:text-base">
+                    <h3 className="text-sm font-semibold sm:text-base">
                       AI Assistant
                     </h3>
                     <span className="relative flex size-2">

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 import { Icons } from './icons';
 
@@ -13,40 +14,36 @@ interface FAQProps {
   items?: FAQItem[];
 }
 
-const defaultFAQItems: FAQItem[] = [
-  {
-    question: 'What services do you offer?',
-    answer:
-      'I offer full-stack web development services including React.js, Next.js, Node.js, and MERN/MEVN stack development. I specialize in creating interactive and beautiful user interfaces with modern web technologies.',
-  },
-  {
-    question: 'How much experience do you have?',
-    answer:
-      'I have 3.5+ years of real-world experience in web development, working with various technologies including React.js, Next.js, Node.js, MongoDB, Express.js, and Vue.js.',
-  },
-  {
-    question: 'What is your hourly rate?',
-    answer:
-      "My freelance rate is $25-57/hour, though this may vary depending on the project scope and requirements. I'm flexible with working hours, hourly rate, fixed rate, payment terms and available for both short-term and long-term projects.",
-  },
-  {
-    question: 'Do you work remotely?',
-    answer:
-      "Yes, I work remotely and have experience collaborating with teams across different time zones. I'm based in the United Kingdom and available for remote work opportunities.",
-  },
-  {
-    question: 'What technologies do you specialize in?',
-    answer:
-      'I specialize in React.js, Next.js, Node.js, TypeScript, JavaScript, MERN/MEVN stack, Tailwind CSS, ShadCN UI, MongoDB, Express.js, Vue.js, and various other modern web technologies.',
-  },
-  {
-    question: 'Can you help with existing projects?',
-    answer:
-      'Absolutely! I can help with maintaining, updating, and enhancing existing web applications. I have experience working with legacy codebases and can help modernize older applications.',
-  },
-];
+export function FAQ({ items }: FAQProps) {
+  const t = useTranslations('faq');
 
-export function FAQ({ items = defaultFAQItems }: FAQProps) {
+  // Use translations if items are not provided
+  const faqItems: FAQItem[] = items || [
+    {
+      question: t('items.services.question'),
+      answer: t('items.services.answer'),
+    },
+    {
+      question: t('items.experience.question'),
+      answer: t('items.experience.answer'),
+    },
+    {
+      question: t('items.rate.question'),
+      answer: t('items.rate.answer'),
+    },
+    {
+      question: t('items.remote.question'),
+      answer: t('items.remote.answer'),
+    },
+    {
+      question: t('items.technologies.question'),
+      answer: t('items.technologies.answer'),
+    },
+    {
+      question: t('items.existing.question'),
+      answer: t('items.existing.answer'),
+    },
+  ];
   const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
@@ -59,7 +56,7 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
   const faqStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: items.map((item) => ({
+    mainEntity: faqItems.map((item) => ({
       '@type': 'Question',
       name: item.question,
       acceptedAnswer: {
@@ -82,15 +79,13 @@ export function FAQ({ items = defaultFAQItems }: FAQProps) {
       <div className="container mx-auto px-4">
         <div className="mb-10 text-center">
           <h2 className="font-heading mb-4 text-3xl font-semibold">
-            Frequently Asked Questions
+            {t('heading')}
           </h2>
-          <p className="text-muted-foreground text-lg">
-            Get answers to common questions about my services and expertise
-          </p>
+          <p className="text-muted-foreground text-lg">{t('subheading')}</p>
         </div>
 
         <div className="mx-auto max-w-3xl">
-          {items.map((item, index) => (
+          {faqItems.map((item, index) => (
             <div key={index} className="border-border border-b last:border-b-0">
               <button
                 className="hover:bg-muted/50 flex w-full items-center justify-between py-6 text-left transition-colors"

@@ -11,7 +11,7 @@ export const ThemeToggle = ({ className }: ButtonProps) => {
 
   return (
     <Button
-      className={cn('h-9 w-9 sm:h-11 sm:w-11', className)}
+      className={cn('size-9 sm:size-11', className)}
       variant="outline"
       size="icon"
       aria-label="theme toggle"

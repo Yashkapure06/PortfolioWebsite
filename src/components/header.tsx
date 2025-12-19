@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
 
 import { useActiveSection } from '@/components/active-section-provider';
 import { Button } from '@/components/button';
@@ -15,6 +14,7 @@ import {
   DialogTrigger,
 } from '@/components/dialog';
 import { Icons } from '@/components/icons';
+import { Link } from '@/i18n/routing';
 import { links } from '@/lib/data';
 
 export const Header = () => {
@@ -55,7 +55,15 @@ export const Header = () => {
                   className="border-muted-foreground/10 py-3 text-sm [&:not(:last-child)]:border-b"
                 >
                   <Link className="block" href={hash}>
-                    {tNav(name.toLowerCase() as any)}
+                    {tNav(
+                      name.toLowerCase() as
+                        | 'home'
+                        | 'about'
+                        | 'experience'
+                        | 'projects'
+                        | 'testimonials'
+                        | 'contact'
+                    )}
                   </Link>
                 </li>
               ))}
@@ -75,7 +83,15 @@ export const Header = () => {
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                {tNav(name.toLowerCase() as any)}
+                {tNav(
+                  name.toLowerCase() as
+                    | 'home'
+                    | 'about'
+                    | 'experience'
+                    | 'projects'
+                    | 'testimonials'
+                    | 'contact'
+                )}
                 {name === activeSection && (
                   <motion.span
                     className="bg-muted absolute inset-0 -z-10 rounded-full"

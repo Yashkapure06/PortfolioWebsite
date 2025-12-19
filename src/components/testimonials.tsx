@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
@@ -10,10 +11,20 @@ import { testimonialsData } from '@/lib/data';
 
 export const Testimonials = () => {
   const { ref } = useSectionInView('Testimonials');
+  const t = useTranslations('testimonials');
   const prefersReducedMotion = useReducedMotion();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const [touchEndX, setTouchEndX] = useState<number | null>(null);
+
+  const testimonialKeys = [
+    'lucca',
+    'daniela',
+    'cristina',
+    'ranjeet',
+    'viraj',
+    'manisha',
+  ] as const;
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonialsData.length);
@@ -106,10 +117,7 @@ export const Testimonials = () => {
         transition={headerTransition}
         viewport={{ once: true }}
       >
-        <SectionHeading
-          heading="Testimonials"
-          content="What clients and colleagues say about my work"
-        />
+        <SectionHeading heading={t('heading')} content={t('content')} />
       </motion.div>
 
       <div
@@ -137,58 +145,66 @@ export const Testimonials = () => {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             transition={prefersReducedMotion ? { duration: 0 } : undefined}
           >
-            {testimonialsData.map((testimonial) => (
-              <div key={testimonial.name} className="w-full shrink-0">
-                <motion.div
-                  initial={cardInitial}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={cardTransition}
-                  className="bg-card text-card-foreground group min-h-[320px] rounded-lg border p-4 shadow-sm transition-all hover:shadow-md sm:min-h-[340px] sm:p-6 md:min-h-[320px] md:p-8 lg:p-10"
-                >
-                  {/* Rating Stars */}
-                  <div className="mb-6 flex justify-center gap-1">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Icons.star
-                        key={i}
-                        aria-hidden="true"
-                        className="size-4 fill-yellow-400 text-yellow-400 sm:size-5 md:size-6"
-                      />
-                    ))}
-                    <span className="sr-only">{`${testimonial.rating} out of 5`}</span>
-                  </div>
+            {testimonialsData.map((testimonial, index) => {
+              const key = testimonialKeys[index];
+              const translatedContent = t(`items.${key}.content`);
+              const translatedName = t(`items.${key}.name`);
+              const translatedPosition = t(`items.${key}.position`);
+              const translatedCompany = t(`items.${key}.company`);
 
-                  {/* Testimonial Content */}
-                  <blockquote
-                    className="mb-6 break-words text-center text-sm italic leading-relaxed sm:mb-8 sm:text-sm md:text-lg lg:text-xl"
-                    dangerouslySetInnerHTML={{
-                      __html: `&ldquo;${testimonial.content}&rdquo;`,
-                    }}
-                  />
+              return (
+                <div key={testimonial.name} className="w-full shrink-0">
+                  <motion.div
+                    initial={cardInitial}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={cardTransition}
+                    className="bg-card text-card-foreground group min-h-[320px] rounded-lg border p-4 shadow-sm transition-all hover:shadow-md sm:min-h-[340px] sm:p-6 md:min-h-[320px] md:p-8 lg:p-10"
+                  >
+                    {/* Rating Stars */}
+                    <div className="mb-6 flex justify-center gap-1">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Icons.star
+                          key={i}
+                          aria-hidden="true"
+                          className="size-4 fill-yellow-400 text-yellow-400 sm:size-5 md:size-6"
+                        />
+                      ))}
+                      <span className="sr-only">{`${testimonial.rating} out of 5`}</span>
+                    </div>
 
-                  {/* Author Info */}
-                  <div className="flex flex-col items-center">
-                    {testimonial.avatar && (
-                      <img
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        className="border-muted mb-4 size-12 rounded-full border-4 object-cover sm:size-16 md:size-20"
-                      />
-                    )}
-                    <div className="text-center">
-                      <div className="text-foreground text-base font-semibold sm:text-lg md:text-xl">
-                        {testimonial.name}
-                      </div>
-                      <div className="text-muted-foreground text-xs sm:text-sm">
-                        {testimonial.position}
-                      </div>
-                      <div className="text-muted-foreground text-xs sm:text-sm">
-                        {testimonial.company}
+                    {/* Testimonial Content */}
+                    <blockquote
+                      className="mb-6 break-words text-center text-sm italic leading-relaxed sm:mb-8 sm:text-sm md:text-lg lg:text-xl"
+                      dangerouslySetInnerHTML={{
+                        __html: `&ldquo;${translatedContent}&rdquo;`,
+                      }}
+                    />
+
+                    {/* Author Info */}
+                    <div className="flex flex-col items-center">
+                      {testimonial.avatar && (
+                        <img
+                          src={testimonial.avatar}
+                          alt={translatedName}
+                          className="border-muted mb-4 size-12 rounded-full border-4 object-cover sm:size-16 md:size-20"
+                        />
+                      )}
+                      <div className="text-center">
+                        <div className="text-foreground text-base font-semibold sm:text-lg md:text-xl">
+                          {translatedName}
+                        </div>
+                        <div className="text-muted-foreground text-xs sm:text-sm">
+                          {translatedPosition}
+                        </div>
+                        <div className="text-muted-foreground text-xs sm:text-sm">
+                          {translatedCompany}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </motion.div>
-              </div>
-            ))}
+                  </motion.div>
+                </div>
+              );
+            })}
           </motion.div>
         </div>
 
