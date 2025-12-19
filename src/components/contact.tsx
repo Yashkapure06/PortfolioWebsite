@@ -3,7 +3,8 @@
 import { useEffect } from 'react';
 import { useForm } from '@formspree/react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { toast } from 'sonner';
 
 import { Button } from '@/components/button';
@@ -13,13 +14,12 @@ import { useSectionInView } from '@/hooks/use-section-in-view';
 
 export const Contact = () => {
   const { ref } = useSectionInView('Contact');
+  const t = useTranslations('contact');
   const [state, handleSubmit] = useForm('mbjervyr');
 
   useEffect(() => {
     if (state.succeeded) {
-      toast.success(
-        'Thank you for getting in touch! I will get back to you soon.'
-      );
+      toast.success(t('success'));
       // Clear the form after successful submission
       const form = document.querySelector('form');
       if (form) {
@@ -27,9 +27,9 @@ export const Contact = () => {
       }
     }
     if (state.errors && Object.keys(state.errors).length > 0) {
-      toast.error('Something went wrong. Please try again.');
+      toast.error(t('error'));
     }
-  }, [state.succeeded, state.errors]);
+  }, [state.succeeded, state.errors, t]);
 
   return (
     <motion.section
@@ -50,10 +50,10 @@ export const Contact = () => {
       }}
     >
       <SectionHeading
-        heading="Get In Touch"
+        heading={t('heading')}
         content={
           <>
-            Please contact me directly at{' '}
+            {t('description')}{' '}
             <Button
               variant="link"
               className="text-muted-foreground hover:text-foreground h-fit p-0 font-medium underline transition-colors"
@@ -63,7 +63,7 @@ export const Contact = () => {
                 yashkapure06@gmail.com
               </Link>
             </Button>{' '}
-            or through this form.
+            {t('or')}
           </>
         }
       />
@@ -76,13 +76,13 @@ export const Contact = () => {
             htmlFor="name"
             className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
           >
-            Name
+            {t('name')}
           </label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Your Name"
+            placeholder={t('namePlaceholder')}
             required
             className="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
           />
@@ -92,13 +92,13 @@ export const Contact = () => {
             htmlFor="email"
             className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
           >
-            Email
+            {t('email')}
           </label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="hello@gmail.com"
+            placeholder={t('emailPlaceholder')}
             required
             className="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
           />
@@ -108,18 +108,18 @@ export const Contact = () => {
             htmlFor="message"
             className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
           >
-            Message
+            {t('message')}
           </label>
           <textarea
             id="message"
             name="message"
-            placeholder="Hello! What's up?"
+            placeholder={t('messagePlaceholder')}
             required
             className="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-60 w-full resize-none rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
           ></textarea>
         </div>
         <Button type="submit" size="lg" disabled={state.submitting}>
-          {state.submitting ? 'Sending...' : 'Submit'}{' '}
+          {state.submitting ? t('sending') : t('submit')}{' '}
           <Icons.arrowRight className="ml-2 size-4" />
         </Button>
       </form>

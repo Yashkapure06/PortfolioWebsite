@@ -1,7 +1,8 @@
 'use client';
 
 import { motion, useReducedMotion } from 'framer-motion';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
@@ -10,6 +11,7 @@ import { useSectionInView } from '@/hooks/use-section-in-view';
 export const Intro = () => {
   const { ref } = useSectionInView('Home');
   const prefersReducedMotion = useReducedMotion();
+  const t = useTranslations('intro');
 
   return (
     <section
@@ -58,7 +60,7 @@ export const Intro = () => {
             <span className="absolute flex size-full animate-ping rounded-full bg-green-400 opacity-75"></span>
             <span className="relative flex size-2 rounded-full bg-green-400"></span>
           </span>
-          <span className="font-mono text-sm">Available for work!</span>
+          <span className="font-mono text-sm">{t('available')}</span>
         </Link>
       </motion.div>
       <motion.p
@@ -71,18 +73,18 @@ export const Intro = () => {
         }
         className="text-muted-foreground mt-2 text-xs"
       >
-        Currently based in United Kingdom — open to relocate
+        {t('location')}
       </motion.p>
       <motion.h1
         initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: prefersReducedMotion ? 0 : 0 }}
         className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
       >
-        Hi I&#39;m
+        {t('greeting')}{' '}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
-          Yash Kapure
-        </span>
-        - Frontend Engineer with Full-Stack Expertise.
+          {t('name')}
+        </span>{' '}
+        - {t('title')}
       </motion.h1>
       <motion.p
         initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
@@ -90,13 +92,7 @@ export const Intro = () => {
         transition={prefersReducedMotion ? { duration: 0 } : { delay: 0.1 }}
         className="text-muted-foreground max-w-xl"
       >
-        I build fast, accessible, and SEO-friendly web applications using
-        React.js, Next.js, Tailwind CSS, and shadcn/ui. With 3.5+ years of
-        experience and strong full-stack skills in JavaScript and TypeScript, I
-        am passionate about creating smooth user interfaces, maintaining
-        excellent UI/UX, and writing clean, maintainable code. I craft modern
-        user experiences while also delivering scalable backend integrations
-        when needed.
+        {t('description')}
       </motion.p>
       <motion.div
         initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
@@ -108,7 +104,7 @@ export const Intro = () => {
         <div className="flex flex-1 flex-col gap-2 sm:flex-row sm:gap-2">
           <Button asChild size="lg" className="w-full sm:w-auto">
             <Link href="#contact">
-              Get in touch{' '}
+              {t('getInTouch')}{' '}
               <Icons.arrowRight aria-hidden="true" className="ml-2 size-4" />
             </Link>
           </Button>
@@ -119,7 +115,7 @@ export const Intro = () => {
             className="w-full sm:w-auto"
           >
             <Link href="#projects">
-              View projects{' '}
+              {t('viewProjects')}{' '}
               <Icons.arrowRight aria-hidden="true" className="ml-2 size-4" />
             </Link>
           </Button>
@@ -134,7 +130,7 @@ export const Intro = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download CV{' '}
+              {t('downloadCV')}{' '}
               <Icons.download aria-hidden="true" className="ml-2 size-4" />
             </a>
           </Button>

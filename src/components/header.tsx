@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 import { useActiveSection } from '@/components/active-section-provider';
 import { Button } from '@/components/button';
@@ -14,11 +15,12 @@ import {
   DialogTrigger,
 } from '@/components/dialog';
 import { Icons } from '@/components/icons';
-import { ThemeToggle } from '@/components/theme-toggle';
 import { links } from '@/lib/data';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations('common');
+  const tNav = useTranslations('nav');
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSection();
 
@@ -41,7 +43,7 @@ export const Header = () => {
         <DialogContent className="text-muted-foreground max-h-screen w-[90%] rounded">
           <DialogHeader>
             <DialogTitle className="text-md self-start font-medium">
-              Navigation
+              {t('navigation')}
             </DialogTitle>
           </DialogHeader>
           <nav>
@@ -53,7 +55,7 @@ export const Header = () => {
                   className="border-muted-foreground/10 py-3 text-sm [&:not(:last-child)]:border-b"
                 >
                   <Link className="block" href={hash}>
-                    {name}
+                    {tNav(name.toLowerCase() as any)}
                   </Link>
                 </li>
               ))}
@@ -61,7 +63,6 @@ export const Header = () => {
           </nav>
         </DialogContent>
       </Dialog>
-      <ThemeToggle className="bg-background/80 backdrop-blur-sm sm:hidden" />
       <nav className="text-muted-foreground hidden text-sm sm:block">
         <ul className="flex gap-5">
           {links.map(({ name, hash }) => (
@@ -74,7 +75,7 @@ export const Header = () => {
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                {name}
+                {tNav(name.toLowerCase() as any)}
                 {name === activeSection && (
                   <motion.span
                     className="bg-muted absolute inset-0 -z-10 rounded-full"
