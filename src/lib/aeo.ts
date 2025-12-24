@@ -18,6 +18,11 @@ export function generateFAQStructuredData(
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    about: {
+      '@type': 'Thing',
+      name: 'Yash Kapure Portfolio',
+      url: siteConfig.url,
+    },
     mainEntity: faqItems.map((item) => ({
       '@type': 'Question',
       name: item.question,
@@ -255,7 +260,8 @@ export function generateServiceSchema() {
 export function generateAEOStructuredData(
   faqItems?: Array<{ question: string; answer: string }>
 ) {
-  const schemas = [
+  // Use a flexible type to accommodate different schema shapes
+  const schemas: Array<Record<string, any>> = [
     generateEnhancedPersonSchema(),
     generateServiceSchema(),
     generateQAPageStructuredData(),
