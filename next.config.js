@@ -27,13 +27,8 @@ const nextConfig = {
           }
         : false,
   },
-  // Optimize package imports (reduces bundle size by tree-shaking unused exports)
-  optimizePackageImports: [
-    '@radix-ui/react-dialog',
-    '@radix-ui/react-slot',
-    'lucide-react',
-    'framer-motion',
-  ],
+  // Note: optimizePackageImports is deprecated in Next.js 16+
+  // Package imports are automatically optimized by Next.js/Turbopack
 };
 
 module.exports = withNextIntl(nextConfig);
