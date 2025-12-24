@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 import { env } from '@/env.mjs';
+import { generateAEOStructuredData } from '@/lib/aeo';
 import { fonts } from '@/lib/fonts';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
@@ -57,119 +58,9 @@ export const metadata: Metadata = {
 // Root layout with required html/body tags
 // The [locale] layout will handle locale-specific content
 export default function RootLayout({ children }: { children: ReactNode }) {
-  // Structured Data for SEO
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: 'Yash Kapure',
-    alternateName: 'Yash Vinod Kapure',
-    jobTitle: 'Frontend Engineer & Full Stack Developer',
-    description:
-      'Hi there! My name is Yash and I am a programmer with a passion for learning and exploring new technologies. With a strong background in full-stack development, I have a well-rounded skill set and am always looking to expand my knowledge and take on new challenges. As a dedicated and driven individual, I am constantly seeking out opportunities to grow and improve as a programmer.',
-    url: siteConfig.url,
-    image: `${siteConfig.url}/images/profile.jpg`,
-    email: 'yashkapure06@gmail.com',
-    sameAs: [
-      'https://github.com/Yashkapure06',
-      'https://linkedin.com/in/yash-kapure',
-      'https://twitter.com/KapureYash',
-      'https://www.instagram.com/_yashkapure_',
-    ],
-    address: {
-      '@type': 'PostalAddress',
-      addressCountry: 'GB',
-      addressRegion: 'Europe',
-    },
-    alumniOf: [
-      {
-        '@type': 'Organization',
-        name: 'Impact Academies',
-      },
-    ],
-    worksFor: [
-      {
-        '@type': 'Organization',
-        name: 'Impact Academies',
-        jobTitle: 'IT Tutor',
-      },
-      {
-        '@type': 'Organization',
-        name: 'Dragon Sino Group',
-        jobTitle: 'Full Stack Developer',
-      },
-    ],
-    knowsAbout: [
-      'React.js',
-      'Next.js',
-      'Node.js',
-      'TypeScript',
-      'JavaScript',
-      'MERN Stack',
-      'MEVN Stack',
-      'Tailwind CSS',
-      'MongoDB',
-      'Express.js',
-      'Vue.js',
-      'Web Development',
-      'Frontend Development',
-      'Full Stack Development',
-      'React-Native Development',
-      'Freelance Development',
-      'Online Interview Assessment System',
-      "Dr. Manisha's Yoga Institute",
-      'Anandlok Ayurveda',
-    ],
-    offers: {
-      '@type': 'Service',
-      name: 'Web Development Services',
-      description:
-        'Professional web development services including React.js, Next.js, Node.js, React-Native, and full-stack development. Best Freelancer Near me, Affordable Freelancer Near me, Hourly based paid freelancer near me.',
-      provider: {
-        '@type': 'Person',
-        name: 'Yash Kapure',
-      },
-      areaServed: [
-        'GB',
-        'IE',
-        'DE',
-        'FR',
-        'ES',
-        'IT',
-        'NL',
-        'BE',
-        'AT',
-        'CH',
-        'SE',
-        'NO',
-        'DK',
-        'PL',
-        'PT',
-        'EU',
-        'Worldwide',
-      ],
-      serviceType: 'Web Development',
-    },
-    hasOccupation: {
-      '@type': 'Occupation',
-      name: 'Full Stack Web Developer',
-      description:
-        'Frontend Engineer & Full Stack Developer specializing in React.js, Next.js, Node.js, and MERN/MEVN stack',
-      occupationLocation: [
-        {
-          '@type': 'Country',
-          name: 'United Kingdom',
-        },
-        {
-          '@type': 'Continent',
-          name: 'Europe',
-        },
-        {
-          '@type': 'Place',
-          name: 'Worldwide',
-        },
-      ],
-    },
-  };
+  // AEO (Answer Engine Optimization) Structured Data
+  // Combines SEO with AI/voice search optimization for comprehensive visibility
+  const aeoStructuredData = generateAEOStructuredData();
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -206,13 +97,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${env.NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT_ID}`}
           crossOrigin="anonymous"
         />
-        {/* Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
-          }}
-        />
+        {/* AEO Structured Data - Optimized for AI search engines and voice assistants */}
+        {aeoStructuredData.map((schema, index) => (
+          <script
+            key={`aeo-schema-${index}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(schema),
+            }}
+          />
+        ))}
         {/* Preload critical resources */}
         <link rel="preload" href="/images/profile.jpg" as="image" />
         <link
