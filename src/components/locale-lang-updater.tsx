@@ -13,3 +13,4 @@ export const LocaleLangUpdater = () => {
 
   return null;
 };
+

@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
+import { generateFAQStructuredData } from '@/lib/aeo';
+
 import { Icons } from './icons';
 
 interface FAQItem {
@@ -52,19 +54,8 @@ export function FAQ({ items }: FAQProps) {
     );
   };
 
-  // Structured data for FAQ
-  const faqStructuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqItems.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  };
+  // AEO-optimized FAQ structured data for AI search engines and voice assistants
+  const faqStructuredData = generateFAQStructuredData(faqItems);
 
   return (
     <section className="py-16">
