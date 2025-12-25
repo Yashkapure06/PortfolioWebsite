@@ -71,3 +71,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  @keyframes skills-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-skills-scroll {
+    animation: skills-scroll 40s linear infinite;
+  }
+
+  .animate-skills-scroll:hover {
+    animation-play-state: paused;
+  }
+}
