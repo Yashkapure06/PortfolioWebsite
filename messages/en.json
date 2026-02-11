@@ -333,11 +333,11 @@
       },
       "usClients": {
         "question": "Do you work with US-based clients?",
-        "answer": "Yes. I actively work with US clients—startups, product teams, and agencies. I work remotely with flexible hours to overlap with US time zones, communicate clearly in English, and charge in USD. If you're in the US and need a reliable frontend or full-stack developer, get in touch via the contact form or email."
+        "answer": "Yes. I actively work with US clients - startups, product teams, and agencies. I work remotely with flexible hours to overlap with US time zones, communicate clearly in English, and charge in USD. If you're in the US and need a reliable frontend or full-stack developer, get in touch via the contact form or email."
       },
       "technologies": {
         "question": "What technologies do you specialize in?",
-        "answer": "I specialize in React.js, Next.js, Node.js, TypeScript, JavaScript, MERN/MEVN stack, Tailwind CSS, ShadCN UI, MongoDB, Express.js, Vue.js, and various other modern web technologies."
+        "answer": "I specialize in React.js, Next.js, Node.js, TypeScript, JavaScript, MERN/MEVN stack, Tailwind CSS, ShadCN UI, MongoDB, Supabase, Express.js, Vue.js, and various other modern web technologies."
       },
       "existing": {
         "question": "Can you help with existing projects?",

@@ -38,6 +38,10 @@ export function FAQ({ items }: FAQProps) {
       answer: t('items.remote.answer'),
     },
     {
+      question: t('items.usClients.question'),
+      answer: t('items.usClients.answer'),
+    },
+    {
       question: t('items.technologies.question'),
       answer: t('items.technologies.answer'),
     },
