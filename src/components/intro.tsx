@@ -63,15 +63,38 @@ export const Intro = () => {
           <span className="font-mono text-sm">{t('available')}</span>
         </Link>
       </motion.div>
-      <motion.p
-        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 16 }}
+      <motion.div
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={
           prefersReducedMotion
             ? { duration: 0 }
             : { delay: 0.05, duration: 0.2, type: 'tween' }
         }
-        className="text-muted-foreground mt-2 text-xs"
+        className="text-muted-foreground mt-3 flex flex-wrap items-center justify-center gap-2 text-xs"
+      >
+        <span className="sr-only">{t('workTypes')}: </span>
+        <span className="rounded-full border border-border/80 bg-muted/50 px-2.5 py-0.5 font-medium">
+          {t('fullTime')}
+        </span>
+        <span className="rounded-full border border-border/80 bg-muted/50 px-2.5 py-0.5 font-medium">
+          {t('freelance')}
+        </span>
+        <span className="rounded-full border border-border/80 bg-muted/50 px-2.5 py-0.5 font-medium">
+          {t('contract')}
+        </span>
+        <span className="text-muted-foreground/80 px-1">·</span>
+        <span>{t('remoteOnsite')}</span>
+      </motion.div>
+      <motion.p
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={
+          prefersReducedMotion
+            ? { duration: 0 }
+            : { delay: 0.06, duration: 0.2, type: 'tween' }
+        }
+        className="text-muted-foreground mt-1 text-xs"
       >
         {t('location')}
       </motion.p>
