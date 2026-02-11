@@ -10,6 +10,7 @@ import { Intro } from '@/components/intro';
 import { LanguageSwitcher } from '@/components/language-switcher';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
+import { Services } from '@/components/services';
 import { Testimonials } from '@/components/testimonials';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { generateQAPageStructuredData } from '@/lib/aeo';
@@ -33,6 +34,7 @@ const HomePage = async () => {
         <Intro />
         <SectionDivider />
         <About />
+        <Services />
         <Experience />
         <Projects />
         <Testimonials />
