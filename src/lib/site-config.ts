@@ -2,8 +2,19 @@ export const siteConfig = {
   title:
     'Yash Kapure | Best Freelancer | Front-End Engineer | MERN/MEVN Stack Dev | Full Stack Web Developer | React-Native Developer',
   description:
-    'Hi there! My name is Yash and I am a programmer with a passion for learning and exploring new technologies. With a strong background in full-stack development, I have a well-rounded skill set and am always looking to expand my knowledge and take on new challenges. As a dedicated and driven individual, I am constantly seeking out opportunities to grow and improve as a programmer.',
+    'Frontend & full-stack developer available for US and global clients. React, Next.js, MERN/MEVN. Remote work, flexible hours, USD rates. Hire for production-ready web apps, performance, and SEO.',
   keywords: [
+    // US-focused (for discoverability and clients)
+    'Hire React developer USA',
+    'Hire Next.js developer United States',
+    'Freelance web developer US',
+    'Full stack developer USA',
+    'Remote web developer United States',
+    'React developer for hire US',
+    'Next.js developer USA',
+    'MERN stack developer United States',
+    'Frontend developer USA remote',
+    'Web developer US freelance',
     'SEO AEO GEO',
     'SEO AEO GEO Production Readiness',
     'Answer Engine Optimization',
@@ -106,6 +117,7 @@ export const siteConfig = {
   url: 'https://yashkapure.netlify.app',
   googleSiteVerificationId: 'zjseZ18pLQ6Tg4nvpJJkRVevf7dK4QzbpzMuZNCKNYQ',
   // Supported locales for international SEO
+  // en-US first for US traffic; default en for global
   locales: [
     'en',
     'en-US',

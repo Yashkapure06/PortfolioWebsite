@@ -215,6 +215,7 @@ export function generateServiceSchema() {
       url: siteConfig.url,
     },
     areaServed: [
+      'US', // United States – primary focus for client acquisition
       'GB',
       'IE',
       'DE',
@@ -245,10 +246,10 @@ export function generateServiceSchema() {
       },
       availability: 'https://schema.org/InStock',
       description:
-        'Frontend, Full Stack, Database, Performance, Architecture, Product UI, and SEO/AEO/GEO & Production Readiness. Metadata, structured data, analytics, monitoring. Available for remote work with flexible hours.',
+        'Frontend, Full Stack, Database, Performance, Architecture, Product UI, and SEO/AEO/GEO & Production Readiness. Available for US and global clients—remote, flexible hours, USD.',
     },
     description:
-      'Professional web development services: Frontend (React, Next.js, Vue, payments); Full Stack (MERN, MEVN, auth, real-time); Database & Backend; Performance & Optimization; Frontend Architecture; Product-Focused UI; and SEO, AEO, GEO & Production Readiness (metadata, JSON-LD, Open Graph, sitemaps, analytics, monitoring for discoverability and AI citation). Fast, accessible, production-ready applications. Available for hire at $25-57/hour.',
+      'Professional web development for US and worldwide clients: Frontend (React, Next.js, Vue, payments); Full Stack (MERN, MEVN, auth, real-time); Database & Backend; Performance & Optimization; Frontend Architecture; Product-Focused UI; SEO, AEO, GEO & Production Readiness. Remote work, flexible hours, USD rates. Available for hire at $25-57/hour.',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5',
@@ -296,5 +297,7 @@ export const voiceSearchQueries = [
   'How to contact Yash Kapure?',
   "What is Yash Kapure's hourly rate?",
   'Does Yash Kapure work remotely?',
+  'Does Yash Kapure work with US clients?',
+  'Hire React developer USA',
   'What services does Yash Kapure offer?',
 ];
