@@ -2,6 +2,7 @@
   "nav": {
     "home": "Startseite",
     "about": "Über mich",
+    "services": "Dienstleistungen",
     "experience": "Erfahrung",
     "projects": "Projekte",
     "testimonials": "Referenzen",
@@ -9,18 +10,60 @@
   },
   "intro": {
     "available": "Verfügbar für Arbeit!",
+    "workTypes": "Offen für Festanstellung, Freelance & Vertrag",
+    "fullTime": "Festanstellung",
+    "freelance": "Freelance",
+    "contract": "Vertrag",
+    "remoteOnsite": "Remote oder vor Ort",
     "location": "Derzeit ansässig im Vereinigten Königreich — offen für Umzug",
     "greeting": "Hallo, ich bin",
     "name": "Yash Kapure",
     "title": "Frontend-Ingenieur mit Full-Stack-Expertise.",
-    "description": "Ich erstelle schnelle, zugängliche und SEO-freundliche Webanwendungen mit React.js, Next.js, Tailwind CSS und shadcn/ui. Mit über 3.5 Jahren Erfahrung und starken Full-Stack-Fähigkeiten in JavaScript und TypeScript bin ich leidenschaftlich daran interessiert, flüssige Benutzeroberflächen zu erstellen, eine hervorragende UI/UX zu gewährleisten und sauberen, wartbaren Code zu schreiben. Ich gestalte moderne Benutzererfahrungen und liefere gleichzeitig skalierbare Backend-Integrationen, wenn sie benötigt werden.",
+    "description": "Ich erstelle schnelle, zugängliche und SEO-freundliche Webanwendungen mit React.js, Next.js, Tailwind CSS und shadcn/ui. Mit über 4 Jahren Erfahrung und starken Full-Stack-Fähigkeiten in JavaScript und TypeScript bin ich leidenschaftlich daran interessiert, flüssige Benutzeroberflächen zu erstellen, eine hervorragende UI/UX zu gewährleisten und sauberen, wartbaren Code zu schreiben. Ich gestalte moderne Benutzererfahrungen und liefere gleichzeitig skalierbare Backend-Integrationen, wenn sie benötigt werden.",
     "getInTouch": "Kontakt aufnehmen",
     "viewProjects": "Projekte ansehen",
     "downloadCV": "Lebenslauf herunterladen"
   },
+  "services": {
+    "heading": "Meine Dienstleistungen",
+    "content": "Was ich für Sie umsetzen kann — von UI und APIs bis Backend und Daten.",
+    "badgeMostPopular": "Am häufigsten nachgefragt",
+    "bookService": "Service besprechen",
+    "technologiesLabel": "Stack & Tools",
+    "items": {
+      "frontend": {
+        "title": "Frontend-Entwicklung",
+        "description": "Schnelle, barrierefreie Oberflächen mit React, Next.js oder Vue. Ich integriere Third-Party-APIs, komplexe API-Anbindungen und Zahlungsgateways (Stripe, Easebuzz), damit Ihr Frontend nahtlos mit Diensten und Zahlungen verbunden ist."
+      },
+      "fullstack": {
+        "title": "Full-Stack-Entwicklung",
+        "description": "End-to-End-Webanwendungen mit MERN (MongoDB, Express, React, Node), React + Node oder MEVN. Von Authentifizierung und APIs bis zu Dashboards und Echtzeit-Features."
+      },
+      "database": {
+        "title": "Datenbank & Backend",
+        "description": "Schema-Design, Abfragen und Integrationen für skalierbare Anwendungen. SQL, NoSQL und managed Backends inkl. Supabase für Auth und Echtzeit."
+      },
+      "performance": {
+        "title": "Performance & Frontend-Optimierung",
+        "description": "Bestehende Frontends schneller und zuverlässiger machen. Core Web Vitals, Bundle-Größe und Laufzeit-Performance für reaktive UIs und kalkulierbare Infra-Kosten."
+      },
+      "architecture": {
+        "title": "Frontend-Architektur & Systemdesign",
+        "description": "Frontend-Code so strukturieren, dass Teams ohne Chaos liefern können. Komponentengrenzen, State-Strategie und klare Kontrakte für sichere Refactorings."
+      },
+      "productUi": {
+        "title": "Produktorientiertes UI-Engineering",
+        "description": "Figma und Spezifikationen in produktionsreife UIs überführen. Barrierefreie Komponenten und Design-System-Alignment, damit das Ergebnis für alle funktioniert."
+      },
+      "seoAeo": {
+        "title": "SEO, AEO, GEO & Produktionsreife",
+        "description": "Apps such-, antwort- und betriebsbereit machen. Metadaten, strukturierte Daten (SEO/AEO/GEO), Analytics und Monitoring, damit Sie gefunden werden, von KI zitiert werden und Probleme früh beheben."
+      }
+    }
+  },
   "about": {
     "heading": "Über Mich",
-    "paragraph1": "Mein Name ist Yash Kapure und ich bin ein Frontend-Ingenieur mit über 3.5 Jahren praktischer Erfahrung im Design schneller, benutzerfreundlicher und SEO-freundlicher Webanwendungen. Meine Spezialität ist die Erstellung flüssiger Benutzeroberflächen mit React.js, Next.js, Tailwind CSS und shadcn/ui und das Erwecken von Dingen mit Framer Motion.",
+    "paragraph1": "Mein Name ist Yash Kapure und ich bin ein Frontend-Ingenieur mit über 4 Jahren praktischer Erfahrung im Design schneller, benutzerfreundlicher und SEO-freundlicher Webanwendungen. Meine Spezialität ist die Erstellung flüssiger Benutzeroberflächen mit React.js, Next.js, Tailwind CSS und shadcn/ui und das Erwecken von Dingen mit Framer Motion.",
     "paragraph2": "Neben meiner Frontend-Erfahrung verfüge ich über gute Full-Stack-Fähigkeiten in JavaScript und TypeScript sowie vertraute Erfahrung mit Node.js, Express und Datenbanken wie MongoDB und MySQL. Dies ermöglicht es mir, Projekte von Anfang bis Ende zu verwalten, vom Design flüssiger Benutzeroberflächen bis zur Verbindung skalierbarer Backends.",
     "paragraph3": "Ich habe Software für Produktunternehmen, Kliniken und Startups erstellt und maximale Leistung, Engagement und Lead-Generierung durch präzises Engineering geliefert. Das Schreiben von elegantem, aktuellem Code und die Entdeckung neuer Tools und Trends begeistert mich.",
     "paragraph4": "Außerhalb der Arbeit genieße ich Cricket und eine gute Tasse Tee, aber jetzt bin ich es gewohnt, Kaffee zu trinken. Ich bin immer bereit zu lernen, zu experimentieren und zu wachsen und suche nach Möglichkeiten, bei denen ich Wert zu wirkungsvollen Produkten und erfinderischen Teams beitragen kann."
@@ -142,18 +185,47 @@
   },
   "contact": {
     "heading": "Kontakt Aufnehmen",
+    "introExpectations": "I work with product teams and founders who need production-ready code and clear communication. A few details below help me respond with something useful — goal, timeline, and scope go a long way.",
+    "openToRoles": "Offen für Festanstellung, Freelance und Verträge — remote oder vor Ort.",
+    "requestingService": "Angefragter Dienst",
     "description": "Bitte kontaktieren Sie mich direkt unter",
     "or": "oder über dieses Formular.",
-    "name": "Name",
-    "namePlaceholder": "Ihr Name",
+    "name": "Ihr Name",
+    "namePlaceholder": "Vollständiger Name",
     "email": "E-Mail",
-    "emailPlaceholder": "hallo@gmail.com",
+    "emailPlaceholder": "sie@firma.com",
+    "preferredContact": "Bevorzugte Kontaktart",
+    "preferredContactEmail": "E-Mail",
+    "preferredContactWhatsApp": "WhatsApp",
+    "preferredContactCall": "Anruf",
+    "phoneOptional": "Telefon (optional)",
+    "phoneCountryCodeLabel": "Ländervorwahl",
+    "phonePlaceholder": "Rufnummer",
+    "budgetLabel": "Geschätztes Budget (hilft, Erwartungen abzugleichen)",
+    "budgetNotSure": "Nicht sicher",
+    "budgetUnder2k": "Unter 2k £",
+    "budget2k5k": "2k–5k £",
+    "budget5k10k": "5k–10k £",
+    "budget10kPlus": "10k+ £",
+    "currency": "Währung",
+    "currencyLabel": "Währung",
+    "timeline": "Zeitrahmen",
+    "timelineASAP": "Schnellstmöglich",
+    "timeline1to2": "1–2 Wochen",
+    "timeline1month": "1 Monat",
+    "timelineFlexible": "Flexibel",
+    "projectDescription": "Projektdetails",
+    "projectDescriptionPlaceholder": "Ziel, Zeitrahmen, Umfang und wie Sie den Erfolg messen (ein paar Sätze reichen).",
     "message": "Nachricht",
     "messagePlaceholder": "Hallo! Wie geht's?",
-    "submit": "Absenden",
+    "submit": "Projektdetails senden",
     "sending": "Wird gesendet...",
-    "success": "Vielen Dank für Ihre Nachricht! Ich werde mich bald bei Ihnen melden.",
-    "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+    "success": "Danke — ich antworte in der Regel innerhalb von 24–48 Stunden, wenn es passt.",
+    "successToast": "Nachricht gesendet.",
+    "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+    "trustMicrocopy": "Kein Spam. Ihre Daten bleiben privat.",
+    "validationRequired": "Dieses Feld ist erforderlich.",
+    "sendAnother": "Weitere Nachricht senden"
   },
   "faq": {
     "heading": "Häufig Gestellte Fragen",
@@ -165,7 +237,7 @@
       },
       "experience": {
         "question": "Wie viel Erfahrung haben Sie?",
-        "answer": "Ich habe über 3.5 Jahre praktische Erfahrung in der Webentwicklung und arbeite mit verschiedenen Technologien, einschließlich React.js, Next.js, Node.js, MongoDB, Express.js und Vue.js."
+        "answer": "Ich habe über 4 Jahre praktische Erfahrung in der Webentwicklung und arbeite mit verschiedenen Technologien, einschließlich React.js, Next.js, Node.js, MongoDB, Express.js und Vue.js."
       },
       "rate": {
         "question": "Wie hoch ist Ihr Stundensatz?",

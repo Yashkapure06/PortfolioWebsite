@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "services": "Services",
     "experience": "Experience",
     "projects": "Projects",
     "testimonials": "Testimonials",
@@ -9,21 +10,63 @@
   },
   "intro": {
     "available": "Available for work!",
-    "location": "Currently based in United Kingdom — open to relocate",
+    "workTypes": "Open to full-time, freelance & contract",
+    "fullTime": "Full-time",
+    "freelance": "Freelance",
+    "contract": "Contract",
+    "remoteOnsite": "Remote or onsite",
+    "location": "Currently based in United Kingdom - open to relocate",
     "greeting": "Hi I'm",
     "name": "Yash Kapure",
     "title": "Frontend Engineer with Full-Stack Expertise.",
-    "description": "I build fast, accessible, and SEO-friendly web applications using React.js, Next.js, Tailwind CSS, and shadcn/ui. With 3.5+ years of experience and strong full-stack skills in JavaScript and TypeScript, I am passionate about creating smooth user interfaces, maintaining excellent UI/UX, and writing clean, maintainable code. I craft modern user experiences while also delivering scalable backend integrations when needed.",
+    "description": "I build fast, accessible, and SEO-friendly web applications using React.js, Next.js, Tailwind CSS, and shadcn/ui. With 4+ years of experience and strong full-stack skills in JavaScript and TypeScript, I am passionate about creating smooth user interfaces, maintaining excellent UI/UX, and writing clean, maintainable code. I craft modern user experiences while also delivering scalable backend integrations when needed.",
     "getInTouch": "Get in touch",
     "viewProjects": "View projects",
     "downloadCV": "Download CV"
   },
   "about": {
     "heading": "About Me",
-    "paragraph1": "My name is Yash Kapure, and I am a Frontend Engineer with 3.5+ years of real-world experience designing fast, usable, and SEO-friendly web applications. My specialty is crafting smooth-looking UIs with React.js, Next.js, Tailwind CSS, and shadcn/ui and bringing things to life with Framer Motion.",
+    "paragraph1": "My name is Yash Kapure, and I am a Frontend Engineer with 4+ years of real-world experience designing fast, usable, and SEO-friendly web applications. My specialty is crafting smooth-looking UIs with React.js, Next.js, Tailwind CSS, and shadcn/ui and bringing things to life with Framer Motion.",
     "paragraph2": "Alongside my frontend experience, I possess good full-stack skills in JavaScript and TypeScript, and familiar experience in Node.js, Express, and databases like MongoDB and MySQL. This allows me to manage projects from start-to-finish, from designing smooth UIs through connecting scalable backends.",
     "paragraph3": "I have built software for product companies, clinics, and start-ups, delivering maximum performance, engagement, and lead capture through precise engineering. Writing elegant, up-to-date code and discovering new tools and trends thrills me.",
     "paragraph4": "Outside of work, I enjoy cricket and a good cup of tea, but now I am used to drinking coffee. I'm always up for learning, experimenting, and growing and looking for opportunities wherein I can bring value toward impactful products and inventive teams."
+  },
+  "services": {
+    "heading": "How I can help",
+    "content": "Production systems I’ve shipped and can run for you.",
+    "badgeMostPopular": "Most requested",
+    "bookService": "Discuss this service",
+    "technologiesLabel": "Stack & tools",
+    "items": {
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "Production UIs in React, Next.js, or Vue—third-party and payment integrations included. Built for real traffic and maintained in production."
+      },
+      "fullstack": {
+        "title": "Full Stack Development",
+        "description": "End-to-end apps: MERN, React+Node, or MEVN. Auth, role-based access, and real-time where it matters. Designed to scale without rewrites."
+      },
+      "database": {
+        "title": "Database & Backend",
+        "description": "Schemas, queries, and integrations that hold up in production. Supabase, MongoDB, PostgreSQL—Prisma or native—with real-time when you need it."
+      },
+      "performance": {
+        "title": "Performance & Frontend Optimization",
+        "description": "Audit and improve existing frontends: Core Web Vitals, bundle size, runtime. So load times and infra cost stay predictable at scale."
+      },
+      "architecture": {
+        "title": "Frontend Architecture & System Design",
+        "description": "Structure so teams can ship. Clear boundaries, state strategy, and contracts. New features land cleanly; refactors stay low-risk."
+      },
+      "productUi": {
+        "title": "Product-Focused UI Engineering",
+        "description": "Figma and specs to production. Accessible, consistent components and design-system alignment so what ships matches design and works for everyone."
+      },
+      "seoAeo": {
+        "title": "SEO, AEO, GEO & Production Readiness",
+        "description": "Ready for search and real users. Metadata, structured data, analytics, and monitoring so you’re discoverable, citable by AI, and issues get caught early."
+      }
+    }
   },
   "experience": {
     "heading": "My Experience",
@@ -226,18 +269,47 @@
   },
   "contact": {
     "heading": "Get In Touch",
+    "introExpectations": "I work with product teams and founders who need production-ready code and clear communication. A few details below help me respond with something useful - goal, timeline, and scope go a long way.",
+    "openToRoles": "Open to full-time, freelance, and contract roles - remote or onsite.",
+    "requestingService": "Requesting service",
     "description": "Please contact me directly at",
     "or": "or through this form.",
-    "name": "Name",
-    "namePlaceholder": "Your Name",
+    "name": "Your name",
+    "namePlaceholder": "Full name",
     "email": "Email",
-    "emailPlaceholder": "hello@gmail.com",
+    "emailPlaceholder": "you@company.com",
+    "preferredContact": "Preferred contact method",
+    "preferredContactEmail": "Email",
+    "preferredContactWhatsApp": "WhatsApp",
+    "preferredContactCall": "Call",
+    "phoneOptional": "Phone (optional)",
+    "phoneCountryCodeLabel": "Country code",
+    "phonePlaceholder": "Phone number",
+    "budgetLabel": "Estimated budget (helps align expectations)",
+    "budgetNotSure": "Not sure",
+    "budgetUnder2k": "Under £2k",
+    "budget2k5k": "£2k–£5k",
+    "budget5k10k": "£5k–£10k",
+    "budget10kPlus": "£10k+",
+    "currency": "Currency",
+    "currencyLabel": "Currency",
+    "timeline": "Timeline",
+    "timelineASAP": "ASAP",
+    "timeline1to2": "1–2 weeks",
+    "timeline1month": "1 month",
+    "timelineFlexible": "Flexible",
+    "projectDescription": "Project details",
+    "projectDescriptionPlaceholder": "Goal, timeline, scope, and how you’ll measure success (a few sentences is enough).",
     "message": "Message",
     "messagePlaceholder": "Hello! What's up?",
-    "submit": "Submit",
+    "submit": "Send project details",
     "sending": "Sending...",
-    "success": "Thank you for getting in touch! I will get back to you soon.",
-    "error": "Something went wrong. Please try again."
+    "success": "Thanks — I usually reply within 24–48 hours if it's a good fit.",
+    "successToast": "Message sent.",
+    "error": "Something went wrong. Please try again.",
+    "trustMicrocopy": "No spam. Your details stay private.",
+    "validationRequired": "This field is required.",
+    "sendAnother": "Send another message"
   },
   "faq": {
     "heading": "Frequently Asked Questions",
@@ -249,7 +321,7 @@
       },
       "experience": {
         "question": "How much experience do you have?",
-        "answer": "I have 3.5+ years of real-world experience in web development, working with various technologies including React.js, Next.js, Node.js, MongoDB, Express.js, and Vue.js."
+        "answer": "I have 4+ years of real-world experience in web development, working with various technologies including React.js, Next.js, Node.js, MongoDB, Express.js, and Vue.js."
       },
       "rate": {
         "question": "What is your hourly rate?",
@@ -274,4 +346,3 @@
     "navigation": "Navigation"
   }
 }
-

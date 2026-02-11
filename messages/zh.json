@@ -2,6 +2,7 @@
   "nav": {
     "home": "首页",
     "about": "关于",
+    "services": "服务",
     "experience": "经验",
     "projects": "项目",
     "testimonials": "推荐",
@@ -9,18 +10,60 @@
   },
   "intro": {
     "available": "可工作！",
+    "workTypes": "接受全职、自由职业与合同",
+    "fullTime": "全职",
+    "freelance": "自由职业",
+    "contract": "合同",
+    "remoteOnsite": "远程或现场",
     "location": "目前位于英国 — 愿意搬迁",
     "greeting": "你好，我是",
     "name": "Yash Kapure",
     "title": "具有全栈专业知识的前端工程师。",
-    "description": "我使用 React.js、Next.js、Tailwind CSS 和 shadcn/ui 构建快速、可访问且对 SEO 友好的 Web 应用程序。拥有 3.5 年以上的经验和强大的 JavaScript 和 TypeScript 全栈技能，我热衷于创建流畅的用户界面、保持出色的 UI/UX 并编写干净、可维护的代码。我打造现代用户体验，同时在需要时提供可扩展的后端集成。",
+    "description": "我使用 React.js、Next.js、Tailwind CSS 和 shadcn/ui 构建快速、可访问且对 SEO 友好的 Web 应用程序。拥有 4 年以上的经验和强大的 JavaScript 和 TypeScript 全栈技能，我热衷于创建流畅的用户界面、保持出色的 UI/UX 并编写干净、可维护的代码。我打造现代用户体验，同时在需要时提供可扩展的后端集成。",
     "getInTouch": "取得联系",
     "viewProjects": "查看项目",
     "downloadCV": "下载简历"
   },
+  "services": {
+    "heading": "我提供的服务",
+    "content": "我能为您构建什么 — 从 UI、API 到后端与数据。",
+    "badgeMostPopular": "咨询最多",
+    "bookService": "讨论此服务",
+    "technologiesLabel": "技术与工具",
+    "items": {
+      "frontend": {
+        "title": "前端开发",
+        "description": "使用 React、Next.js 或 Vue 构建快速、无障碍的用户界面。我实现第三方 API、复杂 API 集成以及支付网关（Stripe、Easebuzz），让您的前端与服务和支付无缝对接。"
+      },
+      "fullstack": {
+        "title": "全栈开发",
+        "description": "使用 MERN（MongoDB、Express、React、Node）、React + Node 或 MEVN 构建端到端 Web 应用。从认证与 API 到仪表盘与实时功能。"
+      },
+      "database": {
+        "title": "数据库与后端",
+        "description": "为可扩展应用提供 schema 设计、查询与集成。SQL、NoSQL 及 Supabase 等托管后端，用于认证与实时。"
+      },
+      "performance": {
+        "title": "性能与前端优化",
+        "description": "让现有前端更快、更可靠。Core Web Vitals、打包体积与运行时性能，实现响应式 UI 与可预期的基础设施成本。"
+      },
+      "architecture": {
+        "title": "前端架构与系统设计",
+        "description": "梳理前端代码结构，便于团队有序交付。组件边界、状态策略与清晰契约，保障安全重构。"
+      },
+      "productUi": {
+        "title": "以产品为导向的 UI 工程",
+        "description": "将 Figma 与产品规格落地为生产级 UI。无障碍组件与设计系统对齐，确保交付结果对所有人可用。"
+      },
+      "seoAeo": {
+        "title": "SEO、AEO、GEO 与生产就绪",
+        "description": "为搜索、回答引擎与真实用户做好准备。元数据、结构化数据（SEO/AEO/GEO）、分析与监控，便于被发现、被 AI 引用并及早修复问题。"
+      }
+    }
+  },
   "about": {
     "heading": "关于我",
-    "paragraph1": "我的名字是 Yash Kapure，我是一名前端工程师，拥有 3.5 年以上的实际经验，设计快速、可用且对 SEO 友好的 Web 应用程序。我的专长是使用 React.js、Next.js、Tailwind CSS 和 shadcn/ui 制作流畅的用户界面，并使用 Framer Motion 让事物变得生动。",
+    "paragraph1": "我的名字是 Yash Kapure，我是一名前端工程师，拥有 4 年以上的实际经验，设计快速、可用且对 SEO 友好的 Web 应用程序。我的专长是使用 React.js、Next.js、Tailwind CSS 和 shadcn/ui 制作流畅的用户界面，并使用 Framer Motion 让事物变得生动。",
     "paragraph2": "除了我的前端经验，我还拥有良好的 JavaScript 和 TypeScript 全栈技能，以及 Node.js、Express 和 MongoDB 和 MySQL 等数据库的熟悉经验。这使我能够从头到尾管理项目，从设计流畅的用户界面到连接可扩展的后端。",
     "paragraph3": "我为产品公司、诊所和初创公司构建了软件，通过精确的工程提供最大的性能、参与度和潜在客户捕获。编写优雅、最新的代码并发现新工具和趋势让我兴奋。",
     "paragraph4": "工作之余，我喜欢板球和一杯好茶，但现在我已经习惯喝咖啡了。我总是愿意学习、实验和成长，并寻找机会为有影响力的产品和创新团队带来价值。"
@@ -142,18 +185,47 @@
   },
   "contact": {
     "heading": "取得联系",
+    "introExpectations": "我与需要生产级代码和清晰沟通的产品团队和创始人合作。下面几项信息有助于我更有针对性地回复 — 目标、时间线和范围很重要。",
+    "openToRoles": "接受全职、自由职业与合同 — 远程或现场均可。",
+    "requestingService": "预约服务",
     "description": "请直接联系我",
     "or": "或通过此表单。",
-    "name": "姓名",
-    "namePlaceholder": "您的姓名",
-    "email": "电子邮件",
-    "emailPlaceholder": "hello@gmail.com",
+    "name": "您的姓名",
+    "namePlaceholder": "姓名",
+    "email": "电子邮箱",
+    "emailPlaceholder": "you@company.com",
+    "preferredContact": "首选联系方式",
+    "preferredContactEmail": "邮箱",
+    "preferredContactWhatsApp": "WhatsApp",
+    "preferredContactCall": "电话",
+    "phoneOptional": "电话（选填）",
+    "phoneCountryCodeLabel": "国家/地区代码",
+    "phonePlaceholder": "电话号码",
+    "budgetLabel": "预算范围（便于对齐预期）",
+    "budgetNotSure": "暂不确定",
+    "budgetUnder2k": "2k £ 以下",
+    "budget2k5k": "2k–5k £",
+    "budget5k10k": "5k–10k £",
+    "budget10kPlus": "10k £ 以上",
+    "currency": "货币",
+    "currencyLabel": "货币",
+    "timeline": "时间线",
+    "timelineASAP": "尽快",
+    "timeline1to2": "1–2 周",
+    "timeline1month": "1 个月",
+    "timelineFlexible": "灵活",
+    "projectDescription": "项目说明",
+    "projectDescriptionPlaceholder": "目标、时间线、范围以及如何衡量成功（简要说明即可）。",
     "message": "消息",
     "messagePlaceholder": "你好！怎么了？",
-    "submit": "提交",
+    "submit": "发送项目详情",
     "sending": "发送中...",
-    "success": "感谢您的联系！我会尽快回复您。",
-    "error": "出了些问题。请重试。"
+    "success": "感谢 — 若需求匹配，我通常会在 24–48 小时内回复。",
+    "successToast": "已发送。",
+    "error": "出了些问题。请重试。",
+    "trustMicrocopy": "不会发送垃圾信息。您的信息将严格保密。",
+    "validationRequired": "此项为必填。",
+    "sendAnother": "再发一条消息"
   },
   "faq": {
     "heading": "常见问题",
@@ -165,7 +237,7 @@
       },
       "experience": {
         "question": "您有多少经验？",
-        "answer": "我在 Web 开发方面拥有 3.5 年以上的实际经验，使用包括 React.js、Next.js、Node.js、MongoDB、Express.js 和 Vue.js 在内的各种技术。"
+        "answer": "我在 Web 开发方面拥有 4 年以上的实际经验，使用包括 React.js、Next.js、Node.js、MongoDB、Express.js 和 Vue.js 在内的各种技术。"
       },
       "rate": {
         "question": "您的小时费率是多少？",

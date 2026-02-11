@@ -2,6 +2,7 @@
   "nav": {
     "home": "ホーム",
     "about": "私について",
+    "services": "サービス",
     "experience": "経験",
     "projects": "プロジェクト",
     "testimonials": "お客様の声",
@@ -9,18 +10,60 @@
   },
   "intro": {
     "available": "仕事可能です！",
+    "workTypes": "正社員・フリーランス・契約に対応",
+    "fullTime": "正社員",
+    "freelance": "フリーランス",
+    "contract": "契約",
+    "remoteOnsite": "リモート・オンサイト可",
     "location": "現在イギリス在住 — 転勤可能",
     "greeting": "こんにちは、私は",
     "name": "Yash Kapure",
     "title": "フルスタック専門知識を持つフロントエンドエンジニア。",
-    "description": "React.js、Next.js、Tailwind CSS、shadcn/uiを使用して、高速でアクセス可能でSEOに優れたWebアプリケーションを構築しています。3.5年以上の経験と、JavaScriptとTypeScriptの強力なフルスタックスキルを持ち、滑らかなユーザーインターフェースの作成、優れたUI/UXの維持、クリーンで保守可能なコードの記述に情熱を注いでいます。モダンなユーザーエクスペリエンスを構築し、必要に応じてスケーラブルなバックエンド統合も提供します。",
+    "description": "React.js、Next.js、Tailwind CSS、shadcn/uiを使用して、高速でアクセス可能でSEOに優れたWebアプリケーションを構築しています。4年以上の経験と、JavaScriptとTypeScriptの強力なフルスタックスキルを持ち、滑らかなユーザーインターフェースの作成、優れたUI/UXの維持、クリーンで保守可能なコードの記述に情熱を注いでいます。モダンなユーザーエクスペリエンスを構築し、必要に応じてスケーラブルなバックエンド統合も提供します。",
     "getInTouch": "お問い合わせ",
     "viewProjects": "プロジェクトを見る",
     "downloadCV": "履歴書をダウンロード"
   },
+  "services": {
+    "heading": "提供サービス",
+    "content": "UI・APIからバックエンド・データまで、お客様のニーズに合わせて構築します。",
+    "badgeMostPopular": "ご依頼多数",
+    "bookService": "このサービスについて相談",
+    "technologiesLabel": "技術・ツール",
+    "items": {
+      "frontend": {
+        "title": "フロントエンド開発",
+        "description": "React、Next.js、Vueを使った高速でアクセスしやすいUI。サードパーティAPI、複雑なAPI連携、決済ゲートウェイ（Stripe、Easebuzz）の実装で、フロントエンドをサービスや決済にシームレスに接続します。"
+      },
+      "fullstack": {
+        "title": "フルスタック開発",
+        "description": "MERN（MongoDB、Express、React、Node）、React + Node、MEVNによるエンドツーエンドのWebアプリ。認証・APIからダッシュボード・リアルタイム機能まで。"
+      },
+      "database": {
+        "title": "データベース・バックエンド",
+        "description": "スケーラブルなアプリのためのスキーマ設計、クエリ、連携。SQL、NoSQL、Supabaseなどのマネージドバックエンドで認証とリアルタイムを実現。"
+      },
+      "performance": {
+        "title": "パフォーマンス・フロントエンド最適化",
+        "description": "既存フロントエンドをより速く・安定に。Core Web Vitals、バンドルサイズ、ランタイム性能でレスポンシブなUIと予測可能なインフラコストを実現。"
+      },
+      "architecture": {
+        "title": "フロントエンドアーキテクチャ・システム設計",
+        "description": "チームが混乱なくリリースできるようフロントエンドを構造化。コンポーネント境界、状態戦略、明確な契約で安全なリファクタを可能に。"
+      },
+      "productUi": {
+        "title": "プロダクト重視のUIエンジニアリング",
+        "description": "Figmaとプロダクト仕様を本番UIに。アクセシブルなコンポーネントとデザインシステム準拠で、リリースするものが全員に届くように。"
+      },
+      "seoAeo": {
+        "title": "SEO・AEO・GEO・本番準備",
+        "description": "検索、回答エンジン、実ユーザーに備えてアプリを準備。メタデータ、構造化データ（SEO/AEO/GEO）、アナリティクス、モニタリングで発見されやすく、AIに引用され、問題を早期に修正。"
+      }
+    }
+  },
   "about": {
     "heading": "私について",
-    "paragraph1": "私の名前はYash Kapureで、3.5年以上の実務経験を持つフロントエンドエンジニアです。高速で使いやすく、SEOに優れたWebアプリケーションを設計しています。私の専門は、React.js、Next.js、Tailwind CSS、shadcn/uiを使用して滑らかなUIを作成し、Framer Motionで物事に命を吹き込むことです。",
+    "paragraph1": "私の名前はYash Kapureで、4年以上の実務経験を持つフロントエンドエンジニアです。高速で使いやすく、SEOに優れたWebアプリケーションを設計しています。私の専門は、React.js、Next.js、Tailwind CSS、shadcn/uiを使用して滑らかなUIを作成し、Framer Motionで物事に命を吹き込むことです。",
     "paragraph2": "フロントエンドの経験に加えて、JavaScriptとTypeScriptの優れたフルスタックスキルを持ち、Node.js、Express、MongoDBやMySQLなどのデータベースに精通しています。これにより、滑らかなUIの設計からスケーラブルなバックエンドの接続まで、プロジェクトを最初から最後まで管理できます。",
     "paragraph3": "製品会社、クリニック、スタートアップ向けのソフトウェアを構築し、精密なエンジニアリングを通じて最大のパフォーマンス、エンゲージメント、リード獲得を提供してきました。エレガントで最新のコードを書き、新しいツールやトレンドを発見することに興奮しています。",
     "paragraph4": "仕事以外では、クリケットと良いお茶を楽しんでいますが、今はコーヒーを飲むことに慣れています。常に学習、実験、成長に積極的で、影響力のある製品と革新的なチームに価値をもたらす機会を探しています。"
@@ -142,18 +185,47 @@
   },
   "contact": {
     "heading": "お問い合わせ",
+    "introExpectations": "プロダクトチームや創業者の方々と、本番運用可能なコードと明確なコミュニケーションでお手伝いしています。下記の簡単な情報があると、より的確にご返信できます — 目標・スケジュール・範囲があると助かります。",
+    "openToRoles": "正社員・フリーランス・契約のご依頼に対応 — リモート・オンサイト可。",
+    "requestingService": "ご依頼サービス",
     "description": "直接お問い合わせください",
     "or": "またはこのフォームから。",
-    "name": "名前",
-    "namePlaceholder": "お名前",
+    "name": "お名前",
+    "namePlaceholder": "氏名",
     "email": "メール",
-    "emailPlaceholder": "hello@gmail.com",
+    "emailPlaceholder": "you@company.com",
+    "preferredContact": "ご希望の連絡方法",
+    "preferredContactEmail": "メール",
+    "preferredContactWhatsApp": "WhatsApp",
+    "preferredContactCall": "電話",
+    "phoneOptional": "電話（任意）",
+    "phoneCountryCodeLabel": "国コード",
+    "phonePlaceholder": "電話番号",
+    "budgetLabel": "予算の目安（認識のすり合わせに役立ちます）",
+    "budgetNotSure": "未定",
+    "budgetUnder2k": "£2k未満",
+    "budget2k5k": "£2k–£5k",
+    "budget5k10k": "£5k–£10k",
+    "budget10kPlus": "£10k以上",
+    "currency": "通貨",
+    "currencyLabel": "通貨",
+    "timeline": "希望時期",
+    "timelineASAP": "なるべく早く",
+    "timeline1to2": "1–2週間",
+    "timeline1month": "1ヶ月",
+    "timelineFlexible": "柔軟",
+    "projectDescription": "プロジェクト詳細",
+    "projectDescriptionPlaceholder": "目標・スケジュール・範囲・成功の測り方（簡単な説明で大丈夫です）。",
     "message": "メッセージ",
     "messagePlaceholder": "こんにちは！どうしましたか？",
-    "submit": "送信",
+    "submit": "プロジェクト詳細を送信",
     "sending": "送信中...",
-    "success": "お問い合わせありがとうございます！すぐに返信いたします。",
-    "error": "問題が発生しました。もう一度お試しください。"
+    "success": "ありがとうございます。条件が合う場合、通常24–48時間以内にご返信します。",
+    "successToast": "送信しました。",
+    "error": "問題が発生しました。もう一度お試しください。",
+    "trustMicrocopy": "スパムは送りません。内容は厳重に取り扱います。",
+    "validationRequired": "必須項目です。",
+    "sendAnother": "別のメッセージを送る"
   },
   "faq": {
     "heading": "よくある質問",
@@ -165,7 +237,7 @@
       },
       "experience": {
         "question": "どのくらいの経験がありますか？",
-        "answer": "Web開発で3.5年以上の実務経験があり、React.js、Next.js、Node.js、MongoDB、Express.js、Vue.jsなどのさまざまなテクノロジーで作業しています。"
+        "answer": "Web開発で4年以上の実務経験があり、React.js、Next.js、Node.js、MongoDB、Express.js、Vue.jsなどのさまざまなテクノロジーで作業しています。"
       },
       "rate": {
         "question": "時給はいくらですか？",

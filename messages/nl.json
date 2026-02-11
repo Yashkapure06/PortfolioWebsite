@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "Over Mij",
+    "services": "Diensten",
     "experience": "Ervaring",
     "projects": "Projecten",
     "testimonials": "Getuigenissen",
@@ -9,18 +10,60 @@
   },
   "intro": {
     "available": "Beschikbaar voor werk!",
+    "workTypes": "Open voor vast, freelance en contract",
+    "fullTime": "Vast",
+    "freelance": "Freelance",
+    "contract": "Contract",
+    "remoteOnsite": "Remote of op locatie",
     "location": "Momenteel gevestigd in het Verenigd Koninkrijk — open voor verhuizing",
     "greeting": "Hallo, ik ben",
     "name": "Yash Kapure",
     "title": "Frontend Engineer met Full-Stack Expertise.",
-    "description": "Ik bouw snelle, toegankelijke en SEO-vriendelijke webapplicaties met React.js, Next.js, Tailwind CSS en shadcn/ui. Met meer dan 3.5 jaar ervaring en sterke full-stack vaardigheden in JavaScript en TypeScript, ben ik gepassioneerd over het creëren van vloeiende gebruikersinterfaces, het behouden van uitstekende UI/UX en het schrijven van schone, onderhoudbare code. Ik creëer moderne gebruikerservaringen terwijl ik ook schaalbare backend-integraties lever wanneer dat nodig is.",
+    "description": "Ik bouw snelle, toegankelijke en SEO-vriendelijke webapplicaties met React.js, Next.js, Tailwind CSS en shadcn/ui. Met meer dan 4 jaar ervaring en sterke full-stack vaardigheden in JavaScript en TypeScript, ben ik gepassioneerd over het creëren van vloeiende gebruikersinterfaces, het behouden van uitstekende UI/UX en het schrijven van schone, onderhoudbare code. Ik creëer moderne gebruikerservaringen terwijl ik ook schaalbare backend-integraties lever wanneer dat nodig is.",
     "getInTouch": "Neem contact op",
     "viewProjects": "Bekijk projecten",
     "downloadCV": "CV downloaden"
   },
+  "services": {
+    "heading": "Diensten die ik aanbied",
+    "content": "Wat ik voor u kan bouwen — van UI en API's tot backend en data.",
+    "badgeMostPopular": "Meest gevraagd",
+    "bookService": "Bespreek deze service",
+    "technologiesLabel": "Technologieën en tools",
+    "items": {
+      "frontend": {
+        "title": "Frontend-ontwikkeling",
+        "description": "Snelle, toegankelijke interfaces met React, Next.js of Vue. Ik implementeer third-party API's, complexe API-integratie en betaalpoorten (Stripe, Easebuzz) zodat uw frontend naadloos verbinding maakt met diensten en betalingen."
+      },
+      "fullstack": {
+        "title": "Full-stack-ontwikkeling",
+        "description": "End-to-end webapplicaties met MERN (MongoDB, Express, React, Node), React + Node of MEVN. Van authenticatie en API's tot dashboards en realtime-functionaliteit."
+      },
+      "database": {
+        "title": "Database en backend",
+        "description": "Schema-ontwerp, query's en integraties voor schaalbare apps. SQL, NoSQL en beheerde backends zoals Supabase voor auth en realtime."
+      },
+      "performance": {
+        "title": "Performance en frontend-optimalisatie",
+        "description": "Bestaande frontends sneller en betrouwbaarder maken. Core Web Vitals, bundelgrootte en runtime-prestaties voor responsieve UI's en voorspelbare infra-kosten."
+      },
+      "architecture": {
+        "title": "Frontend-architectuur en systeemontwerp",
+        "description": "Frontendcode structureren zodat teams zonder chaos kunnen leveren. Componentgrenzen, state-strategie en duidelijke contracten voor veilige refactors."
+      },
+      "productUi": {
+        "title": "Productgericht UI-engineering",
+        "description": "Figma en productspecificaties omzetten naar productie-UI. Toegankelijke componenten en design system-afstemming zodat wat wordt uitgerold voor iedereen werkt."
+      },
+      "seoAeo": {
+        "title": "SEO, AEO, GEO en productiegereedheid",
+        "description": "Uw app klaar maken voor zoeken, antwoordengines en echte gebruikers. Metagegevens, gestructureerde data (SEO/AEO/GEO), analytics en monitoring om gevonden te worden, door AI geciteerd te worden en problemen tijdig te verhelpen."
+      }
+    }
+  },
   "about": {
     "heading": "Over Mij",
-    "paragraph1": "Mijn naam is Yash Kapure en ik ben een Frontend Engineer met meer dan 3.5 jaar praktische ervaring in het ontwerpen van snelle, bruikbare en SEO-vriendelijke webapplicaties. Mijn specialiteit is het creëren van vloeiende gebruikersinterfaces met React.js, Next.js, Tailwind CSS en shadcn/ui en dingen tot leven brengen met Framer Motion.",
+    "paragraph1": "Mijn naam is Yash Kapure en ik ben een Frontend Engineer met meer dan 4 jaar praktische ervaring in het ontwerpen van snelle, bruikbare en SEO-vriendelijke webapplicaties. Mijn specialiteit is het creëren van vloeiende gebruikersinterfaces met React.js, Next.js, Tailwind CSS en shadcn/ui en dingen tot leven brengen met Framer Motion.",
     "paragraph2": "Naast mijn frontend-ervaring beschik ik over goede full-stack vaardigheden in JavaScript en TypeScript, en vertrouwde ervaring met Node.js, Express en databases zoals MongoDB en MySQL. Dit stelt me in staat om projecten van begin tot eind te beheren, van het ontwerpen van vloeiende gebruikersinterfaces tot het verbinden van schaalbare backends.",
     "paragraph3": "Ik heb software gebouwd voor productbedrijven, klinieken en startups, waarbij ik maximale prestaties, betrokkenheid en leadgeneratie lever door middel van precieze engineering. Het schrijven van elegante, up-to-date code en het ontdekken van nieuwe tools en trends spreekt me aan.",
     "paragraph4": "Buiten het werk geniet ik van cricket en een goede kop thee, maar nu ben ik gewend aan het drinken van koffie. Ik sta altijd open voor leren, experimenteren en groeien en zoek naar kansen waarbij ik waarde kan toevoegen aan impactvolle producten en inventieve teams."
@@ -142,18 +185,47 @@
   },
   "contact": {
     "heading": "Neem Contact Op",
+    "introExpectations": "Ik werk met productteams en oprichters die production-ready code en duidelijke communicatie nodig hebben. Een paar gegevens hieronder helpen me om nuttig te reageren — doel, tijdlijn en scope maken het verschil.",
+    "openToRoles": "Open voor vaste banen, freelance en contracten — remote of op locatie.",
+    "requestingService": "Aangevraagde service",
     "description": "Neem rechtstreeks contact met me op via",
     "or": "of via dit formulier.",
-    "name": "Naam",
-    "namePlaceholder": "Uw Naam",
+    "name": "Uw naam",
+    "namePlaceholder": "Volledige naam",
     "email": "E-mail",
-    "emailPlaceholder": "hallo@gmail.com",
+    "emailPlaceholder": "u@bedrijf.com",
+    "preferredContact": "Voorkeurscontactmethode",
+    "preferredContactEmail": "E-mail",
+    "preferredContactWhatsApp": "WhatsApp",
+    "preferredContactCall": "Bellen",
+    "phoneOptional": "Telefoon (optioneel)",
+    "phoneCountryCodeLabel": "Landcode",
+    "phonePlaceholder": "Telefoonnummer",
+    "budgetLabel": "Geschat budget (helpt verwachtingen af te stemmen)",
+    "budgetNotSure": "Weet ik nog niet",
+    "budgetUnder2k": "Onder £2k",
+    "budget2k5k": "£2k–£5k",
+    "budget5k10k": "£5k–£10k",
+    "budget10kPlus": "£10k+",
+    "currency": "Valuta",
+    "currencyLabel": "Valuta",
+    "timeline": "Tijdlijn",
+    "timelineASAP": "Zo snel mogelijk",
+    "timeline1to2": "1–2 weken",
+    "timeline1month": "1 maand",
+    "timelineFlexible": "Flexibel",
+    "projectDescription": "Projectdetails",
+    "projectDescriptionPlaceholder": "Doel, tijdlijn, scope en hoe u succes meet (een paar zinnen is voldoende).",
     "message": "Bericht",
     "messagePlaceholder": "Hallo! Hoe gaat het?",
-    "submit": "Verzenden",
+    "submit": "Projectdetails versturen",
     "sending": "Verzenden...",
-    "success": "Bedankt voor uw bericht! Ik neem binnenkort contact met u op.",
-    "error": "Er is iets misgegaan. Probeer het opnieuw."
+    "success": "Bedankt — ik reageer meestal binnen 24–48 uur als het een goede match is.",
+    "successToast": "Bericht verzonden.",
+    "error": "Er is iets misgegaan. Probeer het opnieuw.",
+    "trustMicrocopy": "Geen spam. Uw gegevens blijven privé.",
+    "validationRequired": "Dit veld is verplicht.",
+    "sendAnother": "Nog een bericht sturen"
   },
   "faq": {
     "heading": "Veelgestelde Vragen",
@@ -165,7 +237,7 @@
       },
       "experience": {
         "question": "Hoeveel ervaring heeft u?",
-        "answer": "Ik heb meer dan 3.5 jaar praktische ervaring in webontwikkeling en werk met verschillende technologieën, waaronder React.js, Next.js, Node.js, MongoDB, Express.js en Vue.js."
+        "answer": "Ik heb meer dan 4 jaar praktische ervaring in webontwikkeling en werk met verschillende technologieën, waaronder React.js, Next.js, Node.js, MongoDB, Express.js en Vue.js."
       },
       "rate": {
         "question": "Wat is uw uurtarief?",
