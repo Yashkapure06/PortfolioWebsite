@@ -4,6 +4,11 @@ export const siteConfig = {
   description:
     'Hi there! My name is Yash and I am a programmer with a passion for learning and exploring new technologies. With a strong background in full-stack development, I have a well-rounded skill set and am always looking to expand my knowledge and take on new challenges. As a dedicated and driven individual, I am constantly seeking out opportunities to grow and improve as a programmer.',
   keywords: [
+    'SEO AEO GEO',
+    'SEO AEO GEO Production Readiness',
+    'Answer Engine Optimization',
+    'Generative Engine Optimization',
+    'Structured data JSON-LD',
     'Online Interview Assessment System for Students and Professionals',
     'Yash Kapure projects',
     'Projects by Yash Kapure',
