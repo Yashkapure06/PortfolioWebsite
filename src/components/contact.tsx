@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useForm } from '@formspree/react';
+import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
@@ -21,37 +22,38 @@ const textareaClassName =
 const labelClassName =
   'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70';
 
+// Currency with symbol and flag for combined budget UI
 const CURRENCIES = [
-  { value: 'USD', label: 'USD' },
-  { value: 'EUR', label: 'EUR' },
-  { value: 'GBP', label: 'GBP' },
-  { value: 'INR', label: 'INR' },
-  { value: 'CAD', label: 'CAD' },
-  { value: 'AUD', label: 'AUD' },
-  { value: 'CHF', label: 'CHF' },
-  { value: 'JPY', label: 'JPY' },
-  { value: 'PLN', label: 'PLN' },
-  { value: 'SEK', label: 'SEK' },
-  { value: 'NOK', label: 'NOK' },
-  { value: 'DKK', label: 'DKK' },
-  { value: 'BRL', label: 'BRL' },
-  { value: 'MXN', label: 'MXN' },
-  { value: 'AED', label: 'AED' },
-  { value: 'PKR', label: 'PKR' },
-  { value: 'BDT', label: 'BDT' },
-  { value: 'LKR', label: 'LKR' },
-  { value: 'EGP', label: 'EGP' },
-  { value: 'ZAR', label: 'ZAR' },
-  { value: 'NGN', label: 'NGN' },
-  { value: 'SGD', label: 'SGD' },
-  { value: 'MYR', label: 'MYR' },
-  { value: 'PHP', label: 'PHP' },
-  { value: 'THB', label: 'THB' },
-  { value: 'IDR', label: 'IDR' },
-  { value: 'TRY', label: 'TRY' },
-  { value: 'CNY', label: 'CNY' },
-  { value: 'KRW', label: 'KRW' },
-  { value: 'NZD', label: 'NZD' },
+  { value: 'USD', label: 'USD', symbol: '$', flag: '🇺🇸' },
+  { value: 'EUR', label: 'EUR', symbol: '€', flag: '🇪🇺' },
+  { value: 'GBP', label: 'GBP', symbol: '£', flag: '🇬🇧' },
+  { value: 'INR', label: 'INR', symbol: '₹', flag: '🇮🇳' },
+  { value: 'CAD', label: 'CAD', symbol: 'C$', flag: '🇨🇦' },
+  { value: 'AUD', label: 'AUD', symbol: 'A$', flag: '🇦🇺' },
+  { value: 'CHF', label: 'CHF', symbol: 'Fr', flag: '🇨🇭' },
+  { value: 'JPY', label: 'JPY', symbol: '¥', flag: '🇯🇵' },
+  { value: 'PLN', label: 'PLN', symbol: 'zł', flag: '🇵🇱' },
+  { value: 'SEK', label: 'SEK', symbol: 'kr', flag: '🇸🇪' },
+  { value: 'NOK', label: 'NOK', symbol: 'kr', flag: '🇳🇴' },
+  { value: 'DKK', label: 'DKK', symbol: 'kr', flag: '🇩🇰' },
+  { value: 'BRL', label: 'BRL', symbol: 'R$', flag: '🇧🇷' },
+  { value: 'MXN', label: 'MXN', symbol: '$', flag: '🇲🇽' },
+  { value: 'AED', label: 'AED', symbol: 'د.إ', flag: '🇦🇪' },
+  { value: 'PKR', label: 'PKR', symbol: '₨', flag: '🇵🇰' },
+  { value: 'BDT', label: 'BDT', symbol: '৳', flag: '🇧🇩' },
+  { value: 'LKR', label: 'LKR', symbol: 'Rs', flag: '🇱🇰' },
+  { value: 'EGP', label: 'EGP', symbol: 'E£', flag: '🇪🇬' },
+  { value: 'ZAR', label: 'ZAR', symbol: 'R', flag: '🇿🇦' },
+  { value: 'NGN', label: 'NGN', symbol: '₦', flag: '🇳🇬' },
+  { value: 'SGD', label: 'SGD', symbol: 'S$', flag: '🇸🇬' },
+  { value: 'MYR', label: 'MYR', symbol: 'RM', flag: '🇲🇾' },
+  { value: 'PHP', label: 'PHP', symbol: '₱', flag: '🇵🇭' },
+  { value: 'THB', label: 'THB', symbol: '฿', flag: '🇹🇭' },
+  { value: 'IDR', label: 'IDR', symbol: 'Rp', flag: '🇮🇩' },
+  { value: 'TRY', label: 'TRY', symbol: '₺', flag: '🇹🇷' },
+  { value: 'CNY', label: 'CNY', symbol: '¥', flag: '🇨🇳' },
+  { value: 'KRW', label: 'KRW', symbol: '₩', flag: '🇰🇷' },
+  { value: 'NZD', label: 'NZD', symbol: 'NZ$', flag: '🇳🇿' },
 ] as const;
 
 const serviceKeys: ServiceKey[] = [
@@ -82,10 +84,24 @@ export const Contact = () => {
     email?: boolean;
     message?: boolean;
   }>({});
+  const [currencyOpen, setCurrencyOpen] = useState(false);
+  const [selectedCurrency, setSelectedCurrency] = useState<(typeof CURRENCIES)[number]>(CURRENCIES[0]);
+  const currencyDropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (currencyDropdownRef.current && !currencyDropdownRef.current.contains(e.target as Node)) {
+        setCurrencyOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   useEffect(() => {
     if (state.succeeded) {
       setShowSuccessMessage(true);
+      setSelectedCurrency(CURRENCIES[0]);
       toast.success(t('successToast'));
       const form = document.querySelector('form');
       if (form) form.reset();
@@ -230,40 +246,81 @@ export const Contact = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-            <div>
-              <label htmlFor="contact-budget" className={labelClassName}>
-                {t('budgetLabel')}
-              </label>
-              <select
+          {/* Single combined field: currency first (flag + symbol), then amount */}
+          <div>
+            <label htmlFor="contact-budget" className={labelClassName}>
+              {t('budgetLabel')}
+            </label>
+            <div
+              className="border-input bg-background ring-offset-background focus-within:ring-ring mt-2 flex h-11 w-full items-stretch rounded-md border focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2"
+              ref={currencyDropdownRef}
+            >
+              <input type="hidden" name="currency" value={selectedCurrency.value} />
+              {/* Currency selector (left) */}
+              <div className="relative flex-shrink-0">
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setCurrencyOpen((o) => !o);
+                  }}
+                  aria-haspopup="listbox"
+                  aria-expanded={currencyOpen}
+                  aria-label={t('currencyLabel')}
+                  className="border-input flex h-full min-w-[8rem] items-center justify-between gap-1.5 rounded-l-[6px] border-0 border-r bg-muted/40 px-3 py-2 text-sm transition-colors hover:bg-muted/60 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary/30"
+                >
+                  <span className="flex items-center gap-1.5 truncate">
+                    <span className="text-base leading-none" aria-hidden>
+                      {selectedCurrency.flag}
+                    </span>
+                    <span className="font-medium">{selectedCurrency.label}</span>
+                    <span className="text-muted-foreground text-xs">({selectedCurrency.symbol})</span>
+                  </span>
+                  <ChevronDown
+                    className={`text-muted-foreground size-4 shrink-0 transition-transform ${currencyOpen ? 'rotate-180' : ''}`}
+                    aria-hidden
+                  />
+                </button>
+                {currencyOpen && (
+                  <ul
+                    role="listbox"
+                    aria-label={t('currencyLabel')}
+                    className="border-input bg-background absolute left-0 top-full z-50 mt-1 max-h-60 w-64 overflow-auto rounded-md border py-1 shadow-lg"
+                  >
+                    {CURRENCIES.map((curr) => (
+                      <li
+                        key={curr.value}
+                        role="option"
+                        aria-selected={selectedCurrency.value === curr.value}
+                        onMouseDown={(e) => {
+                          e.preventDefault();
+                          setSelectedCurrency(curr);
+                          setCurrencyOpen(false);
+                        }}
+                        className="hover:bg-muted/50 flex cursor-pointer items-center gap-2 px-3 py-2 text-sm"
+                      >
+                        <span className="text-base" aria-hidden>
+                          {curr.flag}
+                        </span>
+                        <span className="font-medium">{curr.label}</span>
+                        <span className="text-muted-foreground text-xs">({curr.symbol})</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              {/* Amount input (right) */}
+              <input
+                type="number"
                 id="contact-budget"
                 name="budget"
+                min={0}
+                step={1}
+                placeholder={t('budgetPlaceholder')}
+                inputMode="decimal"
                 aria-label={t('budgetLabel')}
-                className={inputClassName}
-              >
-                <option value="">{t('budgetNotSure')}</option>
-                <option value="under-2k">{t('budgetUnder2k')}</option>
-                <option value="2k-5k">{t('budget2k5k')}</option>
-                <option value="5k-10k">{t('budget5k10k')}</option>
-                <option value="10k-plus">{t('budget10kPlus')}</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="contact-currency" className={labelClassName}>
-                {t('currency')}
-              </label>
-              <select
-                id="contact-currency"
-                name="currency"
-                aria-label={t('currencyLabel')}
-                className={inputClassName}
-              >
-                {CURRENCIES.map(({ value, label }) => (
-                  <option key={value} value={value}>
-                    {label}
-                  </option>
-                ))}
-              </select>
+                className="placeholder:text-muted-foreground border-0 bg-transparent px-3 py-2 text-sm outline-none focus:ring-0 min-w-0 flex-1 [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+              />
             </div>
           </div>
 
@@ -271,18 +328,14 @@ export const Contact = () => {
             <label htmlFor="contact-timeline" className={labelClassName}>
               {t('timeline')}
             </label>
-            <select
+            <input
+              type="text"
               id="contact-timeline"
               name="timeline"
+              placeholder={t('timelinePlaceholder')}
               aria-label={t('timeline')}
               className={inputClassName}
-            >
-              <option value="">—</option>
-              <option value="asap">{t('timelineASAP')}</option>
-              <option value="1-2-weeks">{t('timeline1to2')}</option>
-              <option value="1-month">{t('timeline1month')}</option>
-              <option value="flexible">{t('timelineFlexible')}</option>
-            </select>
+            />
           </div>
 
           <div className="flex flex-col items-center gap-2 pt-2">
