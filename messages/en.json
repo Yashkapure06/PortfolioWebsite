@@ -317,7 +317,7 @@
     "items": {
       "services": {
         "question": "What services do you offer?",
-        "answer": "I offer full-stack web development services including React.js, Next.js, Node.js, and MERN/MEVN stack development. I specialize in creating interactive and beautiful user interfaces with modern web technologies."
+        "answer": "I offer: Frontend Development (React, Next.js, Vue, payments); Full Stack Development (MERN, MEVN, auth, real-time); Database & Backend; Performance & Frontend Optimization; Frontend Architecture & System Design; Product-Focused UI Engineering; and SEO, AEO, GEO & Production Readiness—metadata, structured data, analytics, and monitoring so your site is discoverable, citable by AI, and issues get caught early."
       },
       "experience": {
         "question": "How much experience do you have?",
