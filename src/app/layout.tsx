@@ -6,6 +6,7 @@ import Script from 'next/script';
 
 import { env } from '@/env.mjs';
 import { generateAEOStructuredData } from '@/lib/aeo';
+import { generateGeoStructuredData } from '@/lib/geo';
 import { fonts } from '@/lib/fonts';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
@@ -59,8 +60,9 @@ export const metadata: Metadata = {
 // The [locale] layout will handle locale-specific content
 export default function RootLayout({ children }: { children: ReactNode }) {
   // AEO (Answer Engine Optimization) Structured Data
-  // Combines SEO with AI/voice search optimization for comprehensive visibility
   const aeoStructuredData = generateAEOStructuredData();
+  // GEO (Generative Engine Optimization) – provenance & citation signals for AI (ChatGPT, Perplexity, Claude)
+  const geoStructuredData = generateGeoStructuredData();
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -101,6 +103,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {aeoStructuredData.map((schema, index) => (
           <script
             key={`aeo-schema-${index}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(schema),
+            }}
+          />
+        ))}
+        {/* GEO Structured Data - Provenance (author, dates) for generative engine citations */}
+        {geoStructuredData.map((schema, index) => (
+          <script
+            key={`geo-schema-${index}`}
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(schema),
