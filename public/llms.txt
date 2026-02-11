@@ -1,0 +1,30 @@
+# Yash Kapure
+
+> Full Stack Web Developer and Frontend Engineer. React.js, Next.js, Node.js, MERN/MEVN stack. Based in the United Kingdom. Available for remote freelance work at $25–57/hour.
+
+## About
+
+- [Home](https://yashkapure.netlify.app): Portfolio overview, skills, experience, and contact.
+- [Projects](https://yashkapure.netlify.app/projects): Web and mobile projects by Yash Kapure (React, Next.js, React-Native, MERN/MEVN).
+
+## Services
+
+- Full-stack web development (React.js, Next.js, Node.js, TypeScript).
+- MERN/MEVN stack development.
+- React-Native development.
+- Freelance remote work; hourly rate $25–57 USD.
+
+## Contact
+
+- Email: yashkapure06@gmail.com
+- GitHub: https://github.com/Yashkapure06
+- LinkedIn: https://linkedin.com/in/yash-kapure
+- Twitter: https://twitter.com/KapureYash
+
+## Key facts
+
+- Name: Yash Kapure (Yash Vinod Kapure)
+- Role: Frontend Engineer & Full Stack Developer
+- Location: United Kingdom (remote)
+- Availability: Available for hire
+- Experience: 4+ years
