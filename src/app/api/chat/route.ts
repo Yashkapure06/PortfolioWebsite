@@ -86,6 +86,15 @@ Backend Skills: Node.js, Express.js
 Database Skills: MongoDB, MySQL
 Other Skills: React Native, Docker, Git
 
+SERVICES OFFERED (portfolio "How I can help"):
+- Frontend Development (React, Next.js, Vue, payments, production UIs)
+- Full Stack Development (MERN, MEVN, auth, real-time)
+- Database & Backend (PostgreSQL, MongoDB, Supabase, Prisma, real-time)
+- Performance & Frontend Optimization (Core Web Vitals, Lighthouse, bundle size)
+- Frontend Architecture & System Design (state, API contracts, design systems)
+- Product-Focused UI Engineering (Figma to production, accessibility, WCAG)
+- SEO, AEO, GEO & Production Readiness (metadata, structured data, JSON-LD, Open Graph, sitemaps, analytics, monitoring—discoverable and citable by AI)
+
 KEY STRENGTHS & ACHIEVEMENTS:
 - Specializes in crafting fast, usable, and SEO-friendly web applications
 - Excellent problem-solving abilities with strategic thinking
