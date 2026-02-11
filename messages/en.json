@@ -15,7 +15,7 @@
     "freelance": "Freelance",
     "contract": "Contract",
     "remoteOnsite": "Remote or onsite",
-    "location": "Currently based in United Kingdom - open to relocate",
+    "location": "Based in the UK — serving clients in the US, UK, and worldwide. Remote-first.",
     "greeting": "Hi I'm",
     "name": "Yash Kapure",
     "title": "Frontend Engineer with Full-Stack Expertise.",
@@ -270,7 +270,7 @@
   "contact": {
     "heading": "Get In Touch",
     "introExpectations": "I work with product teams and founders who need production-ready code and clear communication. A few details below help me respond with something useful - goal, timeline, and scope go a long way.",
-    "openToRoles": "Open to full-time, freelance, and contract roles - remote or onsite.",
+    "openToRoles": "Open to full-time, freelance, and contract - US, UK, and worldwide. Remote or onsite.",
     "requestingService": "Requesting service",
     "description": "Please contact me directly at",
     "or": "or through this form.",
@@ -329,7 +329,11 @@
       },
       "remote": {
         "question": "Do you work remotely?",
-        "answer": "Yes, I work remotely and have experience collaborating with teams across different time zones. I'm based in the United Kingdom and available for remote work opportunities."
+        "answer": "Yes. I work remotely with teams worldwide, including the US, UK, and Europe. I'm used to overlapping with US hours and async communication. Based in the UK; available for remote projects and flexible on time zones."
+      },
+      "usClients": {
+        "question": "Do you work with US-based clients?",
+        "answer": "Yes. I actively work with US clients—startups, product teams, and agencies. I work remotely with flexible hours to overlap with US time zones, communicate clearly in English, and charge in USD. If you're in the US and need a reliable frontend or full-stack developer, get in touch via the contact form or email."
       },
       "technologies": {
         "question": "What technologies do you specialize in?",

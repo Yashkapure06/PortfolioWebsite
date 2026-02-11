@@ -247,6 +247,10 @@
         "question": "Você trabalha remotamente?",
         "answer": "Sim, trabalho remotamente e tenho experiência colaborando com equipes em diferentes fusos horários. Estou baseado no Reino Unido e disponível para oportunidades de trabalho remoto."
       },
+      "usClients": {
+        "question": "Você trabalha com clientes nos EUA?",
+        "answer": "Sim. Trabalho com clientes nos EUA — startups, times de produto, agências. Remoto, horários flexíveis para fuso dos EUA, comunicação em inglês, tarifas em USD. Entre em contato pelo formulário ou por e-mail."
+      },
       "technologies": {
         "question": "Em quais tecnologias você se especializa?",
         "answer": "Especializo-me em React.js, Next.js, Node.js, TypeScript, JavaScript, stack MERN/MEVN, Tailwind CSS, ShadCN UI, MongoDB, Express.js, Vue.js e várias outras tecnologias web modernas."

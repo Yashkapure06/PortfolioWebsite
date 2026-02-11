@@ -247,6 +247,10 @@
         "question": "リモートで働きますか？",
         "answer": "はい、リモートで働いており、異なるタイムゾーンのチームと協力する経験があります。イギリスに拠点を置いており、リモートワークの機会に利用可能です。"
       },
+      "usClients": {
+        "question": "アメリカのクライアントと仕事をしますか？",
+        "answer": "はい。アメリカのクライアント（スタートアップ、プロダクトチーム、代理店）とリモートで仕事をしています。米国時間に合わせた柔軟な勤務、英語でのコミュニケーション、USDでの請求。お問い合わせはフォームまたはメールでどうぞ。"
+      },
       "technologies": {
         "question": "どのテクノロジーに特化していますか？",
         "answer": "React.js、Next.js、Node.js、TypeScript、JavaScript、MERN/MEVNスタック、Tailwind CSS、ShadCN UI、MongoDB、Express.js、Vue.js、その他のモダンなWebテクノロジーに特化しています。"

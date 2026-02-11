@@ -247,6 +247,10 @@
         "question": "Werkt u op afstand?",
         "answer": "Ja, ik werk op afstand en heb ervaring met samenwerken met teams in verschillende tijdzones. Ik ben gevestigd in het Verenigd Koninkrijk en beschikbaar voor mogelijkheden voor remote werk."
       },
+      "usClients": {
+        "question": "Werkt u met klanten in de VS?",
+        "answer": "Ja. Ik werk met klanten in de VS — startups, productteams, bureaus. Remote, flexibele uren voor VS-tijdzones, communicatie in het Engels, tarieven in USD. Neem contact op via het formulier of per e-mail."
+      },
       "technologies": {
         "question": "In welke technologieën specialiseert u zich?",
         "answer": "Ik specialiseer me in React.js, Next.js, Node.js, TypeScript, JavaScript, MERN/MEVN-stack, Tailwind CSS, ShadCN UI, MongoDB, Express.js, Vue.js en verschillende andere moderne webtechnologieën."

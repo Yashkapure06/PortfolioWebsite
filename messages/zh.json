@@ -247,6 +247,10 @@
         "question": "您远程工作吗？",
         "answer": "是的，我远程工作，并且有与不同时区的团队合作的经验。我位于英国，可用于远程工作机会。"
       },
+      "usClients": {
+        "question": "您与美国客户合作吗？",
+        "answer": "是的。我与美国客户合作——初创公司、产品团队、代理商。远程工作，灵活安排以配合美国时区，英语沟通，以美元计费。请通过表单或邮件联系。"
+      },
       "technologies": {
         "question": "您专长于哪些技术？",
         "answer": "我专长于 React.js、Next.js、Node.js、TypeScript、JavaScript、MERN/MEVN 堆栈、Tailwind CSS、ShadCN UI、MongoDB、Express.js、Vue.js 以及各种其他现代 Web 技术。"
