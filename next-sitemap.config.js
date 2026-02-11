@@ -3,7 +3,18 @@ module.exports = {
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
+    policies: [
+      // GEO: Allow AI crawlers for generative engine visibility (ChatGPT, Perplexity, Claude, etc.)
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'Claude-Web', allow: '/' },
+      { userAgent: 'Anthropic-AI', allow: '/' },
+      { userAgent: 'Google-Extended', allow: '/' },
+      { userAgent: 'CCBot', allow: '/' },
+      { userAgent: 'Bingbot', allow: '/' },
+      { userAgent: '*', allow: '/' },
+    ],
     additionalSitemaps: ['https://yashkapure.netlify.app/sitemap.xml'],
   },
   // Additional paths for better indexing
