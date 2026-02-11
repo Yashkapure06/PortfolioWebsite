@@ -1,31 +1,148 @@
 import { Icons } from '@/components/icons';
 
 export const links = [
-  {
-    name: 'Home',
-    hash: '#home',
-  },
-  {
-    name: 'About',
-    hash: '#about',
-  },
-  {
-    name: 'Experience',
-    hash: '#experience',
-  },
-  {
-    name: 'Projects',
-    hash: '#projects',
-  },
-  {
-    name: 'Testimonials',
-    hash: '#testimonials',
-  },
-  {
-    name: 'Contact',
-    hash: '#contact',
-  },
+  { name: 'Home', hash: '#home' },
+  { name: 'About', hash: '#about' },
+  { name: 'Services', hash: '#services' },
+  { name: 'Experience', hash: '#experience' },
+  { name: 'Projects', hash: '#projects' },
+  { name: 'Testimonials', hash: '#testimonials' },
+  { name: 'Contact', hash: '#contact' },
 ] as const;
+
+/** Service card key; must match i18n keys under services.items.* */
+export type ServiceKey =
+  | 'frontend'
+  | 'fullstack'
+  | 'database'
+  | 'performance'
+  | 'architecture'
+  | 'productUi'
+  | 'seoAeo';
+
+export interface ServiceCard {
+  key: ServiceKey;
+  /** Core stack shown first and with stronger emphasis. */
+  technologies: readonly string[];
+  /** Number of leading technologies to treat as primary (core stack). */
+  primaryCount?: number;
+  /** Show "Most requested" badge when set */
+  highlight?: 'mostPopular';
+}
+
+export const servicesData: readonly ServiceCard[] = [
+  {
+    key: 'frontend',
+    highlight: 'mostPopular',
+    primaryCount: 5,
+    technologies: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'Vue.js',
+      'Framer Motion',
+      'REST APIs',
+      'Stripe',
+      'Easebuzz',
+    ],
+  },
+  {
+    key: 'fullstack',
+    highlight: 'mostPopular',
+    primaryCount: 5,
+    technologies: [
+      'MERN',
+      'MEVN',
+      'Node.js',
+      'Express',
+      'React',
+      'JWT',
+      'OAuth',
+      'Socket.io',
+      'Role-based UI',
+      'REST APIs',
+    ],
+  },
+  {
+    key: 'database',
+    primaryCount: 4,
+    technologies: [
+      'PostgreSQL',
+      'MongoDB',
+      'Supabase',
+      'Prisma',
+      'MySQL',
+      'Firebase',
+      'SQL',
+      'NoSQL',
+      'Real-time',
+    ],
+  },
+  {
+    key: 'performance',
+    highlight: 'mostPopular',
+    primaryCount: 4,
+    technologies: [
+      'Core Web Vitals',
+      'Lighthouse',
+      'Code splitting',
+      'Next.js optimization',
+      'Lazy loading',
+      'Memoization',
+      'Caching',
+      'React DevTools',
+      'Vercel Analytics',
+    ],
+  },
+  {
+    key: 'architecture',
+    highlight: 'mostPopular',
+    primaryCount: 4,
+    technologies: [
+      'TypeScript',
+      'Component design',
+      'State management',
+      'API contracts',
+      'Design systems',
+      'Zustand',
+      'Testing strategy',
+      'Monorepo',
+    ],
+  },
+  {
+    key: 'productUi',
+    primaryCount: 4,
+    technologies: [
+      'Figma',
+      'Accessibility',
+      'WCAG',
+      'Component library',
+      'Design tokens',
+      'Responsive layout',
+      'Keyboard nav',
+      'ARIA',
+    ],
+  },
+  {
+    key: 'seoAeo',
+    highlight: 'mostPopular',
+    primaryCount: 4,
+    technologies: [
+      'Metadata',
+      'JSON-LD',
+      'Open Graph',
+      'GEO',
+      'Sitemaps',
+      'llms.txt',
+      'Google Search Console',
+      'Analytics',
+      'Error tracking',
+      'Monitoring',
+    ],
+  },
+];
 
 export const projectsData = [
   {

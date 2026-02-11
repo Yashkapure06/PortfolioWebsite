@@ -124,7 +124,7 @@ export function generateEnhancedPersonSchema() {
     alternateName: 'Yash Vinod Kapure',
     jobTitle: 'Frontend Engineer & Full Stack Developer',
     description:
-      'Yash Kapure is a Frontend Engineer and Full Stack Developer with 3.5+ years of professional experience. He specializes in React.js, Next.js, Node.js, TypeScript, and MERN/MEVN stack development. Based in the United Kingdom, he works remotely and offers freelance web development services at $25-57/hour. He creates fast, accessible, and SEO-friendly web applications with modern technologies like Tailwind CSS, shadcn/ui, and Framer Motion.',
+      'Yash Kapure is a Frontend Engineer and Full Stack Developer with 4+ years of professional experience. He specializes in React.js, Next.js, Node.js, TypeScript, and MERN/MEVN stack development. Based in the United Kingdom, he works remotely and offers freelance web development services at $25-57/hour. He creates fast, accessible, and SEO-friendly web applications with modern technologies like Tailwind CSS, shadcn/ui, and Framer Motion.',
     url: siteConfig.url,
     image: `${siteConfig.url}/images/profile.jpg`,
     email: 'yashkapure06@gmail.com',
@@ -172,7 +172,7 @@ export function generateEnhancedPersonSchema() {
       {
         '@type': 'PropertyValue',
         name: 'Experience',
-        value: '3.5+ years',
+        value: '4+ years',
       },
       {
         '@type': 'PropertyValue',
