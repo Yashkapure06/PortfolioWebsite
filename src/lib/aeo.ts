@@ -47,7 +47,7 @@ export function generateQAPageStructuredData() {
       name: 'Who is Yash Kapure and what services does he offer?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yash Kapure is a Frontend Engineer and Full Stack Developer with 4+ years of experience. He specializes in React.js, Next.js, Node.js, and MERN/MEVN stack development. He offers full-stack web development services, creates interactive user interfaces, and works remotely from the United Kingdom. His hourly rate ranges from $25-57/hour, and he is available for both short-term and long-term projects.',
+        text: 'Yash Kapure is a Frontend Engineer and Full Stack Developer with 4+ years of experience. He offers: Frontend Development (React, Next.js, Vue, payments); Full Stack Development (MERN, MEVN, auth, real-time); Database & Backend (PostgreSQL, MongoDB, Supabase, Prisma); Performance & Frontend Optimization (Core Web Vitals, Lighthouse); Frontend Architecture & System Design; Product-Focused UI Engineering (accessibility, design systems); and SEO, AEO, GEO & Production Readiness (metadata, structured data, JSON-LD, Open Graph, sitemaps, analytics, monitoring so sites are discoverable and citable by AI). He works remotely from the United Kingdom at $25-57/hour.',
         author: {
           '@type': 'Person',
           name: 'Yash Kapure',
@@ -105,7 +105,7 @@ export function generateHowToStructuredData() {
         '@type': 'HowToStep',
         position: 5,
         name: 'Get Started',
-        text: 'Once requirements are aligned, Yash will begin development using modern web technologies to deliver fast, accessible, and SEO-friendly web applications.',
+        text: 'Once requirements are aligned, Yash will begin development using modern web technologies—including SEO, AEO, and GEO when needed—to deliver fast, accessible, and production-ready web applications.',
       },
     ],
     totalTime: 'PT1H',
@@ -140,7 +140,7 @@ export function generateEnhancedPersonSchema() {
       addressRegion: 'Europe',
       addressLocality: 'United Kingdom',
     },
-    // Answer-focused properties for AI queries
+    // Answer-focused properties for AI queries (aligned with services: frontend, fullstack, database, performance, architecture, productUi, seoAeo)
     knowsAbout: [
       'React.js',
       'Next.js',
@@ -158,7 +158,13 @@ export function generateEnhancedPersonSchema() {
       'Full Stack Development',
       'React-Native Development',
       'Freelance Development',
-      'SEO Optimization',
+      'SEO',
+      'AEO',
+      'GEO',
+      'Structured Data',
+      'JSON-LD',
+      'Open Graph',
+      'Production Readiness',
       'UI/UX Design',
       'Responsive Design',
     ],
@@ -187,7 +193,7 @@ export function generateEnhancedPersonSchema() {
       {
         '@type': 'PropertyValue',
         name: 'Specialization',
-        value: 'React.js, Next.js, Node.js, MERN/MEVN Stack',
+        value: 'Frontend, Full Stack, Database, Performance, Architecture, Product UI, SEO/AEO/GEO & Production Readiness',
       },
     ],
   };
@@ -239,10 +245,10 @@ export function generateServiceSchema() {
       },
       availability: 'https://schema.org/InStock',
       description:
-        'Full-stack web development services including React.js, Next.js, Node.js, and MERN/MEVN stack development. Available for remote work with flexible hours.',
+        'Frontend, Full Stack, Database, Performance, Architecture, Product UI, and SEO/AEO/GEO & Production Readiness. Metadata, structured data, analytics, monitoring. Available for remote work with flexible hours.',
     },
     description:
-      'Professional web development services including React.js, Next.js, Node.js, React-Native, and full-stack development. Specializes in creating fast, accessible, and SEO-friendly web applications with modern technologies. Available for hire at $25-57/hour with flexible working hours.',
+      'Professional web development services: Frontend (React, Next.js, Vue, payments); Full Stack (MERN, MEVN, auth, real-time); Database & Backend; Performance & Optimization; Frontend Architecture; Product-Focused UI; and SEO, AEO, GEO & Production Readiness (metadata, JSON-LD, Open Graph, sitemaps, analytics, monitoring for discoverability and AI citation). Fast, accessible, production-ready applications. Available for hire at $25-57/hour.',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5',
