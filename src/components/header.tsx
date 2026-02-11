@@ -59,6 +59,7 @@ export const Header = () => {
                       name.toLowerCase() as
                         | 'home'
                         | 'about'
+                        | 'services'
                         | 'experience'
                         | 'projects'
                         | 'testimonials'
