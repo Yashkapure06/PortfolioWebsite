@@ -1,9 +1,16 @@
 export const siteConfig = {
   title:
-    'Yash Kapure | Best Freelancer | Front-End Engineer | MERN/MEVN Stack Dev | Full Stack Web Developer | React-Native Developer',
+    'Yash Kapure | Best Frontend Services | Front-End Engineer | Full Stack Web Developer | React & Next.js',
   description:
-    'Frontend & full-stack developer available for US and global clients. React, Next.js, MERN/MEVN. Remote work, flexible hours, USD rates. Hire for production-ready web apps, performance, and SEO.',
+    'Best frontend services: production UIs, React, Next.js, performance, and SEO. Yash Kapure offers Frontend Development, Full Stack, Database, Performance, Architecture, Product UI, and SEO/AEO/GEO. Hire for US & global. $25–57/hr.',
   keywords: [
+    // Services & discoverability (Google + AI answers)
+    'best frontend services',
+    'best frontend development services',
+    'what are the services provided by Yash Kapure',
+    'services provided by Yash Kapure',
+    'Yash Kapure services',
+    'frontend services list',
     // US-focused (for discoverability and clients)
     'Hire React developer USA',
     'Hire Next.js developer United States',

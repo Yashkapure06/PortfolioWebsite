@@ -261,6 +261,67 @@ export function generateServiceSchema() {
 }
 
 /**
+ * Service names and short descriptions for ItemList and AI/Google answers.
+ * Kept in sync with portfolio services (en) for rich results and "what services does Yash Kapure offer".
+ */
+const SERVICES_LIST = [
+  { name: 'Frontend Development', description: 'Production UIs in React, Next.js, or Vue—third-party and payment integrations. Built for real traffic.' },
+  { name: 'Full Stack Development', description: 'End-to-end apps: MERN, React+Node, or MEVN. Auth, role-based access, real-time.' },
+  { name: 'Database & Backend', description: 'PostgreSQL, MongoDB, Supabase, Prisma. Schemas, queries, real-time when you need it.' },
+  { name: 'Performance & Frontend Optimization', description: 'Core Web Vitals, Lighthouse, bundle size, runtime. Predictable load times at scale.' },
+  { name: 'Frontend Architecture & System Design', description: 'Clear boundaries, state strategy, API contracts. New features land cleanly.' },
+  { name: 'Product-Focused UI Engineering', description: 'Figma to production. Accessible components, design-system alignment, WCAG.' },
+  { name: 'SEO, AEO, GEO & Production Readiness', description: 'Metadata, structured data, JSON-LD, Open Graph, sitemaps, analytics, monitoring.' },
+] as const;
+
+/**
+ * ItemList schema: explicit list of services for Google list results and AI answers.
+ * Enables "Services provided by Yash Kapure" to surface as a list in search and AI.
+ */
+export function generateServicesItemListSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Services provided by Yash Kapure',
+    description: 'List of professional web development and frontend services offered by Yash Kapure: Frontend Development, Full Stack, Database & Backend, Performance Optimization, Architecture, Product UI, and SEO/AEO/GEO.',
+    numberOfItems: SERVICES_LIST.length,
+    itemListElement: SERVICES_LIST.map((service, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: service.name,
+      description: service.description,
+    })),
+    author: {
+      '@type': 'Person',
+      name: 'Yash Kapure',
+      url: siteConfig.url,
+    },
+  };
+}
+
+/**
+ * QAPage schema specifically for "What are the services provided by Yash Kapure?"
+ * Gives Google and AI a direct, list-style answer for featured snippets and AI overviews.
+ */
+export function generateServicesQAPageStructuredData() {
+  const listText = SERVICES_LIST.map((s, i) => `${i + 1}. ${s.name}: ${s.description}`).join(' ');
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'QAPage',
+    mainEntity: {
+      '@type': 'Question',
+      name: 'What are the services provided by Yash Kapure?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `Yash Kapure provides the following services: ${SERVICES_LIST.map((s) => s.name).join('; ')}. In detail: ${listText}. Contact: ${siteConfig.url}/#contact or yashkapure06@gmail.com.`,
+        author: { '@type': 'Person', name: 'Yash Kapure' },
+      },
+    },
+    about: { '@type': 'Person', name: 'Yash Kapure', url: siteConfig.url },
+  };
+}
+
+/**
  * Generate comprehensive AEO structured data bundle
  * Combines all schemas for maximum AI search engine visibility
  */
@@ -272,6 +333,8 @@ export function generateAEOStructuredData(
     generateEnhancedPersonSchema(),
     generateServiceSchema(),
     generateQAPageStructuredData(),
+    generateServicesQAPageStructuredData(),
+    generateServicesItemListSchema(),
     generateHowToStructuredData(),
   ];
 
@@ -300,4 +363,7 @@ export const voiceSearchQueries = [
   'Does Yash Kapure work with US clients?',
   'Hire React developer USA',
   'What services does Yash Kapure offer?',
+  'What are the services provided by Yash Kapure?',
+  'best frontend services',
+  'best frontend development services',
 ];
