@@ -27,6 +27,7 @@
   "services": {
     "heading": "Services que je propose",
     "content": "Ce que je peux construire pour vous — de l'UI et des APIs au backend et aux données.",
+    "seoLine": "Services frontend et full-stack : Frontend, Full Stack, Base de données, Performance, Architecture, Product UI, SEO/AEO/GEO. Services par Yash Kapure.",
     "badgeMostPopular": "Le plus demandé",
     "bookService": "Discuter de ce service",
     "technologiesLabel": "Technologies et outils",

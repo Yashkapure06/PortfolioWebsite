@@ -27,6 +27,7 @@
   "services": {
     "heading": "我提供的服务",
     "content": "我能为您构建什么 — 从 UI、API 到后端与数据。",
+    "seoLine": "前端与全栈服务：前端、全栈、数据库、性能、架构、产品 UI、SEO/AEO/GEO。Yash Kapure 提供的服务。",
     "badgeMostPopular": "咨询最多",
     "bookService": "讨论此服务",
     "technologiesLabel": "技术与工具",

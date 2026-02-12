@@ -27,6 +27,7 @@
   "services": {
     "heading": "提供サービス",
     "content": "UI・APIからバックエンド・データまで、お客様のニーズに合わせて構築します。",
+    "seoLine": "フロントエンド・フルスタックサービス：フロントエンド、フルスタック、DB、パフォーマンス、アーキテクチャ、Product UI、SEO/AEO/GEO。Yash Kapureのサービス。",
     "badgeMostPopular": "ご依頼多数",
     "bookService": "このサービスについて相談",
     "technologiesLabel": "技術・ツール",
