@@ -60,7 +60,10 @@ export const Services = () => {
       transition={transition}
     >
       <SectionHeading heading={t('heading')} content={t('content')} />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <p className="text-muted-foreground mx-auto mt-2 max-w-2xl text-center text-sm">
+        {t('seoLine')}
+      </p>
+      <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {servicesData.map(
           ({ key, technologies, primaryCount = 0, highlight }, index) => {
             const Icon = serviceIcons[key];
