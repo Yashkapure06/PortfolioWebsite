@@ -24,6 +24,7 @@ export const Testimonials = () => {
     'ranjeet',
     'viraj',
     'manisha',
+    'surekha',
   ] as const;
 
   const nextTestimonial = () => {
