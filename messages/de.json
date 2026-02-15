@@ -15,7 +15,7 @@
     "freelance": "Freelance",
     "contract": "Vertrag",
     "remoteOnsite": "Remote oder vor Ort",
-    "location": "Derzeit ansässig im Vereinigten Königreich — offen für Umzug",
+    "location": "Derzeit ansässig im Vereinigten Königreich - offen für Umzug",
     "greeting": "Hallo, ich bin",
     "name": "Yash Kapure",
     "title": "Frontend-Ingenieur mit Full-Stack-Expertise.",
@@ -26,7 +26,7 @@
   },
   "services": {
     "heading": "Meine Dienstleistungen",
-    "content": "Was ich für Sie umsetzen kann — von UI und APIs bis Backend und Daten.",
+    "content": "Was ich für Sie umsetzen kann - von UI und APIs bis Backend und Daten.",
     "seoLine": "Frontend- und Full-Stack-Services: Frontend, Full Stack, Datenbank & Backend, Performance, Architektur, Product UI, SEO/AEO/GEO. Services von Yash Kapure.",
     "badgeMostPopular": "Am häufigsten nachgefragt",
     "bookService": "Service besprechen",
@@ -186,8 +186,8 @@
   },
   "contact": {
     "heading": "Kontakt Aufnehmen",
-    "introExpectations": "I work with product teams and founders who need production-ready code and clear communication. A few details below help me respond with something useful — goal, timeline, and scope go a long way.",
-    "openToRoles": "Offen für Festanstellung, Freelance und Verträge — remote oder vor Ort.",
+    "introExpectations": "I work with product teams and founders who need production-ready code and clear communication. A few details below help me respond with something useful - goal, timeline, and scope go a long way.",
+    "openToRoles": "Offen für Festanstellung, Freelance und Verträge - remote oder vor Ort.",
     "requestingService": "Angefragter Dienst",
     "description": "Bitte kontaktieren Sie mich direkt unter",
     "or": "oder über dieses Formular.",
@@ -223,7 +223,7 @@
     "messagePlaceholder": "Hallo! Wie geht's?",
     "submit": "Projektdetails senden",
     "sending": "Wird gesendet...",
-    "success": "Danke — ich antworte in der Regel innerhalb von 24–48 Stunden, wenn es passt.",
+    "success": "Danke - ich antworte in der Regel innerhalb von 24–48 Stunden, wenn es passt.",
     "successToast": "Nachricht gesendet.",
     "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
     "trustMicrocopy": "Kein Spam. Ihre Daten bleiben privat.",
@@ -349,6 +349,12 @@
         "position": "CEO @ Dr. Manisha's Yoga Institute",
         "company": "Pune, India",
         "content": "Thank you Mr. Yash Kapure. I really appreciate your work on our website. The website looks professional and user-friendly. It's very easy to navigate our services and products to our clients. Our clients had a very positive impact. I highly recommend Yash for web development projects."
+      },
+      "surekha": {
+        "name": "Surekha",
+        "position": "Director @ Elyra Overseas",
+        "company": "Pune, India",
+        "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
   }

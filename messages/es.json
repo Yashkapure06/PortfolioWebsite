@@ -15,7 +15,7 @@
     "freelance": "Freelance",
     "contract": "Contrato",
     "remoteOnsite": "Remoto o presencial",
-    "location": "Actualmente basado en Reino Unido — abierto a reubicación",
+    "location": "Actualmente basado en Reino Unido - abierto a reubicación",
     "greeting": "Hola, soy",
     "name": "Yash Kapure",
     "title": "Ingeniero Frontend con Experiencia Full-Stack.",
@@ -26,7 +26,7 @@
   },
   "services": {
     "heading": "Servicios que Ofrezco",
-    "content": "Lo que puedo construir para usted — desde UI y APIs hasta backend y datos.",
+    "content": "Lo que puedo construir para usted - desde UI y APIs hasta backend y datos.",
     "seoLine": "Servicios frontend y full-stack: Frontend, Full Stack, Base de datos, Performance, Arquitectura, Product UI, SEO/AEO/GEO. Servicios de Yash Kapure.",
     "badgeMostPopular": "Más solicitado",
     "bookService": "Hablar de este servicio",
@@ -265,13 +265,19 @@
         "position": "CEO @ Dr. Manisha's Yoga Institute",
         "company": "Pune, India",
         "content": "Gracias Sr. Yash Kapure. Realmente aprecio su trabajo en nuestro sitio web. El sitio web se ve profesional y fácil de usar. Es muy fácil navegar nuestros servicios y productos a nuestros clientes. Nuestros clientes tuvieron un impacto muy positivo. Recomiendo altamente a Yash para proyectos de desarrollo web."
+      },
+      "surekha": {
+        "name": "Surekha",
+        "position": "Directora @ Elyra Overseas",
+        "company": "Pune, India",
+        "content": "El Sr. Yash entregó nuestro sitio web con un estándar verdaderamente profesional: pulido, moderno y con tecnología actualizada. Destacaron su entusiasmo y actitud positiva durante todo el proyecto; sentimos que estábamos en manos seguras y capaces. Es raro encontrar a alguien tan comprometido y confiable. Le deseamos mucho éxito en llevar el mismo servicio fiable a más clientes."
       }
     }
   },
   "contact": {
     "heading": "Ponerse en Contacto",
-    "introExpectations": "Trabajo con equipos de producto y fundadores que necesitan código listo para producción y comunicación clara. Unos detalles abajo me ayudan a responder con algo útil — objetivo, plazos y alcance son clave.",
-    "openToRoles": "Abierto a roles full-time, freelance y por contrato — remoto o presencial.",
+    "introExpectations": "Trabajo con equipos de producto y fundadores que necesitan código listo para producción y comunicación clara. Unos detalles abajo me ayudan a responder con algo útil - objetivo, plazos y alcance son clave.",
+    "openToRoles": "Abierto a roles full-time, freelance y por contrato - remoto o presencial.",
     "requestingService": "Servicio solicitado",
     "description": "Por favor contáctame directamente en",
     "or": "o a través de este formulario.",
@@ -307,7 +313,7 @@
     "messagePlaceholder": "¡Hola! ¿Qué tal?",
     "submit": "Enviar detalles del proyecto",
     "sending": "Enviando...",
-    "success": "Gracias — suelo responder en 24–48 horas si encaja.",
+    "success": "Gracias - suelo responder en 24–48 horas si encaja.",
     "successToast": "Mensaje enviado.",
     "error": "Algo salió mal. Por favor intenta de nuevo.",
     "trustMicrocopy": "Sin spam. Tus datos se mantienen privados.",
@@ -336,7 +342,7 @@
       },
       "usClients": {
         "question": "¿Trabajas con clientes en EE. UU.?",
-        "answer": "Sí. Trabajo con clientes en EE. UU.—startups, equipos de producto y agencias. Remoto, horarios flexibles para coincidir con EE. UU., comunicación en inglés, tarifas en USD. Contáctame por el formulario o por email."
+        "answer": "Sí. Trabajo con clientes en EE. UU.- startups, equipos de producto y agencias. Remoto, horarios flexibles para coincidir con EE. UU., comunicación en inglés, tarifas en USD. Contáctame por el formulario o por email."
       },
       "technologies": {
         "question": "¿En qué tecnologías te especializas?",

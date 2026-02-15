@@ -15,7 +15,7 @@
     "freelance": "自由职业",
     "contract": "合同",
     "remoteOnsite": "远程或现场",
-    "location": "目前位于英国 — 愿意搬迁",
+    "location": "目前位于英国 - 愿意搬迁",
     "greeting": "你好，我是",
     "name": "Yash Kapure",
     "title": "具有全栈专业知识的前端工程师。",
@@ -26,7 +26,7 @@
   },
   "services": {
     "heading": "我提供的服务",
-    "content": "我能为您构建什么 — 从 UI、API 到后端与数据。",
+    "content": "我能为您构建什么 - 从 UI、API 到后端与数据。",
     "seoLine": "前端与全栈服务：前端、全栈、数据库、性能、架构、产品 UI、SEO/AEO/GEO。Yash Kapure 提供的服务。",
     "badgeMostPopular": "咨询最多",
     "bookService": "讨论此服务",
@@ -186,8 +186,8 @@
   },
   "contact": {
     "heading": "取得联系",
-    "introExpectations": "我与需要生产级代码和清晰沟通的产品团队和创始人合作。下面几项信息有助于我更有针对性地回复 — 目标、时间线和范围很重要。",
-    "openToRoles": "接受全职、自由职业与合同 — 远程或现场均可。",
+    "introExpectations": "我与需要生产级代码和清晰沟通的产品团队和创始人合作。下面几项信息有助于我更有针对性地回复 - 目标、时间线和范围很重要。",
+    "openToRoles": "接受全职、自由职业与合同 - 远程或现场均可。",
     "requestingService": "预约服务",
     "description": "请直接联系我",
     "or": "或通过此表单。",
@@ -223,7 +223,7 @@
     "messagePlaceholder": "你好！怎么了？",
     "submit": "发送项目详情",
     "sending": "发送中...",
-    "success": "感谢 — 若需求匹配，我通常会在 24–48 小时内回复。",
+    "success": "感谢 - 若需求匹配，我通常会在 24–48 小时内回复。",
     "successToast": "已发送。",
     "error": "出了些问题。请重试。",
     "trustMicrocopy": "不会发送垃圾信息。您的信息将严格保密。",
@@ -252,7 +252,7 @@
       },
       "usClients": {
         "question": "您与美国客户合作吗？",
-        "answer": "是的。我与美国客户合作——初创公司、产品团队、代理商。远程工作，灵活安排以配合美国时区，英语沟通，以美元计费。请通过表单或邮件联系。"
+        "answer": "是的。我与美国客户合作- - 初创公司、产品团队、代理商。远程工作，灵活安排以配合美国时区，英语沟通，以美元计费。请通过表单或邮件联系。"
       },
       "technologies": {
         "question": "您专长于哪些技术？",
@@ -349,6 +349,12 @@
         "position": "CEO @ Dr. Manisha's Yoga Institute",
         "company": "Pune, India",
         "content": "Thank you Mr. Yash Kapure. I really appreciate your work on our website. The website looks professional and user-friendly. It's very easy to navigate our services and products to our clients. Our clients had a very positive impact. I highly recommend Yash for web development projects."
+      },
+      "surekha": {
+        "name": "Surekha",
+        "position": "Director @ Elyra Overseas",
+        "company": "Pune, India",
+        "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
   }

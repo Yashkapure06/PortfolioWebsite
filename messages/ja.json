@@ -15,7 +15,7 @@
     "freelance": "フリーランス",
     "contract": "契約",
     "remoteOnsite": "リモート・オンサイト可",
-    "location": "現在イギリス在住 — 転勤可能",
+    "location": "現在イギリス在住 - 転勤可能",
     "greeting": "こんにちは、私は",
     "name": "Yash Kapure",
     "title": "フルスタック専門知識を持つフロントエンドエンジニア。",
@@ -186,8 +186,8 @@
   },
   "contact": {
     "heading": "お問い合わせ",
-    "introExpectations": "プロダクトチームや創業者の方々と、本番運用可能なコードと明確なコミュニケーションでお手伝いしています。下記の簡単な情報があると、より的確にご返信できます — 目標・スケジュール・範囲があると助かります。",
-    "openToRoles": "正社員・フリーランス・契約のご依頼に対応 — リモート・オンサイト可。",
+    "introExpectations": "プロダクトチームや創業者の方々と、本番運用可能なコードと明確なコミュニケーションでお手伝いしています。下記の簡単な情報があると、より的確にご返信できます - 目標・スケジュール・範囲があると助かります。",
+    "openToRoles": "正社員・フリーランス・契約のご依頼に対応 - リモート・オンサイト可。",
     "requestingService": "ご依頼サービス",
     "description": "直接お問い合わせください",
     "or": "またはこのフォームから。",
@@ -349,6 +349,12 @@
         "position": "CEO @ Dr. Manisha's Yoga Institute",
         "company": "Pune, India",
         "content": "Thank you Mr. Yash Kapure. I really appreciate your work on our website. The website looks professional and user-friendly. It's very easy to navigate our services and products to our clients. Our clients had a very positive impact. I highly recommend Yash for web development projects."
+      },
+      "surekha": {
+        "name": "Surekha",
+        "position": "Director @ Elyra Overseas",
+        "company": "Pune, India",
+        "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
   }

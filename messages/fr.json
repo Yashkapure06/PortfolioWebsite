@@ -15,7 +15,7 @@
     "freelance": "Freelance",
     "contract": "Mission",
     "remoteOnsite": "Distanciel ou sur site",
-    "location": "Actuellement basé au Royaume-Uni — ouvert à la réinstallation",
+    "location": "Actuellement basé au Royaume-Uni - ouvert à la réinstallation",
     "greeting": "Salut, je suis",
     "name": "Yash Kapure",
     "title": "Ingénieur Frontend avec Expertise Full-Stack.",
@@ -26,7 +26,7 @@
   },
   "services": {
     "heading": "Services que je propose",
-    "content": "Ce que je peux construire pour vous — de l'UI et des APIs au backend et aux données.",
+    "content": "Ce que je peux construire pour vous - de l'UI et des APIs au backend et aux données.",
     "seoLine": "Services frontend et full-stack : Frontend, Full Stack, Base de données, Performance, Architecture, Product UI, SEO/AEO/GEO. Services par Yash Kapure.",
     "badgeMostPopular": "Le plus demandé",
     "bookService": "Discuter de ce service",
@@ -265,13 +265,19 @@
         "position": "PDG @ Dr. Manisha's Yoga Institute",
         "company": "Pune, Inde",
         "content": "Merci M. Yash Kapure. J'apprécie vraiment votre travail sur notre site web. Le site web a l'air professionnel et convivial. Il est très facile de naviguer nos services et produits à nos clients. Nos clients ont eu un impact très positif. Je recommande vivement Yash pour les projets de développement web."
+      },
+      "surekha": {
+        "name": "Surekha",
+        "position": "Directrice @ Elyra Overseas",
+        "company": "Pune, Inde",
+        "content": "M. Yash a livré notre site web à un niveau vraiment professionnel - soigné, moderne et construit avec une technologie à jour. Ce qui nous a marqués, c'est son enthousiasme et sa posture positive tout au long du projet ; nous nous sommes sentis entre de bonnes mains. C'est rare de trouver quelqu'un d'aussi engagé et fiable. Nous lui souhaitons tout le succès pour offrir le même service de confiance à d'autres clients."
       }
     }
   },
   "contact": {
     "heading": "Me Contacter",
-    "introExpectations": "Je travaille avec des équipes produit et des fondateurs qui ont besoin de code prêt pour la prod et d'une communication claire. Quelques détails ci-dessous m'aident à répondre utilement — objectif, délais et périmètre font la différence.",
-    "openToRoles": "Ouvert au CDI, freelance et missions — distanciel ou sur site.",
+    "introExpectations": "Je travaille avec des équipes produit et des fondateurs qui ont besoin de code prêt pour la prod et d'une communication claire. Quelques détails ci-dessous m'aident à répondre utilement - objectif, délais et périmètre font la différence.",
+    "openToRoles": "Ouvert au CDI, freelance et missions - distanciel ou sur site.",
     "requestingService": "Service demandé",
     "description": "Veuillez me contacter directement à",
     "or": "ou via ce formulaire.",
@@ -307,7 +313,7 @@
     "messagePlaceholder": "Bonjour ! Quoi de neuf ?",
     "submit": "Envoyer les détails du projet",
     "sending": "Envoi en cours...",
-    "success": "Merci — je réponds en général sous 24–48 h si ça matche.",
+    "success": "Merci - je réponds en général sous 24–48 h si ça matche.",
     "successToast": "Message envoyé.",
     "error": "Quelque chose s'est mal passé. Veuillez réessayer.",
     "trustMicrocopy": "Pas de spam. Vos données restent privées.",
@@ -336,7 +342,7 @@
       },
       "usClients": {
         "question": "Travaillez-vous avec des clients aux États-Unis ?",
-        "answer": "Oui. Je travaille avec des clients aux États-Unis — startups, équipes produit, agences. En remote, horaires flexibles pour les fuseaux US, communication en anglais, tarifs en USD. Contactez-moi via le formulaire ou par email."
+        "answer": "Oui. Je travaille avec des clients aux États-Unis - startups, équipes produit, agences. En remote, horaires flexibles pour les fuseaux US, communication en anglais, tarifs en USD. Contactez-moi via le formulaire ou par email."
       },
       "technologies": {
         "question": "Dans quelles technologies vous spécialisez-vous ?",

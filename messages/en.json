@@ -15,7 +15,7 @@
     "freelance": "Freelance",
     "contract": "Contract",
     "remoteOnsite": "Remote or onsite",
-    "location": "Based in the UK — serving clients in the US, UK, and worldwide. Remote-first.",
+    "location": "Based in the UK - serving clients in the US, UK, and worldwide. Remote-first.",
     "greeting": "Hi I'm",
     "name": "Yash Kapure",
     "title": "Frontend Engineer with Full-Stack Expertise.",
@@ -34,14 +34,14 @@
   "services": {
     "heading": "How I can help",
     "content": "Production systems I’ve shipped and can run for you.",
-    "seoLine": "Best frontend services and full-stack development: Frontend Development, Full Stack, Database & Backend, Performance & Optimization, Architecture, Product UI, and SEO/AEO/GEO. Services provided by Yash Kapure — hire for US and worldwide.",
+    "seoLine": "Best frontend services and full-stack development: Frontend Development, Full Stack, Database & Backend, Performance & Optimization, Architecture, Product UI, and SEO/AEO/GEO. Services provided by Yash Kapure - hire for US and worldwide.",
     "badgeMostPopular": "Most requested",
     "bookService": "Discuss this service",
     "technologiesLabel": "Stack & tools",
     "items": {
       "frontend": {
         "title": "Frontend Development",
-        "description": "Production UIs in React, Next.js, or Vue—third-party and payment integrations included. Built for real traffic and maintained in production."
+        "description": "Production UIs in React, Next.js, or Vue- third-party and payment integrations included. Built for real traffic and maintained in production."
       },
       "fullstack": {
         "title": "Full Stack Development",
@@ -49,7 +49,7 @@
       },
       "database": {
         "title": "Database & Backend",
-        "description": "Schemas, queries, and integrations that hold up in production. Supabase, MongoDB, PostgreSQL—Prisma or native—with real-time when you need it."
+        "description": "Schemas, queries, and integrations that hold up in production. Supabase, MongoDB, PostgreSQL- Prisma or native- with real-time when you need it."
       },
       "performance": {
         "title": "Performance & Frontend Optimization",
@@ -265,6 +265,12 @@
         "position": "CEO @ Dr. Manisha's Yoga Institute",
         "company": "Pune, India",
         "content": "Thank you Mr. Yash Kapure. I really appreciate your work on our website. The website looks professional and user-friendly. It's very easy to navigate our services and products to our clients. Our clients had a very positive impact. I highly recommend Yash for web development projects."
+      },
+      "surekha": {
+        "name": "Surekha",
+        "position": "Director @ Elyra Overseas",
+        "company": "Pune, India",
+        "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
   },
@@ -307,7 +313,7 @@
     "messagePlaceholder": "Hello! What's up?",
     "submit": "Send project details",
     "sending": "Sending...",
-    "success": "Thanks — I usually reply within 24–48 hours if it's a good fit.",
+    "success": "Thanks - I usually reply within 24–48 hours if it's a good fit.",
     "successToast": "Message sent.",
     "error": "Something went wrong. Please try again.",
     "trustMicrocopy": "No spam. Your details stay private.",
@@ -320,7 +326,7 @@
     "items": {
       "services": {
         "question": "What services do you offer?",
-        "answer": "I offer: Frontend Development (React, Next.js, Vue, payments); Full Stack Development (MERN, MEVN, auth, real-time); Database & Backend; Performance & Frontend Optimization; Frontend Architecture & System Design; Product-Focused UI Engineering; and SEO, AEO, GEO & Production Readiness—metadata, structured data, analytics, and monitoring so your site is discoverable, citable by AI, and issues get caught early."
+        "answer": "I offer: Frontend Development (React, Next.js, Vue, payments); Full Stack Development (MERN, MEVN, auth, real-time); Database & Backend; Performance & Frontend Optimization; Frontend Architecture & System Design; Product-Focused UI Engineering; and SEO, AEO, GEO & Production Readiness- metadata, structured data, analytics, and monitoring so your site is discoverable, citable by AI, and issues get caught early."
       },
       "experience": {
         "question": "How much experience do you have?",

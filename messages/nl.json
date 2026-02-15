@@ -15,7 +15,7 @@
     "freelance": "Freelance",
     "contract": "Contract",
     "remoteOnsite": "Remote of op locatie",
-    "location": "Momenteel gevestigd in het Verenigd Koninkrijk — open voor verhuizing",
+    "location": "Momenteel gevestigd in het Verenigd Koninkrijk - open voor verhuizing",
     "greeting": "Hallo, ik ben",
     "name": "Yash Kapure",
     "title": "Frontend Engineer met Full-Stack Expertise.",
@@ -26,7 +26,7 @@
   },
   "services": {
     "heading": "Diensten die ik aanbied",
-    "content": "Wat ik voor u kan bouwen — van UI en API's tot backend en data.",
+    "content": "Wat ik voor u kan bouwen - van UI en API's tot backend en data.",
     "seoLine": "Frontend- en full-stackdiensten: Frontend, Full Stack, Database, Performance, Architectuur, Product UI, SEO/AEO/GEO. Diensten van Yash Kapure.",
     "badgeMostPopular": "Meest gevraagd",
     "bookService": "Bespreek deze service",
@@ -186,8 +186,8 @@
   },
   "contact": {
     "heading": "Neem Contact Op",
-    "introExpectations": "Ik werk met productteams en oprichters die production-ready code en duidelijke communicatie nodig hebben. Een paar gegevens hieronder helpen me om nuttig te reageren — doel, tijdlijn en scope maken het verschil.",
-    "openToRoles": "Open voor vaste banen, freelance en contracten — remote of op locatie.",
+    "introExpectations": "Ik werk met productteams en oprichters die production-ready code en duidelijke communicatie nodig hebben. Een paar gegevens hieronder helpen me om nuttig te reageren - doel, tijdlijn en scope maken het verschil.",
+    "openToRoles": "Open voor vaste banen, freelance en contracten - remote of op locatie.",
     "requestingService": "Aangevraagde service",
     "description": "Neem rechtstreeks contact met me op via",
     "or": "of via dit formulier.",
@@ -223,7 +223,7 @@
     "messagePlaceholder": "Hallo! Hoe gaat het?",
     "submit": "Projectdetails versturen",
     "sending": "Verzenden...",
-    "success": "Bedankt — ik reageer meestal binnen 24–48 uur als het een goede match is.",
+    "success": "Bedankt - ik reageer meestal binnen 24–48 uur als het een goede match is.",
     "successToast": "Bericht verzonden.",
     "error": "Er is iets misgegaan. Probeer het opnieuw.",
     "trustMicrocopy": "Geen spam. Uw gegevens blijven privé.",
@@ -252,7 +252,7 @@
       },
       "usClients": {
         "question": "Werkt u met klanten in de VS?",
-        "answer": "Ja. Ik werk met klanten in de VS — startups, productteams, bureaus. Remote, flexibele uren voor VS-tijdzones, communicatie in het Engels, tarieven in USD. Neem contact op via het formulier of per e-mail."
+        "answer": "Ja. Ik werk met klanten in de VS - startups, productteams, bureaus. Remote, flexibele uren voor VS-tijdzones, communicatie in het Engels, tarieven in USD. Neem contact op via het formulier of per e-mail."
       },
       "technologies": {
         "question": "In welke technologieën specialiseert u zich?",
@@ -349,6 +349,12 @@
         "position": "CEO @ Dr. Manisha's Yoga Institute",
         "company": "Pune, India",
         "content": "Thank you Mr. Yash Kapure. I really appreciate your work on our website. The website looks professional and user-friendly. It's very easy to navigate our services and products to our clients. Our clients had a very positive impact. I highly recommend Yash for web development projects."
+      },
+      "surekha": {
+        "name": "Surekha",
+        "position": "Director @ Elyra Overseas",
+        "company": "Pune, India",
+        "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
   }
