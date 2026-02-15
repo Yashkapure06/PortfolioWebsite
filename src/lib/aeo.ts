@@ -105,7 +105,7 @@ export function generateHowToStructuredData() {
         '@type': 'HowToStep',
         position: 5,
         name: 'Get Started',
-        text: 'Once requirements are aligned, Yash will begin development using modern web technologies—including SEO, AEO, and GEO when needed—to deliver fast, accessible, and production-ready web applications.',
+        text: 'Once requirements are aligned, Yash will begin development using modern web technologies- including SEO, AEO, and GEO when needed- to deliver fast, accessible, and production-ready web applications.',
       },
     ],
     totalTime: 'PT1H',
@@ -246,7 +246,7 @@ export function generateServiceSchema() {
       },
       availability: 'https://schema.org/InStock',
       description:
-        'Frontend, Full Stack, Database, Performance, Architecture, Product UI, and SEO/AEO/GEO & Production Readiness. Available for US and global clients—remote, flexible hours, USD.',
+        'Frontend, Full Stack, Database, Performance, Architecture, Product UI, and SEO/AEO/GEO & Production Readiness. Available for US and global clients- remote, flexible hours, USD.',
     },
     description:
       'Professional web development for US and worldwide clients: Frontend (React, Next.js, Vue, payments); Full Stack (MERN, MEVN, auth, real-time); Database & Backend; Performance & Optimization; Frontend Architecture; Product-Focused UI; SEO, AEO, GEO & Production Readiness. Remote work, flexible hours, USD rates. Available for hire at $25-57/hour.',
@@ -265,7 +265,7 @@ export function generateServiceSchema() {
  * Kept in sync with portfolio services (en) for rich results and "what services does Yash Kapure offer".
  */
 const SERVICES_LIST = [
-  { name: 'Frontend Development', description: 'Production UIs in React, Next.js, or Vue—third-party and payment integrations. Built for real traffic.' },
+  { name: 'Frontend Development', description: 'Production UIs in React, Next.js, or Vue- third-party and payment integrations. Built for real traffic.' },
   { name: 'Full Stack Development', description: 'End-to-end apps: MERN, React+Node, or MEVN. Auth, role-based access, real-time.' },
   { name: 'Database & Backend', description: 'PostgreSQL, MongoDB, Supabase, Prisma. Schemas, queries, real-time when you need it.' },
   { name: 'Performance & Frontend Optimization', description: 'Core Web Vitals, Lighthouse, bundle size, runtime. Predictable load times at scale.' },

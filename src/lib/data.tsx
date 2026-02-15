@@ -769,4 +769,13 @@ export const testimonialsData = [
     avatar:
       'https://www.drmanishasyogainstitute.com/img/Dr.Manisha.3b416061.jpeg',
   },
+  {
+    name: 'Surekha',
+    position: 'Director @ Elyra Overseas',
+    company: 'Pune, India',
+    content:
+      "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients.",
+    rating: 5,
+    avatar: 'https://www.elyraoverseas.com/assets/logo/Elyra%20overseas-globe.png',
+  },
 ] as const;
