@@ -195,6 +195,11 @@ export function generateEnhancedPersonSchema() {
         name: 'Specialization',
         value: 'Frontend, Full Stack, Database, Performance, Architecture, Product UI, SEO/AEO/GEO & Production Readiness',
       },
+      {
+        '@type': 'PropertyValue',
+        name: 'Portfolio Traction',
+        value: '80,000+ portfolio visits in the last 12 months',
+      },
     ],
   };
 }
@@ -246,10 +251,10 @@ export function generateServiceSchema() {
       },
       availability: 'https://schema.org/InStock',
       description:
-        'Frontend, Full Stack, Database, Performance, Architecture, Product UI, and SEO/AEO/GEO & Production Readiness. Available for US and global clients- remote, flexible hours, USD.',
+        'Frontend, Full Stack, Database, Performance, Architecture, Product UI, and SEO/AEO/GEO & Production Readiness. 80,000+ portfolio visits in the last 12 months. Available for US and global clients- remote, flexible hours, USD.',
     },
     description:
-      'Professional web development for US and worldwide clients: Frontend (React, Next.js, Vue, payments); Full Stack (MERN, MEVN, auth, real-time); Database & Backend; Performance & Optimization; Frontend Architecture; Product-Focused UI; SEO, AEO, GEO & Production Readiness. Remote work, flexible hours, USD rates. Available for hire at $25-57/hour.',
+      'Professional web development for US and worldwide clients: Frontend (React, Next.js, Vue, payments); Full Stack (MERN, MEVN, auth, real-time); Database & Backend; Performance & Optimization; Frontend Architecture; Product-Focused UI; SEO, AEO, GEO & Production Readiness. Portfolio traction: 80,000+ visits in the last 12 months. Remote work, flexible hours, USD rates. Available for hire at $25-57/hour.',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5',
