@@ -5,9 +5,11 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 import { env } from '@/env.mjs';
+import { defaultLocale } from '@/i18n/config';
 import { generateAEOStructuredData } from '@/lib/aeo';
 import { generateGeoStructuredData } from '@/lib/geo';
 import { fonts } from '@/lib/fonts';
+import { getLocalizedAlternates, getLocalizedCanonical } from '@/lib/seo';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
 
@@ -20,6 +22,10 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: siteConfig.keywords.join(', '),
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: getLocalizedCanonical(defaultLocale, '/'),
+    languages: getLocalizedAlternates('/'),
+  },
   icons: {
     icon: '/favicon/favicon.ico',
     shortcut: '/favicon/favicon-16x16.png',
@@ -67,18 +73,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Hreflang tags for international SEO */}
-        <link rel="alternate" hrefLang="en" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="es" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="fr" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="de" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="it" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="pt" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="nl" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="hi" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="zh" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="ja" href={siteConfig.url} />
-        <link rel="alternate" hrefLang="x-default" href={siteConfig.url} />
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
