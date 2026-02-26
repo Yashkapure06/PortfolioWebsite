@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
+import { MilestoneStat } from '@/components/milestone-stat';
 import { useSectionInView } from '@/hooks/use-section-in-view';
 import { Link } from '@/i18n/routing';
 
@@ -98,6 +99,17 @@ export const Intro = () => {
       >
         {t('location')}
       </motion.p>
+      <motion.div
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={
+          prefersReducedMotion
+            ? { duration: 0 }
+            : { delay: 0.08, duration: 0.2, type: 'tween' }
+        }
+      >
+        <MilestoneStat />
+      </motion.div>
       <motion.h1
         initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: prefersReducedMotion ? 0 : 0 }}
