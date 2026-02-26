@@ -1,4 +1,6 @@
 import Script from 'next/script';
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 import { About } from '@/components/about';
 import { Contact } from '@/components/contact';
@@ -13,7 +15,59 @@ import { SectionDivider } from '@/components/section-divider';
 import { Services } from '@/components/services';
 import { Testimonials } from '@/components/testimonials';
 import { ThemeToggle } from '@/components/theme-toggle';
+import { defaultLocale, type Locale, locales } from '@/i18n/config';
 import { generateQAPageStructuredData } from '@/lib/aeo';
+import { getLocalizedAlternates, getLocalizedCanonical } from '@/lib/seo';
+import { siteConfig } from '@/lib/site-config';
+
+interface HomePageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: HomePageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const safeLocale = locales.includes(locale as Locale)
+    ? (locale as Locale)
+    : defaultLocale;
+
+  const tIntro = await getTranslations({ locale: safeLocale, namespace: 'intro' });
+  const title = `${tIntro('name')} - ${tIntro('title')}`;
+  const description = `${tIntro('description')} 80,000+ portfolio visits in the last 12 months.`;
+  const canonical = getLocalizedCanonical(safeLocale, '/');
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical,
+      languages: getLocalizedAlternates('/'),
+    },
+    openGraph: {
+      type: 'website',
+      url: canonical,
+      siteName: 'Yash Kapure Portfolio',
+      title,
+      description,
+      images: [
+        {
+          url: `${siteConfig.url}/images/metaimg.png`,
+          width: 1200,
+          height: 630,
+          alt: 'Yash Kapure - Portfolio milestone and services',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`${siteConfig.url}/images/metaimg.png`],
+      creator: '@KapureYash',
+    },
+  };
+}
 
 const HomePage = async () => {
   // AEO: QAPage schema for chat/QA functionality
