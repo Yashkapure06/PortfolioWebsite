@@ -47,6 +47,7 @@ export function generateQAPageStructuredData() {
     mainEntity: {
       '@type': 'Question',
       name: 'Who is Yash Kapure and what services does he offer?',
+      text: 'Overview of who Yash Kapure is and the frontend, full stack, and related services he offers.',
       answerCount: 1,
       datePublished: publishedDate,
       author: {
@@ -64,6 +65,7 @@ export function generateQAPageStructuredData() {
         },
         url: siteConfig.url,
         datePublished: publishedDate,
+        upvoteCount: 1,
       },
     },
     about: {
@@ -224,7 +226,9 @@ export function generateServiceSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    name: 'Yash Kapure Web Development Services',
     serviceType: 'Web Development Services',
+    url: siteConfig.url,
     provider: {
       '@type': 'Person',
       name: 'Yash Kapure',
@@ -332,6 +336,7 @@ export function generateServicesQAPageStructuredData() {
     mainEntity: {
       '@type': 'Question',
       name: 'What are the services provided by Yash Kapure?',
+      text: 'Detailed list of the professional web development services provided by Yash Kapure.',
       answerCount: 1,
       datePublished: publishedDate,
       author: {
@@ -349,6 +354,7 @@ export function generateServicesQAPageStructuredData() {
         },
         url: `${siteConfig.url}/#services`,
         datePublished: publishedDate,
+        upvoteCount: 1,
       },
     },
     about: { '@type': 'Person', name: 'Yash Kapure', url: siteConfig.url },
