@@ -6,7 +6,7 @@ High-performance personal portfolio built with Next.js, Tailwind CSS, and Framer
 
 ## 🌐 Quick Links
 
-- Live site: [yashkapure.com](yashkapure.com)
+- Live site: [https://yashkapure.com](https://yashkapure.com)
 - Connect: [yashkapure06@gmail.com](mailto:yashkapure06@gmail.com)
 
 ---
