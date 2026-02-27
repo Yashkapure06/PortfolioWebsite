@@ -13,7 +13,8 @@ const getWwwBaseUrl = () => {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
-  const wwwBase = getWwwBaseUrl();
+  const canonicalBase = siteConfig.url.replace(/\/$/, '');
+  const wwwBase = getWwwBaseUrl().replace(/\/$/, '');
 
   const pathConfigs: Array<{ path: string; priority: number }> = [
     { path: '/', priority: 1 },
@@ -21,6 +22,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const entries: MetadataRoute.Sitemap = [];
+
+  // Include root host URLs in addition to locale-prefixed paths.
+  entries.push(
+    {
+      url: `${canonicalBase}/`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 1,
+    },
+    {
+      url: `${wwwBase}/`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 1,
+    }
+  );
 
   for (const { path, priority } of pathConfigs) {
     for (const locale of locales) {
