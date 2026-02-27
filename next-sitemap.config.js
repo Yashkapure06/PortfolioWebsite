@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://yashkapure.netlify.app',
+  siteUrl: 'yashkapure.com',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   robotsTxtOptions: {
@@ -15,7 +15,7 @@ module.exports = {
       { userAgent: 'Bingbot', allow: '/' },
       { userAgent: '*', allow: '/' },
     ],
-    additionalSitemaps: ['https://yashkapure.netlify.app/sitemap.xml'],
+    additionalSitemaps: ['yashkapure.com/sitemap.xml'],
   },
   // Additional paths for better indexing
   additionalPaths: async () => {

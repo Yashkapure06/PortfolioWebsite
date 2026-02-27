@@ -30,6 +30,6 @@ export const siteConfig = {
     'Portfolio website developer',
     'Open to full-time freelance contract',
   ],
-  url: 'https://yashkapure.netlify.app',
+  url: 'yashkapure.com',
   googleSiteVerificationId: 'zjseZ18pLQ6Tg4nvpJJkRVevf7dK4QzbpzMuZNCKNYQ',
 };

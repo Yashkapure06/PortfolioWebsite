@@ -4,8 +4,8 @@
 
 ## About
 
-- [Home](https://yashkapure.netlify.app): Portfolio overview, skills, experience, and contact.
-- [Projects](https://yashkapure.netlify.app/projects): Web and mobile projects by Yash Kapure (React, Next.js, React-Native, MERN/MEVN).
+- [Home](yashkapure.com): Portfolio overview, skills, experience, and contact.
+- [Projects](yashkapure.com/projects): Web and mobile projects by Yash Kapure (React, Next.js, React-Native, MERN/MEVN).
 
 ## Services
 
