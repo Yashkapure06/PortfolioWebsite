@@ -30,6 +30,6 @@ export const siteConfig = {
     'Portfolio website developer',
     'Open to full-time freelance contract',
   ],
-  url: 'yashkapure.com',
+  url: 'https://yashkapure.com',
   googleSiteVerificationId: 'zjseZ18pLQ6Tg4nvpJJkRVevf7dK4QzbpzMuZNCKNYQ',
 };
