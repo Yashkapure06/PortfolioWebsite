@@ -271,13 +271,6 @@ export function generateServiceSchema() {
     },
     description:
       'Professional web development for US and worldwide clients: Frontend (React, Next.js, Vue, payments); Full Stack (MERN, MEVN, auth, real-time); Database & Backend; Performance & Optimization; Frontend Architecture; Product-Focused UI; SEO, AEO, GEO & Production Readiness. Portfolio traction: 80,000+ visits in the last 12 months. Remote work, flexible hours, USD rates. Available for hire at $25-57/hour.',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5',
-      bestRating: '5',
-      worstRating: '1',
-      ratingCount: '1',
-    },
   };
 }
 
