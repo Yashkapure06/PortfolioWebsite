@@ -39,19 +39,31 @@ export function generateFAQStructuredData(
  * Optimizes content for AI-powered question answering systems
  */
 export function generateQAPageStructuredData() {
+  const publishedDate = '2024-01-01T00:00:00+00:00';
+
   return {
     '@context': 'https://schema.org',
     '@type': 'QAPage',
     mainEntity: {
       '@type': 'Question',
       name: 'Who is Yash Kapure and what services does he offer?',
+      answerCount: 1,
+      datePublished: publishedDate,
+      author: {
+        '@type': 'Person',
+        name: 'Yash Kapure',
+        url: siteConfig.url,
+      },
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Yash Kapure is a Frontend Engineer and Full Stack Developer with 4+ years of experience. He offers: Frontend Development (React, Next.js, Vue, payments); Full Stack Development (MERN, MEVN, auth, real-time); Database & Backend (PostgreSQL, MongoDB, Supabase, Prisma); Performance & Frontend Optimization (Core Web Vitals, Lighthouse); Frontend Architecture & System Design; Product-Focused UI Engineering (accessibility, design systems); and SEO, AEO, GEO & Production Readiness (metadata, structured data, JSON-LD, Open Graph, sitemaps, analytics, monitoring so sites are discoverable and citable by AI). He works remotely from the United Kingdom at $25-57/hour.',
         author: {
           '@type': 'Person',
           name: 'Yash Kapure',
+          url: siteConfig.url,
         },
+        url: siteConfig.url,
+        datePublished: publishedDate,
       },
     },
     about: {
@@ -309,17 +321,34 @@ export function generateServicesItemListSchema() {
  * Gives Google and AI a direct, list-style answer for featured snippets and AI overviews.
  */
 export function generateServicesQAPageStructuredData() {
-  const listText = SERVICES_LIST.map((s, i) => `${i + 1}. ${s.name}: ${s.description}`).join(' ');
+  const listText = SERVICES_LIST.map(
+    (s, i) => `${i + 1}. ${s.name}: ${s.description}`
+  ).join(' ');
+  const publishedDate = '2024-01-01T00:00:00+00:00';
+
   return {
     '@context': 'https://schema.org',
     '@type': 'QAPage',
     mainEntity: {
       '@type': 'Question',
       name: 'What are the services provided by Yash Kapure?',
+      answerCount: 1,
+      datePublished: publishedDate,
+      author: {
+        '@type': 'Person',
+        name: 'Yash Kapure',
+        url: siteConfig.url,
+      },
       acceptedAnswer: {
         '@type': 'Answer',
         text: `Yash Kapure provides the following services: ${SERVICES_LIST.map((s) => s.name).join('; ')}. In detail: ${listText}. Contact: ${siteConfig.url}/#contact or yashkapure06@gmail.com.`,
-        author: { '@type': 'Person', name: 'Yash Kapure' },
+        author: {
+          '@type': 'Person',
+          name: 'Yash Kapure',
+          url: siteConfig.url,
+        },
+        url: `${siteConfig.url}/#services`,
+        datePublished: publishedDate,
       },
     },
     about: { '@type': 'Person', name: 'Yash Kapure', url: siteConfig.url },

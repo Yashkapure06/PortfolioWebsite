@@ -14,7 +14,7 @@ import { siteConfig } from './site-config';
 /** Default dates for provenance; update when content is meaningfully updated */
 const GEO_DATES = {
   datePublished: '2024-01-01',
-  dateModified: new Date().toISOString().slice(0, 10), // today in YYYY-MM-DD
+  dateModified: new Date().toISOString(), // full ISO datetime for better validation
 } as const;
 
 /**
