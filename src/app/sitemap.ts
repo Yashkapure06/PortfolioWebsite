@@ -4,17 +4,9 @@ import { locales } from '@/i18n/config';
 import { siteConfig } from '@/lib/site-config';
 import { getLocalizedUrl } from '@/lib/seo';
 
-/** Base URL for www variant (e.g. https://www.yashkapure.com) */
-const getWwwBaseUrl = () => {
-  const base = siteConfig.url;
-  if (base.includes('://www.')) return base;
-  return base.replace(/^(https?:\/\/)(?!www\.)/i, '$1www.');
-};
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
   const canonicalBase = siteConfig.url.replace(/\/$/, '');
-  const wwwBase = getWwwBaseUrl().replace(/\/$/, '');
 
   const pathConfigs: Array<{ path: string; priority: number }> = [
     { path: '/', priority: 1 },
@@ -30,12 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: 'weekly' as const,
       priority: 1,
-    },
-    {
-      url: `${wwwBase}/`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 1,
     }
   );
 
@@ -45,12 +31,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push(
         {
           url: getLocalizedUrl(locale, path),
-          lastModified,
-          changeFrequency: 'weekly' as const,
-          priority,
-        },
-        {
-          url: `${wwwBase}/${locale}${pathname}`,
           lastModified,
           changeFrequency: 'weekly' as const,
           priority,

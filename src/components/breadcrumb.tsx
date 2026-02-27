@@ -42,7 +42,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       '@type': 'ListItem',
       position: position + 1,
       name: item.name,
-      item: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://yashkapure.com'}${item.href}`,
+      item: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yashkapure.com'}${item.href}`,
     })),
   };
 
