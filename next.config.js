@@ -8,7 +8,7 @@ const nextConfig = {
   // If you need static export, you'll need to use a different approach for the chatbot
   trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: false,
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
