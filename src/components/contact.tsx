@@ -1,12 +1,14 @@
 'use client';
 
+import emailjs from '@emailjs/browser';
 import { useEffect, useRef, useState } from 'react';
-import { useForm } from '@formspree/react';
 import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
+
+import { env } from '@/env.mjs';
 
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
@@ -77,7 +79,9 @@ export const Contact = () => {
   const serviceTitle = serviceKey
     ? tServices(`items.${serviceKey}.title`)
     : null;
-  const [state, handleSubmit] = useForm('mbjervyr');
+  const [submitting, setSubmitting] = useState(false);
+  const [succeeded, setSucceeded] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [touched, setTouched] = useState<{
     name?: boolean;
@@ -99,21 +103,77 @@ export const Contact = () => {
   }, []);
 
   useEffect(() => {
-    if (state.succeeded) {
+    if (succeeded) {
       setShowSuccessMessage(true);
       setSelectedCurrency(CURRENCIES[0]);
       toast.success(t('successToast'));
       const form = document.querySelector('form');
-      if (form) form.reset();
+      if (form) (form as HTMLFormElement).reset();
     }
-    if (state.errors && Object.keys(state.errors).length > 0) {
+    if (submitError) {
       toast.error(t('error'));
     }
-  }, [state.succeeded, state.errors, t]);
+  }, [succeeded, submitError, t]);
 
-  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     setTouched({ name: true, email: true, message: true });
-    handleSubmit(e);
+    setSubmitError(null);
+
+    const publicKey = env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+    const serviceId = env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+
+    if (!publicKey || !serviceId || !templateId) {
+      toast.error(t('error'));
+      setSubmitError('EmailJS is not configured. Add NEXT_PUBLIC_EMAILJS_* to .env.local');
+      return;
+    }
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const fromName = String(formData.get('name') ?? '').trim();
+    const fromEmail = String(formData.get('email') ?? '').trim();
+    const message = String(formData.get('message') ?? '').trim();
+
+    if (!fromName || !fromEmail || !message) {
+      toast.error(t('error'));
+      setSubmitting(false);
+      return;
+    }
+
+    setSubmitting(true);
+
+    // Support both from_* and user_* (EmailJS default contact template uses user_name, user_email)
+    const templateParams: Record<string, string> = {
+      from_name: fromName,
+      from_email: fromEmail,
+      user_name: fromName,
+      user_email: fromEmail,
+      message,
+      reply_to: fromEmail,
+    };
+    const optional = {
+      service: String(formData.get('service') ?? ''),
+      currency: String(formData.get('currency') ?? ''),
+      budget: String(formData.get('budget') ?? ''),
+      timeline: String(formData.get('timeline') ?? ''),
+    };
+    Object.entries(optional).forEach(([k, v]) => {
+      if (v.trim()) templateParams[k] = v;
+    });
+
+    try {
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      setSucceeded(true);
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      setSubmitError('send_failed');
+      setSucceeded(false);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (showSuccessMessage) {
@@ -339,8 +399,8 @@ export const Contact = () => {
           </div>
 
           <div className="flex flex-col items-center gap-2 pt-2">
-            <Button type="submit" size="lg" disabled={state.submitting}>
-              {state.submitting ? t('sending') : t('submit')}{' '}
+            <Button type="submit" size="lg" disabled={submitting}>
+              {submitting ? t('sending') : t('submit')}{' '}
               <Icons.arrowRight className="ml-2 size-4" />
             </Button>
             <p className="text-muted-foreground text-center text-xs">
