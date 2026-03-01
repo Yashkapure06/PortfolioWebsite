@@ -1,12 +1,12 @@
-## 🚀 Yash Kapure | Full-Stack Portfolio
+## 🚀 Yash Kapure | React & Next.js Portfolio
 
-High-performance personal portfolio built with Next.js, Tailwind CSS, and Framer Motion. Showcases Yash Kapure's expertise in React.js, Node.js, MERN/MEVN, and modern product engineering practices for startups and global teams.
+Portfolio built with Next.js, Tailwind CSS, and Framer Motion. Showcases Yash Kapure as a React and Next.js specialist and frontend engineer for remote freelance and contract work worldwide.
 
 ---
 
 ## 🌐 Quick Links
 
-- Live site: [https://yashkapure.com](https://yashkapure.com)
+- Live site: [https://www.yashkapure.com](https://www.yashkapure.com)
 - Connect: [yashkapure06@gmail.com](mailto:yashkapure06@gmail.com)
 
 ---
@@ -36,7 +36,7 @@ High-performance personal portfolio built with Next.js, Tailwind CSS, and Framer
 
 ## 🔍 SEO Highlights
 
-- Descriptive metadata targeting keywords such as "Full-Stack Developer", "Next.js engineer", "React consultant", and "remote MERN developer".
+- Descriptive metadata and structured data for React developer, Next.js developer, and remote frontend engineer queries.
 - Sitemap generated through `next-sitemap` using `SITE_URL`.
 - Pre-rendered sections and image optimization for global performance.
 - Contact CTA, social previews, and canonical URLs for improved discoverability.
