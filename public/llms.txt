@@ -1,18 +1,21 @@
 # Yash Kapure
 
-> Full Stack Web Developer and Frontend Engineer. React.js, Next.js, Node.js, MERN/MEVN stack. Based in the United Kingdom. Available for remote freelance work at $25–57/hour.
+> Hire frontend developer for React and Next.js. 4+ years building production UIs and full-stack apps. Based in UK. Freelance for US, UK, and EU clients. $25–57/hour. Responds within 24–48 hours. 7 five-star testimonials. 80,000+ portfolio visits in 12 months.
 
 ## About
 
-- [Home](https://yashkapure.com): Portfolio overview, skills, experience, and contact.
-- [Projects](https://yashkapure.com/projects): Web and mobile projects by Yash Kapure (React, Next.js, React-Native, MERN/MEVN).
+- [Home](https://www.yashkapure.com): Portfolio, skills, experience, 7 testimonials, and contact.
+- [Projects](https://www.yashkapure.com/projects): React, Next.js, and full-stack projects by Yash Kapure.
 
 ## Services
 
-- Full-stack web development (React.js, Next.js, Node.js, TypeScript).
-- MERN/MEVN stack development.
-- React-Native development.
-- Freelance remote work; hourly rate $25–57 USD.
+- React and Next.js development.
+- Full-stack MERN/MEVN applications.
+- TypeScript, Tailwind CSS, Node.js.
+- Performance optimization and frontend architecture.
+- SEO, AEO, GEO and production readiness.
+- Google Business Profile setup (local search, Google Maps).
+- Remote freelance and contract; $25–57 USD/hour.
 
 ## Contact
 
@@ -20,11 +23,15 @@
 - GitHub: https://github.com/Yashkapure06
 - LinkedIn: https://linkedin.com/in/yash-kapure
 - Twitter: https://twitter.com/KapureYash
+- Hire: Fill out the contact form at https://www.yashkapure.com/#contact
 
 ## Key facts
 
 - Name: Yash Kapure (Yash Vinod Kapure)
-- Role: Frontend Engineer & Full Stack Developer
-- Location: United Kingdom (remote)
+- Role: React & Next.js Specialist | Frontend Engineer
+- Location: United Kingdom (remote, global clients)
 - Availability: Available for hire
 - Experience: 4+ years
+- Testimonials: 7 client reviews (all 5-star rated)
+- Response time: Within 24–48 hours
+- Portfolio traction: 80,000+ visits in the last 12 months
