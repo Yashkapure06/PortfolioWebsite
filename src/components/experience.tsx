@@ -79,9 +79,9 @@ export const Experience = () => {
                 </div>
                 <p className="text-muted-foreground">{description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {technologies.map((tech) => (
+                  {technologies.map((tech, idx) => (
                     <div
-                      key={tech}
+                      key={`${tech}-${idx}`}
                       className="rounded-full border px-3 py-1 text-sm "
                     >
                       {tech}
