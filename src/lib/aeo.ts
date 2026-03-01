@@ -47,7 +47,7 @@ export function generateQAPageStructuredData() {
     mainEntity: {
       '@type': 'Question',
       name: 'Who is Yash Kapure and what services does he offer?',
-      text: 'Overview of who Yash Kapure is and the frontend, full stack, and related services he offers.',
+      text: 'Yash Kapure is a frontend engineer; his services and how to hire him for US, UK, and EU projects.',
       answerCount: 1,
       datePublished: publishedDate,
       author: {
@@ -57,7 +57,7 @@ export function generateQAPageStructuredData() {
       },
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yash Kapure is a Frontend Engineer and Full Stack Developer with 4+ years of experience. He offers: Frontend Development (React, Next.js, Vue, payments); Full Stack Development (MERN, MEVN, auth, real-time); Database & Backend (PostgreSQL, MongoDB, Supabase, Prisma); Performance & Frontend Optimization (Core Web Vitals, Lighthouse); Frontend Architecture & System Design; Product-Focused UI Engineering (accessibility, design systems); and SEO, AEO, GEO & Production Readiness (metadata, structured data, JSON-LD, Open Graph, sitemaps, analytics, monitoring so sites are discoverable and citable by AI). He works remotely from the United Kingdom at $25-57/hour.',
+        text: 'Yash Kapure is a frontend engineer with 4+ years of experience. He builds production UIs and full-stack apps with React, Next.js, and TypeScript. Available for hire for US, UK, and EU clients, freelance and contract at $25-57/hour. He usually responds within 24-48 hours. 7 five-star testimonials.',
         author: {
           '@type': 'Person',
           name: 'Yash Kapure',
@@ -71,7 +71,7 @@ export function generateQAPageStructuredData() {
     about: {
       '@type': 'Person',
       name: 'Yash Kapure',
-      jobTitle: 'Frontend Engineer & Full Stack Developer',
+      jobTitle: 'Hire Frontend Developer | React & Next.js',
       url: siteConfig.url,
     },
   };
@@ -85,15 +85,15 @@ export function generateHowToStructuredData() {
   return {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to Hire Yash Kapure for Web Development Services',
+    name: 'How to Hire Yash Kapure for React and Next.js Development',
     description:
-      'Step-by-step guide to hiring Yash Kapure for full-stack web development projects',
+      'Steps to hire Yash Kapure for remote React, Next.js, and full-stack development.',
     step: [
       {
         '@type': 'HowToStep',
         position: 1,
         name: 'Review Portfolio',
-        text: "Visit the portfolio website to review Yash's projects, skills, and experience in React.js, Next.js, Node.js, and MERN/MEVN stack development.",
+        text: "Review Yash's portfolio for React, Next.js, and MERN/MEVN projects and case studies.",
         url: `${siteConfig.url}/projects`,
       },
       {
@@ -119,7 +119,7 @@ export function generateHowToStructuredData() {
         '@type': 'HowToStep',
         position: 5,
         name: 'Get Started',
-        text: 'Once requirements are aligned, Yash will begin development using modern web technologies- including SEO, AEO, and GEO when needed- to deliver fast, accessible, and production-ready web applications.',
+        text: 'Once requirements are aligned, Yash will begin development using modern web technologies, including SEO, AEO, and GEO when needed, to deliver fast, accessible, and production-ready web applications.',
       },
     ],
     totalTime: 'PT1H',
@@ -136,9 +136,9 @@ export function generateEnhancedPersonSchema() {
     '@type': 'Person',
     name: 'Yash Kapure',
     alternateName: 'Yash Vinod Kapure',
-    jobTitle: 'Frontend Engineer & Full Stack Developer',
+    jobTitle: 'Hire Frontend Developer | React & Next.js',
     description:
-      'Yash Kapure is a Frontend Engineer and Full Stack Developer with 4+ years of professional experience. He specializes in React.js, Next.js, Node.js, TypeScript, and MERN/MEVN stack development. Based in the United Kingdom, he works remotely and offers freelance web development services at $25-57/hour. He creates fast, accessible, and SEO-friendly web applications with modern technologies like Tailwind CSS, shadcn/ui, and Framer Motion.',
+      'Yash Kapure is a frontend engineer with 4+ years of experience. React, Next.js, and full-stack. Available for hire for US, UK, and EU, freelance and contract at $25-57/hour.',
     url: siteConfig.url,
     image: `${siteConfig.url}/images/profile.jpg`,
     email: 'yashkapure06@gmail.com',
@@ -175,6 +175,7 @@ export function generateEnhancedPersonSchema() {
       'SEO',
       'AEO',
       'GEO',
+      'Google Business Profile',
       'Structured Data',
       'JSON-LD',
       'Open Graph',
@@ -207,7 +208,7 @@ export function generateEnhancedPersonSchema() {
       {
         '@type': 'PropertyValue',
         name: 'Specialization',
-        value: 'Frontend, Full Stack, Database, Performance, Architecture, Product UI, SEO/AEO/GEO & Production Readiness',
+        value: 'React, Next.js, full-stack, performance',
       },
       {
         '@type': 'PropertyValue',
@@ -267,10 +268,10 @@ export function generateServiceSchema() {
       },
       availability: 'https://schema.org/InStock',
       description:
-        'Frontend, Full Stack, Database, Performance, Architecture, Product UI, and SEO/AEO/GEO & Production Readiness. 80,000+ portfolio visits in the last 12 months. Available for US and global clients- remote, flexible hours, USD.',
+        'React, Next.js, and full-stack development. US, UK, and EU. Remote, flexible hours, USD.',
     },
     description:
-      'Professional web development for US and worldwide clients: Frontend (React, Next.js, Vue, payments); Full Stack (MERN, MEVN, auth, real-time); Database & Backend; Performance & Optimization; Frontend Architecture; Product-Focused UI; SEO, AEO, GEO & Production Readiness. Portfolio traction: 80,000+ visits in the last 12 months. Remote work, flexible hours, USD rates. Available for hire at $25-57/hour.',
+      'Hire frontend developer for React and Next.js. Full-stack for US, UK, and EU. $25–57/hour.',
   };
 }
 
@@ -286,6 +287,7 @@ const SERVICES_LIST = [
   { name: 'Frontend Architecture & System Design', description: 'Clear boundaries, state strategy, API contracts. New features land cleanly.' },
   { name: 'Product-Focused UI Engineering', description: 'Figma to production. Accessible components, design-system alignment, WCAG.' },
   { name: 'SEO, AEO, GEO & Production Readiness', description: 'Metadata, structured data, JSON-LD, Open Graph, sitemaps, analytics, monitoring.' },
+  { name: 'Google Business Profile Setup', description: 'Set up and optimize your Google Business Profile for local search (NAP, categories, posts, reviews).' },
 ] as const;
 
 /**
@@ -297,7 +299,7 @@ export function generateServicesItemListSchema() {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Services provided by Yash Kapure',
-    description: 'List of professional web development and frontend services offered by Yash Kapure: Frontend Development, Full Stack, Database & Backend, Performance Optimization, Architecture, Product UI, and SEO/AEO/GEO.',
+    description: 'React, Next.js, and full-stack. Hire for US, UK, and EU.',
     numberOfItems: SERVICES_LIST.length,
     itemListElement: SERVICES_LIST.map((service, index) => ({
       '@type': 'ListItem',
@@ -318,9 +320,6 @@ export function generateServicesItemListSchema() {
  * Gives Google and AI a direct, list-style answer for featured snippets and AI overviews.
  */
 export function generateServicesQAPageStructuredData() {
-  const listText = SERVICES_LIST.map(
-    (s, i) => `${i + 1}. ${s.name}: ${s.description}`
-  ).join(' ');
   const publishedDate = '2024-01-01T00:00:00+00:00';
 
   return {
@@ -329,7 +328,7 @@ export function generateServicesQAPageStructuredData() {
     mainEntity: {
       '@type': 'Question',
       name: 'What are the services provided by Yash Kapure?',
-      text: 'Detailed list of the professional web development services provided by Yash Kapure.',
+      text: 'List of development services Yash Kapure offers: React, Next.js, full-stack, and related work.',
       answerCount: 1,
       datePublished: publishedDate,
       author: {
@@ -339,7 +338,7 @@ export function generateServicesQAPageStructuredData() {
       },
       acceptedAnswer: {
         '@type': 'Answer',
-        text: `Yash Kapure provides the following services: ${SERVICES_LIST.map((s) => s.name).join('; ')}. In detail: ${listText}. Contact: ${siteConfig.url}/#contact or yashkapure06@gmail.com.`,
+        text: `Services: ${SERVICES_LIST.map((s) => s.name).join('; ')}. Hire for US, UK, EU. Contact: ${siteConfig.url}/#contact or yashkapure06@gmail.com.`,
         author: {
           '@type': 'Person',
           name: 'Yash Kapure',
@@ -365,8 +364,6 @@ export function generateAEOStructuredData(
   const schemas: Array<Record<string, any>> = [
     generateEnhancedPersonSchema(),
     generateServiceSchema(),
-    generateQAPageStructuredData(),
-    generateServicesQAPageStructuredData(),
     generateServicesItemListSchema(),
     generateHowToStructuredData(),
   ];
@@ -384,19 +381,16 @@ export function generateAEOStructuredData(
  * These help optimize content for natural language queries
  */
 export const voiceSearchQueries = [
+  'hire frontend developer',
+  'react developer for hire',
+  'next.js developer for hire',
+  'freelance frontend developer',
   'Who is Yash Kapure?',
-  'What does Yash Kapure do?',
-  'How much does Yash Kapure charge?',
-  'Where is Yash Kapure located?',
-  'What technologies does Yash Kapure use?',
-  'Is Yash Kapure available for hire?',
-  'How to contact Yash Kapure?',
-  "What is Yash Kapure's hourly rate?",
-  'Does Yash Kapure work remotely?',
-  'Does Yash Kapure work with US clients?',
-  'Hire React developer USA',
   'What services does Yash Kapure offer?',
-  'What are the services provided by Yash Kapure?',
-  'best frontend services',
-  'best frontend development services',
+  'Hire React developer US UK EU',
+  'How do I hire Yash Kapure?',
+  'Is Yash Kapure available for hire?',
+  'Yash Kapure hourly rate',
+  'freelance React developer UK',
+  'hire Next.js developer',
 ];
