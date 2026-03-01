@@ -13,6 +13,9 @@ export const env = createEnv({
     NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID: z.string().min(1),
     NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT_ID: z.string().min(1),
     NEXT_PUBLIC_MICROSOFT_CLARITY_ID: z.string().min(1),
+    NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: z.string().min(1).optional(),
+    NEXT_PUBLIC_EMAILJS_SERVICE_ID: z.string().min(1).optional(),
+    NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: z.string().min(1).optional(),
   },
   runtimeEnv: {
     SITE_URL: process.env.SITE_URL,
@@ -26,5 +29,11 @@ export const env = createEnv({
       process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT_ID,
     NEXT_PUBLIC_MICROSOFT_CLARITY_ID:
       process.env.NEXT_PUBLIC_MICROSOFT_CLARITY_ID,
+    NEXT_PUBLIC_EMAILJS_PUBLIC_KEY:
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+    NEXT_PUBLIC_EMAILJS_SERVICE_ID:
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+    NEXT_PUBLIC_EMAILJS_TEMPLATE_ID:
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
   },
 });
