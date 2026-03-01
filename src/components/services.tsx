@@ -6,6 +6,7 @@ import {
   Code2,
   Database,
   Gauge,
+  Globe,
   LayoutTemplate,
   Layers,
   PenTool,
@@ -39,6 +40,7 @@ const serviceIcons: Record<
   architecture: LayoutTemplate,
   productUi: PenTool,
   seoAeo: Search,
+  googleBusiness: Globe,
 };
 
 export const Services = () => {
@@ -68,6 +70,8 @@ export const Services = () => {
           ({ key, technologies, primaryCount = 0, highlight }, index) => {
             const Icon = serviceIcons[key];
 
+            const isMostPopular = highlight === 'mostPopular';
+
             return (
               <motion.div
                 key={key}
@@ -75,18 +79,38 @@ export const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ ...transition, delay: index * 0.08 }}
+                className={cn(isMostPopular && 'group relative')}
               >
+                {isMostPopular && (
+                  <div
+                    className="pointer-events-none absolute -inset-[2px] -z-10 overflow-hidden rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                    aria-hidden
+                  >
+                    <div
+                      className={cn(
+                        'absolute left-1/2 top-1/2 h-[200%] w-[200%] -translate-x-1/2 -translate-y-1/2',
+                        !prefersReducedMotion && 'group-hover:animate-card-border-spin'
+                      )}
+                      style={{
+                        background: `conic-gradient(from 0deg at 50% 50%, transparent 0deg, transparent 250deg, #F9F295 280deg, #E0AA3E 315deg, #B88A44 350deg, transparent 360deg)`,
+                      }}
+                    />
+                  </div>
+                )}
                 <Card
                   className={cn(
-                    'border-border/80 bg-card/50 relative h-full transition-all duration-300',
-                    'hover:border-primary/20 hover:shadow-md'
+                    'relative h-full transition-all duration-300',
+                    isMostPopular
+                      ? 'border-border/80 bg-card hover:border-primary/20 hover:shadow-md group-hover:shadow-[0_0_20px_rgba(224,170,62,0.15)]'
+                      : 'border-border/80 bg-card/50 hover:border-primary/20 hover:shadow-md'
                   )}
                 >
                   {highlight === 'mostPopular' && (
                     <span
-                      className="text-muted-foreground border-border bg-muted/80 absolute right-3 top-3 rounded px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider"
+                      className="absolute right-3 top-3 isolate overflow-hidden rounded-md border border-[#B88A44]/50 bg-gradient-to-r from-[#F9F295] via-[#E0AA3E] to-[#B88A44] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-[#5C4517] shadow-[0_0_16px_rgba(224,170,62,0.5)]"
                       aria-label={t('badgeMostPopular')}
                     >
+                      <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/50 to-transparent animate-badge-shimmer" aria-hidden />
                       {t('badgeMostPopular')}
                     </span>
                   )}
