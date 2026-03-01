@@ -16,7 +16,10 @@ import { Services } from '@/components/services';
 import { Testimonials } from '@/components/testimonials';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { defaultLocale, type Locale, locales } from '@/i18n/config';
-import { generateQAPageStructuredData } from '@/lib/aeo';
+import {
+  generateQAPageStructuredData,
+  generateServicesQAPageStructuredData,
+} from '@/lib/aeo';
 import { getLocalizedAlternates, getLocalizedCanonical } from '@/lib/seo';
 import { siteConfig } from '@/lib/site-config';
 
@@ -34,7 +37,7 @@ export async function generateMetadata({
 
   const tIntro = await getTranslations({ locale: safeLocale, namespace: 'intro' });
   const title = `${tIntro('name')} - ${tIntro('title')}`;
-  const description = `${tIntro('description')} 80,000+ portfolio visits in the last 12 months.`;
+  const description = `${tIntro('description')} Hire for US, UK, and EU.`;
   const canonical = getLocalizedCanonical(safeLocale, '/');
 
   return {
@@ -55,7 +58,7 @@ export async function generateMetadata({
           url: `${siteConfig.url}/images/metaimg.png`,
           width: 1200,
           height: 630,
-          alt: 'Yash Kapure - Portfolio milestone and services',
+          alt: 'Yash Kapure - Hire Frontend Developer',
         },
       ],
     },
@@ -70,8 +73,9 @@ export async function generateMetadata({
 }
 
 const HomePage = async () => {
-  // AEO: QAPage schema for chat/QA functionality
+  // AEO: QAPage schemas are only included on the homepage.
   const qaPageStructuredData = generateQAPageStructuredData();
+  const servicesQaPageStructuredData = generateServicesQAPageStructuredData();
 
   return (
     <>
@@ -81,6 +85,13 @@ const HomePage = async () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(qaPageStructuredData),
+        }}
+      />
+      <Script
+        id="qa-services-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(servicesQaPageStructuredData),
         }}
       />
       <main id="main-content" className="container flex flex-col items-center">

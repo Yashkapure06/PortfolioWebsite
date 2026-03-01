@@ -21,7 +21,7 @@ export async function generateMetadata({
 
   const t = await getTranslations({ locale: safeLocale, namespace: 'projects' });
   const title = t('heading');
-  const description = `${t('content')} 80,000+ portfolio visits in the last 12 months.`;
+  const description = `${t('content')} Hire for US, UK, and EU projects.`;
   const canonical = getLocalizedCanonical(safeLocale, '/projects');
 
   return {
