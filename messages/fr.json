@@ -18,7 +18,8 @@
     "location": "Actuellement basé au Royaume-Uni - ouvert à la réinstallation",
     "greeting": "Salut, je suis",
     "name": "Yash Kapure",
-    "title": "Ingénieur Frontend avec Expertise Full-Stack.",
+    "title": "Hire Frontend Developer | React & Next.js.",
+    "tagline": "Ingénieur Frontend avec Expertise Full-Stack",
     "description": "Je construis des applications web rapides, accessibles et optimisées pour le SEO en utilisant React.js, Next.js, Tailwind CSS et shadcn/ui. Avec plus de 4 ans d'expérience et de solides compétences full-stack en JavaScript et TypeScript, je suis passionné par la création d'interfaces utilisateur fluides, le maintien d'une excellente UI/UX et l'écriture de code propre et maintenable. Je crée des expériences utilisateur modernes tout en fournissant des intégrations backend évolutives lorsque nécessaire.",
     "getInTouch": "Me contacter",
     "viewProjects": "Voir les projets",
@@ -59,6 +60,10 @@
       "seoAeo": {
         "title": "SEO, AEO, GEO et Prêt pour la Production",
         "description": "Préparer l'app pour la recherche, les moteurs de réponse et les vrais utilisateurs. Métadonnées, données structurées (SEO/AEO/GEO), analytics et monitoring pour être trouvé, cité par l'IA et corriger les problèmes tôt."
+      },
+      "googleBusiness": {
+        "title": "Configuration Google Business Profile",
+        "description": "Faites apparaître votre entreprise sur Google Maps et Recherche. J'aide à configurer et optimiser votre Google Business Profile (catégories, NAP, photos, publications et avis) pour que les clients locaux vous trouvent."
       }
     }
   },
@@ -239,7 +244,7 @@
       "daniela": {
         "name": "Daniela Vélez",
         "position": "Directrice Marketing Mondiale @ Dragon Sino Group",
-        "company": "Coventry, Royaume-Uni",
+        "company": "Colombie, Amérique du Sud",
         "content": "J'ai eu l'opportunité de travailler avec Yash et j'ai été ravie de voir son enthousiasme dès le début. Il a abordé ses tâches avec une attitude positive et a montré une volonté claire d'apprendre. Tout au long de notre collaboration, il a été réceptif aux commentaires et a fait des efforts pour s'améliorer. Son ouverture aux conseils a été une partie précieuse de la collaboration."
       },
       "cristina": {
@@ -351,6 +356,10 @@
       "existing": {
         "question": "Pouvez-vous aider avec des projets existants ?",
         "answer": "Absolument ! Je peux aider avec la maintenance, la mise à jour et l'amélioration d'applications web existantes. J'ai de l'expérience avec des bases de code héritées et je peux aider à moderniser des applications plus anciennes."
+      },
+      "hire": {
+        "question": "Comment vous engager ?",
+        "answer": "Remplissez le formulaire de contact avec les détails de votre projet, calendrier et budget. Je réponds généralement sous 24–48 h. Nous pouvons planifier un appel pour discuter des exigences, puis commencer. Flexible pour projets courts et longs."
       }
     }
   },

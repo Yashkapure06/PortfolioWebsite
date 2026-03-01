@@ -18,7 +18,8 @@
     "location": "Atualmente baseado no Reino Unido - aberto a realocação",
     "greeting": "Olá, eu sou",
     "name": "Yash Kapure",
-    "title": "Engenheiro Frontend com Expertise Full-Stack.",
+    "title": "Hire Frontend Developer | React & Next.js.",
+    "tagline": "Engenheiro Frontend com Expertise Full-Stack",
     "description": "Construo aplicações web rápidas, acessíveis e otimizadas para SEO usando React.js, Next.js, Tailwind CSS e shadcn/ui. Com mais de 4 anos de experiência e fortes habilidades full-stack em JavaScript e TypeScript, sou apaixonado por criar interfaces de usuário fluidas, manter excelente UI/UX e escrever código limpo e manutenível. Crio experiências de usuário modernas enquanto também entrego integrações backend escaláveis quando necessário.",
     "getInTouch": "Entrar em contato",
     "viewProjects": "Ver projetos",
@@ -59,6 +60,10 @@
       "seoAeo": {
         "title": "SEO, AEO, GEO e prontidão para produção",
         "description": "Preparar o app para busca, motores de resposta e usuários reais. Metadados, dados estruturados (SEO/AEO/GEO), analytics e monitoramento para ser encontrado, citado por IA e corrigir problemas a tempo."
+      },
+      "googleBusiness": {
+        "title": "Configuração do Google Business Profile",
+        "description": "Coloque seu negócio no Google Maps e na Pesquisa. Ajudo a configurar e otimizar seu Google Business Profile (categorias, NAP, fotos, posts e avaliações) para que clientes locais possam encontrá-lo."
       }
     }
   },
@@ -261,6 +266,10 @@
       "existing": {
         "question": "Você pode ajudar com projetos existentes?",
         "answer": "Absolutamente! Posso ajudar com manutenção, atualização e aprimoramento de aplicações web existentes. Tenho experiência trabalhando com bases de código legadas e posso ajudar a modernizar aplicações mais antigas."
+      },
+      "hire": {
+        "question": "Como te contrato?",
+        "answer": "Preencha o formulário de contato com os detalhes do seu projeto, cronograma e orçamento. Geralmente respondo em 24–48 horas. Podemos agendar uma chamada para discutir requisitos e começar. Flexível para projetos de curto e longo prazo."
       }
     }
   },
@@ -323,7 +332,7 @@
       "daniela": {
         "name": "Daniela Vélez",
         "position": "Global Marketing Director @ Dragon Sino Group",
-        "company": "Coventry, United Kingdom",
+        "company": "Colombia, South America",
         "content": "I had the opportunity to work with Yash and was pleased to see his enthusiasm from the very start. He approached his tasks with a positive attitude and showed a clear willingness to learn. Throughout our time working together, he was receptive to feedback and made efforts to improve. His openness to guidance was a valuable part of the collaboration."
       },
       "cristina": {

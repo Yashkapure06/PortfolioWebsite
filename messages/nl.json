@@ -18,7 +18,8 @@
     "location": "Momenteel gevestigd in het Verenigd Koninkrijk - open voor verhuizing",
     "greeting": "Hallo, ik ben",
     "name": "Yash Kapure",
-    "title": "Frontend Engineer met Full-Stack Expertise.",
+    "title": "Hire Frontend Developer | React & Next.js.",
+    "tagline": "Frontend Engineer met Full-Stack Expertise",
     "description": "Ik bouw snelle, toegankelijke en SEO-vriendelijke webapplicaties met React.js, Next.js, Tailwind CSS en shadcn/ui. Met meer dan 4 jaar ervaring en sterke full-stack vaardigheden in JavaScript en TypeScript, ben ik gepassioneerd over het creëren van vloeiende gebruikersinterfaces, het behouden van uitstekende UI/UX en het schrijven van schone, onderhoudbare code. Ik creëer moderne gebruikerservaringen terwijl ik ook schaalbare backend-integraties lever wanneer dat nodig is.",
     "getInTouch": "Neem contact op",
     "viewProjects": "Bekijk projecten",
@@ -59,6 +60,10 @@
       "seoAeo": {
         "title": "SEO, AEO, GEO en productiegereedheid",
         "description": "Uw app klaar maken voor zoeken, antwoordengines en echte gebruikers. Metagegevens, gestructureerde data (SEO/AEO/GEO), analytics en monitoring om gevonden te worden, door AI geciteerd te worden en problemen tijdig te verhelpen."
+      },
+      "googleBusiness": {
+        "title": "Google Business Profile Setup",
+        "description": "Zet je bedrijf op Google Maps en Zoeken. Ik help met het opzetten en optimaliseren van je Google Business Profile (categorieën, NAP, foto's, berichten en beoordelingen) zodat lokale klanten je kunnen vinden."
       }
     }
   },
@@ -261,6 +266,10 @@
       "existing": {
         "question": "Kunt u helpen met bestaande projecten?",
         "answer": "Absoluut! Ik kan helpen met het onderhouden, bijwerken en verbeteren van bestaande webapplicaties. Ik heb ervaring met legacy codebases en kan helpen bij het moderniseren van oudere applicaties."
+      },
+      "hire": {
+        "question": "Hoe neem ik u in dienst?",
+        "answer": "Vul het contactformulier in met uw projectdetails, tijdlijn en budget. Ik reageer meestal binnen 24–48 uur. We kunnen een gesprek plannen om vereisten te bespreken en daarna beginnen. Flexibel voor korte en lange projecten."
       }
     }
   },
@@ -323,7 +332,7 @@
       "daniela": {
         "name": "Daniela Vélez",
         "position": "Global Marketing Director @ Dragon Sino Group",
-        "company": "Coventry, United Kingdom",
+        "company": "Colombia, South America",
         "content": "I had the opportunity to work with Yash and was pleased to see his enthusiasm from the very start. He approached his tasks with a positive attitude and showed a clear willingness to learn. Throughout our time working together, he was receptive to feedback and made efforts to improve. His openness to guidance was a valuable part of the collaboration."
       },
       "cristina": {

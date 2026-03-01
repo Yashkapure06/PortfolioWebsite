@@ -18,7 +18,8 @@
     "location": "現在イギリス在住 - 転勤可能",
     "greeting": "こんにちは、私は",
     "name": "Yash Kapure",
-    "title": "フルスタック専門知識を持つフロントエンドエンジニア。",
+    "title": "Hire Frontend Developer | React & Next.js.",
+    "tagline": "フルスタック専門知識を持つフロントエンドエンジニア",
     "description": "React.js、Next.js、Tailwind CSS、shadcn/uiを使用して、高速でアクセス可能でSEOに優れたWebアプリケーションを構築しています。4年以上の経験と、JavaScriptとTypeScriptの強力なフルスタックスキルを持ち、滑らかなユーザーインターフェースの作成、優れたUI/UXの維持、クリーンで保守可能なコードの記述に情熱を注いでいます。モダンなユーザーエクスペリエンスを構築し、必要に応じてスケーラブルなバックエンド統合も提供します。",
     "getInTouch": "お問い合わせ",
     "viewProjects": "プロジェクトを見る",
@@ -59,6 +60,10 @@
       "seoAeo": {
         "title": "SEO・AEO・GEO・本番準備",
         "description": "検索、回答エンジン、実ユーザーに備えてアプリを準備。メタデータ、構造化データ（SEO/AEO/GEO）、アナリティクス、モニタリングで発見されやすく、AIに引用され、問題を早期に修正。"
+      },
+      "googleBusiness": {
+        "title": "Google Business プロフィール設定",
+        "description": "ビジネスをGoogleマップと検索に表示。Google Business プロフィールの設定と最適化をお手伝いします（カテゴリ、NAP、写真、投稿、レビュー）。地元のお客様に見つけていただけるように。"
       }
     }
   },
@@ -261,6 +266,10 @@
       "existing": {
         "question": "既存のプロジェクトを手伝えますか？",
         "answer": "もちろんです！既存のWebアプリケーションの保守、更新、強化をサポートできます。レガシーコードベースでの作業経験があり、古いアプリケーションの近代化を支援できます。"
+      },
+      "hire": {
+        "question": "どのように依頼できますか？",
+        "answer": "プロジェクト詳細、スケジュール、予算を連絡フォームに記入してください。通常24–48時間以内に返信します。要件を話し合う電話を設定し、その後開始できます。短期・長期プロジェクトに対応します。"
       }
     }
   },
@@ -323,7 +332,7 @@
       "daniela": {
         "name": "Daniela Vélez",
         "position": "Global Marketing Director @ Dragon Sino Group",
-        "company": "Coventry, United Kingdom",
+        "company": "Colombia, South America",
         "content": "I had the opportunity to work with Yash and was pleased to see his enthusiasm from the very start. He approached his tasks with a positive attitude and showed a clear willingness to learn. Throughout our time working together, he was receptive to feedback and made efforts to improve. His openness to guidance was a valuable part of the collaboration."
       },
       "cristina": {

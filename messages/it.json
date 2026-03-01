@@ -18,7 +18,8 @@
     "location": "Attualmente basato nel Regno Unito - aperto a trasferimenti",
     "greeting": "Ciao, sono",
     "name": "Yash Kapure",
-    "title": "Ingegnere Frontend con Competenze Full-Stack.",
+    "title": "Hire Frontend Developer | React & Next.js.",
+    "tagline": "Ingegnere Frontend con Competenze Full-Stack",
     "description": "Costruisco applicazioni web veloci, accessibili e ottimizzate per SEO utilizzando React.js, Next.js, Tailwind CSS e shadcn/ui. Con oltre 4 anni di esperienza e solide competenze full-stack in JavaScript e TypeScript, sono appassionato di creare interfacce utente fluide, mantenere un'eccellente UI/UX e scrivere codice pulito e manutenibile. Creo esperienze utente moderne fornendo anche integrazioni backend scalabili quando necessario.",
     "getInTouch": "Mettersi in contatto",
     "viewProjects": "Visualizza progetti",
@@ -59,6 +60,10 @@
       "seoAeo": {
         "title": "SEO, AEO, GEO e Pronto per la Produzione",
         "description": "Preparare l'app per la ricerca, i motori di risposta e gli utenti reali. Metadati, dati strutturati (SEO/AEO/GEO), analytics e monitoring per essere trovati, citati dall'IA e risolvere i problemi in tempo."
+      },
+      "googleBusiness": {
+        "title": "Configurazione Google Business Profile",
+        "description": "Metti la tua attività su Google Maps e Ricerca. Aiuto a configurare e ottimizzare il tuo Google Business Profile (categorie, NAP, foto, post e recensioni) affinché i clienti locali ti trovino."
       }
     }
   },
@@ -261,6 +266,10 @@
       "existing": {
         "question": "Puoi aiutare con progetti esistenti?",
         "answer": "Assolutamente! Posso aiutare con la manutenzione, l'aggiornamento e il miglioramento di applicazioni web esistenti. Ho esperienza nel lavorare con codebase legacy e posso aiutare a modernizzare applicazioni più vecchie."
+      },
+      "hire": {
+        "question": "Come ti assumo?",
+        "answer": "Compila il modulo di contatto con i dettagli del progetto, tempistiche e budget. Di solito rispondo entro 24–48 ore. Possiamo fissare una chiamata per discutere i requisiti e poi iniziare. Flessibile per progetti brevi e lunghi."
       }
     }
   },
@@ -323,7 +332,7 @@
       "daniela": {
         "name": "Daniela Vélez",
         "position": "Global Marketing Director @ Dragon Sino Group",
-        "company": "Coventry, United Kingdom",
+        "company": "Colombia, South America",
         "content": "I had the opportunity to work with Yash and was pleased to see his enthusiasm from the very start. He approached his tasks with a positive attitude and showed a clear willingness to learn. Throughout our time working together, he was receptive to feedback and made efforts to improve. His openness to guidance was a valuable part of the collaboration."
       },
       "cristina": {

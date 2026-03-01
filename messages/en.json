@@ -15,18 +15,19 @@
     "freelance": "Freelance",
     "contract": "Contract",
     "remoteOnsite": "Remote or onsite",
-    "location": "Based in the UK - serving clients in the US, UK, and worldwide. Remote-first.",
+    "location": "Based in the UK. Hire me for US, UK, and EU projects, remote or onsite.",
     "greeting": "Hi I'm",
     "name": "Yash Kapure",
-    "title": "Frontend Engineer with Full-Stack Expertise.",
-    "description": "I build fast, accessible, and SEO-friendly web applications using React.js, Next.js, Tailwind CSS, and shadcn/ui. With 4+ years of experience and strong full-stack skills in JavaScript and TypeScript, I am passionate about creating smooth user interfaces, maintaining excellent UI/UX, and writing clean, maintainable code. I craft modern user experiences while also delivering scalable backend integrations when needed.",
+    "title": "Hire Frontend Developer | React & Next.js.",
+    "tagline": "Frontend Engineer with Full-Stack Expertise",
+    "description": "I build production web apps with React, Next.js, and TypeScript. 4+ years shipping UIs and full-stack features for product teams in the US, UK, and EU. I focus on performance, accessibility, and clear code. Available for freelance and contract.",
     "getInTouch": "Get in touch",
     "viewProjects": "View projects",
     "downloadCV": "Download CV"
   },
   "about": {
     "heading": "About Me",
-    "paragraph1": "My name is Yash Kapure, and I am a Frontend Engineer with 4+ years of real-world experience designing fast, usable, and SEO-friendly web applications. My specialty is crafting smooth-looking UIs with React.js, Next.js, Tailwind CSS, and shadcn/ui and bringing things to life with Framer Motion.",
+    "paragraph1": "I'm Yash Kapure, a frontend engineer with 4+ years of experience. I ship UIs and full-stack features with React, Next.js, and TypeScript for product companies and startups in the US, UK, and EU. Based in the UK, I work remotely.",
     "paragraph2": "Alongside my frontend experience, I possess good full-stack skills in JavaScript and TypeScript, and familiar experience in Node.js, Express, and databases like MongoDB and MySQL. This allows me to manage projects from start-to-finish, from designing smooth UIs through connecting scalable backends.",
     "paragraph3": "I have built software for product companies, clinics, and start-ups, delivering maximum performance, engagement, and lead capture through precise engineering. Writing elegant, up-to-date code and discovering new tools and trends thrills me.",
     "paragraph4": "Outside of work, I enjoy cricket and a good cup of tea, but now I am used to drinking coffee. I'm always up for learning, experimenting, and growing and looking for opportunities wherein I can bring value toward impactful products and inventive teams."
@@ -34,7 +35,7 @@
   "services": {
     "heading": "How I can help",
     "content": "Production systems I’ve shipped and can run for you.",
-    "seoLine": "Best frontend services and full-stack development: Frontend Development, Full Stack, Database & Backend, Performance & Optimization, Architecture, Product UI, and SEO/AEO/GEO. Services provided by Yash Kapure - hire for US and worldwide.",
+    "seoLine": "React, Next.js, and full-stack development. Available for hire for US, UK, and EU clients, freelance and contract.",
     "badgeMostPopular": "Most requested",
     "bookService": "Discuss this service",
     "technologiesLabel": "Stack & tools",
@@ -66,6 +67,10 @@
       "seoAeo": {
         "title": "SEO, AEO, GEO & Production Readiness",
         "description": "Ready for search and real users. Metadata, structured data, analytics, and monitoring so you’re discoverable, citable by AI, and issues get caught early."
+      },
+      "googleBusiness": {
+        "title": "Google Business Profile Setup",
+        "description": "Get your business on Google Maps and Search. I help set up and optimize your Google Business Profile (categories, NAP, photos, posts, and reviews) so local customers can find you."
       }
     }
   },
@@ -239,7 +244,7 @@
       "daniela": {
         "name": "Daniela Vélez",
         "position": "Global Marketing Director @ Dragon Sino Group",
-        "company": "Coventry, United Kingdom",
+        "company": "Colombia, South America",
         "content": "I had the opportunity to work with Yash and was pleased to see his enthusiasm from the very start. He approached his tasks with a positive attitude and showed a clear willingness to learn. Throughout our time working together, he was receptive to feedback and made efforts to improve. His openness to guidance was a valuable part of the collaboration."
       },
       "cristina": {
@@ -276,8 +281,8 @@
   },
   "contact": {
     "heading": "Get In Touch",
-    "introExpectations": "I work with product teams and founders who need production-ready code and clear communication. A few details below help me respond with something useful - goal, timeline, and scope go a long way.",
-    "openToRoles": "Open to full-time, freelance, and contract - US, UK, and worldwide. Remote or onsite.",
+    "introExpectations": "I work with product teams and founders who need production-ready code. Share your goal, timeline, and scope. I'll respond with something useful.",
+    "openToRoles": "Open to full-time, freelance, and contract: US, UK, and EU. Remote or onsite.",
     "requestingService": "Requesting service",
     "description": "Please contact me directly at",
     "or": "or through this form.",
@@ -326,15 +331,11 @@
     "items": {
       "services": {
         "question": "What services do you offer?",
-        "answer": "I offer: Frontend Development (React, Next.js, Vue, payments); Full Stack Development (MERN, MEVN, auth, real-time); Database & Backend; Performance & Frontend Optimization; Frontend Architecture & System Design; Product-Focused UI Engineering; and SEO, AEO, GEO & Production Readiness- metadata, structured data, analytics, and monitoring so your site is discoverable, citable by AI, and issues get caught early."
+        "answer": "React and Next.js development, full-stack apps with MERN/MEVN, performance work, frontend architecture, SEO/AEO/GEO, and Google Business Profile setup. I take on freelance and contract projects for US, UK, and EU clients."
       },
       "experience": {
         "question": "How much experience do you have?",
         "answer": "I have 4+ years of real-world experience in web development, working with various technologies including React.js, Next.js, Node.js, MongoDB, Express.js, and Vue.js."
-      },
-      "rate": {
-        "question": "What is your hourly rate?",
-        "answer": "My freelance rate is $25-57/hour, though this may vary depending on the project scope and requirements. I'm flexible with working hours, hourly rate, fixed rate, payment terms and available for both short-term and long-term projects."
       },
       "remote": {
         "question": "Do you work remotely?",
@@ -342,15 +343,19 @@
       },
       "usClients": {
         "question": "Do you work with US-based clients?",
-        "answer": "Yes. I actively work with US clients - startups, product teams, and agencies. I work remotely with flexible hours to overlap with US time zones, communicate clearly in English, and charge in USD. If you're in the US and need a reliable frontend or full-stack developer, get in touch via the contact form or email."
+        "answer": "Yes. I work with US startups, product teams, and agencies. Flexible hours for time-zone overlap, clear communication in English, and USD billing. Get in touch via the contact form or email."
       },
       "technologies": {
         "question": "What technologies do you specialize in?",
-        "answer": "I specialize in React.js, Next.js, Node.js, TypeScript, JavaScript, MERN/MEVN stack, Tailwind CSS, ShadCN UI, MongoDB, Supabase, Express.js, Vue.js, and various other modern web technologies."
+        "answer": "I specialize in React, Next.js, TypeScript, Node.js, and the MERN/MEVN stack. I also work with Tailwind CSS, Supabase, MongoDB, Express, and Vue for full-stack and UI work."
       },
       "existing": {
         "question": "Can you help with existing projects?",
         "answer": "Absolutely! I can help with maintaining, updating, and enhancing existing web applications. I have experience working with legacy codebases and can help modernize older applications."
+      },
+      "hire": {
+        "question": "How do I hire you?",
+        "answer": "Fill out the contact form with your project details, timeline, and budget. I usually reply within 24–48 hours. We can schedule a call to discuss requirements, then get started. Flexible for short-term and long-term projects."
       }
     }
   },

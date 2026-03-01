@@ -18,7 +18,8 @@
     "location": "目前位于英国 - 愿意搬迁",
     "greeting": "你好，我是",
     "name": "Yash Kapure",
-    "title": "具有全栈专业知识的前端工程师。",
+    "title": "Hire Frontend Developer | React & Next.js.",
+    "tagline": "具有全栈专业知识的前端工程师",
     "description": "我使用 React.js、Next.js、Tailwind CSS 和 shadcn/ui 构建快速、可访问且对 SEO 友好的 Web 应用程序。拥有 4 年以上的经验和强大的 JavaScript 和 TypeScript 全栈技能，我热衷于创建流畅的用户界面、保持出色的 UI/UX 并编写干净、可维护的代码。我打造现代用户体验，同时在需要时提供可扩展的后端集成。",
     "getInTouch": "取得联系",
     "viewProjects": "查看项目",
@@ -59,6 +60,10 @@
       "seoAeo": {
         "title": "SEO、AEO、GEO 与生产就绪",
         "description": "为搜索、回答引擎与真实用户做好准备。元数据、结构化数据（SEO/AEO/GEO）、分析与监控，便于被发现、被 AI 引用并及早修复问题。"
+      },
+      "googleBusiness": {
+        "title": "Google 商家档案设置",
+        "description": "让您的业务出现在 Google 地图和搜索中。我帮助设置和优化您的 Google 商家档案（分类、NAP、照片、帖子和评价），便于本地客户找到您。"
       }
     }
   },
@@ -261,6 +266,10 @@
       "existing": {
         "question": "您能帮助现有项目吗？",
         "answer": "当然！我可以帮助维护、更新和增强现有的 Web 应用程序。我有使用遗留代码库的经验，可以帮助现代化较旧的应用程序。"
+      },
+      "hire": {
+        "question": "如何雇佣您？",
+        "answer": "在联系表中填写项目详情、时间表和预算。我通常在24–48小时内回复。我们可以安排通话讨论需求，然后开始。可灵活安排短期和长期项目。"
       }
     }
   },
@@ -323,7 +332,7 @@
       "daniela": {
         "name": "Daniela Vélez",
         "position": "Global Marketing Director @ Dragon Sino Group",
-        "company": "Coventry, United Kingdom",
+        "company": "Colombia, South America",
         "content": "I had the opportunity to work with Yash and was pleased to see his enthusiasm from the very start. He approached his tasks with a positive attitude and showed a clear willingness to learn. Throughout our time working together, he was receptive to feedback and made efforts to improve. His openness to guidance was a valuable part of the collaboration."
       },
       "cristina": {
