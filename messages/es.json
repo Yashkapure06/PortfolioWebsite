@@ -186,7 +186,7 @@
         "description": "Usando Vue.js he creado esta aplicación de noticias con la característica principal de mapeo de imágenes, usé la API de newsapi.org para obtener noticias de diferentes partes del mundo. Nota: La API utilizada funciona en modo desarrolladores (es decir, localmente. descárgala)."
       },
       "textToSpeech": {
-        "title": "Select Text to Speech Chrome extention",
+        "title": "Select Text to Speech Chrome extension",
         "description": "Una extensión simple de Chrome donde puedes seleccionar texto, luego hacer clic derecho y luego seleccionar la opción 'Leer en voz alta' y puedes escuchar el audio final."
       },
       "restro": {

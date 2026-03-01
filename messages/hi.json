@@ -186,11 +186,11 @@
         "description": "Vue.js का उपयोग करके मैंने यह समाचार एप्लिकेशन बनाया है जिसमें Image Mapping की मुख्य सुविधा है, दुनिया के विभिन्न हिस्सों से समाचार प्राप्त करने के लिए newsapi.org api का उपयोग किया। नोट: उपयोग की गई API डेवलपर्स मोड में काम करती है (यानी, स्थानीय रूप से। इसे डाउनलोड करें)।"
       },
       "textToSpeech": {
-        "title": "Select Text to Speech Chrome extention",
+        "title": "Select Text to Speech Chrome extension",
         "description": "एक सरल क्रोम एक्सटेंशन जहां आप टेक्स्ट का चयन कर सकते हैं, फिर राइट क्लिक करें और फिर 'Read aloud' विकल्प का चयन करें और आप अंतिम ऑडियो सुन सकते हैं।"
       },
       "restro": {
-        "title": "Restro - A Restaurent Website",
+        "title": "Restro - A Restaurant Website",
         "description": "Pure HTML, CSS और JS से बना एक सरल और सुंदर रेस्टोरेंट वेबसाइट। कुछ सुंदर एनिमेशन और API का उपयोग करके डेटा प्राप्त करना।"
       },
       "chakraUI": {

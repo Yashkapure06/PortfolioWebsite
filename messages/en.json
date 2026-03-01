@@ -99,7 +99,7 @@
       "frontendAnandlok": {
         "title": "Frontend Developer (Full-Stack - Next.js)",
         "company": "Anandlok Ayurveda & Panchakarma Hospital, Nagpur",
-        "description": "Worked as an Full Stack Developer Frontend Focused, creating a website for Ayurveda & Panchakarma practitioners using React.js, Next.js, and Material-UI. The platform allows practitioners to share their knowledge and experience with others.",
+        "description": "Worked as a Full Stack Developer Frontend Focused, creating a website for Ayurveda & Panchakarma practitioners using React.js, Next.js, and Material-UI. The platform allows practitioners to share their knowledge and experience with others.",
         "period": "2021-2023"
       },
       "vueDeveloper": {
@@ -186,12 +186,12 @@
         "description": "Using Vue.js I have created this news application having the main feature of Image Mapping, Used newsapi.org api to fetch the news from different parts of the world. Note: The API used works developers mode (i.e, locally. download it)."
       },
       "textToSpeech": {
-        "title": "Select Text to Speech Chrome extention",
+        "title": "Select Text to Speech Chrome extension",
         "description": "A simple chrome extension where you can select text, then right click and then select the option 'Read aloud' and you can hear the final audio."
       },
       "restro": {
-        "title": "Restro - A Restaurent Website",
-        "description": "A simple and beautiful Restaurent Website made with Pure HTML, CSS and JS. With some beautiful Animation and data fetching using API."
+        "title": "Restro - A Restaurant Website",
+        "description": "A simple and beautiful Restaurant Website made with Pure HTML, CSS and JS. With some beautiful Animation and data fetching using API."
       },
       "chakraUI": {
         "title": "OpenSource Contribution in Chakra-UI",
