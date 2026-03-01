@@ -425,7 +425,7 @@ export const projectsData = [
   },
   {
     image: '/images/text-to-sppech.webp',
-    title: 'Select Text to Speech Chrome extention',
+    title: 'Select Text to Speech Chrome extension',
     description:
       "A simple chrome extension where you can select text, then right click and then select the option 'Read aloud' and you can hear the final audio.",
     technologies: ['JavaScript'],
@@ -437,9 +437,9 @@ export const projectsData = [
   },
   {
     image: '/images/restro.png',
-    title: 'Restro - A Restaurent Website',
+    title: 'Restro - A Restaurant Website',
     description:
-      'A simple and beautiful Restaurent Website made with Pure HTML, CSS and JS. With some beautiful Animation and data fetching using API.',
+      'A simple and beautiful Restaurant Website made with Pure HTML, CSS and JS. With some beautiful Animation and data fetching using API.',
     technologies: ['HTML', 'CSS', 'Javascript', 'API'],
     links: {
       preview: 'https://fynd-academy-mevn.vercel.app/',
@@ -627,7 +627,7 @@ export const experiencesData = [
     title: 'Frontend Developer (Full-Stack - Next.js)',
     company: 'Anandlok Ayurveda & Panchakarma Hospital, Nagpur',
     description:
-      'Worked as an FUll Stack Developer Frontend Focused, creating a website for Ayurveda & Panchakarma practitioners using React.js, Next.js, and Material-UI. The platform allows practitioners to share their knowledge and experience with others.',
+      'Worked as a Full Stack Developer Frontend Focused, creating a website for Ayurveda & Panchakarma practitioners using React.js, Next.js, and Material-UI. The platform allows practitioners to share their knowledge and experience with others.',
     period: '2021-2023',
     technologies: [
       'Next.js',
