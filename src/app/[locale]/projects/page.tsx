@@ -8,6 +8,7 @@ import { Breadcrumb } from '@/components/breadcrumb';
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
 import { Link } from '@/i18n/routing';
+import { generateProjectsItemListSchema } from '@/lib/aeo';
 import { projectsData } from '@/lib/data';
 
 export default function ProjectsPage() {
@@ -31,8 +32,8 @@ export default function ProjectsPage() {
     "Dr. Manisha's Yoga Institute": 'yogaInstitute',
     'Anandlok Ayurveda': 'anandlok',
     'News-o-Pedia': 'newspedia',
-    'Select Text to Speech Chrome extention': 'textToSpeech',
-    'Restro - A Restaurent Website': 'restro',
+    'Select Text to Speech Chrome extension': 'textToSpeech',
+    'Restro - A Restaurant Website': 'restro',
     'OpenSource Contribution in Chakra-UI': 'chakraUI',
     'YouTube Clone using ReactJs': 'youtubeClone',
     'Blogging Website': 'blogging',
@@ -42,8 +43,16 @@ export default function ProjectsPage() {
     'Complete React Website': 'reactWebsite',
     'Wedding Invitation Website': 'wedding',
   };
+  const projectsStructuredData = generateProjectsItemListSchema();
+
   return (
     <main id="main-content" className="container mx-auto px-4 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(projectsStructuredData),
+        }}
+      />
       <Breadcrumb />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
