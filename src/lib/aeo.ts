@@ -1,4 +1,5 @@
 import { siteConfig } from './site-config';
+import { projectsData } from '@/lib/data';
 
 /**
  * AEO (Answer Engine Optimization) Utilities
@@ -350,6 +351,50 @@ export function generateServicesQAPageStructuredData() {
       },
     },
     about: { '@type': 'Person', name: 'Yash Kapure', url: siteConfig.url },
+  };
+}
+
+/**
+ * ItemList schema for projects page: list of CreativeWork items.
+ * Enables "Projects by Yash Kapure" to surface in search and AI.
+ */
+export function generateProjectsItemListSchema() {
+  const baseUrl = siteConfig.url;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Web development projects by Yash Kapure',
+    description: 'React, Next.js, and full-stack projects built by Yash Kapure. Hire for US, UK, and EU.',
+    numberOfItems: projectsData.length,
+    itemListElement: projectsData.map((project, index) => {
+      const desc =
+        typeof project.description === 'string'
+          ? project.description
+          : String((project as { description?: unknown }).description ?? '');
+      return {
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+          '@type': 'CreativeWork',
+          name: project.title,
+          description: desc.slice(0, 300),
+          url: project.links.preview,
+          author: {
+            '@type': 'Person',
+            name: 'Yash Kapure',
+            url: baseUrl,
+          },
+          ...(project.technologies?.length && {
+            keywords: project.technologies.slice(0, 5).join(', '),
+          }),
+        },
+      };
+    }),
+    author: {
+      '@type': 'Person',
+      name: 'Yash Kapure',
+      url: siteConfig.url,
+    },
   };
 }
 
