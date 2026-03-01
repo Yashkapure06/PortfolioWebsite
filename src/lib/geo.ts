@@ -115,6 +115,32 @@ export function generateGeoProfilePageSchema() {
 }
 
 /**
+ * Organization schema for brand and employer context.
+ * Complements Person/LocalBusiness for Knowledge Panel and rich results.
+ */
+export function generateOrganizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${siteConfig.url}/#organization`,
+    name: 'Yash Kapure - Frontend & Full-Stack Development',
+    url: siteConfig.url,
+    description: siteConfig.description,
+    logo: `${siteConfig.url}/images/profile.jpg`,
+    founder: {
+      '@type': 'Person',
+      name: 'Yash Kapure',
+      url: siteConfig.url,
+    },
+    sameAs: [
+      'https://github.com/Yashkapure06',
+      'https://linkedin.com/in/yash-kapure',
+      'https://twitter.com/KapureYash',
+    ],
+  };
+}
+
+/**
  * WebSite schema for sitelinks and Knowledge Panel.
  * Helps Google and AI engines understand site structure.
  */
@@ -141,6 +167,7 @@ export function generateWebSiteSchema() {
  */
 export function generateGeoStructuredData() {
   return [
+    generateOrganizationSchema(),
     generateWebSiteSchema(),
     generateGeoWebPageSchema(),
     generateGeoProfilePageSchema(),
