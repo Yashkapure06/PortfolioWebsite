@@ -118,8 +118,8 @@ export const Intro = () => {
         {t('greeting')}{' '}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
           {t('name')}
-        </span>{' '}
-        - {t('title')}
+        </span>
+        <span className="text-foreground font-semibold"> · {t('tagline')}</span>
       </motion.h1>
       <motion.p
         initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 100 }}
