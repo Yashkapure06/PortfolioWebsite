@@ -125,6 +125,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//github.com" />
         <link rel="dns-prefetch" href="//linkedin.com" />
+        <link rel="llms" href="/llms.txt" />
       </head>
       <body className={cn('min-h-screen font-sans', fonts)}>
         <a
