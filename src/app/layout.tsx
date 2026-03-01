@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.title,
-    template: `%s | ${siteConfig.title}`,
+    template: '%s | Yash Kapure',
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords.join(', '),
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         url: `${siteConfig.url}/images/metaimg.png`,
         width: 1200,
         height: 630,
-        alt: 'Yash Kapure - Full Stack Developer',
+        alt: 'Yash Kapure - Hire Frontend Developer',
       },
     ],
   },
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     creator: '@KapureYash',
     images: [`${siteConfig.url}/images/metaimg.png`],
   },
-  authors: [{ name: 'Yash Kapure', url: 'https://github.com/Yashkapure06' }],
+  authors: [{ name: 'Yash Kapure', url: siteConfig.url }],
   creator: 'Yash Kapure',
   publisher: 'Yash Kapure',
 };
