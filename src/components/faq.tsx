@@ -30,10 +30,6 @@ export function FAQ({ items }: FAQProps) {
       answer: t('items.experience.answer'),
     },
     {
-      question: t('items.rate.question'),
-      answer: t('items.rate.answer'),
-    },
-    {
       question: t('items.remote.question'),
       answer: t('items.remote.answer'),
     },
@@ -48,6 +44,10 @@ export function FAQ({ items }: FAQProps) {
     {
       question: t('items.existing.question'),
       answer: t('items.existing.answer'),
+    },
+    {
+      question: t('items.hire.question'),
+      answer: t('items.hire.answer'),
     },
   ];
   const [openItems, setOpenItems] = useState<number[]>([]);
