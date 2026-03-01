@@ -89,4 +89,30 @@
   .animate-skills-scroll:hover {
     animation-play-state: paused;
   }
+
+  @keyframes badge-shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-badge-shimmer {
+    animation: badge-shimmer 2.5s ease-in-out infinite;
+  }
+
+  @keyframes card-border-spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  .animate-card-border-spin {
+    animation: card-border-spin 2.8s linear infinite;
+  }
 }
