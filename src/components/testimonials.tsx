@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
+import { siteConfig } from '@/lib/site-config';
 import { testimonialsData } from '@/lib/data';
 
 export const Testimonials = () => {
@@ -61,26 +62,41 @@ export const Testimonials = () => {
     setTouchEndX(null);
   };
 
-  // Structured data for testimonials
+  // Structured data for testimonials - Review requires itemReviewed (what's being reviewed)
+  const itemReviewed = {
+    '@type': 'LocalBusiness' as const,
+    '@id': `${siteConfig.url}/#localbusiness`,
+    name: 'Yash Kapure - Frontend & Full-Stack Development',
+  };
   const testimonialsStructuredData = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Yash Kapure Portfolio',
+    '@type': 'LocalBusiness',
+    '@id': `${siteConfig.url}/#localbusiness`,
+    name: 'Yash Kapure - Frontend & Full-Stack Development',
+    description: 'Hire frontend developer for React and Next.js. 4+ years, production UIs and full-stack apps. Freelance for US, UK, and EU. $25–57/hr.',
+    url: siteConfig.url,
+    image: `${siteConfig.url}/images/profile.jpg`,
+    priceRange: '$$',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5',
       reviewCount: testimonialsData.length,
+      bestRating: '5',
+      worstRating: '1',
     },
     review: testimonialsData.map((testimonial) => ({
-      '@type': 'Review',
+      '@type': 'Review' as const,
+      itemReviewed,
       author: {
-        '@type': 'Person',
+        '@type': 'Person' as const,
         name: testimonial.name,
       },
       reviewBody: testimonial.content,
       reviewRating: {
-        '@type': 'Rating',
+        '@type': 'Rating' as const,
         ratingValue: '5',
+        bestRating: '5',
+        worstRating: '1',
       },
     })),
   };
