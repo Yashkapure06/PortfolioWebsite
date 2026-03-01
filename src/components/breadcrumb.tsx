@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import { siteConfig } from '@/lib/site-config';
 import { Icons } from './icons';
 
 interface BreadcrumbItem {
@@ -42,7 +43,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       '@type': 'ListItem',
       position: position + 1,
       name: item.name,
-      item: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.yashkapure.com'}${item.href}`,
+      item: `${siteConfig.url}${item.href}`,
     })),
   };
 
