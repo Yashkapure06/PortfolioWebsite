@@ -37,17 +37,18 @@ export function generateGeoWebPageSchema() {
       '@id': `${siteConfig.url}/#website`,
       name: 'Yash Kapure Portfolio',
       url: siteConfig.url,
+      description: siteConfig.description,
     },
     about: {
       '@type': 'Person',
       name: 'Yash Kapure',
-      jobTitle: 'Frontend Engineer & Full Stack Developer',
+      jobTitle: 'Hire Frontend Developer | React & Next.js',
       url: siteConfig.url,
     },
     author: {
       '@type': 'Person',
       name: 'Yash Kapure',
-      url: 'https://github.com/Yashkapure06',
+      url: siteConfig.url,
       sameAs: [
         'https://github.com/Yashkapure06',
         'https://linkedin.com/in/yash-kapure',
@@ -62,7 +63,7 @@ export function generateGeoWebPageSchema() {
     mainEntity: {
       '@type': 'Person',
       name: 'Yash Kapure',
-      jobTitle: 'Frontend Engineer & Full Stack Developer',
+      jobTitle: 'Hire Frontend Developer | React & Next.js',
       description: siteConfig.description,
       url: siteConfig.url,
     },
@@ -87,7 +88,7 @@ export function generateGeoProfilePageSchema() {
       '@type': 'Person',
       name: 'Yash Kapure',
       alternateName: 'Yash Vinod Kapure',
-      jobTitle: 'Frontend Engineer & Full Stack Developer',
+      jobTitle: 'Hire Frontend Developer | React & Next.js',
       description: siteConfig.description,
       url: siteConfig.url,
       image: `${siteConfig.url}/images/profile.jpg`,
@@ -108,7 +109,28 @@ export function generateGeoProfilePageSchema() {
     author: {
       '@type': 'Person',
       name: 'Yash Kapure',
-      url: 'https://github.com/Yashkapure06',
+      url: siteConfig.url,
+    },
+  };
+}
+
+/**
+ * WebSite schema for sitelinks and Knowledge Panel.
+ * Helps Google and AI engines understand site structure.
+ */
+export function generateWebSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteConfig.url}/#website`,
+    name: 'Yash Kapure Portfolio',
+    url: siteConfig.url,
+    description: siteConfig.description,
+    inLanguage: 'en',
+    author: {
+      '@type': 'Person',
+      name: 'Yash Kapure',
+      url: siteConfig.url,
     },
   };
 }
@@ -119,6 +141,7 @@ export function generateGeoProfilePageSchema() {
  */
 export function generateGeoStructuredData() {
   return [
+    generateWebSiteSchema(),
     generateGeoWebPageSchema(),
     generateGeoProfilePageSchema(),
   ];
