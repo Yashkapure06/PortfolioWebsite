@@ -18,7 +18,8 @@ export type ServiceKey =
   | 'performance'
   | 'architecture'
   | 'productUi'
-  | 'seoAeo';
+  | 'seoAeo'
+  | 'googleBusiness';
 
 export interface ServiceCard {
   key: ServiceKey;
@@ -140,6 +141,20 @@ export const servicesData: readonly ServiceCard[] = [
       'Analytics',
       'Error tracking',
       'Monitoring',
+    ],
+  },
+  {
+    key: 'googleBusiness',
+    primaryCount: 4,
+    technologies: [
+      'Google Business Profile',
+      'Local SEO',
+      'Google Maps',
+      'Reviews & ratings',
+      'NAP consistency',
+      'Categories & attributes',
+      'Posts & updates',
+      'Insights & analytics',
     ],
   },
 ];
@@ -576,9 +591,6 @@ export const experiencesData = [
       'Tailwind CSS',
       'Node.js',
       'Express',
-      'Express',
-      'TypeScript',
-      'Tailwind CSS',
       'API Integration',
       'MERN Stack',
       'RESTful API',
@@ -724,7 +736,7 @@ export const testimonialsData = [
   {
     name: 'Daniela Vélez',
     position: 'Global Marketing Director @ Dragon Sino Group',
-    company: 'Coventry, United Kingdom',
+    company: 'Colombia, South America',
     content:
       'I had the opportunity to work with Yash and was pleased to see his enthusiasm from the very start. He approached his tasks with a positive attitude and showed a clear willingness to learn. Throughout our time working together, he was receptive to feedback and made efforts to improve. His openness to guidance was a valuable part of the collaboration.',
     rating: 5,
