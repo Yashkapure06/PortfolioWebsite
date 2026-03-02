@@ -95,7 +95,6 @@ const HomePage = async () => {
         }}
       />
       <main id="main-content" className="container flex flex-col items-center">
-        <Header />
         <Intro />
         <SectionDivider />
         <About />

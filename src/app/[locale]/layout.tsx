@@ -5,6 +5,7 @@ import { getMessages } from 'next-intl/server';
 
 import { ActiveSectionProvider } from '@/components/active-section-provider';
 import { Chatbot } from '@/components/chatbot';
+import { Header } from '@/components/header';
 import { LocaleLangUpdater } from '@/components/locale-lang-updater';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/toaster';
@@ -31,7 +32,12 @@ const LocaleLayout = async ({ children, params }: LocaleLayoutProps) => {
       <LocaleLangUpdater />
       <ThemeProvider attribute="class">
         <ActiveSectionProvider>
-          {children}
+          <div className="fixed left-0 right-0 top-0 z-20 flex justify-center px-4 pt-5 sm:px-6 lg:pt-10">
+            <Header />
+          </div>
+          <div className="pt-24">
+            {children}
+          </div>
           <Toaster position="bottom-left" />
           <Chatbot />
         </ActiveSectionProvider>
