@@ -1,5 +1,5 @@
 import { siteConfig } from './site-config';
-import { projectsData } from '@/lib/data';
+import { projectsData, testimonialsData } from '@/lib/data';
 
 /**
  * AEO (Answer Engine Optimization) Utilities
@@ -399,6 +399,51 @@ export function generateProjectsItemListSchema() {
 }
 
 /**
+ * Generate AggregateRating and Review structured data for testimonials.
+ * Enables star ratings in search results (SERP) site-wide.
+ */
+export function generateTestimonialsAggregateRatingSchema() {
+  const itemReviewed = {
+    '@type': 'LocalBusiness' as const,
+    '@id': `${siteConfig.url}/#localbusiness`,
+    name: 'Yash Kapure - Frontend & Full-Stack Development',
+  };
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${siteConfig.url}/#localbusiness`,
+    name: 'Yash Kapure - Frontend & Full-Stack Development',
+    description:
+      'Hire frontend developer for React and Next.js. 4+ years, production UIs and full-stack apps. Freelance for US, UK, and EU. $25–57/hr.',
+    url: siteConfig.url,
+    image: `${siteConfig.url}/images/profile.jpg`,
+    priceRange: '$$',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: testimonialsData.length,
+      bestRating: '5',
+      worstRating: '1',
+    },
+    review: testimonialsData.map((testimonial) => ({
+      '@type': 'Review' as const,
+      itemReviewed,
+      author: {
+        '@type': 'Person' as const,
+        name: testimonial.name,
+      },
+      reviewBody: testimonial.content,
+      reviewRating: {
+        '@type': 'Rating' as const,
+        ratingValue: '5',
+        bestRating: '5',
+        worstRating: '1',
+      },
+    })),
+  };
+}
+
+/**
  * Generate comprehensive AEO structured data bundle
  * Combines all schemas for maximum AI search engine visibility
  */
@@ -411,6 +456,7 @@ export function generateAEOStructuredData(
     generateServiceSchema(),
     generateServicesItemListSchema(),
     generateHowToStructuredData(),
+    generateTestimonialsAggregateRatingSchema(),
   ];
 
   // Add FAQ schema if items provided

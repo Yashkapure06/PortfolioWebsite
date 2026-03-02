@@ -1,13 +1,14 @@
 import { Icons } from '@/components/icons';
 
 export const links = [
-  { name: 'Home', hash: '#home' },
-  { name: 'About', hash: '#about' },
-  { name: 'Services', hash: '#services' },
-  { name: 'Experience', hash: '#experience' },
-  { name: 'Projects', hash: '#projects' },
-  { name: 'Testimonials', hash: '#testimonials' },
-  { name: 'Contact', hash: '#contact' },
+  { name: 'Home', hash: '/' },
+  { name: 'About', hash: '/#about' },
+  { name: 'Services', hash: '/services' },
+  { name: 'Experience', hash: '/#experience' },
+  { name: 'Projects', hash: '/projects' },
+  { name: 'Testimonials', hash: '/#testimonials' },
+  { name: 'Contact', hash: '/#contact' },
+  { name: 'Hire', hash: '/hire' },
 ] as const;
 
 /** Service card key; must match i18n keys under services.items.* */
