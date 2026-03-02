@@ -5,8 +5,10 @@
     "services": "Services",
     "experience": "Experience",
     "projects": "Projects",
+    "blog": "Blog",
     "testimonials": "Testimonials",
-    "contact": "Contact"
+    "contact": "Contact",
+    "hire": "Hire"
   },
   "intro": {
     "available": "Available for work!",
@@ -362,5 +364,53 @@
   "common": {
     "skipToContent": "Skip to content",
     "navigation": "Navigation"
+  },
+  "blog": {
+    "heading": "Blog",
+    "content": "Articles on React, Next.js, hiring, and full-stack development.",
+    "metaTitle": "Blog | React & Next.js Insights | Yash Kapure",
+    "metaDescription": "Read articles on React vs Next.js, hiring remote developers, MERN best practices, and frontend performance.",
+    "readMore": "Read article",
+    "backToHome": "Back to Home"
+  },
+  "servicesPage": {
+    "heading": "Services",
+    "content": "Production systems I've shipped and can run for you. React, Next.js, full-stack, performance, and more.",
+    "metaTitle": "Services | Hire Frontend Developer | Yash Kapure",
+    "metaDescription": "React, Next.js, full-stack MERN/MEVN, performance optimization, frontend architecture, SEO/AEO/GEO. Hire for US, UK, EU. $25-57/hr.",
+    "rates": "$25–57/hour. Freelance and contract for US, UK, and EU clients.",
+    "cta": "Discuss this service",
+    "whyMe": "Why work with me?",
+    "whyMeContent": "4+ years of production experience. 7 five-star testimonials. 80,000+ portfolio visits. Based in the UK, working remotely with US, UK, and EU clients. I focus on clean code, performance, and delivery.",
+    "hireCta": "Hire me",
+    "viewProjects": "View projects",
+    "backToHome": "Back to Home"
+  },
+  "hire": {
+    "heading": "Hire Me",
+    "content": "I'm available for freelance and contract work. Share your project details and I'll get back within 24–48 hours.",
+    "metaTitle": "Hire Yash Kapure | React & Next.js Developer | US UK EU",
+    "metaDescription": "Hire frontend developer for React and Next.js. 4+ years. Responds within 24–48 hours. $25–57/hr. Freelance for US, UK, and EU.",
+    "availabilityTitle": "Availability",
+    "availability": "Available for hire. Open to full-time, freelance, and contract. Remote or onsite. US, UK, EU.",
+    "responseTitle": "Response Time",
+    "responseTime": "I usually reply within 24–48 hours. If it's a good fit, we can schedule a call and get started.",
+    "ratesTitle": "Rates",
+    "ratesContent": "Flexible rates depending on project scope, timeline, and duration. Short-term and long-term projects welcome.",
+    "ratesRange": "$25–57 USD/hour",
+    "processTitle": "How it works",
+    "step1Title": "Share your project",
+    "step1Content": "Fill out the contact form with your goal, timeline, scope, and budget. Or email me directly.",
+    "step2Title": "Quick response",
+    "step2Content": "I'll reply within 24–48 hours. If it's a fit, we'll schedule a call to discuss details.",
+    "step3Title": "Align & kick off",
+    "step3Content": "We align on scope, milestones, and timeline. Then we get started with clear communication and updates.",
+    "step4Title": "Deliver & iterate",
+    "step4Content": "I deliver production-ready code. We iterate based on feedback. You get a reliable, performant product.",
+    "ctaTitle": "Ready to get started?",
+    "ctaContent": "Share your project details and I'll respond within 24–48 hours. No spam, your details stay private.",
+    "ctaButton": "Contact me",
+    "emailDirect": "Email directly",
+    "backToHome": "Back to Home"
   }
 }

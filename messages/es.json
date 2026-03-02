@@ -5,8 +5,10 @@
     "services": "Servicios",
     "experience": "Experiencia",
     "projects": "Proyectos",
+    "blog": "Blog",
     "testimonials": "Testimonios",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "hire": "Contratar"
   },
   "intro": {
     "available": "¡Disponible para trabajar!",
@@ -366,5 +368,53 @@
   "common": {
     "skipToContent": "Saltar al contenido",
     "navigation": "Navegación"
+  },
+  "blog": {
+    "heading": "Blog",
+    "content": "Artículos sobre React, Next.js, contratación y desarrollo full-stack.",
+    "metaTitle": "Blog | React & Next.js | Yash Kapure",
+    "metaDescription": "Artículos sobre React vs Next.js, contratar desarrolladores remotos, mejores prácticas MERN y rendimiento frontend.",
+    "readMore": "Leer artículo",
+    "backToHome": "Volver al inicio"
+  },
+  "servicesPage": {
+    "heading": "Servicios",
+    "content": "Sistemas de producción que he entregado y puedo ejecutar para ti.",
+    "metaTitle": "Servicios | Contratar Desarrollador Frontend | Yash Kapure",
+    "metaDescription": "React, Next.js, MERN/MEVN full-stack, optimización de rendimiento. Contratar para US, UK, EU. $25-57/hr.",
+    "rates": "$25–57/hora. Freelance y contrato para clientes en US, UK y EU.",
+    "cta": "Discutir este servicio",
+    "whyMe": "¿Por qué trabajar conmigo?",
+    "whyMeContent": "4+ años de experiencia en producción. 7 testimonios de cinco estrellas. Basado en UK, trabajando remotamente con clientes en US, UK y EU.",
+    "hireCta": "Contrátame",
+    "viewProjects": "Ver proyectos",
+    "backToHome": "Volver al inicio"
+  },
+  "hire": {
+    "heading": "Contrátame",
+    "content": "Estoy disponible para trabajo freelance y por contrato. Comparte los detalles de tu proyecto y responderé en 24–48 horas.",
+    "metaTitle": "Contratar Yash Kapure | Desarrollador React & Next.js | US UK EU",
+    "metaDescription": "Contratar desarrollador frontend para React y Next.js. 4+ años. Responde en 24–48 horas. $25–57/hr. Freelance para US, UK y EU.",
+    "availabilityTitle": "Disponibilidad",
+    "availability": "Disponible para contratar. Abierto a full-time, freelance y contrato. Remoto u on-site. US, UK, EU.",
+    "responseTitle": "Tiempo de respuesta",
+    "responseTime": "Normalmente respondo en 24–48 horas. Si encaja, podemos programar una llamada y comenzar.",
+    "ratesTitle": "Tarifas",
+    "ratesContent": "Tarifas flexibles según el alcance, plazo y duración del proyecto.",
+    "ratesRange": "$25–57 USD/hora",
+    "processTitle": "Cómo funciona",
+    "step1Title": "Comparte tu proyecto",
+    "step1Content": "Completa el formulario de contacto con tu objetivo, plazo, alcance y presupuesto.",
+    "step2Title": "Respuesta rápida",
+    "step2Content": "Responderé en 24–48 horas. Si encaja, programaremos una llamada.",
+    "step3Title": "Alinear y comenzar",
+    "step3Content": "Alineamos alcance, hitos y plazo. Luego comenzamos con comunicación clara.",
+    "step4Title": "Entregar e iterar",
+    "step4Content": "Entrego código listo para producción. Iteramos según feedback.",
+    "ctaTitle": "¿Listo para comenzar?",
+    "ctaContent": "Comparte los detalles de tu proyecto. Responderé en 24–48 horas. Sin spam.",
+    "ctaButton": "Contactar",
+    "emailDirect": "Email directo",
+    "backToHome": "Volver al inicio"
   }
 }

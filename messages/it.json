@@ -5,8 +5,10 @@
     "services": "Servizi",
     "experience": "Esperienza",
     "projects": "Progetti",
+    "blog": "Blog",
     "testimonials": "Testimonianze",
-    "contact": "Contatto"
+    "contact": "Contatto",
+    "hire": "Assumi"
   },
   "intro": {
     "available": "Disponibile per lavorare!",
@@ -366,5 +368,8 @@
         "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
-  }
+  },
+  "blog": {"heading":"Blog","content":"Articoli su React, Next.js, assunzione e sviluppo full-stack.","metaTitle":"Blog | React & Next.js | Yash Kapure","metaDescription":"Articoli su React vs Next.js, assumere sviluppatori remoti, best practice MERN e performance frontend.","readMore":"Leggi articolo","backToHome":"Torna alla home"},
+  "servicesPage": {"heading":"Servizi","content":"Sistemi di produzione che ho consegnato e posso gestire per te.","metaTitle":"Servizi | Assumi Sviluppatore Frontend | Yash Kapure","metaDescription":"React, Next.js, MERN/MEVN full-stack, ottimizzazione performance. Assumi per US, UK, EU. $25-57/hr.","rates":"$25–57/ora. Freelance e contratto per clienti US, UK e EU.","cta":"Discuti questo servizio","whyMe":"Perché lavorare con me?","whyMeContent":"4+ anni di esperienza in produzione. 7 recensioni cinque stelle. Basato in UK, lavoro a distanza con clienti US, UK e EU.","hireCta":"Assumimi","viewProjects":"Vedi progetti","backToHome":"Torna alla home"},
+  "hire": {"heading":"Assumimi","content":"Disponibile per freelance e contratti. Condividi i dettagli del progetto e risponderò entro 24–48 ore.","metaTitle":"Assumi Yash Kapure | Sviluppatore React & Next.js | US UK EU","metaDescription":"Assumi sviluppatore frontend per React e Next.js. 4+ anni. Risponde entro 24–48 ore. $25–57/hr. Freelance per US, UK, EU.","availabilityTitle":"Disponibilità","availability":"Disponibile. Aperto a full-time, freelance e contratto. Remoto o in sede. US, UK, EU.","responseTitle":"Tempo di risposta","responseTime":"Rispondo di solito entro 24–48 ore. Se va bene, programmiamo una chiamata.","ratesTitle":"Tariffe","ratesContent":"Tariffe flessibili in base a scope, timeline e durata del progetto.","ratesRange":"$25–57 USD/ora","processTitle":"Come funziona","step1Title":"Condividi il progetto","step1Content":"Compila il modulo di contatto con obiettivo, timeline, scope e budget.","step2Title":"Risposta rapida","step2Content":"Risponderò entro 24–48 ore. Se va bene, programmiamo una chiamata.","step3Title":"Allinea e inizia","step3Content":"Allineiamo scope, milestone e timeline. Poi partiamo.","step4Title":"Consegna e itera","step4Content":"Consegno codice pronto per produzione. Iteriamo in base al feedback.","ctaTitle":"Pronto a iniziare?","ctaContent":"Condividi i dettagli del progetto. Risponderò entro 24–48 ore. Niente spam.","ctaButton":"Contattami","emailDirect":"Email diretta","backToHome":"Torna alla home"}
 }

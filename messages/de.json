@@ -5,8 +5,10 @@
     "services": "Dienstleistungen",
     "experience": "Erfahrung",
     "projects": "Projekte",
+    "blog": "Blog",
     "testimonials": "Referenzen",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "hire": "Buchen"
   },
   "intro": {
     "available": "Verfügbar für Arbeit!",
@@ -366,5 +368,53 @@
         "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
+  },
+  "blog": {
+    "heading": "Blog",
+    "content": "Artikel über React, Next.js, Recruiting und Full-Stack-Entwicklung.",
+    "metaTitle": "Blog | React & Next.js | Yash Kapure",
+    "metaDescription": "Artikel über React vs Next.js, Remote-Entwickler einstellen, MERN-Best-Practices und Frontend-Performance.",
+    "readMore": "Artikel lesen",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "servicesPage": {
+    "heading": "Dienste",
+    "content": "Produktionssysteme, die ich geliefert habe und für Sie betreiben kann.",
+    "metaTitle": "Dienste | Frontend-Entwickler beauftragen | Yash Kapure",
+    "metaDescription": "React, Next.js, MERN/MEVN Full-Stack, Performance-Optimierung. Beauftragen für US, UK, EU. $25-57/Std.",
+    "rates": "$25–57/Stunde. Freelance und Vertrag für Kunden in US, UK und EU.",
+    "cta": "Diesen Dienst besprechen",
+    "whyMe": "Warum mit mir arbeiten?",
+    "whyMeContent": "4+ Jahre Produktionserfahrung. 7 Fünf-Sterne-Bewertungen. Sitz in UK, Remote-Arbeit mit Kunden in US, UK und EU.",
+    "hireCta": "Mich beauftragen",
+    "viewProjects": "Projekte ansehen",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "hire": {
+    "heading": "Mich beauftragen",
+    "content": "Verfügbar für Freelance und Vertragsarbeit. Teilen Sie Ihre Projekt details und ich antworte innerhalb von 24–48 Stunden.",
+    "metaTitle": "Yash Kapure beauftragen | React & Next.js Entwickler | US UK EU",
+    "metaDescription": "Frontend-Entwickler für React und Next.js beauftragen. 4+ Jahre. Antwort innerhalb 24–48 Std. $25–57/Std. Freelance US, UK, EU.",
+    "availabilityTitle": "Verfügbarkeit",
+    "availability": "Verfügbar. Offen für Vollzeit, Freelance und Vertrag. Remote oder vor Ort. US, UK, EU.",
+    "responseTitle": "Antwortzeit",
+    "responseTime": "Ich antworte in der Regel innerhalb von 24–48 Stunden. Bei Interesse planen wir einen Anruf.",
+    "ratesTitle": "Tarife",
+    "ratesContent": "Flexible Tarife je nach Projektumfang, Zeitrahmen und Dauer.",
+    "ratesRange": "$25–57 USD/Stunde",
+    "processTitle": "So funktioniert es",
+    "step1Title": "Projekt teilen",
+    "step1Content": "Kontaktformular mit Ziel, Zeitrahmen, Umfang und Budget ausfüllen.",
+    "step2Title": "Schnelle Antwort",
+    "step2Content": "Ich antworte innerhalb von 24–48 Stunden. Bei Interesse planen wir einen Anruf.",
+    "step3Title": "Abstimmen und starten",
+    "step3Content": "Wir stimmen Umfang, Meilensteine und Zeitplan ab. Dann starten wir.",
+    "step4Title": "Liefern und iterieren",
+    "step4Content": "Ich liefere produktionsreifen Code. Wir iterieren basierend auf Feedback.",
+    "ctaTitle": "Bereit anzufangen?",
+    "ctaContent": "Teilen Sie Ihre Projekt details. Ich antworte innerhalb von 24–48 Stunden. Kein Spam.",
+    "ctaButton": "Kontakt",
+    "emailDirect": "Direkt per E-Mail",
+    "backToHome": "Zurück zur Startseite"
   }
 }

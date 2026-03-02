@@ -5,8 +5,10 @@
     "services": "サービス",
     "experience": "経験",
     "projects": "プロジェクト",
+    "blog": "ブログ",
     "testimonials": "お客様の声",
-    "contact": "お問い合わせ"
+    "contact": "お問い合わせ",
+    "hire": "雇用"
   },
   "intro": {
     "available": "仕事可能です！",
@@ -366,5 +368,8 @@
         "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
-  }
+  },
+  "blog": {"heading":"ブログ","content":"React、Next.js、採用、フルスタック開発に関する記事。","metaTitle":"ブログ | React & Next.js | Yash Kapure","metaDescription":"React vs Next.js、リモート開発者採用、MERNベストプラクティス、フロントエンドパフォーマンスに関する記事。","readMore":"記事を読む","backToHome":"ホームに戻る"},
+  "servicesPage": {"heading":"サービス","content":"私が納品し、運営できる本番システム。","metaTitle":"サービス | フロントエンド開発者を雇う | Yash Kapure","metaDescription":"React、Next.js、MERN/MEVNフルスタック、パフォーマンス最適化。米英EU向け。$25-57/時。","rates":"$25–57/時間。米英EUクライアント向けフリーランス・契約。","cta":"このサービスについて相談","whyMe":"なぜ私と仕事をするのか？","whyMeContent":"4年以上の本番経験。7件の5つ星レビュー。英国在住、米英EUクライアントとリモートで仕事。","hireCta":"雇う","viewProjects":"プロジェクトを見る","backToHome":"ホームに戻る"},
+  "hire": {"heading":"雇う","content":"フリーランス・契約可能。プロジェクトの詳細を共有してください。24〜48時間以内に返信します。","metaTitle":"Yash Kapureを雇う | React & Next.js開発者 | 米英EU","metaDescription":"ReactとNext.jsのフロントエンド開発者を雇う。4年以上。24〜48時間以内に返信。$25–57/時。","availabilityTitle":"稼働可能","availability":"雇用可能。フルタイム、フリーランス、契約に対応。リモートまたはオンサイト。米英EU。","responseTitle":"返信時間","responseTime":"通常24〜48時間以内に返信。フィットすれば、電話をスケジュールします。","ratesTitle":"料金","ratesContent":"プロジェクトのスコープ、タイムライン、期間に応じて柔軟な料金。","ratesRange":"$25–57 USD/時間","processTitle":"流れ","step1Title":"プロジェクトを共有","step1Content":"連絡フォームに目標、タイムライン、スコープ、予算を記入。","step2Title":"迅速な返信","step2Content":"24〜48時間以内に返信します。フィットすれば、電話をスケジュール。","step3Title":"調整してスタート","step3Content":"スコープ、マイルストーン、タイムラインを調整。その後開始。","step4Title":"納品と反復","step4Content":"本番対応コードを納品。フィードバックに基づき反復。","ctaTitle":"始める準備はできましたか？","ctaContent":"プロジェクトの詳細を共有してください。24〜48時間以内に返信します。スパムなし。","ctaButton":"連絡する","emailDirect":"直接メール","backToHome":"ホームに戻る"}
 }

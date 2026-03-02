@@ -5,8 +5,10 @@
     "services": "服务",
     "experience": "经验",
     "projects": "项目",
+    "blog": "博客",
     "testimonials": "推荐",
-    "contact": "联系"
+    "contact": "联系",
+    "hire": "聘用"
   },
   "intro": {
     "available": "可工作！",
@@ -366,5 +368,8 @@
         "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
-  }
+  },
+  "blog": {"heading":"博客","content":"关于 React、Next.js、招聘和全栈开发的文章。","metaTitle":"博客 | React 和 Next.js | Yash Kapure","metaDescription":"关于 React 与 Next.js、招聘远程开发者、MERN 最佳实践和前端性能的文章。","readMore":"阅读文章","backToHome":"返回首页"},
+  "servicesPage": {"heading":"服务","content":"我交付的生产系统，可为您运营。","metaTitle":"服务 | 聘请前端开发者 | Yash Kapure","metaDescription":"React、Next.js、MERN/MEVN 全栈、性能优化。为美国、英国、欧盟聘请。$25-57/小时。","rates":"$25–57/小时。美国和英国、欧盟客户的自由职业和合同。","cta":"讨论此服务","whyMe":"为什么与我合作？","whyMeContent":"4年以上生产经验。7个五星评价。位于英国，与美英欧盟客户远程合作。","hireCta":"雇用我","viewProjects":"查看项目","backToHome":"返回首页"},
+  "hire": {"heading":"雇用我","content":"可承接自由职业和合同工作。分享您的项目详情，我将在24-48小时内回复。","metaTitle":"雇用 Yash Kapure | React 和 Next.js 开发者 | 美英欧盟","metaDescription":"雇用 React 和 Next.js 前端开发者。4年以上经验。24-48小时内回复。$25-57/小时。","availabilityTitle":"可用性","availability":"可被雇用。接受全职、自由职业和合同。远程或现场。美英欧盟。","responseTitle":"回复时间","responseTime":"我通常在24-48小时内回复。如合适，我们会安排通话。","ratesTitle":"费率","ratesContent":"根据项目范围、时间线和持续时间灵活定价。","ratesRange":"$25–57 美元/小时","processTitle":"如何运作","step1Title":"分享您的项目","step1Content":"填写联系表格，注明目标、时间线、范围及预算。","step2Title":"快速回复","step2Content":"我将在24-48小时内回复。如合适，安排通话。","step3Title":"对齐并启动","step3Content":"我们对齐范围、里程碑和时间线。然后开始。","step4Title":"交付并迭代","step4Content":"我交付可用于生产的代码。我们根据反馈迭代。","ctaTitle":"准备开始？","ctaContent":"分享您的项目详情。我将在24-48小时内回复。无垃圾邮件。","ctaButton":"联系我","emailDirect":"直接发邮件","backToHome":"返回首页"}
 }

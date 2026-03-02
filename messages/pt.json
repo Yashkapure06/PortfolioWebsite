@@ -5,8 +5,10 @@
     "services": "Serviços",
     "experience": "Experiência",
     "projects": "Projetos",
+    "blog": "Blog",
     "testimonials": "Depoimentos",
-    "contact": "Contato"
+    "contact": "Contato",
+    "hire": "Contratar"
   },
   "intro": {
     "available": "Disponível para trabalhar!",
@@ -366,5 +368,8 @@
         "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
-  }
+  },
+  "blog": {"heading":"Blog","content":"Artigos sobre React, Next.js, contratação e desenvolvimento full-stack.","metaTitle":"Blog | React & Next.js | Yash Kapure","metaDescription":"Artigos sobre React vs Next.js, contratar desenvolvedores remotos, melhores práticas MERN e performance frontend.","readMore":"Ler artigo","backToHome":"Voltar ao início"},
+  "servicesPage": {"heading":"Serviços","content":"Sistemas de produção que entreguei e posso executar para você.","metaTitle":"Serviços | Contratar Desenvolvedor Frontend | Yash Kapure","metaDescription":"React, Next.js, MERN/MEVN full-stack, otimização de performance. Contratar para US, UK, EU. $25-57/hr.","rates":"$25–57/hora. Freelance e contrato para clientes US, UK e EU.","cta":"Discutir este serviço","whyMe":"Por que trabalhar comigo?","whyMeContent":"4+ anos de experiência em produção. 7 depoimentos cinco estrelas. Baseado no UK, trabalho remoto com clientes US, UK e EU.","hireCta":"Me contrate","viewProjects":"Ver projetos","backToHome":"Voltar ao início"},
+  "hire": {"heading":"Me contrate","content":"Disponível para freelance e contrato. Compartilhe os detalhes do seu projeto e responderei em 24–48 horas.","metaTitle":"Contratar Yash Kapure | Desenvolvedor React & Next.js | US UK EU","metaDescription":"Contratar desenvolvedor frontend para React e Next.js. 4+ anos. Responde em 24–48 horas. $25–57/hr. Freelance para US, UK, EU.","availabilityTitle":"Disponibilidade","availability":"Disponível. Aberto a full-time, freelance e contrato. Remoto ou presencial. US, UK, EU.","responseTitle":"Tempo de resposta","responseTime":"Geralmente respondo em 24–48 horas. Se encaixar, agendamos uma chamada.","ratesTitle":"Taxas","ratesContent":"Taxas flexíveis conforme escopo, cronograma e duração do projeto.","ratesRange":"$25–57 USD/hora","processTitle":"Como funciona","step1Title":"Compartilhe seu projeto","step1Content":"Preencha o formulário de contato com objetivo, cronograma, escopo e orçamento.","step2Title":"Resposta rápida","step2Content":"Responderei em 24–48 horas. Se encaixar, agendamos uma chamada.","step3Title":"Alinhar e iniciar","step3Content":"Alinhamos escopo, marcos e cronograma. Então começamos.","step4Title":"Entregar e iterar","step4Content":"Entrego código pronto para produção. Iteramos com base no feedback.","ctaTitle":"Pronto para começar?","ctaContent":"Compartilhe os detalhes do projeto. Responderei em 24–48 horas. Sem spam.","ctaButton":"Contate-me","emailDirect":"Email direto","backToHome":"Voltar ao início"}
 }

@@ -5,8 +5,10 @@
     "services": "Diensten",
     "experience": "Ervaring",
     "projects": "Projecten",
+    "blog": "Blog",
     "testimonials": "Getuigenissen",
-    "contact": "Contact"
+    "contact": "Contact",
+    "hire": "In huren"
   },
   "intro": {
     "available": "Beschikbaar voor werk!",
@@ -366,5 +368,8 @@
         "content": "Mr. Yash delivered our website to a truly professional standard - polished, modern, and built with up-to-date technology. What stood out was his enthusiasm and positive attitude throughout the project; we felt we were in safe, capable hands. It's rare to find someone so committed and trustworthy. We wish him every success in bringing the same reliable service to more clients."
       }
     }
-  }
+  },
+  "blog": {"heading":"Blog","content":"Artikelen over React, Next.js, werving en full-stack ontwikkeling.","metaTitle":"Blog | React & Next.js | Yash Kapure","metaDescription":"Artikelen over React vs Next.js, remote developers inhuren, MERN best practices en frontend performance.","readMore":"Lees artikel","backToHome":"Terug naar home"},
+  "servicesPage": {"heading":"Diensten","content":"Productiesystemen die ik heb geleverd en voor u kan runnen.","metaTitle":"Diensten | Frontend Ontwikkelaar Inhuren | Yash Kapure","metaDescription":"React, Next.js, MERN/MEVN full-stack, performance optimalisatie. Inhuren voor US, UK, EU. $25-57/uur.","rates":"$25–57/uur. Freelance en contract voor klanten US, UK en EU.","cta":"Bespreek deze dienst","whyMe":"Waarom met mij werken?","whyMeContent":"4+ jaar productie-ervaring. 7 vijfsterren testimonials. Gebaseerd in UK, werk remote met klanten US, UK en EU.","hireCta":"Huur me in","viewProjects":"Bekijk projecten","backToHome":"Terug naar home"},
+  "hire": {"heading":"Huur me in","content":"Beschikbaar voor freelance en contract. Deel je projectdetails en ik reageer binnen 24–48 uur.","metaTitle":"Yash Kapure Inhuren | React & Next.js Ontwikkelaar | US UK EU","metaDescription":"Frontend ontwikkelaar inhuren voor React en Next.js. 4+ jaar. Reageert binnen 24–48 uur. $25–57/uur. Freelance voor US, UK, EU.","availabilityTitle":"Beschikbaarheid","availability":"Beschikbaar. Open voor full-time, freelance en contract. Remote of on-site. US, UK, EU.","responseTitle":"Responstijd","responseTime":"Ik reageer meestal binnen 24–48 uur. Als het past, plannen we een gesprek.","ratesTitle":"Tarieven","ratesContent":"Flexibele tarieven afhankelijk van scope, tijdlijn en duur van het project.","ratesRange":"$25–57 USD/uur","processTitle":"Hoe het werkt","step1Title":"Deel je project","step1Content":"Vul het contactformulier in met doel, tijdlijn, scope en budget.","step2Title":"Snelle reactie","step2Content":"Ik reageer binnen 24–48 uur. Als het past, plannen we een gesprek.","step3Title":"Afstemmen en starten","step3Content":"We stemmen scope, mijlpalen en tijdlijn af. Dan gaan we van start.","step4Title":"Leveren en itereren","step4Content":"Ik lever productie-klaar code. We itereren op basis van feedback.","ctaTitle":"Klaar om te beginnen?","ctaContent":"Deel je projectdetails. Ik reageer binnen 24–48 uur. Geen spam.","ctaButton":"Neem contact op","emailDirect":"Direct e-mailen","backToHome":"Terug naar home"}
 }
