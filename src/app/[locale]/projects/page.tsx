@@ -7,7 +7,6 @@ import { useTranslations } from 'next-intl';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
-import { Link } from '@/i18n/routing';
 import { generateProjectsItemListSchema } from '@/lib/aeo';
 import { projectsData } from '@/lib/data';
 
@@ -54,20 +53,6 @@ export default function ProjectsPage() {
         }}
       />
       <Breadcrumb />
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="mb-8"
-      >
-        <Button variant="outline" asChild className="mb-8">
-          <Link href="/">
-            <Icons.arrowRight className="mr-2 size-4 rotate-180" />
-            Back to Home
-          </Link>
-        </Button>
-      </motion.div>
-
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
