@@ -60,7 +60,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       {/* Breadcrumb Navigation */}
       <nav
         aria-label="Breadcrumb"
-        className="text-muted-foreground mb-4 flex items-center space-x-1 text-sm"
+        className="text-muted-foreground mb-4 flex w-full justify-start items-center space-x-1 text-sm"
       >
         {breadcrumbItems.map((item, index) => (
           <div key={item.href} className="flex items-center">
